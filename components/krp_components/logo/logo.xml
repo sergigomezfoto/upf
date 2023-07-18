@@ -8,22 +8,25 @@
     bgalpha="0.3"
     bgcapture="false"
     width="380px"
-    height="calc:stageheight - 37"
-    onloaded="trace('hgaga');"  
+    height=""
+    onloaded="calc_mesures();"  
     />
+    <action name="calc_mesures" scope="local">
+        gb=caller;    
+        calculated=(stageheight - 37);  
+        tween(gb.height,*calculated,0.1,linear);
+    </action>
     <style name="logo_upf"
     url="%FIRSTXML%/assets/img/logo_upf.png"
     align="topleft"
     x="get:margins.left"
-    y="get:margins.top"
+    y="calc:margins.top - 8"
     capture="false"
     onclick="openurl(get(ui.logo_upf_link));"
     />
 
     <layer name="gray_bg" keep="true" style="gray_bg">
-        <layer name="logo_upf" keep="true" style="logo_upf"
-            
-        />
+        <layer name="logo_upf" keep="true" style="logo_upf"/>
     </layer>
 
 </krpano>

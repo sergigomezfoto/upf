@@ -137,7 +137,7 @@ class S_LoadControl {
 //////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////loadeR control
 const generalLoadControl = new S_LoadControl();
-console.log();
+let krpanoTexts = false;
 ///////////////////////////////////////////////////////////////////LittlePlanet ready
 const first_loadder = document.getElementById("first_loadder");
 const svgArr = [
@@ -145,19 +145,24 @@ const svgArr = [
   // document.getElementById("time-message-wrapper-svg")
 ];
 const imgArr = [
-  // "../../assets/img/logo_pds.png",
-  
-  
+  "../../assets/img/lang_triangle.png",
+  "../../assets/img/lang_world.png",
+  "../../assets/img/logo_upf.png",
+  "../../assets/img/ui_fs_bg.png",
+  "../../assets/img/ui_fs_shape.png",
+  "../../assets/img/ui_fs.png",
+  "../../assets/img/ui_in.png",
+  "../../assets/img/ui_out.png",
 ];
-const fontArr = [
-  "16pt lota_regular",
-   "16pt lota_semibold"
-];
-
+const fontArr = ["16pt lota_regular", "16pt lota_semibold"];
 
 (async () => {
   if (test) {
     first_loadder.style.display = "none";
+    await asyncLoopPositive((_) => krpanoTexts);
+    politica.textContent = krpano.ui.politica;
+    guide.textContent = krpano.ui.guide;
+    politica.setAttribute("href", krpano.ui.politica_link);
     return;
   }
   for (const svg of svgArr) {
@@ -169,10 +174,16 @@ const fontArr = [
   for (const font of fontArr) {
     await generalLoadControl.registerFonts(font);
   }
-  await asyncLoopPositive((_) => generalLoadControl.count === svgArr.length + imgArr.length + fontArr.length ); // +1=krpano little planet
+  await asyncLoopPositive((_) => generalLoadControl.count === svgArr.length + imgArr.length + fontArr.length && krpanoTexts); 
   first_loadder.style.opacity = "0";
   console.log("he arribat!!", generalLoadControl.count);
   generalLoadControl.log();
+
+  //defintis a js.js
+  politica.textContent = krpano.ui.politica;
+  guide.textContent = krpano.ui.guide;
+  politica.setAttribute("href", krpano.ui.politica_link);
+
   await asyncLoopPositive((_) => getComputedStyle(first_loadder).opacity === "0");
   first_loadder.style.display = "none";
 })();

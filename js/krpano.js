@@ -7,7 +7,7 @@ embedpano({
   passQueryParameters: "startscene,startlookat",
   mobilescale: 1.0,
   consolelog: true,
-  bgcolor: "#332244",
+  bgcolor: "#ffffff",
   onready: krpano_onready_callback,
   initvars: {
     test: test,

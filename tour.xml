@@ -5,6 +5,8 @@
 <include url="components/krp_components/logo/logo.xml" />
 <include url="components/krp_components/lang/lang.xml" />
 <include url="components/krp_components/cta/cta.xml" />
+<include url="components/krp_components/ui_buttons/ui_buttons.xml" />
+<include url="components/krp_components/info_panel/info_panel.xml" />
 <action name="skin_onstart_loadscene" scope="local" autorun="onstart">
 		
 		<!-- load first scene -->

@@ -1,0 +1,193 @@
+<krpano>
+
+    
+
+
+<style name="info_container"   
+    type="container"
+    align="topright"
+    y="calc:margins.top + 100"
+    x="calc:margins.right"   
+    bgcapture="false"
+    capture="true"
+    bgcolor="0x549865"
+    bgalpha="0"
+    flowchildren="v" 
+    childmargin="0"
+
+/>
+
+    <style name="info_container_header"
+        type="text"
+        bgcolor="0xffffff"
+        bgalpha="0.8"
+        onclick="onclick_header();"
+        flowchildren="v" 
+        childmargin="0" 
+        childflowspacing="3"
+        align="left"
+        width="280px"
+        capture="false"
+
+    />
+        <action name="onclick_header" scope="local">
+         
+           switch(layer[info_container_header_button].crop, '0|0|14|14', '14|0|14|14');  
+           switch(layer[info_container_body].alpha, 0, 1);
+           
+           if (global.gpstrue,
+                switch(layer[info_container_gps].alpha, 0, 1);
+           );
+
+        
+        </action>
+        <style name="info_container_header_text"
+          type="text"
+          css="font-family:'lota_semibold';font-size:20px;color:#000000;letter-spacing: 0px;"  
+          bg="false"
+          bgcolor="0xff49ff"
+          padding="24 0 0 29"
+          width="220px"
+          enabled="false"
+          
+        />
+        <style name="info_container_header_campus"
+          type="text"
+          css="font-family:'lota_semibold';font-size:16px;color:#7a7a7a;letter-spacing: 0px;"  
+          bg="false"
+          bgcolor="0x6549ff"
+          padding="0 0 16 29"
+          enabled="false"
+        />
+        <style name="info_container_header_line"
+          type="text"
+          bgborder="2,0,0,0 0x7a7a7a 0.6 solid"       
+          height="20px"
+          minwidth="220"
+          bg="false"
+          ox="30"
+          enabled="false"
+        />
+        <style name="info_container_header_button"
+          url="%FIRSTXML%/assets/img/plus_min.png"
+          crop="14|0|14|14"
+          flow="false"
+          align="topright"
+          y="28"
+          x="28"  
+          enabled="false"
+        />
+    <style name="info_container_body"
+        type="text"
+        bgcolor="0xffffff"
+        bgalpha="0.8"
+        onclick="trace('info_container clicked');"
+        flowchildren="v" 
+        childmargin="0 30 20 30"
+        childflowspacing="0"
+        align="top"
+        width="280px"
+        alpha="1"
+        autoalpha="true"
+        capture="false"
+        cursor="default"
+    />
+        <style name="info_container_body_text"
+            type="text"
+            align="topleft"
+            bg="false"
+            bgcolor="0x6554ff"
+            width="220px"
+            maxheight="200"
+            capture="false"
+            cursor="default"
+            css="font-family:'lota_regular';font-size:13px;color:#000000;letter-spacing: 0px;line-height: 19px;"
+
+        />
+    <style name="info_container_gps"
+        type="text"
+        bgcolor="0xffffff"
+        bgalpha="0.8"
+        onclick="trace('info_container clicked');"
+        flowchildren="v" 
+        childmargin="0 30 20 30"
+        childflowspacing="0"
+        align="top"
+        width="280px"
+        capture="false"
+        alpha="0"  
+        autoalpha="true"
+        cursor="default"
+    />
+        <style name="info_container_gps_text"
+            type="text"
+            align="topleft"
+            bg="false"
+            bgcolor="0x6554ff"
+            width="220px"
+            maxheight="200"
+            capture="false"
+            cursor="default"
+            css="font-family:'lota_regular';font-size:13px;color:#000000;letter-spacing: 0px;line-height: 19px;"
+            bgborder="2,0,0,0 0x7a7a7a 0.6 solid"
+        />
+<events name="info_panel" keep="true" 
+onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );"
+/>
+
+<action name="info_panel_action" scope="local">
+    tit=layer[info_container_header_text];
+    camp=layer[info_container_header_campus];
+    cont=layer[info_container_body_text];
+    sc=(scene[(xml.scene)].title);
+    gps=layer[info_container_gps];
+    gpstext=layer[info_container_gps_text];
+    but=layer[info_container_header_button];
+    cp='';
+    panos_balmes=11;
+    if (scene[(xml.scene)].index === 0 OR scene[(xml.scene)].index === panos_balmes, global.gpstrue=true;,global.gpstrue=false;);
+    
+    if (scene[(xml.scene)].index LT panos_balmes
+    ,
+        cp=campus.balmes;
+        if (scene[(xml.scene)].index === 0 AND but.crop === '14|0|14|14' ,
+            gpstext.text=data[balmes_gps].content;
+            gps.alpha=1;
+            , 
+            gps.alpha=0;
+        );
+    , scene[(xml.scene)].index GE panos_balmes,
+        cp=campus.ciutadella;
+        if (scene[(xml.scene)].index === panos_balmes AND but.crop === '14|0|14|14' ,
+            gpstext.text=data[balmes_gps].content;
+            gps.alpha=1;
+            , 
+            gps.alpha=0;
+        );
+    );
+    cont.text=data[(sc + '_content')].content;
+    tit.text=data[(sc + '_title')].content;
+    camp.text=cp;
+</action>
+
+<layer name="info_container" keep="true" style="info_container">
+    <layer name="info_container_header" keep="true" style="info_container_header" >
+        <layer name="info_container_header_text" keep="true" style="info_container_header_text" />
+        <layer name="info_container_header_campus" keep="true" style="info_container_header_campus" />
+        <layer name="info_container_header_line" keep="true" style="info_container_header_line" />
+        <layer name="info_container_header_button" keep="true" style="info_container_header_button"/>
+    </layer>
+    <layer name="info_container_body" keep="true" style="info_container_body">
+    
+        <layer name="info_container_body_text" keep="true" style="info_container_body_text"/>
+
+    
+    </layer>
+    <layer name="info_container_gps" keep="true" style="info_container_gps">
+    
+        <layer name="info_container_gps_text" keep="true" style="info_container_gps_text"/>
+    
+    </layer>
+</layer>
+
+</krpano>

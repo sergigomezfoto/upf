@@ -9,7 +9,7 @@
     y="get:margins.top"
     x="get:margins.right"   
     bgcapture="true"
-    capture="false"
+    capture="true"
     onclick="choose_lang"
     bgcolor="0x654ff54"
     bgalpha="0"
@@ -44,7 +44,7 @@
         align="center"
         bg="false"
         bgcolor="0x654ff54"
-        css="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;"  
+        css="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;text-transform: uppercase;"  
         enabled="false"     
     />
 
@@ -78,7 +78,7 @@
         align="top"
         bg="false"
         bgcolor="0x654ff54"
-        css="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;"  
+        css="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;text-transform: uppercase;"  
         alpha="0.6"    
         autoalpha="true"   
         onover="set(alpha, 1);"

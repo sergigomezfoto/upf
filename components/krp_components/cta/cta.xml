@@ -3,26 +3,52 @@
 <style name="cta_container"
     type="container"
     align="topright"
-    width="102px"
     height="30px"
     edge="topright"
     y="get:margins.top"
-    x="get:margins.right"   
-    bgcapture="true"
-    capture="false"
+    x="calc:margins.right + 120"   
+    bgcapture="false"
     onclick="choose_lang"
     bgcolor="0x654ff54"
-    bgalpha="1"
-
-
-
+    bgalpha="0"
+    flowchildren="h"
+    childflowspacing="20"
 />
-
-
-
-
-    <layer name="cta_container" keep="true" style="cta_container"
-        
+    <style name="cta"
+    type="text"
+    bg="true"
+    bgcolor="0xffffff"
+    bgalpha="0"
+    css="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:center;text-transform: uppercase;" 
+    css_out="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:center;text-transform: uppercase;" 
+    css_hover="font-family:'lota_regular';font-size:16px;color:#c8102e;text-align:center;text-transform: uppercase;"
+    align="right"
+    padding="10 20"
+    capture="false"
+    bgborder="2 0xffffff 1 solid"
+    onover="cta_over"    
+    onout="cta_out"
+    onclick="cta_click"
     />
+    <action name="cta_over" scope="local">
+    caller.bgalpha = 1;
+    caller.css = caller.css_hover;    
+    
+    </action>
+    <action name="cta_out" scope="local">
+    caller.bgalpha = 0;
+    caller.css = caller.css_out;    
+        
+    
+    </action>
 
+
+
+
+    <layer name="cta_container" keep="true" style="cta_container">
+
+        <layer name="cta_1" keep="true" style="cta" text="get:ui.cta_1" onclick="openurl(get(ui.cta_1_link),'_blank');"/>
+        <layer name="cta_2" keep="true" style="cta" text="get:ui.cta_2" onclick="openurl(get(ui.cta_2_link),'_blank');"/>
+
+    </layer>
 </krpano>

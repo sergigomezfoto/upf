@@ -4,19 +4,47 @@
 
 
 <if check="language == 'spanish'">
-<lang
-main="ESPAÑOL"
-sub1="CATALÀ"
-sub2="ENGLISH"
-/>  
-<ui
-    logo_upf_link="https://www.upf.edu/es/"
-    cta_1="mira los estúdios"
-    cta_1_link="https://www.upf.edu/es/web/guest/oferta-estudios"
-    cta_2="Investigación UPF"
-    cta_2_link="https://www.upf.edu/es/web/guest/recercaupf"
-/>
-"   
+    <lang
+    main="ESPAÑOL"
+    sub1="CATALÀ"
+    sub2="ENGLISH"
+    />  
+
+    <ui
+        logo_upf_link="https://www.upf.edu/es/"
+        cta_1="cta 1 text español"
+        cta_1_link="https://www.upf.edu/es/web/guest/oferta-estudios"
+        cta_2="cta 2 text español"
+        cta_2_link="https://www.upf.edu/es/web/guest/recercaupf"
+        politica="Política de privacidad"
+        politica_link="https://www.bsm.upf.edu/es/politica-de-privacidad"
+        guide="Guía de navegación"
+    />
+    "   
+    <campus 
+    balmes="Campus Balmes"
+    ciutadella="Campus de la Ciutadella"
+    />
+    <data name="b_01_title"><![CDATA[
+     Exterior
+    ]]></data>
+    <data name="b_01_content"><![CDATA[
+    Barcelona es una ciudad abierta que fomenta la riqueza cultural y la innovación. Compartimos los valores de nuestra ciudad y en ella creamos nuestro espacio experto en formación, detección y desarrollo de talento intelectual y creativo.
+   ]]></data>
+
+
+
+    <data name="balmes_gps"><![CDATA[
+    
+    <div style="margin-top:20px;display:flex;justify-content:flex-start;">
+    <img src="assets/img/gps.png" style="width:23px;height:36px; margin-right:14px;"/>
+        <div>
+            <div>Balmes, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:10px;"><div><a style="color:#999999;letter-spacing: 1.5px; text-decoration:none;" href="https://sergigomez.com">COMO LLEGAR</a></div><img src="assets/img/gps_arrow.png" style="width:14px;height:9px;margin-bottom:3px; "/></div>
+        </div>
+    </div>
+
+   ]]></data>
+
 </if>
 
 
@@ -41,7 +69,9 @@ sub2="ENGLISH"
 
 
 
-
+<action name="" autorun="true">
+jscall(krpanoTexts = true);
+</action>
 
 
 </krpano>
