@@ -1,0 +1,108 @@
+<krpano>
+
+<style name="lang_cont"
+    type="container"
+    align="topright"
+    width="102px"
+    height="30px"
+    edge="topright"
+    y="get:margins.top"
+    x="get:margins.right"   
+    bgcapture="true"
+    capture="false"
+    onclick="choose_lang"
+    bgcolor="0x654ff54"
+    bgalpha="0"
+/>
+
+    <action name="choose_lang" scope="local">
+        lt=layer[lang_cont_triangle];
+        ls=layer[lang_sub_container];
+        if (lt.rotate == 0,
+            lt.rotate="180";
+            lt.edge="left";
+            tween(ls.y, 80, 0.2);
+            tween(ls.alpha, 1, 0.3);
+            ,
+            lt.rotate="0";
+            lt.edge="right";
+            tween(ls.y,70, 0.3);
+            tween(ls.alpha,0, 0.2);
+        );
+    </action>
+
+    <style name="lang_cont_ico"
+        url="%FIRSTXML%/assets/img/lang_world.png"
+        align="left" 
+        enabled="false" 
+    />
+
+    <style name="lang_cont_text"
+        type="text"
+        text="get:lang.main"
+        x="3px"
+        align="center"
+        bg="false"
+        bgcolor="0x654ff54"
+        css="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;"  
+        enabled="false"     
+    />
+
+    <style name="lang_cont_triangle"
+        url="%FIRSTXML%/assets/img/lang_triangle.png"
+        align="right" 
+        enabled="false"
+    />
+
+<style name="lang_sub_container"
+    type="container"
+    align="righttop"
+    width="102px"
+    height="40px"
+    y="70"
+    x="get:margins.right"   
+    bgcapture="true"
+    capture="false"
+    bgcolor="0xff5498"
+    bgalpha="0"
+    enablechildren="true"
+    autoalpha="true"
+    alpha="0"
+
+/>
+
+
+    <style name="lang_sub"
+        type="text"
+        x="3px"
+        align="top"
+        bg="false"
+        bgcolor="0x654ff54"
+        css="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;"  
+        alpha="0.6"    
+        autoalpha="true"   
+        onover="set(alpha, 1);"
+        onout="set(alpha, 0.6);"
+        onclick="change_lang"
+    />
+
+<layer name="lang_cont" keep="true" style="lang_cont">
+    <layer name="lang_cont_ico" keep="true" style="lang_cont_ico"/>
+    <layer name="lang_cont_text" keep="true" style="lang_cont_text"/>
+    <layer name="lang_cont_triangle" keep="true" style="lang_cont_triangle"/>
+</layer>
+<layer name="lang_sub_container" keep="true" style="lang_sub_container">
+    <layer name="lang_sub1" keep="true" style="lang_sub" text="get:lang.sub1"/>
+    <layer name="lang_sub2" keep="true" style="lang_sub" text="get:lang.sub2" y="25px"/>
+</layer>
+
+// TODO CANVI IDIOMA
+
+<action name="change_lang">
+
+   trace('change lang'); 
+
+</action>
+
+
+</krpano>

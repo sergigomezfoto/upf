@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+    --zindexfirstloader: 1100;
+    --zindexcommon: 1005;
+    --zindexblackblock: 1006;
+
+    --zindexlittleplanet: 1000;
+    --zindexmainpano: 1;
+    --mainmarginhorit: 32px;
+    --mainvermargin: 22px;
+    --maincolor: #3f2d51;
+    --scr_opacity: 1;
+    --thumb_color: rgba(63, 45, 81, 0.35);
+    user-select: none;
+}
+
+body {
+    /* zoom:75%; */
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'lota_regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    /* font-size: 0.8rem; */
+    color: #FFFFFF;
+    background-color: #000000;
+}

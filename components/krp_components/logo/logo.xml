@@ -1,0 +1,29 @@
+<krpano>
+
+    <style name="gray_bg"
+    type="container"
+    align="lefttop"
+    bg="true"
+    bgcolor="0x000000"
+    bgalpha="0.3"
+    bgcapture="false"
+    width="380px"
+    height="calc:stageheight - 37"
+    onloaded="trace('hgaga');"  
+    />
+    <style name="logo_upf"
+    url="%FIRSTXML%/assets/img/logo_upf.png"
+    align="topleft"
+    x="get:margins.left"
+    y="get:margins.top"
+    capture="false"
+    onclick="openurl(get(ui.logo_upf_link));"
+    />
+
+    <layer name="gray_bg" keep="true" style="gray_bg">
+        <layer name="logo_upf" keep="true" style="logo_upf"
+            
+        />
+    </layer>
+
+</krpano>

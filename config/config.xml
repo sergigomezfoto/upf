@@ -1,0 +1,61 @@
+<krpano>
+
+  
+
+
+<if check="language == 'spanish'">
+<lang
+main="ESPAÑOL"
+sub1="CATALÀ"
+sub2="ENGLISH"
+/>  
+<ui
+    logo_upf_link="https://www.upf.edu/es/"
+    cta_1="mira los estúdios"
+    cta_1_link="https://www.upf.edu/es/web/guest/oferta-estudios"
+    cta_2="Investigación UPF"
+    cta_2_link="https://www.upf.edu/es/web/guest/recercaupf"
+/>
+"   
+</if>
+
+
+
+
+<!-- <if check="language == 'catalan'">
+
+
+
+
+
+   
+</if>
+<if check="language == 'english'">
+
+
+
+
+
+   
+</if> -->
+
+
+
+
+
+
+</krpano>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

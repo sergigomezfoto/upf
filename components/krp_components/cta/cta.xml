@@ -1,0 +1,28 @@
+<krpano>
+
+<style name="cta_container"
+    type="container"
+    align="topright"
+    width="102px"
+    height="30px"
+    edge="topright"
+    y="get:margins.top"
+    x="get:margins.right"   
+    bgcapture="true"
+    capture="false"
+    onclick="choose_lang"
+    bgcolor="0x654ff54"
+    bgalpha="1"
+
+
+
+/>
+
+
+
+
+    <layer name="cta_container" keep="true" style="cta_container"
+        
+    />
+
+</krpano>

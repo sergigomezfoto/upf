@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'lota_regular';
+    src: url('./fonts/LotaGrotesqueAlt1-Regular.woff2') format('woff2'),
+        url('./fonts/LotaGrotesqueAlt1-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'lota_semibold';
+    src: url('./fonts/LotaGrotesqueAlt1-SemiBold.woff2') format('woff2'),
+        url('./fonts/LotaGrotesqueAlt1-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
