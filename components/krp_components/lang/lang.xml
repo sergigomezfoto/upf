@@ -39,7 +39,6 @@
 
     <style name="lang_cont_text"
         type="text"
-        text="get:lang.main"
         x="3px"
         align="center"
         bg="false"
@@ -88,7 +87,7 @@
 
 <layer name="lang_cont" keep="true" style="lang_cont">
     <layer name="lang_cont_ico" keep="true" style="lang_cont_ico"/>
-    <layer name="lang_cont_text" keep="true" style="lang_cont_text"/>
+    <layer name="lang_cont_text" keep="true" style="lang_cont_text" text="get:lang.main"/>
     <layer name="lang_cont_triangle" keep="true" style="lang_cont_triangle"/>
 </layer>
 <layer name="lang_sub_container" keep="true" style="lang_sub_container">
@@ -100,9 +99,32 @@
 
 <action name="change_lang">
 
-   trace('change lang'); 
+   if (text === 'CATALÀ',
+    language='catalan';
+    ,text === 'ESPAÑOL',
+    language='spanish';
+    ,text === 'ENGLISH',
+    language='english';
+   );
+   includexml('%FIRSTXML%/config/config.xml', hot_reload(););
 
 </action>
+<action name="hot_reload">
+//lang component
+layer[lang_cont_text].text=lang.main;
+layer[lang_sub1].text=lang.sub1;
+layer[lang_sub2].text=lang.sub2;
+callwith(layer[lang_cont],'onclick');
 
+//info_panel component
+info_panel_action();
+
+//cta component
+layer[cta_1].text=ui.cta_1;
+layer[cta_2].text=ui.cta_2;
+
+//js-krpano data
+jscall(jsUiText(););
+</action>
 
 </krpano>

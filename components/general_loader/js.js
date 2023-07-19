@@ -160,9 +160,7 @@ const fontArr = ["16pt lota_regular", "16pt lota_semibold"];
   if (test) {
     first_loadder.style.display = "none";
     await asyncLoopPositive((_) => krpanoTexts);
-    politica.textContent = krpano.ui.politica;
-    guide.textContent = krpano.ui.guide;
-    politica.setAttribute("href", krpano.ui.politica_link);
+    jsUiText();
     return;
   }
   for (const svg of svgArr) {
@@ -180,9 +178,7 @@ const fontArr = ["16pt lota_regular", "16pt lota_semibold"];
   generalLoadControl.log();
 
   //defintis a js.js
-  politica.textContent = krpano.ui.politica;
-  guide.textContent = krpano.ui.guide;
-  politica.setAttribute("href", krpano.ui.politica_link);
+  jsUiText();
 
   await asyncLoopPositive((_) => getComputedStyle(first_loadder).opacity === "0");
   first_loadder.style.display = "none";
