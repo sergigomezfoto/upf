@@ -9,19 +9,44 @@
     childmargin="0"
     align="left"   
     parent="gray_bg"
+    x="40"
+    bgborder="0,0,0,2 0xffffff 1 solid"
 />
 
 <style name="campus"
-    type="text"
+    type="container"
+    bg="true"
+    bgalpha="0.8"
     bgcolor="0x6577ff"
     height="50"
     width="380px"
-    css="font-family:Arial;font-size:20px;font-weight:bold;color:#ffffff;text-align:left;"
     align="top"
 
-    onclick="height=200"
-
+    
 />
+    <style name="t_campus"
+    type="text"
+    css="font-family:Arial;font-size:20px;font-weight:bold;color:#ffffff;text-align:left;"
+    bg="false" 
+    x="2" 
+    bgborder="0,0,0,7 0xff0000 1 solid"
+    height="50"
+    textalign="center"
+    onclick="openmenu()"
+    />
+    <action name="openmenu" scope="local">
+        parent=layer[(caller.parent)].name;
+        pheight=layer[*parent].height;
+            if ( pheight === 50,
+            
+            layer[*parent].height="200";
+            ,
+            
+            layer[*parent].height="50";
+
+            );
+            
+    </action>
     <style name="m_b"
         text="Campus Balmes"
         align="lefttop"
@@ -31,8 +56,12 @@
         align="leftbottom"
     />
     <layer name="menu_container" keep="true" style="menu_container">
-        <layer name="campus_balmes" keep="true" style="campus|m_b"/>
-        <layer name="campus_ciutadella" keep="true" style="campus|m_c"/>
+        <layer name="campus_balmes" keep="true" style="campus">
+                <layer name="t_campus_balmes" keep="true" style="t_campus|m_b"/>
+        </layer>
+        <layer name="campus_ciutadella" keep="true" style="campus">
+                <layer name="t_campus_ciutadella" keep="true" style="t_campus|m_c"/>
+        </layer>
 
     </layer>
 
