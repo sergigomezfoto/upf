@@ -53,7 +53,7 @@
     />
     <style name="m_c"
         text="Campus Ciutadella"
-        align="leftbottom"
+        align="lefttop"
     />
     <layer name="menu_container" keep="true" style="menu_container">
         <layer name="campus_balmes" keep="true" style="campus">
