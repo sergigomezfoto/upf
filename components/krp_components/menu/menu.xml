@@ -1,5 +1,49 @@
 <krpano>
 
+<style name="menu_container"
+    type="container"
+    bgalpha="0.8"
+    bgcolor="0xff88ff"
+    flowchildren="v"
+    childflowspacing="10"   
+    childmargin="0"
+    align="left"   
+    parent="gray_bg"
+/>
+
+<style name="campus"
+    type="text"
+    bgcolor="0x6577ff"
+    height="50"
+    width="380px"
+    css="font-family:Arial;font-size:20px;font-weight:bold;color:#ffffff;text-align:left;"
+    align="top"
+
+    onclick="height=200"
+
+/>
+    <style name="m_b"
+        text="Campus Balmes"
+        align="lefttop"
+    />
+    <style name="m_c"
+        text="Campus Ciutadella"
+        align="leftbottom"
+    />
+    <layer name="menu_container" keep="true" style="menu_container">
+        <layer name="campus_balmes" keep="true" style="campus|m_b"/>
+        <layer name="campus_ciutadella" keep="true" style="campus|m_c"/>
+
+    </layer>
+
+
+ <action name="create_menu" autorun="true">
+
+    forall(scene, s,
+      
+     );
     
+ 
+ </action>   
 
 </krpano>

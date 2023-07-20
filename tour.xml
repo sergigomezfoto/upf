@@ -2,6 +2,7 @@
 <include url="config/config.xml" />
 <include url="config/dessign.xml" />
 <include url="components/krp_components/menu/menu.xml" />
+<!-- <include url="test/scroll.xml" /> -->
 <include url="components/krp_components/followmouse/followmouse.xml" />
 <include url="components/krp_components/logo/logo.xml" />
 <include url="components/krp_components/lang/lang.xml" />

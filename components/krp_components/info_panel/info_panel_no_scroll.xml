@@ -8,7 +8,8 @@
     align="topright"
     y="calc:margins.top + 100"
     x="calc:margins.right"   
-
+    bgcapture="false"
+    capture="true"
     bgcolor="0x549865"
     bgalpha="0"
     flowchildren="v" 
@@ -33,8 +34,7 @@
          
            switch(layer[info_container_header_button].crop, '0|0|14|14', '14|0|14|14');  
            switch(layer[info_container_body].alpha, 0, 1);
-           switch(layer[text_margin].alpha, 0, 1);
-      
+           
            if (global.gpstrue,
                 switch(layer[info_container_gps].alpha, 0, 1);
            );
@@ -77,13 +77,14 @@
           x="28"  
           enabled="false"
         />
-
-       <style name="info_container_body"
+    <style name="info_container_body"
         type="text"
         bgcolor="0xffffff"
         bgalpha="0.8"
         onclick="trace('info_container clicked');"
-        height="20"
+        flowchildren="v" 
+        childmargin="0 30 20 30"
+        childflowspacing="0"
         align="top"
         width="280px"
         alpha="1"
@@ -91,63 +92,19 @@
         capture="false"
         cursor="default"
     />
-
-        <style name="info_container_body_scrollarea"
-            type="scrollarea"
-            width="-4" flowchildren="v" childmargin="10"
-            scrolltype.desktop="smooth"
-            scrolltype.tablet.or.mobile="inertia"
-            draggable="false"
-            mwheel="true"
-            capturechildren="true"
-            autoscrollbars="null,vscrollbar_grip,10"
-            onhover_autoscrolling="false"
-            onoverflowchange="set(layer[vscrollbar_grip].height,5);trace('changed');"
-                   
-
-        />
-
-                <style name="info_container_body_text"
-                type="text"
-                align="topleft"
-                padding="0 0 10 20"
-                bgcolor="0x6554ff"
-                bgalpha="0"
-                width="240px"
-
-                capture="false"
-                cursor="default"
-                css="font-family:'lota_regular';font-size:13px;color:#000000;letter-spacing: 0px;line-height: 19px;"
-                />
-
-        
-        <style name="vscrollbar_bg"
-            type="container" 
-            align="right" 
-            width="8" 
-            height="100%"    
-            bgcolor="0xffffff"
-            bgalpha="0"  
-            x="16"  
-        />   
-            <style name="vscrollbar_grip"
-                type="container"
-                align="righttop"
-                width="4"
-                x="2"
-                bgcolor="0xAAAAAA"    
-                bgalpha="0.1"
-                bgroundedge="7"
-                bgcapture="true"
-            />    
-        <style name="text_margin"
+        <style name="info_container_body_text"
             type="text"
-            align="top"
-            width="280"
-            height="30"   
-            bgcolor="0xffffff"
-            bgalpha="0.8"       
+            align="topleft"
+            bg="false"
+            bgcolor="0x6554ff"
+            width="220px"
+            maxheight="200"
+            capture="false"
+            cursor="default"
+            css="font-family:'lota_regular';font-size:13px;color:#000000;letter-spacing: 0px;line-height: 19px;"
+
         />
+
     <style name="info_container_gps"
         type="text"
         bgcolor="0xffffff"
@@ -169,6 +126,7 @@
             bg="false"
             bgcolor="0x6554ff"
             width="220px"
+            maxheight="200"
             capture="false"
             cursor="default"
             css="font-family:'lota_regular';font-size:13px;color:#000000;letter-spacing: 0px;line-height: 19px;"
@@ -177,17 +135,11 @@
 <events name="info_panel" keep="true" 
 onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );"
 />
-<!-- onnewscene="info_panel_action();" -->
 
 <action name="info_panel_action" scope="local">
-    scrollheight=225;
     tit=layer[info_container_header_text];
     camp=layer[info_container_header_campus];
-    contbody=layer[info_container_body];
     cont=layer[info_container_body_text];
-    scroll=layer[info_container_body_scrollarea];
-    scrollgrip=layer[vscrollbar_grip];
-    gripopacity="0.4";
     sc=(scene[(xml.scene)].title);
     gps=layer[info_container_gps];
     gpstext=layer[info_container_gps_text];
@@ -214,37 +166,9 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
             gps.alpha=0;
         );
     );
-    lastheight=(cont.height);
     cont.text=data[(sc + '_content')].content;
     tit.text=data[(sc + '_title')].content;
     camp.text=cp;
-    makeloop=true;
-    asyncloop(cont.height === lastheight AND makeloop
-    , 
-        if (!a,
-            delayedcall (0.1, makeloop=false;); 
-            a=true;
-        );
-        //trace('loop');
-    ,
-        //trace('now');
-        if (cont.height LT scrollheight,
-
-            scroll.direction="null";
-            scroll.capture="false";
-            scrollgrip.bgalpha=0;
-            contbody.height=(cont.height); 
-        ,
-            scroll.direction="v";
-            scroll.capture="true";
-            scrollgrip.bgalpha=gripopacity;
-            contbody.height=scrollheight; 
-            scrollgrip.height="10px";
-            
-        );
-   
-    );
-
 </action>
 
 <layer name="info_container" keep="true" style="info_container">
@@ -255,14 +179,11 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
         <layer name="info_container_header_button" keep="true" style="info_container_header_button"/>
     </layer>
     <layer name="info_container_body" keep="true" style="info_container_body">
-       <layer name="info_container_body_scrollarea" keep="true" style="info_container_body_scrollarea"> 
-            <layer name="info_container_body_text" keep="true" style="info_container_body_text"/>
-       </layer>
-       <layer name="vscrollbar_bg" keep="true" style="vscrollbar_bg">
-            <layer name="vscrollbar_grip" keep="true" style="vscrollbar_grip"/>
-       </layer>
+    
+        <layer name="info_container_body_text" keep="true" style="info_container_body_text"/>
+
+    
     </layer>
-        <layer name="text_margin" keep="true" style="text_margin"/>
     <layer name="info_container_gps" keep="true" style="info_container_gps">
     
         <layer name="info_container_gps_text" keep="true" style="info_container_gps_text"/>
