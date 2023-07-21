@@ -1,4 +1,4 @@
-﻿<krpano version="1.21" title="Virtual Tour">
+﻿<krpano version="1.21" title="Virtual Tour" >
 <include url="config/config.xml" />
 <include url="config/dessign.xml" />
 <include url="components/krp_components/menu/menu.xml" />
@@ -10,7 +10,7 @@
 <include url="components/krp_components/ui_buttons/ui_buttons.xml" />
 <include url="components/krp_components/info_panel/info_panel.xml" />
 <action name="skin_onstart_loadscene" scope="local" autorun="onstart">
-		
+
 		<!-- load first scene -->
 		loadscene(calc(isset(startscene) ? startscene : 0), null, MERGE);
 	
@@ -77,31 +77,31 @@
 		</image>
 
 	</scene>
-
-	<scene name="scene_b_05A" title="b_05A" onstart="" thumburl="panos/b_05A.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+<!-- 
+	<scene name="scene_b_05a" title="b_05a" onstart="" thumburl="panos/b_05a.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/b_05A.tiles/preview.jpg" />
+		<preview url="panos/b_05a.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/b_05A.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+			<cube url="panos/b_05a.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
 	</scene>
 
-	<scene name="scene_b_05B" title="b_05B" onstart="" thumburl="panos/b_05B.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_b_05b" title="b_05b" onstart="" thumburl="panos/b_05b.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/b_05B.tiles/preview.jpg" />
+		<preview url="panos/b_05b.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/b_05B.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+			<cube url="panos/b_05b.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
 	</scene>
@@ -118,7 +118,7 @@
 			<cube url="panos/b_06.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_b_07" title="b_07" onstart="" thumburl="panos/b_07.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
@@ -176,33 +176,33 @@
 
 	</scene>
 
-	<scene name="scene_b_11A" title="b_11A" onstart="" thumburl="panos/b_11A.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_b_11a" title="b_11a" onstart="" thumburl="panos/b_11a.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/b_11A.tiles/preview.jpg" />
+		<preview url="panos/b_11a.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/b_11A.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+			<cube url="panos/b_11a.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
 	</scene>
-
-	<scene name="scene_b_11B" title="b_11B" onstart="" thumburl="panos/b_11B.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+<!-- 
+	<scene name="scene_b_11b" title="b_11b" onstart="" thumburl="panos/b_11B.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/b_11B.tiles/preview.jpg" />
+		<preview url="panos/b_11b.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/b_11B.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+			<cube url="panos/b_11b.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
-	</scene>
+	</scene> -->
 
 	<scene name="scene_b_12" title="b_12" onstart="" thumburl="panos/b_12.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		

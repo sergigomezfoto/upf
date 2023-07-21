@@ -189,25 +189,28 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
     scrollgrip=layer[vscrollbar_grip];
     gripopacity="0.4";
     sc=(scene[(xml.scene)].title);
+    sci=(scene[(xml.scene)].index );
     gps=layer[info_container_gps];
     gpstext=layer[info_container_gps_text];
     but=layer[info_container_header_button];
     cp='';
-    panos_balmes=11;
-    if (scene[(xml.scene)].index === 0 OR scene[(xml.scene)].index === panos_balmes, global.gpstrue=true;,global.gpstrue=false;);
+    panos_balmes=14;
+    if (sci === 0 OR sci === panos_balmes, global.gpstrue=true;,global.gpstrue=false;);
     
-    if (scene[(xml.scene)].index LT panos_balmes
+
+    if (contains(sc,'b_')
     ,
         cp=campus.balmes;
-        if (scene[(xml.scene)].index === 0 AND but.crop === '14|0|14|14' ,
+        if (sci === 0 AND but.crop === '14|0|14|14' ,
             gpstext.text=data[balmes_gps].content;
             gps.alpha=1;
             , 
             gps.alpha=0;
         );
-    , scene[(xml.scene)].index GE panos_balmes,
+
+    , contains(sc,'c_'),
         cp=campus.ciutadella;
-        if (scene[(xml.scene)].index === panos_balmes AND but.crop === '14|0|14|14' ,
+        if (sci === panos_balmes AND but.crop === '14|0|14|14' ,
             gpstext.text=data[balmes_gps].content;
             gps.alpha=1;
             , 

@@ -22,10 +22,13 @@
     />
     "   
     <campus 
-    balmes="Campus Balmes"
-    ciutadella="Campus de la Ciutadella"
+    balmes="Campus[br]Balmes"
+    ciutadella="Campus de[br]la Ciutadella"
     />
-    
+    <separators
+    common="Espacios comunes"
+    classrooms="Aulas y Espacios"
+    />
     <data name="b_01_title"><![CDATA[Aula 503]]></data>
     <data name="b_01_content"><![CDATA[El Aula 503 es un espacio moderno y equipado con tecnología de vanguardia. Diseñada para el aprendizaje efectivo, cuenta con mobiliario ergonómico, pizarras interactivas y acceso a internet de alta velocidad. Es un entorno propicio para el intercambio de conocimientos y la colaboración entre estudiantes.]]></data>
 
@@ -166,8 +169,12 @@
     />
     "   
     <campus 
-    balmes="Campus Balmes"
-    ciutadella="Campus de la Ciutadella"
+    balmes="Campus[br]Balmes"
+    ciutadella="Campus de[br]la Ciutadella"
+    />
+    <separators
+    common="Espais comuns"
+    classrooms="Aules i Espais"
     />
 <data name="b_01_title"><![CDATA[Aula 503]]></data>
 <data name="b_01_content"><![CDATA[L'Aula 503 és un espai modern i equipat amb tecnologia d'avantguarda. Dissenyada per a l'aprenentatge efectiu, compta amb mobiliari ergonòmic, pissarres interactives i accés a internet d'alta velocitat. És un entorn propici per a l'intercanvi de coneixements i la col·laboració entre estudiants.]]></data>
@@ -301,8 +308,13 @@
     />
     "   
     <campus 
-    balmes="Balmes Campus"
-    ciutadella="Ciutadella Campus"
+    balmes="Balmes[br]Campus"
+    ciutadella="Ciutadella[br]Campus"
+    />
+    
+    <separators
+    common="Common spaces"
+    classrooms="Classrooms and Spaces"
     />
  <data name="b_01_title"><![CDATA[Classroom 503]]></data>
 <data name="b_01_content"><![CDATA[Classroom 503 is a modern space equipped with cutting-edge technology. Designed for effective learning, it has ergonomic furniture, interactive whiteboards, and high-speed internet access. It is a conducive environment for the exchange of knowledge and collaboration among students.]]></data>
