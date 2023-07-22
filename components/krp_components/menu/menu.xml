@@ -1,6 +1,6 @@
 <krpano>
 
-<set var="mbgcheck" val="0"/>
+<set var="mbgcheck" val="1"/>
 
 <style name="menu_container"
     type="container"
@@ -14,6 +14,7 @@
     x="50"
     bgborder="0,0,0,2 0xffffff 1 solid"
 />
+    <!-- maskchildren="true" -->
 
 <style name="campus"
     type="container"
@@ -23,7 +24,7 @@
     width="285px"
     align="top"
     flowchildren="v"
-    childflowspacing="3"   
+    childflowspacing="0"   
     childmargin="0"
     
     
@@ -35,22 +36,25 @@
     bg="false" 
     ox="3" 
     width="100%"
+
     textalign="center"
     align="lefttop"
     onclick="openmenu()"
     onloaded="menu_items_text(get(name))"
+    onhover="bgborder='0,0,0,7 0xff0000 0.5 solid';" 
+    onout="bgborder='0,0,0,0 0xff0000 0 solid';" 
     />
     <action name="openmenu" scope="local">
-        <!-- parent=layer[(caller.parent)].name;
+        parent=layer[(caller.parent)].name;
         pheight=layer[*parent].height;
-            if ( pheight === 50,
+            if ( pheight === 78,
             
             layer[*parent].height="200";
             ,
             
-            layer[*parent].height="50";
+            layer[*parent].height="78";
 
-            ); -->
+            );
             
     </action>
 
@@ -58,7 +62,7 @@
         <layer name="campus_balmes" keep="true" style="campus" >
                 <layer name="t_campus_balmes" keep="true" style="t_campus"/>
         </layer>
-        <layer name="campus_ciutadella" keep="true" style="campus">
+        <layer name="campus_ciutadella" keep="true" style="campus" >
                 <layer name="t_campus_ciutadella" keep="true" style="t_campus"/>
         </layer>
 
@@ -79,49 +83,74 @@
     height="40"
     width="260"
     textalign="bottomleft"
-    parent="campus_balmes"
+    enabled="false"
     
 />
+
+<style name="sep_pos_bal"
+        parent="campus_balmes"
+/>
+<style name="sep_pos_ciu"
+        parent="campus_ciutadella"
+/>
+
 
 <style name="menu_title"
     type="text"
     keep="true"
     css="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;"
-    padding="0 0 0 25"
+    padding="10 0 10 25"
     bg="true"
     bgalpha="get:mbgcheck"
-    bgcolor="0x6577ff"
+    bgcolor="0x6227ff"
     width="285px"
     align="topleft"
-    parent="campus_balmes"
-    height="30"
-    textalign="left"
+    textalign="center"
     ox="1"
-    
+    onhover="bgborder='0,0,0,4 0xff0000 0.5 solid';" 
+    onout="bgborder='0,0,0,0 0xff0000 0 solid';" 
 />
 
 <style name="balmes"
     parent="campus_balmes"  
 />
+<style name="ciutadella"
+    parent="campus_ciutadella"  
+/>
 
 
  <action name="create_menu" scope="local" autorun="true">
-
- 
+b="false";
+c="true" ;
 forall(scene, s,
-    if (charat(s.title,0) === 'b',
+    if (charat(s.title,0) === 'b' AND b,
         if (s.index === 0,
             addlayer('bs1', bsep1);
-            bsep1.loadstyle('separator_menu_title');
+            bsep1.loadstyle('separator_menu_title|sep_pos_bal');
             callwith(bsep1, "menu_items_text('scom')");
         );
         if (s.index === 10,
             addlayer('bs2', bsep2);
-            bsep2.loadstyle('separator_menu_title');
+            bsep2.loadstyle('separator_menu_title|sep_pos_bal');
             callwith(bsep2, "menu_items_text('scla')");
         );
         addlayer((s.title + 'menulayer'), cbl);
         cbl.loadstyle('menu_title|balmes');
+        callwith(cbl, "menu_items_text('t')");
+        cbl.onclick = ('loadscene(scene_'+ s.title +')');
+    ,charat(s.title,0) === 'c' AND c,      
+        if (s.index === 12,
+            addlayer('cs1', csep1);
+            csep1.loadstyle('separator_menu_title|sep_pos_ciu');
+            callwith(csep1, "menu_items_text('scom')");
+        );
+        if (s.index === 21,
+            addlayer('cs2', csep2);
+            csep2.loadstyle('separator_menu_title|sep_pos_ciu');
+            callwith(csep2, "menu_items_text('scla')");
+        );
+        addlayer((s.title + 'menulayer'), cbl);
+        cbl.loadstyle('menu_title|ciutadella');
         callwith(cbl, "menu_items_text('t')");
         cbl.onclick = ('loadscene(scene_'+ s.title +')');
     );
@@ -168,21 +197,26 @@ cc=layer[t_campus_ciutadella];
 
 if (contains(actsc,'b_'),
         cb.bgborder="0,0,0,7 0xff0000 1 solid";
+        <!-- cb.enabled=false; -->
         cc.bgborder="0,0,0,0 0xff0000 1 solid";
+        <!-- cc.enabled=true; -->
     ,contains(actsc,'c_'),
         cb.bgborder="0,0,0,0 0xff0000 1 solid";
+        <!-- cb.enabled=true; -->
         cc.bgborder="0,0,0,7 0xff0000 1 solid";
+        <!-- cc.enabled=false; -->
 );
 
 forall(layer,l,
     
     if (contains(l.name,'menulayer'),
         if (contains(l.name,actsc),
-        trace(l.name);
+            l.enabled=false;
             l.bgborder="0,0,0,4 0xff0000 1 solid";
             l.css="font-family:'lota_regular';font-size:16px;color:#ff0000;text-align:left;"
         ,
 
+            l.enabled=true;
             l.bgborder="0,0,0,0 0xff0000 1 solid";
             l.css="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;"
 

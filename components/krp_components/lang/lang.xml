@@ -128,6 +128,8 @@ callwith(layer[t_campus_balmes],"menu_items_text('t_campus_balmes')");
 callwith(layer[t_campus_ciutadella],"menu_items_text('t_campus_ciutadella')");
 callwith(layer[bs1],"menu_items_text('scom')");
 callwith(layer[bs2],"menu_items_text('scla')");
+callwith(layer[cs1],"menu_items_text('scom')");
+callwith(layer[cs2],"menu_items_text('scla')");
 forall(layer,l,
     if(contains(l.name,'menulayer'),
         callwith(l, "menu_items_text('t')");
