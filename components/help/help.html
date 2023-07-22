@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Navegación UPF</title>
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <style>
+        body {
+            background-color: transparent;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'lota_regular';
+            font-size: 20px;
+            color: #888888;
+        }
+
+        .help_container {
+            width: 100%;
+            max-width: 593px;
+            /* min-width: 300px; */
+            height: 600px;
+            margin: 20px;
+            background-color: transparent;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            width: 90%;
+            text-align: center;
+            border-bottom: 2px solid rgba(136, 136, 136, 0.5);
+            
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            font-family: 'lota_semibold';
+            font-size: 28px;
+        }
+
+        .helpelements {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icoandtext {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .ico {
+            width: 160px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="help_container">
+            <div class="title">Leyenda hotspots</div>
+            <div class="helpelements">
+                <div class="icoandtext">
+                    <div class="ico">
+                        <img src="img/ico1.png" alt="">
+                        <div class="text">
+                            Imagen 360°
+                        </div>
+                    </div>
+                    <div class="ico">
+                        <img src="img/ico2.png" alt="">
+                        <div class="text">
+                            Imagen 360°
+                        </div>
+                    </div>
+                    <div class="ico">
+                        <img src="img/ico3.png" alt="">
+                        <div class="text">
+                            Imagen 360°
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
