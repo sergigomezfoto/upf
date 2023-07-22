@@ -124,8 +124,8 @@ layer[cta_1].text=ui.cta_1;
 layer[cta_2].text=ui.cta_2;
 
 //menu component
-callwith(layer[t_campus_balmes],"menu_items_text('t_campus_balmes')");
-callwith(layer[t_campus_ciutadella],"menu_items_text('t_campus_ciutadella')");
+callwith(layer[titol_campus_balmes],"menu_items_text('titol_campus_balmes')");
+callwith(layer[titol_campus_ciutadella],"menu_items_text('titol_campus_ciutadella')");
 callwith(layer[bs1],"menu_items_text('scom')");
 callwith(layer[bs2],"menu_items_text('scla')");
 callwith(layer[cs1],"menu_items_text('scom')");

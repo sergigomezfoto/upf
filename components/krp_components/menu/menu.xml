@@ -1,158 +1,318 @@
 <krpano>
 
-<set var="mbgcheck" val="1"/>
+<set var="testbgcheck" val="0"/>
+<set var="firstcituadellaindex" val="16"/>
 
-<style name="menu_container"
-    type="container"
-    bgalpha="get:mbgcheck"
-    bgcolor="0xff88ff"
-    flowchildren="v"
-    childflowspacing="10"   
-    childmargin="0"
-    align="left"   
-    parent="gray_bg"
-    x="50"
-    bgborder="0,0,0,2 0xffffff 1 solid"
-/>
-    <!-- maskchildren="true" -->
+<set var="firstbalmesseparator" val="0"/>
+<set var="secondbalmesseparator" val="10"/>
+<set var="firstciutadellaseparator" val="16"/>
+<set var="secondciutadellaseparator" val="21"/>
 
-<style name="campus"
+<!-- layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y)); -->
+<set var="maxheightcampus" val="400"/>
+<set var="minheightcampus" val="78"/>
+<set var="menuparent" val="gray_bg"/>
+
+<itemstextcss val="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);"/>    
+<itemstextcsscheked val="font-family:'lota_regular';font-size:16px;color:#C8102E;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
+<menuitemsbordercss val="0,0,0,4 0xC8102E 1 solid"/>
+
+<separatorcss val="font-family:'lota_semibold';font-size:20px;color:#ffffff;text-align:left;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"/>  
+
+<campuscss val="font-family:'lota_regular';font-size:27px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);color:#ffffff;text-align:left;"/>
+<campusbordercss val="0,0,0,7 0xC8102E 1 solid"/>
+<cssstyles>
+
+    .itemtext{
+        border-left: 4px solid #C8102E;
+        border-color: transparent;
+        transition: border-color 0.6s ease;
+    }
+    .itemtextchecked{
+        border-left: 4px solid #C8102E;
+        transition: border-color 0.6s ease;
+    }
+
+    .campustext{
+        border-left: 8px solid #C8102E;
+        border-color: transparent;
+       transition: border-color 0.6s ease;
+    }
+    .campustextchecked{
+         border-left: 8px solid #C8102E;
+       transition: border-color 0.6s ease;
+       
+    }
+</cssstyles>
+
+
+
+
+<style name="super_container_wraper"
     type="container"
     bg="true"
-    bgalpha="get:mbgcheck"
-    bgcolor="0x6577ff"
-    width="285px"
-    align="top"
-    flowchildren="v"
-    childflowspacing="0"   
-    childmargin="0"
-    
-    
+    bgalpha="get:testbgcheck"
+    bgcolor="0x2f83ff"
+    align="left"   
+    parent="get:menuparent"
+    x="0"
+    height="477px"
+    width="380px"
+    maskchildren="true"
 />
-    <style name="t_campus"
-    type="text"
-    css="font-family:'lota_regular';font-size:27px;color:#ffffff;text-align:left;"
-    padding="4 0 4 23"
-    bg="false" 
-    ox="3" 
-    width="100%"
 
-    textalign="center"
-    align="lefttop"
-    onclick="openmenu()"
-    onloaded="menu_items_text(get(name))"
-    onhover="bgborder='0,0,0,7 0xff0000 0.5 solid';" 
-    onout="bgborder='0,0,0,0 0xff0000 0 solid';" 
+
+    <style name="menu_container"
+        type="container"
+        bg="true"
+        bgalpha="get:menuparent"
+        bgcolor="0xf281ff"
+        flowchildren="v"
+        childflowspacing="0"   
+        childmargin=""
+        align="topleft"   
+        x="50"
+        bgborder="0,0,0,2 0xffffff 1 solid"
+        bgbordermode="outside"
     />
-    <action name="openmenu" scope="local">
-        parent=layer[(caller.parent)].name;
-        pheight=layer[*parent].height;
-            if ( pheight === 78,
-            
-            layer[*parent].height="200";
-            ,
-            
-            layer[*parent].height="78";
+        <!-- maskchildren="true" -->
 
-            );
+        <style name="campus"
+            type="container"
+            bg=""
+            bgalpha="get:testbgcheck"
+            bgcolor="0x000000"
+
+            align="top"
+            flowchildren="v"
+            childflowspacing="6"   
+            childmargin="0"
+        />
+            <!-- maskchildren="true"        -->
+            <style name="titol_campus"
+            type="text"
+            css="get:campuscss.val"
+            padding="4 0 4 23"
+            bg="true" 
+            bgalpha="get:testbgcheck"
+            bgcolor="0x6f6777"
+            width="100%"
+            textalign="center"
+            align="lefttop"
+            onloaded="menu_items_text(get(name))"
+            ox="3"  
+            onclick="campus_click();"
+            />
+                    
             
-    </action>
+            <action name="campus_click" scope="local">
+
+            
+                if (contains(caller.name,'balmes'),
+                    layer[scrollarea_scroll_items_balmes].setcenter(,0);
+                    loadscene((scene[0].name), null, MERGE, BLEND(1));
+                );
+                if (contains(caller.name,'ciutadella'),
+                    layer[scrollarea_scroll_items_ciutadella].setcenter(,0);
+                    loadscene((scene[(firstcituadellaindex)].name), null, MERGE, BLEND(1));
+                );
+                
+            </action>
+            
+                    
+
+            <style name="container_scroll_items"
+                type="text"
+                bgcolor="0xffff00"
+                bgalpha="get:testbgcheck"
+                onclick="trace('info_container clicked');"
+                height="300px"
+                align="lefttop"
+                width="350px"
+                alpha="1"
+                autoalpha="true"
+                capture="false"
+                cursor="default"
+                ox="-9"
+            />
+            
+                <style name="scrollarea_scroll_items_balmes"     
+                    type="scrollarea"
+                    width="-4" 
+                    flowchildren="v" 
+                    childmargin="10"
+                    scrolltype.desktop="smooth"
+                    scrolltype.tablet.or.mobile="inertia"
+                    draggable="false"
+                    mwheel="true"
+                    capturechildren="true"
+                    autoscrollbars="null,balmes_vscrollbar_grip,30"
+                    onhover_autoscrolling="false"
+                    onoverflowchange="set(layer[balmes_vscrollbar_grip].height,5);trace('changed');"
+                />
+                <style name="balmes_vscrollbar_bg"
+                    type="container" 
+                    align="right" 
+                    width="8" 
+                    height="100%"    
+                    bgcolor="0xffffff"
+                    bgalpha="0"  
+                    x="28"
+                    autoalpha="true"  
+                />   
+                        <style name="balmes_vscrollbar_grip"
+                            type="container"
+                            align="righttop"
+                            width="2"
+                            x="2"
+                            bgcolor="0xffffff"    
+                            bgalpha="0.6"
+                            bgroundedge="7"
+                            bgcapture="true"
+                        />    
+                    <!-- onoverflowchange="set(layer[vscrollbar_grip].height,5);trace('changed');" -->
+                <style name="scrollarea_scroll_items_ciutadella"     
+                    type="scrollarea"
+                    width="-4" 
+                    flowchildren="v" 
+                    childmargin="10"
+                    scrolltype.desktop="smooth"
+                    scrolltype.tablet.or.mobile="inertia"
+                    draggable="false"
+                    mwheel="true"
+                    capturechildren="true"
+                    autoscrollbars="null,ciutadella_vscrollbar_grip,30"
+                    onhover_autoscrolling="false"
+                    onoverflowchange="set(layer[ciutadella_vscrollbar_grip].height,5);trace('changed');"
+                />
+
+
+                    <style name="ciutadella_vscrollbar_bg"
+                        type="container" 
+                        align="right" 
+                        width="8" 
+                        height="100%"    
+                        bgcolor="0xffffff"
+                        bgalpha="0"  
+                        x="28"
+                        autoalpha="true"  
+                    />   
+                            <style name="ciutadella_vscrollbar_grip"
+                                type="container"
+                                align="righttop"
+                                width="2"
+                                x="2"
+                                bgcolor="0xffffff"    
+                                bgalpha="0.6"
+                                bgroundedge="7"
+                                bgcapture="true"
+                            />    
+                    <!-- onoverflowchange="set(layer[vscrollbar_grip].height,5);trace('changed');" -->
+
+                        <style name="separator_menu_title"
+                            type="text"
+                            keep="true"
+                            css="get:separatorcss.val"
+                            padding="0 0 0 0"
+                            bgborder="0,0,2,0 0xffffff 0.6 solid"
+                            bg="true" 
+                            bgcolor="0x6f67ff"
+                            bgalpha="get:testbgcheck"
+                            height="40"
+                            width="240px"
+                            textalign="bottomleft"
+                            enabled="false"      
+                            ox="26"    
+                        />
+
+                        <style name="menu_title"
+                            type="text"
+                            keep="true"
+                            cssclass="itemtext"
+                            padding="10 0 10 26"
+                            bg="true"
+                            bgalpha="get:testbgcheck"
+                            bgcolor="0x92722f"
+                            width="300px"
+                            align="topleft"
+                            textalign="center"
+                            onhover="css=itemstextcsscheked.val"
+                            onout="css=itemstextcss.val"
+                        />
+
+<layer name="super_container_wraper" keep="true" style="super_container_wraper">
 
     <layer name="menu_container" keep="true" style="menu_container">
-        <layer name="campus_balmes" keep="true" style="campus" >
-                <layer name="t_campus_balmes" keep="true" style="t_campus"/>
+        <layer name="campus_balmes" keep="true" style="campus" height="get:maxheightcampus">          
+                <layer name="titol_campus_balmes" keep="true" style="titol_campus" />              
+                <layer name="container_scroll_items_balmes" keep="true" style="container_scroll_items">                     
+                    <layer name="scrollarea_scroll_items_balmes" keep="true" style="scrollarea_scroll_items_balmes"/>                      
+                    <layer name="balmes_vscrollbar_bg" keep="true" style="balmes_vscrollbar_bg">
+                        <layer name="balmes_vscrollbar_grip" keep="true" style="balmes_vscrollbar_grip"/>
+                    </layer>
+                </layer>
+                
         </layer>
-        <layer name="campus_ciutadella" keep="true" style="campus" >
-                <layer name="t_campus_ciutadella" keep="true" style="t_campus"/>
+        <layer name="campus_ciutadella" keep="true" style="campus" height="get:minheightcampus">
+                
+                <layer name="titol_campus_ciutadella" keep="true" style="titol_campus"/>         
+                <layer name="container_scroll_items_ciutadella" keep="true" style="container_scroll_items">
+                    <layer name="scrollarea_scroll_items_ciutadella" keep="true" style="scrollarea_scroll_items_ciutadella"/>       
+                    <layer name="ciutadella_vscrollbar_bg" keep="true" style="ciutadella_vscrollbar_bg">
+                        <layer name="ciutadella_vscrollbar_grip" keep="true" style="ciutadella_vscrollbar_grip"/>
+                    </layer>
+                </layer>
+                
         </layer>
 
     </layer>
 
+</layer>
 
 
-<style name="separator_menu_title"
-    type="text"
-    keep="true"
-    css="font-family:'lota_semibold';font-size:20px;color:#ffffff;text-align:left;"
-    padding="0 0 4 0"
-    bgborder="0,0,2,0 0xffffff 0.6 solid"
-    bg="true" 
-    bgcolor="0x6f67ff"
-    bgalpha="get:mbgcheck"
-    ox="25px" 
-    height="40"
-    width="260"
-    textalign="bottomleft"
-    enabled="false"
-    
-/>
-
-<style name="sep_pos_bal"
-        parent="campus_balmes"
-/>
-<style name="sep_pos_ciu"
-        parent="campus_ciutadella"
-/>
-
-
-<style name="menu_title"
-    type="text"
-    keep="true"
-    css="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;"
-    padding="10 0 10 25"
-    bg="true"
-    bgalpha="get:mbgcheck"
-    bgcolor="0x6227ff"
-    width="285px"
-    align="topleft"
-    textalign="center"
-    ox="1"
-    onhover="bgborder='0,0,0,4 0xff0000 0.5 solid';" 
-    onout="bgborder='0,0,0,0 0xff0000 0 solid';" 
-/>
-
-<style name="balmes"
-    parent="campus_balmes"  
-/>
-<style name="ciutadella"
-    parent="campus_ciutadella"  
-/>
 
 
  <action name="create_menu" scope="local" autorun="true">
-b="false";
+b="true";
 c="true" ;
 forall(scene, s,
     if (charat(s.title,0) === 'b' AND b,
-        if (s.index === 0,
+        if (s.index === firstbalmesseparator,
             addlayer('bs1', bsep1);
-            bsep1.loadstyle('separator_menu_title|sep_pos_bal');
+            bsep1.loadstyle('separator_menu_title');
+            bsep1.parent="scrollarea_scroll_items_balmes";
             callwith(bsep1, "menu_items_text('scom')");
         );
-        if (s.index === 10,
+        if (s.index === secondbalmesseparator,
             addlayer('bs2', bsep2);
-            bsep2.loadstyle('separator_menu_title|sep_pos_bal');
+            bsep2.loadstyle('separator_menu_title');
+            bsep2.parent="scrollarea_scroll_items_balmes";
             callwith(bsep2, "menu_items_text('scla')");
         );
         addlayer((s.title + 'menulayer'), cbl);
-        cbl.loadstyle('menu_title|balmes');
+        cbl.loadstyle('menu_title');
+        cbl.parent="scrollarea_scroll_items_balmes";
         callwith(cbl, "menu_items_text('t')");
-        cbl.onclick = ('loadscene(scene_'+ s.title +')');
+        cbl.onclick = ('layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +');');
     ,charat(s.title,0) === 'c' AND c,      
-        if (s.index === 12,
+        if (s.index === firstciutadellaseparator,
             addlayer('cs1', csep1);
-            csep1.loadstyle('separator_menu_title|sep_pos_ciu');
+            csep1.loadstyle('separator_menu_title');
+            csep1.parent="scrollarea_scroll_items_ciutadella";
             callwith(csep1, "menu_items_text('scom')");
         );
-        if (s.index === 21,
+        if (s.index === secondciutadellaseparator,
             addlayer('cs2', csep2);
-            csep2.loadstyle('separator_menu_title|sep_pos_ciu');
+            csep2.loadstyle('separator_menu_title');
+            csep2.parent="scrollarea_scroll_items_ciutadella";
             callwith(csep2, "menu_items_text('scla')");
         );
         addlayer((s.title + 'menulayer'), cbl);
-        cbl.loadstyle('menu_title|ciutadella');
+        cbl.loadstyle('menu_title');
+        cbl.parent="scrollarea_scroll_items_ciutadella";
         callwith(cbl, "menu_items_text('t')");
         cbl.onclick = ('loadscene(scene_'+ s.title +')');
+        cbl.onclick = ('layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +');');
     );
 );
     
@@ -161,25 +321,24 @@ forall(scene, s,
 
 
 <action name="menu_items_text" scope="local" args="what">
-trace(what);
-if (what === 't',
-    txtreplace(sc, caller.name, 'menulayer','');
-    caller.text = data[(sc + '_title')].content;     
-);
+    if (what === 't',
+        txtreplace(sc, caller.name, 'menulayer','');
+        caller.text = data[(sc + '_title')].content;     
+    );
 
-if (what === 'scom',
-    caller.text = (separators.common);
-);
+    if (what === 'scom',
+        caller.text = (separators.common);
+    );
 
-if (what === 'scla',
-    caller.text = (separators.classrooms);
-);
-if (what === 't_campus_balmes',
-    caller.text = (campus.balmes);
-);
-if (what === 't_campus_ciutadella',
-    caller.text = (campus.ciutadella);
-);
+    if (what === 'scla',
+        caller.text = (separators.classrooms);
+    );
+    if (what === 'titol_campus_balmes',
+        caller.text = (campus.balmes);
+    );
+    if (what === 'titol_campus_ciutadella',
+        caller.text = (campus.ciutadella);
+    );
 
 </action>
 
@@ -191,20 +350,41 @@ onnewscene="if(global.never6 === true,adjust_menu();,set(global.never6,true); );
 <action name="adjust_menu" scope="local">
 
 actsc=scene[(xml.scene)].title;
-cb=layer[t_campus_balmes];
-cc=layer[t_campus_ciutadella];
-
+cb=layer[campus_balmes];
+cc=layer[campus_ciutadella];
+tcb=layer[titol_campus_balmes];
+tcc=layer[titol_campus_ciutadella];
+scb=layer[scrollarea_scroll_items_balmes];
+stb=layer[balmes_vscrollbar_bg];
+scc=layer[scrollarea_scroll_items_ciutadella];
+stc=layer[ciutadella_vscrollbar_bg];
 
 if (contains(actsc,'b_'),
-        cb.bgborder="0,0,0,7 0xff0000 1 solid";
-        <!-- cb.enabled=false; -->
-        cc.bgborder="0,0,0,0 0xff0000 1 solid";
-        <!-- cc.enabled=true; -->
+        <!-- cb.height=global.maxheightcampus; -->
+        tween(cb.height,get(global.maxheightcampus));
+        scb.alpha=1;
+        stb.alpha=1;
+        scc.alpha=0;
+        stc.alpha=0;
+        <!-- cc.height=global.minheightcampus; -->
+        tween(cc.height,get(global.minheightcampus));
+        tcb.cssclass="campustextchecked";
+        tcb.enabled=false;
+        tcc.cssclass="campustext";
+        tcc.enabled=true;
     ,contains(actsc,'c_'),
-        cb.bgborder="0,0,0,0 0xff0000 1 solid";
-        <!-- cb.enabled=true; -->
-        cc.bgborder="0,0,0,7 0xff0000 1 solid";
-        <!-- cc.enabled=false; -->
+        <!-- cb.height=global.minheightcampus; -->
+        tween(cb.height,get(global.minheightcampus));
+        scb.alpha=0;
+        stb.alpha=0;
+        scc.alpha=1;
+        stc.alpha=1;
+        <!-- cc.height=global.maxheightcampus; -->
+        tween(cc.height,get(global.maxheightcampus));
+        tcb.cssclass="campustext";
+        tcb.enabled=true;
+        tcc.cssclass="campustextchecked";
+        tcc.enabled=false;
 );
 
 forall(layer,l,
@@ -212,22 +392,21 @@ forall(layer,l,
     if (contains(l.name,'menulayer'),
         if (contains(l.name,actsc),
             l.enabled=false;
-            l.bgborder="0,0,0,4 0xff0000 1 solid";
-            l.css="font-family:'lota_regular';font-size:16px;color:#ff0000;text-align:left;"
+            l.cssclass="itemtextchecked";
+            <!-- l.bgborder=menuitemsbordercss.val; -->
+            l.css=(itemstextcsscheked.val);
         ,
 
             l.enabled=true;
-            l.bgborder="0,0,0,0 0xff0000 1 solid";
-            l.css="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;"
+            l.cssclass="itemtext";
+            <!-- l.bgborder=""; -->
+            l.css=(itemstextcss.val);
 
         );
     )
 );
     
-    
 </action>
-
-
 
 
 </krpano>

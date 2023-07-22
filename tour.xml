@@ -77,7 +77,7 @@
 		</image>
 
 	</scene>
-<!-- 
+
 	<scene name="scene_b_05a" title="b_05a" onstart="" thumburl="panos/b_05a.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -118,7 +118,7 @@
 			<cube url="panos/b_06.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
-	</scene> -->
+	</scene>
 
 	<scene name="scene_b_07" title="b_07" onstart="" thumburl="panos/b_07.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
@@ -189,7 +189,7 @@
 		</image>
 
 	</scene>
-<!-- 
+
 	<scene name="scene_b_11b" title="b_11b" onstart="" thumburl="panos/b_11B.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -202,7 +202,7 @@
 			<cube url="panos/b_11b.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
-	</scene> -->
+	</scene>
 
 	<scene name="scene_b_12" title="b_12" onstart="" thumburl="panos/b_12.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
