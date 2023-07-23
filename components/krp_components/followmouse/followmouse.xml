@@ -17,7 +17,7 @@
 	</action>
 	
 	<action name="skin_followmouse_onviewchange" scope="private:skinfollowmouse">
-		if(global.mouse.x != 0 AND global.mouse.y != 0,
+		if(global.mouse.x != 0 AND global.mouse.y != 0 AND global.follow,
 			Math.tan(zoomscale, calc(global.view.vfov * 0.5 * Math.PI / 180.0));
 			calc(zoomscale, 1.0 / zoomscale);
 			Math.max(zoomscale, 1.0);

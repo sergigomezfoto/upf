@@ -43,14 +43,15 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 70px;
         }
 
         .title {
             width: 90%;
             text-align: center;
             border-bottom: 2px solid rgba(136, 136, 136, 0.5);
-            
-            margin-bottom: 50px;
+
+
             padding-bottom: 20px;
             font-family: 'lota_semibold';
             font-size: 28px;
@@ -68,10 +69,10 @@
             width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 6px;
         }
 
         .ico {
@@ -89,24 +90,24 @@
 <body>
     <div class="wrapper">
         <div class="help_container">
-            <div class="title">Leyenda hotspots</div>
+            <div class="title" id="title">Leyenda hotspots</div>
             <div class="helpelements">
                 <div class="icoandtext">
                     <div class="ico">
                         <img src="img/ico1.png" alt="">
-                        <div class="text">
+                        <div class="text" id="ico1">
                             Imagen 360°
                         </div>
                     </div>
                     <div class="ico">
                         <img src="img/ico2.png" alt="">
-                        <div class="text">
+                        <div class="text" id="ico2">
                             Imagen 360°
                         </div>
                     </div>
                     <div class="ico">
                         <img src="img/ico3.png" alt="">
-                        <div class="text">
+                        <div class="text" id="ico3">
                             Imagen 360°
                         </div>
                     </div>
@@ -115,6 +116,49 @@
             </div>
         </div>
     </div>
+    <script>
+
+        const getParam = (name) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        };
+
+        const loadTranslations = async () => {
+            try {
+                const response = await fetch("lang.json");
+                //console.log(await response.json());
+                return await response.json();
+            } catch (error) {
+                console.error("Error loading translations:", error);
+                return null;
+            }
+        };
+        const changeLanguage = (lang, translations) => {
+            console.log(document.getElementById("title"));
+            console.log(translations['title'][lang]);
+            document.getElementById("title").innerText = translations["title"][lang];
+            document.getElementById("ico1").innerText = translations["ico1"][lang];
+            document.getElementById("ico2").innerText = translations["ico2"][lang];
+            document.getElementById("ico3").innerText = translations["ico3"][lang];
+        };
+        const langParam = getParam("ln");
+
+        const init = async () => {
+            const translations = await loadTranslations();
+
+            if (translations) {
+                const validLanguages = ["es", "ca", "en"];
+                if (langParam && validLanguages.includes(langParam)) {
+                    changeLanguage(langParam, translations);
+                } else {
+                    changeLanguage("es", translations);
+                }
+            }
+        };
+        init();
+
+
+    </script>
 </body>
 
 </html>

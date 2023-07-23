@@ -1,0 +1,162 @@
+<krpano>
+
+
+
+
+<style name="popupbg"
+    parent="STAGE"
+    type="container"
+    alpha="1"
+    bg="true"
+    bgalpha="0"
+    bgcapture="true"
+    bgcolor="0xffffff"
+    align="center"
+    width="100%"
+    height="100%"
+        
+/>
+<style name="ploader"
+    parent="STAGE"
+    type="container"
+    alpha="0"
+    bg="true"
+    bgalpha="1"
+    bgcolor="0xffffff"
+    align="center"
+    onloaded="delayedcall(0.1,tween(alpha,1,0.3););"
+        
+/>
+
+<style name="popuplayerstyle"
+    parent="STAGE"
+    type="iframe"
+    iframeurl=""
+    alpha="0"
+    bg="true"
+    bgalpha="1"
+    bgcolor="0xffffff"
+    align="center"
+/>
+
+<action name="actiframe" type="js">
+  const iframe = caller.iframe;
+  iframe.addEventListener('load', function() {
+  kploaded += 1 ;
+  krpano.call('unload_loader()');
+    });
+
+</action>
+
+
+<action name="unload_loader" scope="local">
+    iframe=layer['popuplayer'];
+    ifloader=layer['popuploader'];
+    asyncloop(ifloader.aplpha === 1,,
+    tween(iframe.alpha,1,0.3,);
+    tween(ifloader.alpha,0,0.3,);
+    );
+</action>
+
+
+<style name="xclose_help"
+   url="%FIRSTXML%/assets/img/xclose_help.png" 
+   align="righttop"
+   x="40"
+   y="40" 
+   parent="popuplayer"
+   enabled="true"
+   edge="center"
+
+   onhover="tween(rotate,90,0.2);"
+   onout="tween(rotate,0,0.2);"
+/>
+<style name="xclose_init"
+   url="%FIRSTXML%/assets/img/xclose_init.png" 
+   align="righttop"
+   x="-20"
+   y="-20" 
+   parent="popuplayer"
+   enabled="true"
+   edge="center"
+   onhover="tween(rotate,90,0.2);"
+   onout="tween(rotate,0,0.2);"
+/>
+
+
+
+<action name="popup" scope="local" args="url,size,type">
+
+
+    if (type === 'help' ,
+        actionsbeforepopup();
+        
+        ,type === 'init',
+        actionsbeforepopup(true);
+    );
+
+
+delayedcall (,
+    addlayer('popupbg',popupbg);
+    popupbg.loadstyle('popupbg');
+    popupbg.onclick="closepopup()";
+
+    txtsplit(size,'|',w,h);
+    trace(w);
+    addlayer('popuploader',ifloader);
+    ifloader.loadstyle('ploader');
+    ifloader.width=*w;
+    ifloader.height=*h;
+
+    addlayer('popuplayer',iframe);
+    iframe.loadstyle('popuplayerstyle');
+    iframe.iframeurl=url;
+    iframe.width=*w;
+    iframe.height=*h;
+    iframe.onloaded="actiframe()"; 
+    
+    addlayer('closepopuplayer',ciframe);
+    if (type === 'help',
+        ciframe.loadstyle('xclose_help');
+        ciframe.onclick="closepopup()";
+        ,type === 'init',
+        ciframe.loadstyle('xclose_init');
+        ciframe.onclick="closepopup(true)";
+    );
+
+);
+
+
+</action>
+
+<action name="actionsbeforepopup" scope="local" args="init">
+    global.follow=false;
+    control.usercontrol='off';
+
+    if (!init,
+        blur();
+    );
+
+    <!-- addlayer('bottomlayer',bt);
+    bt.loadstyle('bottomlayer'); -->
+
+</action>
+
+
+<action name="closepopup" scope="local" args="init">
+
+
+        global.follow=true;
+        if (!init,sharp(););
+        tween(layer[popuplayer].alpha|layer[popuploader].alpha,0,,,
+        removelayer('popupbg',true);
+        removelayer('popuplayer',true);
+        removelayer('popuploader',true);
+        removelayer('bottomlayer',true);
+        control.usercontrol='all';
+    );
+
+</action>
+
+
+</krpano>

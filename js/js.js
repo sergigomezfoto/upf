@@ -1,22 +1,24 @@
 let test = true;
-const politica = document.querySelector("#politca > a");
-const guide = document.querySelector("#guide > a");
-const navGuide = document.querySelector("#navigation_guide");
-const closeGuide = document.querySelector("#close_guide");
-guide.addEventListener("click", async () => {
-    navGuide.style.display = "flex";
-    await asyncLoopPositive((_) => getComputedStyle(navGuide).display === "flex");
-    navGuide.style.opacity = "1";
-});
+// const politica = document.querySelector("#politca > a");
+// const guide = document.querySelector("#guide > a");
+// const navGuide = document.querySelector("#navigation_guide");
+// const closeGuide = document.querySelector("#close_guide");
 
-closeGuide.addEventListener("click", async () => {
-        navGuide.style.opacity = "0";
-        await asyncLoopPositive((_) => getComputedStyle(navGuide).opacity === "0");
-        navGuide.style.display = "none";    
-});
+// guide.addEventListener("click", async () => {
+//     navGuide.style.display = "flex";
+//     await asyncLoopPositive((_) => getComputedStyle(navGuide).display === "flex");
+//     navGuide.style.opacity = "1";
+// });
+
+// closeGuide.addEventListener("click", async () => {
+//         navGuide.style.opacity = "0";
+//         await asyncLoopPositive((_) => getComputedStyle(navGuide).opacity === "0");
+//         navGuide.style.display = "none";    
+// });
 
 const jsUiText=()=>{
-    politica.textContent = krpano.ui.politica;
-    politica.setAttribute("href", krpano.ui.politica_link);
-    guide.textContent = krpano.ui.guide;
+    // politica.textContent = krpano.ui.politica;
+    // politica.setAttribute("href", krpano.ui.politica_link);
+    // guide.textContent = krpano.ui.guide;
+    console.log('jsUiText: de moment no faig res');
 }

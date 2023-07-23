@@ -1,0 +1,22 @@
+{
+    "title": {
+      "es": "Leyenda hotspots",
+      "ca": "Llegenda hotspots",
+      "en": "Hotspots legend"
+    },
+    "ico1": {
+      "es": "imagen 360º",
+      "ca": "imatge 360º",
+      "en": "360º image"
+    },
+    "ico2": {
+      "es": "Fotografía",
+      "ca": "Fotografia",
+      "en": "Photography"
+    },
+    "ico3": {
+      "es": "Video",
+      "ca": "Vídeo",
+      "en": "Video"
+    }
+  }

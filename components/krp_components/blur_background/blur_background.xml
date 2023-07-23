@@ -1,0 +1,36 @@
+<krpano>
+
+<cssstyles>
+    .blur_background {
+        backdrop-filter: blur(10px);
+    }
+</cssstyles>
+
+
+<style name="blur_background"
+    type="container"
+    bg="true"
+    bgcapture="true"
+    bgalpha="1"
+    bgcolor="0x000000"
+    width="100%"
+    height="100%"
+    align="center"
+    cssclass="blur_background"
+    alpha="0"
+    autoalpha="true"
+    onloaded=""
+    cursor="default"
+    parent="stage"
+/>
+<layer name="blur_background" keep="true" style="blur_background"/>
+
+
+<action name="blur">
+    tween(layer[blur_background].alpha,1,0.2);
+</action>
+<action name="sharp">
+    tween(layer[blur_background].alpha,0,0.2);
+</action>
+
+</krpano>

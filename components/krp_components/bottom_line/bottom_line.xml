@@ -1,0 +1,68 @@
+<krpano>
+
+<cssstyles>
+.blt a{
+color:white;
+text-decoration: none;
+}
+.blt a:hover{
+color:white;
+text-decoration: underline;
+}
+</cssstyles>
+
+
+<style name="bottom_line"
+    type="text"
+    bg="false"
+    bgcolor="0x000000"
+    width="100%"
+    height="35"
+    align="bottomleft"
+    flowchildren="h"
+    childflowspacing="0"   
+    childmargin="0 0 0 10"
+    bgborder="1,0,0,0 0xffffff 1"
+    bgbordermode="inside"
+    cursor="default"
+/>
+    <style name="bottom_line_text"
+        type="text"
+        css="color: #FFFFFF;text-decoration: none;font-size: 13px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
+        cssorig="color: #FFFFFF;text-decoration: none;font-size: 13px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
+        cssclass="blt"
+        bg="false"
+        bgcolor="0x654fff"
+        bgalpha="0.5"
+        padding="0 25 0 25"
+        align="center"
+        cursor="default"
+    />
+
+    <style name="bottom_line_text_first"
+   
+         align="left"
+         text="powered by: [a href='https://noupunt.com']noupunt.com[/a]"
+    />
+    <style name="bottom_line_text_middle"
+   
+         bgborder="0,2,0,2 0xffffff 1"
+
+    />
+    <style name="bottom_line_text_third"
+        onhover="css=(cssorig + 'text-decoration: underline;');"
+        onout="css=cssorig;"
+        cursor="pointer"
+        onclick="popup(calc('externals/help/index.html?ln=' + language ),'95%|95%','help');"         
+    />
+
+
+layer
+
+<layer name="bottom_line" keep="true" style="bottom_line">    
+    <layer name="bottom_line_text_noupunt" keep="true" style="bottom_line_text|bottom_line_text_first"/>
+    <layer name="bottom_line_text_politica" keep="true" text="get:ui.politica" style="bottom_line_text|bottom_line_text_middle"/>
+    <layer name="bottom_line_text_guide" keep="true" text="get:ui.guide" style="bottom_line_text|bottom_line_text_third"/>
+
+</layer>
+</krpano>

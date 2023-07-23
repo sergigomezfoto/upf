@@ -1,9 +1,8 @@
 <krpano>
-
   
+<set var="follow" val="true" />
 
-
-<if check="language == 'spanish'">
+<if check="language == 'es'">
     <lang
     main="ESPAÑOL"
     sub1="CATALÀ"
@@ -16,11 +15,13 @@
         cta_1_link="https://www.upf.edu/es/web/guest/oferta-estudios"
         cta_2="cta 2 text español"
         cta_2_link="https://www.upf.edu/es/web/guest/recercaupf"
-        politica="Política de privacidad"
-        politica_link="https://www.bsm.upf.edu/es/politica-de-privacidad"
+        politica="[a href='https://www.bsm.upf.edu/es/politica-de-privacidad']Política de privacidad[/a]"
         guide="Guía de navegación"
+        ft360="Arrastra para[br]ver el 360"
+        
+        
     />
-    "   
+       
     <campus 
     balmes="Campus[br]Balmes"
     ciutadella="Campus de[br]la Ciutadella"
@@ -149,7 +150,7 @@
 
 
 
-<if check="language == 'catalan'">
+<if check="language == 'ca'">
 
 <lang
     main="CATALÀ"
@@ -163,9 +164,9 @@
         cta_1_link="https://www.upf.edu/ca/web/guest/oferta-estudios"
         cta_2="cta 2 text català"
         cta_2_link="https://www.upf.edu/ca/web/guest/recercaupf"
-        politica="Política de privacitat"
-        politica_link="https://www.bsm.upf.edu/ca/politica-de-privacitat"
+        politica="[a href='https://www.bsm.upf.edu/ca/politica-de-privacitat']Política de privacitat[/a]"
         guide="Guía de navegació"
+        ft360="Arrossega per[br]veure el 360"
     />
     "   
     <campus 
@@ -288,7 +289,7 @@
 
 </if>
 
-<if check="language == 'english'">
+<if check="language == 'en'">
 
 <lang
     main="ENGLISH"
@@ -302,9 +303,9 @@
         cta_1_link="https://www.upf.edu/en/web/guest/oferta-estudios"
         cta_2="cta 2 text english"
         cta_2_link="https://www.upf.edu/en/web/guest/recercaupf"
-        politica="Privacy policy"
-        politica_link="https://www.bsm.upf.edu/en/privacy-policy"
+        politica="[a href='https://www.bsm.upf.edu/en/privacy-policy']Privacy policy[/a]"
         guide="Navigation guide"
+        ft360="Drag to[br]see the 360"
     />
     "   
     <campus 
@@ -436,9 +437,6 @@
 
 
 
-<action name="" autorun="true">
-jscall(krpanoTexts = true);
-</action>
 
 
 </krpano>

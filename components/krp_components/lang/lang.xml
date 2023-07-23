@@ -100,11 +100,11 @@
 <action name="change_lang">
 
    if (text === 'CATALÀ',
-    language='catalan';
+    language='ca';
     ,text === 'ESPAÑOL',
-    language='spanish';
+    language='es';
     ,text === 'ENGLISH',
-    language='english';
+    language='en';
    );
    includexml('%FIRSTXML%/config/config.xml', hot_reload(););
 
@@ -135,8 +135,9 @@ forall(layer,l,
         callwith(l, "menu_items_text('t')");
     );
 );
-
-
+//bottom line component
+layer[bottom_line_text_politica].text=ui.politica;
+layer[bottom_line_text_guide].text=ui.guide;
 //js-krpano data
 jscall(jsUiText(););
 

@@ -1,8 +1,14 @@
 ﻿<krpano version="1.21" title="Virtual Tour" >
+<include url="config/controls.xml" />
 <include url="config/config.xml" />
 <include url="config/dessign.xml" />
+<include url="components/krp_components/popup/popup.xml" />
+<include url="components/krp_components/blur_background/blur_background.xml" />
+<!-- <include url="components/krp_components/first_entrance/first_entrance.xml" /> -->
+<include url="components/krp_components/localize_hotspots/localize_hotspots.xml" />
 <include url="components/krp_components/menu/menu.xml" />
 <!-- <include url="test/scroll.xml" /> -->
+<include url="components/krp_components/bottom_line/bottom_line.xml" />
 <include url="components/krp_components/followmouse/followmouse.xml" />
 <include url="components/krp_components/logo/logo.xml" />
 <include url="components/krp_components/lang/lang.xml" />
@@ -10,7 +16,7 @@
 <include url="components/krp_components/ui_buttons/ui_buttons.xml" />
 <include url="components/krp_components/info_panel/info_panel.xml" />
 <action name="skin_onstart_loadscene" scope="local" autorun="onstart">
-
+trace(language);
 		<!-- load first scene -->
 		loadscene(calc(isset(startscene) ? startscene : 0), null, MERGE);
 	
@@ -21,26 +27,12 @@
 		);
 
 	</action>	
-	
-	<scene name="scene_b_01" title="b_01" onstart="" thumburl="panos/b_01.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/b_01.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/b_01.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene>
 
 	<scene name="scene_b_02" title="b_02" onstart="" thumburl="panos/b_02.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="107" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/b_02.tiles/preview.jpg" />
 
@@ -49,6 +41,8 @@
 		</image>
 
 	</scene>
+	
+	
 
 	<scene name="scene_b_03" title="b_03" onstart="" thumburl="panos/b_03.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
@@ -116,6 +110,20 @@
 
 		<image>
 			<cube url="panos/b_06.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_b_01" title="b_01" onstart="" thumburl="panos/b_01.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/b_01.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/b_01.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
 	</scene>

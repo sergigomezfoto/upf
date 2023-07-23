@@ -137,7 +137,7 @@ class S_LoadControl {
 //////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////loadeR control
 const generalLoadControl = new S_LoadControl();
-let krpanoTexts = false;
+let kploaded = 0;
 ///////////////////////////////////////////////////////////////////LittlePlanet ready
 const first_loadder = document.getElementById("first_loadder");
 const svgArr = [
@@ -153,13 +153,18 @@ const imgArr = [
   "../../assets/img/ui_fs.png",
   "../../assets/img/ui_in.png",
   "../../assets/img/ui_out.png",
+  "../../assets/img/close_guide.png",
+  "../../assets/img/plus_min.png",
+  "../../assets/img/360.png",
+
+
 ];
 const fontArr = ["16pt lota_regular", "16pt lota_semibold"];
 
 (async () => {
   if (test) {
     first_loadder.style.display = "none";
-    await asyncLoopPositive((_) => krpanoTexts);
+    await asyncLoopPositive((_) => kploaded);
     jsUiText();
     return;
   }
@@ -172,7 +177,7 @@ const fontArr = ["16pt lota_regular", "16pt lota_semibold"];
   for (const font of fontArr) {
     await generalLoadControl.registerFonts(font);
   }
-  await asyncLoopPositive((_) => generalLoadControl.count === svgArr.length + imgArr.length + fontArr.length && krpanoTexts); 
+  await asyncLoopPositive((_) => generalLoadControl.count === svgArr.length + imgArr.length + fontArr.length && kploaded === 1); 
   first_loadder.style.opacity = "0";
   console.log("he arribat!!", generalLoadControl.count);
   generalLoadControl.log();
