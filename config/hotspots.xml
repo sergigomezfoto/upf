@@ -1,21 +1,29 @@
 <krpano>
 
-<if check="language == 'es'">
+<if check="language == 'en'">
+
 <data name="h_b_07_1"><![CDATA[
-<span> Skyline</span>
+<span> Skyline afaf</span>
 ]]></data>
+
+
+
 </if>
 
-<if check="language == 'ca'">
+<!-- <if check="language == 'ca'">
+
 <data name="h_b_07_1"><![CDATA[
 <span> Skyline catalan</span>
 ]]></data>
+
 </if>
 
 <if check="language == 'en'">
+
 <data name="h_b_07_1"><![CDATA[
 <span> Skyline english</span>
 ]]></data>
-</if>
+
+</if> -->
 
 </krpano>

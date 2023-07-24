@@ -11,10 +11,10 @@
 
     <ui
         logo_upf_link="https://www.upf.edu/es/"
-        cta_1="cta 1 text español"
-        cta_1_link="https://www.upf.edu/es/web/guest/oferta-estudios"
-        cta_2="cta 2 text español"
-        cta_2_link="https://www.upf.edu/es/web/guest/recercaupf"
+        cta_1="Acceder a la web"
+        cta_1_link="https://www.bsm.upf.edu/es"
+        cta_2="Encuentra tu programa"
+        cta_2_link="https://www.bsm.upf.edu/es/estudios"
         politica="[a href='https://www.bsm.upf.edu/es/politica-de-privacidad']Política de privacidad[/a]"
         guide="Guía de navegación"
         ft360="Arrastra para[br]ver el 360"
@@ -45,7 +45,7 @@ Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge 
     <data name="b_13_title"><![CDATA[Espai Koiné (espacio polivalente)]]></data>
     <data name="b_13_content"><![CDATA[¿Sabías que dos de nuestros espacios han sido premiados por el German Design Award 2018? Uno es el Espai Koiné, una zona muy versátil de dos ambientes pensados para optimizar la concentración. Esta es la primera estancia, una sala polivalente ideal para el trabajo en equipo gracias a sus paneles móviles coloreables y la disposición flexible del mobiliario. ]]></data>
 
-    <data name="b_12_title"><![CDATA[Espai Koiné (sala de estudios)]></data>
+    <data name="b_12_title"><![CDATA[Espai Koiné (sala de estudios)]]></data>
     <data name="b_12_content"><![CDATA[Por su parte, las cortinas de madera son las encargadas de aislar la segunda estancia. Esto te permite volcar todos tus sentidos en el estudio gracias a su silencio. Es un espacio ideal para preparar tus exámenes o repasar en detalle tus clases.]]></data>
 
     <data name="b_10_title"><![CDATA[Auditorio]]></data>
@@ -152,6 +152,14 @@ Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge 
 
    ]]></data>
 
+////////////////////////////////////////////////////HOTSPOTS
+<data name="h_b_07_1"><![CDATA[
+<span> Skyline</span>
+]]></data>
+
+
+
+
 </if>
 
 
@@ -167,10 +175,10 @@ Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge 
 
     <ui
         logo_upf_link="https://www.upf.edu/ca/"
-        cta_1="cta 1 text català"  
-        cta_1_link="https://www.upf.edu/ca/web/guest/oferta-estudios"
-        cta_2="cta 2 text català"
-        cta_2_link="https://www.upf.edu/ca/web/guest/recercaupf"
+        cta_1="Accedeix al web"  
+        cta_1_link="https://www.bsm.upf.edu/ca"
+        cta_2="Troba el teu programa"
+        cta_2_link="https://www.bsm.upf.edu/ca/estudis"
         politica="[a href='https://www.bsm.upf.edu/ca/politica-de-privacitat']Política de privacitat[/a]"
         guide="Guía de navegació"
         ft360="Arrossega per[br]veure el 360"
@@ -308,6 +316,16 @@ Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge 
 
    ]]></data>
 
+////////////////////////////////////////////////////HOTSPOTS
+<data name="h_b_07_1"><![CDATA[
+<span> Skyline cat</span>
+]]></data>
+
+
+
+
+
+
 </if>
 
 <if check="language == 'en'">
@@ -320,10 +338,10 @@ Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge 
 
     <ui
         logo_upf_link="https://www.upf.edu/en/"
-        cta_1="cta 1 text english"  
-        cta_1_link="https://www.upf.edu/en/web/guest/oferta-estudios"
-        cta_2="cta 2 text english"
-        cta_2_link="https://www.upf.edu/en/web/guest/recercaupf"
+        cta_1="Go to site"  
+        cta_1_link="https://www.bsm.upf.edu/en"
+        cta_2="Find your program"
+        cta_2_link="https://www.bsm.upf.edu/en/studies"
         politica="[a href='https://www.bsm.upf.edu/en/privacy-policy']Privacy policy[/a]"
         guide="Navigation guide"
         ft360="Drag to[br]see the 360"
@@ -461,6 +479,13 @@ Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge 
 
    ]]></data>
    
+////////////////////////////////////////////////////HOTSPOTS
+<data name="h_b_07_1"><![CDATA[
+<span> Skyline eng</span>
+]]></data>
+
+
+
 </if>
 
 

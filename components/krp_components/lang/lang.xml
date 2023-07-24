@@ -144,6 +144,17 @@ layer[bottom_line_text_guide].text=ui.guide;
 //js-krpano data
 jscall(jsUiText(););
 
+
+//hotspots
+forall(hotspot, h,
+   if (!contains(h.name,'title') AND !contains(h.name,'preview'),
+    trace(data[(h.name)].content);
+    trace(data[b_02_title].content);
+    trace(hotspot[(h.name + 'title')].text);
+    calc(hotspot[(h.name + 'title')].text,(data[(h.name)].content));
+   );
+);
+
 </action>
 
 </krpano>

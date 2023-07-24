@@ -100,10 +100,10 @@
 <action name="popup" scope="local" args="url,size,type">
 
 
-    if (type === 'help' ,
+    if (type === 'help' OR type == 'hs',
         actionsbeforepopup();
         
-        ,type === 'init' OR type == 'hs',
+        ,type === 'init',
         actionsbeforepopup(true);
     );
 
