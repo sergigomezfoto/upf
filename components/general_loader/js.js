@@ -145,17 +145,17 @@ const svgArr = [
   // document.getElementById("time-message-wrapper-svg")
 ];
 const imgArr = [
-  "../../assets/img/lang_triangle.png",
-  "../../assets/img/lang_world.png",
-  "../../assets/img/logo_upf.png",
-  "../../assets/img/ui_fs_bg.png",
-  "../../assets/img/ui_fs_shape.png",
-  "../../assets/img/ui_fs.png",
-  "../../assets/img/ui_in.png",
-  "../../assets/img/ui_out.png",
-  "../../assets/img/close_guide.png",
-  "../../assets/img/plus_min.png",
-  "../../assets/img/360.png",
+  "assets/img/lang_triangle.png",
+  "assets/img/lang_world.png",
+  "assets/img/logo_upf.png",
+  "assets/img/ui_fs_bg.png",
+  "assets/img/ui_fs_shape.png",
+  "assets/img/ui_fs.png",
+  "assets/img/ui_in.png",
+  "assets/img/ui_out.png",
+  "assets/img/close_guide.png",
+  "assets/img/plus_min.png",
+  "assets/img/360.png",
 
 
 ];

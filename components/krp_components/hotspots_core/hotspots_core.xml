@@ -1,0 +1,107 @@
+<krpano>
+
+ <style name="hs"
+	onloaded="assignpreview();onloadedhs();" 
+	publicname="stand 1" 
+	s_localize_editmode="true" 
+	s_localize_radius="20|15" 
+	s_localize_interval="0.1"
+  crop="0|0|72|72"
+	onovercrop="72|0|72|72"
+	distorted="true"
+
+ />
+
+
+ <style name="hspano"
+	url="%FIRSTXML%/assets/img/panohs.png"
+ />
+
+<action name="onloadedhs">
+
+  s_localize();
+  calc(hotspot[get(name)].s_onlocalize,'general_localize(' + name + ');');
+  calc(hotspot[get(name)].s_onunlocalize,'general_unlocalize(' + name + ');');
+
+</action>
+
+<action name="general_localize" scope="local" args="hsname">
+  
+  trace(get(hsname));
+
+</action>
+
+<action name="general_unlocalize" scope="local" args="hsname">
+
+  trace(get(hsname));
+
+
+</action>
+
+
+<action name="assignpreview">
+
+  trace(name);
+
+</action>
+<!-- 
+LAUNCH:
+ 
+element static:
+onload="s_localize()"
+element movment:
+onload="s_localize(true)"
+
+IN ELEMENT (HS, OR PLUGIN):
+
+s_localize_editmode="true" / false: nothing , true: it apears a ghost canvas to localize , def: false
+s_localize_radius="30|5" / 30 on element : +30ath-30  +30atv-30 , 30|5 / +30ath-30 +5atv-5 ,  def: 10 
+s_localize_interval="0.1" /  interval refreshing time , def: 0.01
+s_onlocalize="general_localize();" / actions to throw when element localized
+s_onunlocalize="general_unlocalize();" / actions to throw when element unlocalized.
+s_localize_group="GROUPNAME" /define the pertinece to a group to be able to pause or clear all in one
+s_localize_fov_range="maxzoomOUT|maxzoomIN" /define the range where this hotspot have to react to s_localize or s_unlocalize
+GLOBAL VAIABLES THROWN:
+
+lecture:
+	s_loaclaizable /setted to true at the begining to be able to clear all and after restart localization filtering hs via for bucle.
+	s_localize_TARGETNAME_l / left point of localization area.  
+	s_localize_TARGETNAME_r / right point of localization area.
+	s_localize_TARGETNAME_u / upper point of localization area.
+	s_localize_TARGETNAME_d / lower point of localization area.
+	s_localized_any / when any element is localized i set to true, on unlocalize set to false. before any localization unset.
+    s_localized_TARGETNAME / true element localized, false element unlocalized, at the begining unset. 
+	hotspot[NAME].s_localized / true is localized, false is unlocalized.
+    s_localized_last / name of the last localized don't work well in bunch solapated.
+    s_localized_now / the current element localized. 'none' when nothing localized and unset at the beginnig .don't work well in bunch solapated.
+write:
+	s_localize_TARGETNAME_clear / when set to true clear interval ans sotop the acion.
+	s_localize_clear_all / when set to true clear interval ans sotop the acion of all hs.
+	s_localize_GROUPNAME_clear / when true clear all intervals for thos hs with this group name.
+    s_localize_pause / if true pause all localization actions (not vars) if false restart all localizations
+	s_localize_GROUPNAME_pause /s_localize_group="GROUPNAME" if true all of the group will be paused
+    s_localize_TARGETNAME_pause / if true pause target localization actions (not vars) if false restart target localization
+	
+				
+-->
+// per distingir els phantoms dels hs
+
+<action name="s_set_bg_random_color" scope="local" args="tone" >
+
+  calc(calc(caller.name + 'rc'), random * 0xFFFFFF);
+  tohex(calc(caller.name + 'rc'), 0x, 6);
+  copy(rc,calc(caller.name + 'rc'));
+
+  if (layer[get(caller.name)].name,
+    calc(layer[get(caller.name)].bgcolor,rc);
+  ,
+    if (caller.fillcolor,
+      calc(hotspot[get(caller.name)].fillcolor,rc);
+    ,
+      calc(hotspot[get(caller.name)].bgcolor,rc);
+    );
+  ); 
+
+</action>
+
+</krpano>

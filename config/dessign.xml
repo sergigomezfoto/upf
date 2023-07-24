@@ -1,10 +1,44 @@
 <krpano>
 
-<margins
-top="50"
-right="50"
-bottom="50"
-left="50"
-/>
+    <!-- <margins
+    top="50"
+    right="50"
+    bottom="50"
+    left="50"
+    /> -->
+
+<if check="stageheight LT 1024">
+
+    <scrollarea
+        textheight="180"
+    />
+    <margins
+        top="20"
+        right="20"
+        bottom="20"
+        left="20"
+    />
+
+<action name="" autorun="true">   
+    trace(get(stageheight), 'HEIGHT PETIT');
+</action>
+
+</if>
+
+<if check="stageheight GE 1024">
+    <scrollarea
+        textheight="280"
+    />
+    <margins
+        top="50"
+        right="50"
+        bottom="50"
+        left="50"
+    />
+    
+<action name="" autorun="true">
+    trace(get(stageheight), 'HEIGHT GRAN');
+</action>
+</if>
 
 </krpano>

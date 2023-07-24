@@ -1,67 +1,69 @@
 <krpano>
 
+<if check="!test">
 
-<action name="" autorun="true">
-    popup("https://www.youtube.com/embed/A43JOxLa5MM","600|400","init");    
-</action>
+    <action name="" autorun="true">
+        popup("https://www.youtube.com/embed/JPLJ50WkWao","600|400","init");    
+    </action>
 
-<style name="ft_container"
-    type="container"
-    width="100%"
-    height="100%"
-    keep="true"
-    bgcolor="0x000000"
-    bg="true"
-    bgalpha="0.5"
-    parent="stage"
-    onloaded="blur();"
-    ondown="close_ft();"
-    bgcapture="true"
-    capture="false"
-    autoalpha="true"
-    cursor="default"
-/>
-    <style name="ico360_text_container"
-        type="container"    
-        align="center"
-        bg="false"
-        bgcolor="0x000000"
-        bgalpha="1"
-        flowchildren="v"
-        childflowspacing="20"   
-        childmargin=""  
-        enabled="false"  
-    />
-        <style name="t360_text"
-        type="text"
-        css="font-family:'lota_regular';font-size:20px;color:#ffffff;text-align:center;"
+    <style name="ft_container"
+        type="container"
         width="100%"
-        bg="false"
-        align="top"
-        text="get:ui.ft360"   
+        height="100%"
+        keep="true"
+        bgcolor="0x000000"
+        bg="true"
+        bgalpha="0.5"
+        parent="stage"
+        onloaded="blur();"
+        ondown="close_ft();"
+        bgcapture="true"
+        capture="false"
+        autoalpha="true"
+        cursor="default"
+    />
+        <style name="ico360_text_container"
+            type="container"    
+            align="center"
+            bg="false"
+            bgcolor="0x000000"
+            bgalpha="1"
+            flowchildren="v"
+            childflowspacing="20"   
+            childmargin=""  
+            enabled="false"  
         />
+            <style name="t360_text"
+            type="text"
+            css="font-family:'lota_regular';font-size:20px;color:#ffffff;text-align:center;"
+            width="100%"
+            bg="false"
+            align="top"
+            text="get:ui.ft360"   
+            />
 
-    <layer name="ft_container" keep="true" style="ft_container">
+        <layer name="ft_container" keep="true" style="ft_container">
 
-      <layer name="ico360_text_container" keep="true" style="ico360_text_container">
-                
-            <layer name="ico360" keep="true"  url="%FIRSTXML%/assets/img/360.png" align="top"  />
-            <layer name="t360_text" keep="true" style="t360_text"/>
-
-
-      </layer>    
-
-    </layer>
+        <layer name="ico360_text_container" keep="true" style="ico360_text_container">
+                    
+                <layer name="ico360" keep="true"  url="%FIRSTXML%/assets/img/360.png" align="top"  />
+                <layer name="t360_text" keep="true" style="t360_text"/>
 
 
-<action name="close_ft">
+        </layer>    
 
-sharp();
-tween(layer[ft_container].alpha,0, 0.2,);   
+        </layer>
 
-</action>
+
+    <action name="close_ft">
+
+    sharp();
+    tween(layer[ft_container].alpha,0, 0.2,);   
+
+    </action>
 
 
     
+</if>
 
 </krpano>

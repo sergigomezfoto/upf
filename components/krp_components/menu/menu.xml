@@ -14,7 +14,8 @@
 <set var="menuparent" val="gray_bg"/>
 
 <itemstextcss val="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);"/>    
-<itemstextcsscheked val="font-family:'lota_regular';font-size:16px;color:#C8102E;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
+<itemstextcsscheked val="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
+<itemstextcssover val="font-family:'lota_regular';font-size:16px;color:#C8102E;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
 <menuitemsbordercss val="0,0,0,4 0xC8102E 1 solid"/>
 
 <separatorcss val="font-family:'lota_semibold';font-size:20px;color:#ffffff;text-align:left;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"/>  
@@ -59,6 +60,7 @@
     height="477px"
     width="380px"
     maskchildren="true"
+    capture="false" 
 />
 
 
@@ -71,9 +73,10 @@
         childflowspacing="0"   
         childmargin=""
         align="topleft"   
-        x="50"
+        x="get:margins.left"
         bgborder="0,0,0,2 0xffffff 1 solid"
         bgbordermode="outside"
+        capture="false" 
     />
         <!-- maskchildren="true" -->
 
@@ -87,6 +90,7 @@
             flowchildren="v"
             childflowspacing="6"   
             childmargin="0"
+            capture="false" 
         />
             <!-- maskchildren="true"        -->
             <style name="titol_campus"
@@ -102,6 +106,7 @@
             onloaded="menu_items_text(get(name))"
             ox="3"  
             onclick="campus_click();"
+            capture="false" 
             />
                     
             
@@ -141,7 +146,7 @@
                     width="-4" 
                     flowchildren="v" 
                     childmargin="10"
-                    scrolltype.desktop="smooth"
+                    scrolltype.desktop="inertia"
                     scrolltype.tablet.or.mobile="inertia"
                     draggable="false"
                     mwheel="true"
@@ -149,6 +154,7 @@
                     autoscrollbars="null,balmes_vscrollbar_grip,30"
                     onhover_autoscrolling="false"
                     onoverflowchange="set(layer[balmes_vscrollbar_grip].height,5);trace('changed');"
+                    capture="false" 
                 />
                 <style name="balmes_vscrollbar_bg"
                     type="container" 
@@ -159,6 +165,7 @@
                     bgalpha="0"  
                     x="28"
                     autoalpha="true"  
+                    capture="false" 
                 />   
                         <style name="balmes_vscrollbar_grip"
                             type="container"
@@ -169,6 +176,7 @@
                             bgalpha="0.6"
                             bgroundedge="7"
                             bgcapture="true"
+                            capture="false" 
                         />    
                     <!-- onoverflowchange="set(layer[vscrollbar_grip].height,5);trace('changed');" -->
                 <style name="scrollarea_scroll_items_ciutadella"     
@@ -176,7 +184,7 @@
                     width="-4" 
                     flowchildren="v" 
                     childmargin="10"
-                    scrolltype.desktop="smooth"
+                    scrolltype.desktop="inertia"
                     scrolltype.tablet.or.mobile="inertia"
                     draggable="false"
                     mwheel="true"
@@ -184,6 +192,7 @@
                     autoscrollbars="null,ciutadella_vscrollbar_grip,30"
                     onhover_autoscrolling="false"
                     onoverflowchange="set(layer[ciutadella_vscrollbar_grip].height,5);trace('changed');"
+                    capture="false" 
                 />
 
 
@@ -196,6 +205,7 @@
                         bgalpha="0"  
                         x="28"
                         autoalpha="true"  
+                        capture="false" 
                     />   
                             <style name="ciutadella_vscrollbar_grip"
                                 type="container"
@@ -206,6 +216,7 @@
                                 bgalpha="0.6"
                                 bgroundedge="7"
                                 bgcapture="true"
+                                capture="false" 
                             />    
                     <!-- onoverflowchange="set(layer[vscrollbar_grip].height,5);trace('changed');" -->
 
@@ -223,6 +234,7 @@
                             textalign="bottomleft"
                             enabled="false"      
                             ox="26"    
+                            capture="false" 
                         />
 
                         <style name="menu_title"
@@ -236,8 +248,9 @@
                             width="300px"
                             align="topleft"
                             textalign="center"
-                            onhover="css=itemstextcsscheked.val"
+                            onhover="css=itemstextcssover.val"
                             onout="css=itemstextcss.val"
+                            capture="false" 
                         />
 
 <layer name="super_container_wraper" keep="true" style="super_container_wraper">
@@ -312,7 +325,7 @@ forall(scene, s,
         cbl.parent="scrollarea_scroll_items_ciutadella";
         callwith(cbl, "menu_items_text('t')");
         cbl.onclick = ('loadscene(scene_'+ s.title +')');
-        cbl.onclick = ('layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +');');
+        cbl.onclick = ('layer[scrollarea_scroll_items_ciutadella].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +');');
     );
 );
     

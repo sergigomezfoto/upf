@@ -9,7 +9,7 @@
     y="get:margins.top"
     x="get:margins.right"   
     bgcapture="true"
-    capture="true"
+    capture="false"
     onclick="choose_lang"
     bgcolor="0x654ff54"
     bgalpha="0"
@@ -21,12 +21,12 @@
         if (lt.rotate == 0,
             lt.rotate="180";
             lt.edge="left";
-            tween(ls.y, 80, 0.2);
+            tween(ls.y, calc(margins.top + 30), 0.2);
             tween(ls.alpha, 1, 0.3);
             ,
             lt.rotate="0";
             lt.edge="right";
-            tween(ls.y,70, 0.3);
+            tween(ls.y,calc(margins.top + 20), 0.3);
             tween(ls.alpha,0, 0.2);
         );
     </action>
@@ -35,6 +35,7 @@
         url="%FIRSTXML%/assets/img/lang_world.png"
         align="left" 
         enabled="false" 
+        capture="false" 
     />
 
     <style name="lang_cont_text"
@@ -45,12 +46,14 @@
         bgcolor="0x654ff54"
         css="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;text-transform: uppercase;"  
         enabled="false"     
+        capture="false" 
     />
 
     <style name="lang_cont_triangle"
         url="%FIRSTXML%/assets/img/lang_triangle.png"
         align="right" 
         enabled="false"
+        capture="false" 
     />
 
 <style name="lang_sub_container"
@@ -58,7 +61,7 @@
     align="righttop"
     width="102px"
     height="40px"
-    y="70"
+    y="calc:margins.top + 20"
     x="get:margins.right"   
     bgcapture="true"
     capture="false"
@@ -69,7 +72,6 @@
     alpha="0"
 
 />
-
 
     <style name="lang_sub"
         type="text"
@@ -83,6 +85,7 @@
         onover="set(alpha, 1);"
         onout="set(alpha, 0.6);"
         onclick="change_lang"
+        capture="false" 
     />
 
 <layer name="lang_cont" keep="true" style="lang_cont">

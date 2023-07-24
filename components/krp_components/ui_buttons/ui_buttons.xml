@@ -23,6 +23,7 @@
         ondowncrop="68|0|34|34"
         ondown="plus_min"
         onup="stop_plus_min"
+        capture="false" 
     />
         <style name="btn_out"
             url="%FIRSTXML%/assets/img/ui_out.png"
@@ -58,6 +59,7 @@
         onovercrop="34|0|34|34"
         ondowncrop="68|0|34|34"
         onclick="button_fs"
+        capture="false" 
         />
             <style name="btn_fs_shape"
             url="%FIRSTXML%/assets/img/ui_fs_shape.png"

@@ -25,6 +25,7 @@ text-decoration: underline;
     bgborder="1,0,0,0 0xffffff 1"
     bgbordermode="inside"
     cursor="default"
+    capture="false" 
 />
     <style name="bottom_line_text"
         type="text"
@@ -37,6 +38,7 @@ text-decoration: underline;
         padding="0 25 0 25"
         align="center"
         cursor="default"
+        capture="false" 
     />
 
     <style name="bottom_line_text_first"

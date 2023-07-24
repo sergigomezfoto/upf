@@ -2,10 +2,12 @@
 <include url="config/controls.xml" />
 <include url="config/config.xml" />
 <include url="config/dessign.xml" />
+<include url="plugins/s_bundle/s_bundle.xml" />
 <include url="components/krp_components/popup/popup.xml" />
 <include url="components/krp_components/blur_background/blur_background.xml" />
-<!-- <include url="components/krp_components/first_entrance/first_entrance.xml" /> -->
-<include url="components/krp_components/localize_hotspots/localize_hotspots.xml" />
+<include url="components/krp_components/first_entrance/first_entrance.xml" />
+<include url="components/krp_components/gray_bg/gray_bg.xml" />
+<include url="components/krp_components/hotspots_core/hotspots_core.xml" />
 <include url="components/krp_components/menu/menu.xml" />
 <!-- <include url="test/scroll.xml" /> -->
 <include url="components/krp_components/bottom_line/bottom_line.xml" />
@@ -39,6 +41,9 @@ trace(language);
 		<image>
 			<cube url="panos/b_02.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
+
+		<!-- <hotspot name="hp1"  ath="107" atv="0" style="hspano|hs" /> -->
+
 
 	</scene>
 	

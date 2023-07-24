@@ -30,7 +30,7 @@
 <!-- core -->
 <!-- <include url="core/core.xml" /> -->
 <!-- loader -->
-<include url="s_loader/s_loader.xml" />
+<!-- <include url="s_loader/s_loader.xml" /> -->
 <!-- varevent -->
 <!-- <include url="s_varevent/s_varevent.xml" /> -->
 <!-- <include url="s_alert_points/s_alert_points.xml" /> -->

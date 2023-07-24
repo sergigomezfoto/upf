@@ -103,7 +103,7 @@
             autoscrollbars="null,vscrollbar_grip,10"
             onhover_autoscrolling="false"
             onoverflowchange="set(layer[vscrollbar_grip].height,5);trace('changed');"
-                   
+            capture="false"    
 
         />
 
@@ -114,10 +114,10 @@
                 bgcolor="0x6554ff"
                 bgalpha="0"
                 width="240px"
-
                 capture="false"
                 cursor="default"
                 css="font-family:'lota_regular';font-size:13px;color:#000000;letter-spacing: 0px;line-height: 19px;"
+
                 />
 
         
@@ -180,7 +180,8 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
 <!-- onnewscene="info_panel_action();" -->
 
 <action name="info_panel_action" scope="local">
-    scrollheight=225;
+//todo
+    
     tit=layer[info_container_header_text];
     camp=layer[info_container_header_campus];
     contbody=layer[info_container_body];
@@ -231,7 +232,7 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
         //trace('loop');
     ,
         //trace('now');
-        if (cont.height LT scrollheight,
+        if (cont.height LT scrollarea.textheight,
 
             scroll.direction="null";
             scroll.capture="false";
@@ -239,9 +240,9 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
             contbody.height=(cont.height); 
         ,
             scroll.direction="v";
-            scroll.capture="true";
+            <!-- scroll.capture="true"; -->
             scrollgrip.bgalpha=gripopacity;
-            contbody.height=scrollheight; 
+            contbody.height=scrollarea.textheight; 
             scrollgrip.height="10px";
             
         );

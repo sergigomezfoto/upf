@@ -1,0 +1,25 @@
+<krpano>
+
+    
+<style name="gray_bg"
+    type="container"
+    align="lefttop"
+    bg="true"
+    bgcolor="0x000000"
+    bgalpha="0.3"
+    bgcapture="false"
+    width="calc:340 + margins.left"
+    height=""
+    onloaded="calc_mesures();"  
+/>
+    <action name="calc_mesures" scope="local">
+        gb=caller;    
+        calculated=(stageheight - 37);  
+        tween(gb.height,*calculated,0.1,linear);
+    </action>
+
+
+
+<layer name="gray_bg" keep="true" style="gray_bg"/>
+
+</krpano>
