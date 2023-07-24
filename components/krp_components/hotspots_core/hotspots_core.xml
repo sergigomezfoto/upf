@@ -1,21 +1,65 @@
 <krpano>
 
- <style name="hs"
-	onloaded="assignpreview();onloadedhs();" 
-	publicname="stand 1" 
-	s_localize_editmode="true" 
-	s_localize_radius="20|15" 
-	s_localize_interval="0.1"
-  crop="0|0|72|72"
-	onovercrop="72|0|72|72"
-	distorted="true"
-
- />
-
-
  <style name="hspano"
 	url="%FIRSTXML%/assets/img/panohs.png"
  />
+
+ <style name="hs"
+    onloaded="assignpreview();onloadedhs();" 
+    s_localize_editmode="false" 
+    s_localize_radius="20|20" 
+    s_localize_interval="0.1"
+    crop="0|0|72|72"
+    onovercrop="72|0|72|72"
+    distorted="true"
+    scale="0.5"
+    onhover="hsonhover()"
+    onhover2="tween(hotspot[(caller.name + 'preview')].alpha|hotspot[(caller.name + 'title')].alpha,1,0.2,linear);"
+    onout="hsonout()"
+    capture="false"
+    onclick="hsonclick"
+
+ />
+  <style name="hs_preview"
+      onloaded="assigntitle(get(superparent));" 
+      scale="0.5"
+      ox="0"
+      oy="70"
+      distorted="true"
+      blendmode="normal"
+      alpha="0"
+      autoalpha="true"
+      capture="false"
+    
+  />
+  <cssstyles>
+    .hstext span{
+       background-color: #c8102e;
+    line-height: 1.8em;
+    padding: 0.2em;
+    }
+  </cssstyles>
+  <hstitlecss val="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);"/>
+    <style name="hs_title"
+        type="text"
+        css="get:hstitlecss.val"
+        cssclass="hstext"
+        distorted="true"
+        bg="false"
+        bgcolor="0x000000"
+        onloaded="positionatehstitle"
+        edge="bottom"
+        width="100"
+        alpha="0"
+        autoalpha="true"
+        capture="false"
+    />
+    <action name="positionatehstitle" scope="local">
+      trace(hotspot[(caller.parentt)].pixelheight);
+      caller.oy=(hotspot[(caller.parentt)].oy + (hotspot[(caller.parentt)].pixelheight / 4) ); 
+      caller.ox=((hotspot[(caller.parentt)].pixelwidth / 4) + 20 );  
+    </action>
+
 
 <action name="onloadedhs">
 
@@ -25,23 +69,56 @@
 
 </action>
 
-<action name="general_localize" scope="local" args="hsname">
-  
-  trace(get(hsname));
 
+<action name="general_localize" scope="local" args="hsname">
+  tween(hotspot[(hsname + 'preview')].alpha|hotspot[(hsname + 'title')].alpha,1,0.2,linear);
 </action>
 
 <action name="general_unlocalize" scope="local" args="hsname">
+  tween(hotspot[(hsname + 'preview')].alpha|hotspot[(hsname + 'title')].alpha,0,0.2,linear);
+</action>
 
-  trace(get(hsname));
+
+<action name="assignpreview" scope="local">
+
+  addhotspot((caller.name + 'preview'),hs);
+  hs.loadstyle('hs_preview');
+  hs.url=('%FIRSTXML%/assets/img/hs/' + caller.name + '.jpg');
+  hs.ath=(hotspot[(caller.name)].ath);
+  hs.atv=(hotspot[(caller.name)].atv);
+  hs.superparent=(caller.name); 
+  hs.onclick="callwith(hotspot[get(superparent)],'onclick')";
+
+</action>
+
+<action name="assigntitle" scope="local" args="superparent">
+
+  addhotspot((superparent + 'title'),hs);
+  hs.loadstyle('hs_title');
+  hs.text=(data[(superparent)].content);
+  hs.ath=(hotspot[(caller.name)].ath);
+  hs.atv=(hotspot[(caller.name)].atv);
+  hs.superparent=(superparent);
+  hs.parentt=(caller.name);
+  hs.onclick="callwith(hotspot[get(superparent)],'onclick')";
 
 
 </action>
 
+<action name="hsonhover" scope="local">
+if (!caller.s_localized,
+   tween(hotspot[(caller.name + 'preview')].alpha|hotspot[(caller.name + 'title')].alpha,1,0.2,linear);
+);
+</action>
+<action name="hsonout" scope="local">
+if (!caller.s_localized,
+   tween(hotspot[(caller.name + 'preview')].alpha|hotspot[(caller.name + 'title')].alpha,0,0.2,linear);
+);
+</action>
 
-<action name="assignpreview">
+<action name="hsonclick" scope="local">
 
-  trace(name);
+  popup(calc('externals/panosandimages/' + caller.name + '/index.html?ln=' + language),'95%|95%','hs');  
 
 </action>
 <!-- 

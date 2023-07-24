@@ -197,26 +197,29 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
     cp='';
     panos_balmes=14;
     if (sci === 0 OR sci === panos_balmes, global.gpstrue=true;,global.gpstrue=false;);
+    global.gpstrue=false;
     
 
     if (contains(sc,'b_')
     ,
         cp=campusinfo.balmes;
-        if (sci === 0 AND but.crop === '14|0|14|14' ,
+            gps.alpha=0;
+        <!-- if (sci === 0 AND but.crop === '14|0|14|14' ,
             gpstext.text=data[balmes_gps].content;
             gps.alpha=1;
             , 
             gps.alpha=0;
-        );
+        ); -->
 
     , contains(sc,'c_'),
         cp=campusinfo.ciutadella;
-        if (sci === panos_balmes AND but.crop === '14|0|14|14' ,
+            gps.alpha=0;
+        <!-- if (sci === panos_balmes AND but.crop === '14|0|14|14' ,
             gpstext.text=data[balmes_gps].content;
             gps.alpha=1;
             , 
             gps.alpha=0;
-        );
+        ); -->
     );
     lastheight=(cont.height);
     cont.text=data[(sc + '_content')].content;

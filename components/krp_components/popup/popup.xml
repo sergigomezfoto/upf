@@ -71,6 +71,18 @@
    onhover="tween(rotate,90,0.2);"
    onout="tween(rotate,0,0.2);"
 />
+<style name="xclose_hs"
+    url="%FIRSTXML%/assets/img/xclose_init.png" 
+    align="righttop"
+    x="40"
+    y="40" 
+    parent="popuplayer"
+    enabled="true"
+    edge="center"
+    onhover="tween(rotate,90,0.2);"
+    onout="tween(rotate,0,0.2);"
+/>
+
 <style name="xclose_init"
    url="%FIRSTXML%/assets/img/xclose_init.png" 
    align="righttop"
@@ -91,7 +103,7 @@
     if (type === 'help' ,
         actionsbeforepopup();
         
-        ,type === 'init',
+        ,type === 'init' OR type == 'hs',
         actionsbeforepopup(true);
     );
 
@@ -116,8 +128,13 @@ delayedcall (,
     iframe.onloaded="actiframe()"; 
     
     addlayer('closepopuplayer',ciframe);
-    if (type === 'help',
-        ciframe.loadstyle('xclose_help');
+    if (type === 'help' OR type === 'hs',
+        if (type === 'help',
+            ciframe.loadstyle('xclose_help');
+        );
+        if (type === 'hs',
+            ciframe.loadstyle('xclose_hs');
+        );
         ciframe.onclick="closepopup()";
         ,type === 'init',
         ciframe.loadstyle('xclose_init');
