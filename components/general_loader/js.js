@@ -156,6 +156,7 @@ const imgArr = [
   "assets/img/close_guide.png",
   "assets/img/plus_min.png",
   "assets/img/360.png",
+  "assets/img/hs/h_b_07_1.jpg",
 
 
 ];
