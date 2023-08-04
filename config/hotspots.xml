@@ -1,29 +1,18 @@
 <krpano>
 
-<if check="language == 'en'">
+<!-- <if check="language == 'es'"> -->
 
-<data name="h_b_07_1"><![CDATA[
+<!-- <data name="h_b_07_1"><![CDATA[
+<span> Skyline</span>
+]]></data>
+<data name="h_c_02_1"><![CDATA[
+<span>Parque de </br> la Ciutadella</span>
+]]></data>
+<data name="h_c_07_1"><![CDATA[
 <span> Skyline afaf</span>
 ]]></data>
 
-
-
-</if>
-
-<!-- <if check="language == 'ca'">
-
-<data name="h_b_07_1"><![CDATA[
-<span> Skyline catalan</span>
-]]></data>
-
-</if>
-
-<if check="language == 'en'">
-
-<data name="h_b_07_1"><![CDATA[
-<span> Skyline english</span>
-]]></data>
-
 </if> -->
+
 
 </krpano>

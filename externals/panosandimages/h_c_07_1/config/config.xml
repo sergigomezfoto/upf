@@ -1,0 +1,66 @@
+<krpano>
+  
+<set var="follow" val="true" />
+
+<if check="language == 'es'">
+  
+  
+    <campusinfo 
+    balmes="Campus Balmes"
+    ciutadella="Campus Ciutadella"
+    />
+  
+    <data name="c_08_title"><![CDATA[Biblioteca de les aigües]]></data>
+    <data name="c_08_content"><![CDATA[ Esta vista aérea de la terraza te permite ver a la perfección todo el potencial de este espacio. ¿Te imaginas todo lo que se puede organizar aquí?]]></data>
+
+
+</if>
+
+
+
+
+<if check="language == 'ca'">
+
+    <campusinfo 
+    balmes="Campus Balmes"
+    ciutadella="Campus Ciutadella"
+    />
+ 
+<data name="c_08_title"><![CDATA[Biblioteca de les aigües]]></data>
+<data name="c_08_content"><![CDATA[La Terrassa Aèria és un oasi enmig de la ciutat. Amb vistes panoràmiques, jardins i mobiliari còmode, és un lloc ideal per a relaxar-se, socialitzar i gaudir de l'aire lliure. Ja sigui per a prendre un descans entre classes o celebrar esdeveniments a l'aire lliure, aquesta terrassa ofereix un espai únic i agradable per a la comunitat educativa.]]></data>
+
+
+
+</if>
+
+<if check="language == 'en'">
+
+    <campusinfo 
+    balmes="Balmes Campus"
+    ciutadella="Ciutadella Campus"
+    />
+
+<data name="c_08_title"><![CDATA[Biblioteca de les aigües]]></data>
+<data name="c_08_content"><![CDATA[Aerea Terrace is an oasis in the middle of the city. With panoramic views, gardens, and comfortable furniture, it's an ideal place to relax, socialize, and enjoy the outdoors. Whether for taking a break between classes or hosting outdoor events, this terrace offers a unique and enjoyable space for the educational community.]]></data>
+
+</if>
+
+
+
+
+
+</krpano>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

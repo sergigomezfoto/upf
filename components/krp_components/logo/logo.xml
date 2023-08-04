@@ -9,7 +9,8 @@
     y="calc:margins.top - 8"
     capture="false"
     onclick="openurl(get(ui.logo_upf_link));"
-    parent="gray_bg"
+
+    scale="0.75"
     />
 
 

@@ -55,7 +55,7 @@ text-decoration: underline;
         onhover="css=(cssorig + 'text-decoration: underline;');"
         onout="css=cssorig;"
         cursor="pointer"
-        onclick="popup(calc('externals/help/index.html?ln=' + language ),'95%|95%','help');"         
+        onclick="popup(calc('externals/help/index.html?ln=' + language ),'600|400','help');"         
     />
 
 

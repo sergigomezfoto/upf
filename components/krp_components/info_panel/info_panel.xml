@@ -6,9 +6,8 @@
 <style name="info_container"   
     type="container"
     align="topright"
-    y="calc:margins.top + 100"
+    y="calc:margins.top "
     x="calc:margins.right"   
-
     bgcolor="0x549865"
     bgalpha="0"
     flowchildren="v" 
@@ -100,7 +99,7 @@
             draggable="false"
             mwheel="true"
             capturechildren="true"
-            autoscrollbars="null,vscrollbar_grip,10"
+            autoscrollbars="null,vscrollbar_grip,0"
             onhover_autoscrolling="false"
             onoverflowchange="set(layer[vscrollbar_grip].height,5);trace('changed');"
             capture="false"    
@@ -124,19 +123,19 @@
         <style name="vscrollbar_bg"
             type="container" 
             align="right" 
-            width="8" 
+            width="2" 
             height="100%"    
-            bgcolor="0xffffff"
-            bgalpha="0"  
+            bgcolor="0xd9d9da"
+            bgalpha="1"  
             x="16"  
         />   
             <style name="vscrollbar_grip"
                 type="container"
                 align="righttop"
                 width="4"
-                x="2"
-                bgcolor="0xAAAAAA"    
-                bgalpha="0.1"
+                x="-1"
+                bgcolor="0xc1c1c1"    
+                bgalpha="0.72"
                 bgroundedge="7"
                 bgcapture="true"
             />    
@@ -187,18 +186,18 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
     contbody=layer[info_container_body];
     cont=layer[info_container_body_text];
     scroll=layer[info_container_body_scrollarea];
+    scrollbg=layer[vscrollbar_bg];
     scrollgrip=layer[vscrollbar_grip];
-    gripopacity="0.4";
+    gripopacity="0.72";
+    gripbgopacity="1";
     sc=(scene[(xml.scene)].title);
     sci=(scene[(xml.scene)].index );
     gps=layer[info_container_gps];
     gpstext=layer[info_container_gps_text];
     but=layer[info_container_header_button];
     cp='';
-    panos_balmes=14;
+    panos_balmes=12;
     if (sci === 0 OR sci === panos_balmes, global.gpstrue=true;,global.gpstrue=false;);
-    
-
     if (contains(sc,'b_')
     ,
         cp=campusinfo.balmes;
@@ -212,14 +211,15 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
     , contains(sc,'c_'),
         cp=campusinfo.ciutadella;
         if (sci === panos_balmes AND but.crop === '14|0|14|14' ,
-            gpstext.text=data[balmes_gps].content;
+            gpstext.text=data[ciutadella_gps].content;
             gps.alpha=1;
             , 
             gps.alpha=0;
         );
     );
-    lastheight=(cont.height);
+    lastheight=(cont.height); 
     cont.text=data[(sc + '_content')].content;
+
     tit.text=data[(sc + '_title')].content;
     camp.text=cp;
     makeloop=true;
@@ -236,11 +236,14 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
 
             scroll.direction="null";
             scroll.capture="false";
+            scrollbg.bgalpha=0;
             scrollgrip.bgalpha=0;
             contbody.height=(cont.height); 
+            
         ,
             scroll.direction="v";
             <!-- scroll.capture="true"; -->
+            scrollbg.bgalpha=gripbgopacity;
             scrollgrip.bgalpha=gripopacity;
             contbody.height=scrollarea.textheight; 
             scrollgrip.height="10px";

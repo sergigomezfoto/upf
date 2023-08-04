@@ -3,9 +3,16 @@
 <if check="!test">
 
     <action name="" autorun="true">
-        popup("https://www.youtube.com/embed/JPLJ50WkWao","600|400","init");    
+        popup("https://www.youtube.com/embed/JPLJ50WkWao","66%|60%","init",first_360_action);    
     </action>
+<action name="first_360_action">
+delayedcall (3,
+layer[ft_container].ondown="close_ft();";
+    
+);
+    
 
+</action>
     <style name="ft_container"
         type="container"
         width="100%"
@@ -16,11 +23,11 @@
         bgalpha="0.5"
         parent="stage"
         onloaded="blur();"
-        ondown="close_ft();"
         bgcapture="true"
         capture="false"
         autoalpha="true"
         cursor="default"
+
     />
         <style name="ico360_text_container"
             type="container"    
@@ -56,10 +63,11 @@
 
 
     <action name="close_ft">
-
     sharp();
     tween(layer[ft_container].alpha,0, 0.2,);   
-
+    delayedcall (1,
+        firstcompleted=true;
+    );
     </action>
 
 

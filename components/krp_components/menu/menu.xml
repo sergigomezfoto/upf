@@ -1,16 +1,22 @@
 <krpano>
 
+
 <set var="testbgcheck" val="0"/>
 <set var="firstcituadellaindex" val="12"/>
 
 <set var="firstbalmesseparator" val="1"/>
 <set var="secondbalmesseparator" val="8"/>
-<set var="firstciutadellaseparator" val="16"/>
-<set var="secondciutadellaseparator" val="21"/>
+<set var="firstciutadellaseparator" val="13"/>
+<set var="secondciutadellaseparator" val="18"/>
+<set var="blendmode" val="OPENBLEND(1.0, 0.0, 0.2, 0.0, linear)"/>
 
 <!-- layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y)); -->
-<set var="maxheightcampus" val="400"/>
-<set var="minheightcampus" val="78"/>
+<set var="supercontainery" val="-100"/>
+<set var="supercontainerheight" val="320"/>
+<set var="container_scroll" val="220"/>
+<set var="maxheightcampus" val="270"/>
+
+<set var="minheightcampus" val="40"/>
 <set var="menuparent" val="gray_bg"/>
 
 <itemstextcss val="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);"/>    
@@ -57,7 +63,8 @@
     align="left"   
     parent="get:menuparent"
     x="0"
-    height="477px"
+    y="get:supercontainery"
+    height="get:supercontainerheight"
     width="380px"
     maskchildren="true"
     capture="false" 
@@ -88,7 +95,7 @@
 
             align="top"
             flowchildren="v"
-            childflowspacing="6"   
+            childflowspacing="3"   
             childmargin="0"
             capture="false" 
         />
@@ -115,11 +122,11 @@
             
                 if (contains(caller.name,'balmes'),
                     layer[scrollarea_scroll_items_balmes].setcenter(,0);
-                    loadscene((scene[0].name), null, MERGE, BLEND(1));
+                    loadscene((scene[0].name), null, MERGE,get(blendmode));
                 );
                 if (contains(caller.name,'ciutadella'),
                     layer[scrollarea_scroll_items_ciutadella].setcenter(,0);
-                    loadscene((scene[(firstcituadellaindex)].name), null, MERGE, BLEND(1));
+                    loadscene((scene[(firstcituadellaindex)].name), null, MERGE,get(blendmode));
                 );
                 
             </action>
@@ -131,7 +138,7 @@
                 bgcolor="0xffff00"
                 bgalpha="get:testbgcheck"
                 onclick="trace('info_container clicked');"
-                height="300px"
+                height="get:container_scroll"
                 align="lefttop"
                 width="350px"
                 alpha="1"
@@ -151,7 +158,7 @@
                     draggable="false"
                     mwheel="true"
                     capturechildren="true"
-                    autoscrollbars="null,balmes_vscrollbar_grip,30"
+                    autoscrollbars="null,balmes_vscrollbar_grip,0"
                     onhover_autoscrolling="false"
                     onoverflowchange="set(layer[balmes_vscrollbar_grip].height,5);trace('changed');"
                     capture="false" 
@@ -159,10 +166,10 @@
                 <style name="balmes_vscrollbar_bg"
                     type="container" 
                     align="right" 
-                    width="8" 
+                    width="2" 
                     height="100%"    
-                    bgcolor="0xffffff"
-                    bgalpha="0"  
+                    bgcolor="0xc3bebb"
+                    bgalpha="0.5"  
                     x="28"
                     autoalpha="true"  
                     capture="false" 
@@ -170,10 +177,10 @@
                         <style name="balmes_vscrollbar_grip"
                             type="container"
                             align="righttop"
-                            width="2"
-                            x="2"
+                            width="4"
+                            x="-1"
                             bgcolor="0xffffff"    
-                            bgalpha="0.6"
+                            bgalpha="0.75"
                             bgroundedge="7"
                             bgcapture="true"
                             capture="false" 
@@ -189,7 +196,7 @@
                     draggable="false"
                     mwheel="true"
                     capturechildren="true"
-                    autoscrollbars="null,ciutadella_vscrollbar_grip,30"
+                    autoscrollbars="null,ciutadella_vscrollbar_grip,0"
                     onhover_autoscrolling="false"
                     onoverflowchange="set(layer[ciutadella_vscrollbar_grip].height,5);trace('changed');"
                     capture="false" 
@@ -199,10 +206,10 @@
                     <style name="ciutadella_vscrollbar_bg"
                         type="container" 
                         align="right" 
-                        width="8" 
+                        width="2" 
                         height="100%"    
-                        bgcolor="0xffffff"
-                        bgalpha="0"  
+                        bgcolor="0xc3bebb"
+                        bgalpha="0.5"  
                         x="28"
                         autoalpha="true"  
                         capture="false" 
@@ -210,10 +217,10 @@
                             <style name="ciutadella_vscrollbar_grip"
                                 type="container"
                                 align="righttop"
-                                width="2"
-                                x="2"
+                                width="4"
+                                x="-1"
                                 bgcolor="0xffffff"    
-                                bgalpha="0.6"
+                                bgalpha="0.75"
                                 bgroundedge="7"
                                 bgcapture="true"
                                 capture="false" 
@@ -228,10 +235,25 @@
                             bgborder="0,0,2,0 0xffffff 0.6 solid"
                             bg="true" 
                             bgcolor="0x6f67ff"
-                            bgalpha="get:testbgcheck"
-                            height="40"
+                            bgalpha="0"
+                            height="30"
                             width="240px"
-                            textalign="bottomleft"
+                            textalign="left"
+                            enabled="false"      
+                            ox="26"    
+                            capture="false" 
+                        />
+                        <style name="separator_menu_title_space"
+                            type="text"
+                            keep="true"
+                           
+                           
+                            bg="true" 
+                            bgcolor="0x658798"
+                            bgalpha="0"
+                            height="5"
+                            width="240px"
+                            textalign="left"
                             enabled="false"      
                             ox="26"    
                             capture="false" 
@@ -241,7 +263,7 @@
                             type="text"
                             keep="true"
                             cssclass="itemtext"
-                            padding="10 0 10 26"
+                            padding="5 0 5 26"
                             bg="true"
                             bgalpha="get:testbgcheck"
                             bgcolor="0x92722f"
@@ -258,7 +280,7 @@
     <layer name="menu_container" keep="true" style="menu_container">
         <layer name="campus_balmes" keep="true" style="campus" height="get:maxheightcampus">          
                 <layer name="titol_campus_balmes" keep="true" style="titol_campus" />              
-                <layer name="container_scroll_items_balmes" keep="true" style="container_scroll_items">                     
+                <layer name="container_scroll_items_balmes" keep="true"  style="container_scroll_items">      //bg="true" bgalpha="1" bgcolor="0x654654"               
                     <layer name="scrollarea_scroll_items_balmes" keep="true" style="scrollarea_scroll_items_balmes"/>                      
                     <layer name="balmes_vscrollbar_bg" keep="true" style="balmes_vscrollbar_bg">
                         <layer name="balmes_vscrollbar_grip" keep="true" style="balmes_vscrollbar_grip"/>
@@ -269,7 +291,7 @@
         <layer name="campus_ciutadella" keep="true" style="campus" height="get:minheightcampus">
                 
                 <layer name="titol_campus_ciutadella" keep="true" style="titol_campus"/>         
-                <layer name="container_scroll_items_ciutadella" keep="true" style="container_scroll_items">
+                <layer name="container_scroll_items_ciutadella" keep="true"  style="container_scroll_items">// bg="true" bgalpha="1" bgcolor="0x456456"
                     <layer name="scrollarea_scroll_items_ciutadella" keep="true" style="scrollarea_scroll_items_ciutadella"/>       
                     <layer name="ciutadella_vscrollbar_bg" keep="true" style="ciutadella_vscrollbar_bg">
                         <layer name="ciutadella_vscrollbar_grip" keep="true" style="ciutadella_vscrollbar_grip"/>
@@ -294,30 +316,42 @@ forall(scene, s,
             addlayer('bs1', bsep1);
             bsep1.loadstyle('separator_menu_title');
             bsep1.parent="scrollarea_scroll_items_balmes";
+            addlayer('bs1s', bsep1s);
+            bsep1s.loadstyle('separator_menu_title_space');
+            bsep1s.parent="scrollarea_scroll_items_balmes";
             callwith(bsep1, "menu_items_text('scom')");
         );
         if (s.index === secondbalmesseparator,
             addlayer('bs2', bsep2);
             bsep2.loadstyle('separator_menu_title');
             bsep2.parent="scrollarea_scroll_items_balmes";
+            addlayer('bs2s', bsep2s);
+            bsep2s.loadstyle('separator_menu_title_space');
+            bsep2s.parent="scrollarea_scroll_items_balmes";
             callwith(bsep2, "menu_items_text('scla')");
         );
         addlayer((s.title + 'menulayer'), cbl);
         cbl.loadstyle('menu_title');
         cbl.parent="scrollarea_scroll_items_balmes";
         callwith(cbl, "menu_items_text('t')");
-        cbl.onclick = ('layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +');');
+        cbl.onclick = ('layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +',null,MERGE,get(blendmode));');
     ,charat(s.title,0) === 'c' AND c,      
         if (s.index === firstciutadellaseparator,
             addlayer('cs1', csep1);
             csep1.loadstyle('separator_menu_title');
             csep1.parent="scrollarea_scroll_items_ciutadella";
+            addlayer('cs1s', csep1s);
+            csep1s.loadstyle('separator_menu_title_space');
+            csep1s.parent="scrollarea_scroll_items_ciutadella";
             callwith(csep1, "menu_items_text('scom')");
         );
         if (s.index === secondciutadellaseparator,
             addlayer('cs2', csep2);
             csep2.loadstyle('separator_menu_title');
             csep2.parent="scrollarea_scroll_items_ciutadella";
+            addlayer('cs2s', csep2s);
+            csep2s.loadstyle('separator_menu_title_space');
+            csep2s.parent="scrollarea_scroll_items_ciutadella";
             callwith(csep2, "menu_items_text('scla')");
         );
         addlayer((s.title + 'menulayer'), cbl);
@@ -325,7 +359,7 @@ forall(scene, s,
         cbl.parent="scrollarea_scroll_items_ciutadella";
         callwith(cbl, "menu_items_text('t')");
         cbl.onclick = ('loadscene(scene_'+ s.title +')');
-        cbl.onclick = ('layer[scrollarea_scroll_items_ciutadella].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +');');
+        cbl.onclick = ('layer[scrollarea_scroll_items_ciutadella].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +',null,MERGE,get(blendmode));');
     );
 );
     
@@ -364,6 +398,8 @@ onnewscene="if(global.never6 === true,adjust_menu();,set(global.never6,true); );
 
 actsc=scene[(xml.scene)].title;
 cb=layer[campus_balmes];
+csb=layer[container_scroll_items_balmes];
+csc=layer[container_scroll_items_ciutadella];
 cc=layer[campus_ciutadella];
 tcb=layer[titol_campus_balmes];
 tcc=layer[titol_campus_ciutadella];
@@ -375,23 +411,22 @@ stc=layer[ciutadella_vscrollbar_bg];
 if (contains(actsc,'b_'),
         <!-- cb.height=global.maxheightcampus; -->
         tween(cb.height,get(global.maxheightcampus));
-        scb.alpha=1;
-        stb.alpha=1;
-        scc.alpha=0;
-        stc.alpha=0;
+        <!-- tween(csb.height,get(global.container_scroll)); -->
+        tween(scb.alpha|stb.alpha,1);
+        tween(scc.alpha|stc.alpha,0);
         <!-- cc.height=global.minheightcampus; -->
         tween(cc.height,get(global.minheightcampus));
+        <!-- tween(csc.height,0,,); -->
         tcb.cssclass="campustextchecked";
         tcb.enabled=false;
         tcc.cssclass="campustext";
         tcc.enabled=true;
     ,contains(actsc,'c_'),
         <!-- cb.height=global.minheightcampus; -->
-        tween(cb.height,get(global.minheightcampus));
-        scb.alpha=0;
-        stb.alpha=0;
-        scc.alpha=1;
-        stc.alpha=1;
+        tween(cb.height,get(global.minheightcampus),,,
+        );
+        tween(scb.alpha|stb.alpha,0);
+        tween(scc.alpha|stc.alpha,1);
         <!-- cc.height=global.maxheightcampus; -->
         tween(cc.height,get(global.maxheightcampus));
         tcb.cssclass="campustext";

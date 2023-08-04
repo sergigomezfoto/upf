@@ -97,9 +97,9 @@
 
 
 
-<action name="popup" scope="local" args="url,size,type">
+<action name="popup" scope="local" args="url,size,type,act">
 
-
+    trace((act));
     if (type === 'help' OR type == 'hs',
         actionsbeforepopup();
         
@@ -111,7 +111,7 @@
 delayedcall (,
     addlayer('popupbg',popupbg);
     popupbg.loadstyle('popupbg');
-    popupbg.onclick="closepopup()";
+    popupbg.onclick=("closepopup(,"+ act + ")");
 
     txtsplit(size,'|',w,h);
     trace(w);
@@ -135,10 +135,10 @@ delayedcall (,
         if (type === 'hs',
             ciframe.loadstyle('xclose_hs');
         );
-        ciframe.onclick="closepopup()";
+        ciframe.onclick=("closepopup(,"+ act + ")");
         ,type === 'init',
         ciframe.loadstyle('xclose_init');
-        ciframe.onclick="closepopup(true)";
+        ciframe.onclick=("closepopup(true,"+ act + ")");
     );
 
 );
@@ -160,11 +160,10 @@ delayedcall (,
 </action>
 
 
-<action name="closepopup" scope="local" args="init">
+<action name="closepopup" scope="local" args="init,act">
 
-
-        global.follow=true;
-        if (!init,sharp(););
+    global.follow=true;
+    if (!init,sharp(););
         tween(layer[popuplayer].alpha|layer[popuploader].alpha,0,,,
         removelayer('popupbg',true);
         removelayer('popuplayer',true);
@@ -173,6 +172,11 @@ delayedcall (,
         control.usercontrol='all';
     );
 
+    if (act,
+       scope(global,(act));
+        ,
+        trace('no act');
+    );
 </action>
 
 

@@ -3,16 +3,23 @@
  <style name="hspano"
 	url="%FIRSTXML%/assets/img/panohs.png"
  />
+ <style name="hsphoto"
+	url="%FIRSTXML%/assets/img/photohs.png"
+ />
+ <style name="hsvideo"
+	url="%FIRSTXML%/assets/img/videohs.png"
+ />
 
  <style name="hs"
     onloaded="assignpreview();onloadedhs();" 
     s_localize_editmode="false" 
     s_localize_radius="20|60" 
     s_localize_interval="0.1"
-    crop="0|0|72|72"
-    onovercrop="72|0|72|72"
+    alpha="0.75"
+    crop="0|0|74|74"
+    onovercrop="74|0|74|74"
     distorted="true"
-    scale="0.5"
+    scale="0.75"
     onhover="hsonhover()"
     onhover2="tween(hotspot[(caller.name + 'preview')].alpha|hotspot[(caller.name + 'title')].alpha,1,0.2,linear);"
     onout="hsonout()"
@@ -24,17 +31,17 @@
       onloaded="assigntitle(get(superparent));" 
       scale="0.5"
       ox="0"
-      oy="70"
+      oy="80"
       distorted="true"
       blendmode="normal"
-      alpha="0"
+      alpha="1"
       autoalpha="true"
       capture="false"
     
   />
   <cssstyles>
     .hstext span{
-       background-color: #c8102e;
+       background-color: rgba(0, 0, 0, 0.5);
     line-height: 1.8em;
     padding: 0.2em;
     }
@@ -49,13 +56,12 @@
         bgcolor="0x000000"
         onloaded="positionatehstitle"
         edge="bottom"
-        width="100"
-        alpha="0"
+        width="110"
+        alpha="1"
         autoalpha="true"
         capture="false"
     />
     <action name="positionatehstitle" scope="local">
-      trace(hotspot[(caller.parentt)].pixelheight);
       caller.oy=(hotspot[(caller.parentt)].oy + (hotspot[(caller.parentt)].pixelheight / 4) ); 
       caller.ox=((hotspot[(caller.parentt)].pixelwidth / 4) + 20 );  
     </action>

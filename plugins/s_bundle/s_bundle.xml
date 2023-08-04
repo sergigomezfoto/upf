@@ -1,6 +1,6 @@
 <krpano> 
 <!-- framework  -->
-    <!-- <include url="01_s_framework/s_framework.xml"/> -->
+    <include url="01_s_framework/s_framework.xml"/>
     <!-- <include url="02_s_element_effects/s_element_effects.xml" /> -->
     <!-- <include url="03_s_ui_effects/s_ui_effects.xml" /> -->
     <!-- <include url="04_s_popups/s_popups.xml" /> -->

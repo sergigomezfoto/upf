@@ -4,6 +4,7 @@
 <style name="gray_bg"
     type="container"
     align="lefttop"
+    x="0"
     bg="true"
     bgcolor="0x000000"
     bgalpha="0.3"
@@ -18,8 +19,54 @@
         tween(gb.height,*calculated,0.1,linear);
     </action>
 
+<style name="gray_bg_bottom"
+    type="container"
+    align="leftbottom"
+    bg="true"
+    bgcolor="0xff3344"
+    bgalpha="0"
+    bgcapture="false"
+    width="calc:340 + margins.left"
+    height="200"
+    
+/>
+<style name="open_bg"
+    url="%FIRSTXML%/assets/img/open.png"
+    align="right"
+    x="5"
+    alpha="0"
+/>
+<layer name="gray_bg" keep="true" style="gray_bg">
 
+    <layer name="gray_bg_bottom" keep="true" style="gray_bg_bottom"/>
+    <layer name="open_bg" keep="true" style="open_bg"/>
+</layer>
 
-<layer name="gray_bg" keep="true" style="gray_bg"/>
+<events name="gray_bg" keep="true"
+onframe="move_gray"
+/>
 
+<action name="move_gray">
+
+    if (mouse.x LT 200 AND !mouse.leftbutton,
+        wantmenu=true;
+    );
+    if (mouse.x GT 400 AND !mouse.leftbutton,
+        wantmenu=false;
+    );
+
+</action>
+// if="test !== true"
+<action name="" autorun="true">
+
+s_callwhen(mg_1,wantmenu AND firstcompleted,
+tween(layer[gray_bg].x,0,0.3,easeinoutquad);
+tween(layer[open_bg].alpha,0,0.3,easeinoutquad);
+,true);    
+s_callwhen(mg_2,!wantmenu AND firstcompleted,
+tween(layer[gray_bg].x,((layer[gray_bg].pixelwidth - 20) * -1 ),0.3,easeinoutquad);
+tween(layer[open_bg].alpha,1,0.3,easeinoutquad);
+,true);    
+
+</action>
 </krpano>

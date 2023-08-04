@@ -19,16 +19,16 @@
 	</action>	
 
 	
-	<scene name="scene_b_06" title="b_06" onstart="" thumburl="panos/b_06.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_b_06" title="b_06" onstart="" thumburl="../../../panos/b_06.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="30" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="30" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/b_06.tiles/preview.jpg" />
+		<preview url="../../../panos/b_06.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/b_06.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+			<cube url="../../../panos/b_06.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 
 	</scene>

@@ -1,0 +1,103 @@
+<krpano>
+
+<style name="ui_buttons_container"
+    type="container"
+    align="bottomright"
+    width="32px"
+    y="calc:margins.bottom + 27"
+    x="calc:margins.right"   
+    bgcapture="true"
+    capture="false"
+    onclick="choose_lang"
+    bgcolor="0x654ff54"
+    bgalpha="0"
+    flowchildren="v"
+    childflowspacing="4" 
+/>  
+    <style name="ui_buttons_button"
+        type="image"
+        align="top"
+        crop="0|0|34|34"
+        onovercrop="34|0|34|34"
+        ondowncrop="68|0|34|34"
+        ondown="plus_min"
+        onup="stop_plus_min"
+        capture="false" 
+    />
+        <style name="btn_out"
+            url="%FIRSTXML%/assets/img/ui_out.png"
+        />
+        <style name="btn_in"
+            url="%FIRSTXML%/assets/img/ui_in.png"
+        />
+
+        <action name="plus_min" scope="local">
+
+            if (contains(caller.name,'in')
+            ,
+                set(fov_moveforce,-0.2);
+            ,
+                set(fov_moveforce,+0.2);
+            ); 
+
+        </action>
+
+        <action name="stop_plus_min">
+
+         set(fov_moveforce,0); 
+
+        </action>
+
+
+
+        <style name="btn_fs"
+        url="%FIRSTXML%/assets/img/ui_fs_bg.png"
+        type="image"
+        align="top"
+        crop="0|0|34|34"
+        onovercrop="34|0|34|34"
+        ondowncrop="68|0|34|34"
+        onclick="button_fs"
+        capture="false" 
+        />
+            <style name="btn_fs_shape"
+            url="%FIRSTXML%/assets/img/ui_fs_shape.png"
+            align="center"
+            crop="0|0|34|34"
+            crop_origin="0|0|34|34"
+            crop_fs="0|34|34|34"
+            enabled="false"   
+            />
+
+        <action autorun="preinit" type="Javascript">
+            <![CDATA[      
+                    krpano.display.customFullscreenElement = document.getElementById("main");      
+            ]]>   
+        </action>
+
+        <action name="button_fs" scope="local">
+            toggle(fullscreen);
+            delayedcall (0.1,
+                callwith(layer[gray_bg],onloaded );                        
+            );
+            fs=layer[ui_buttons_fs_shape];
+            if (fs.crop === fs.crop_origin
+            ,
+                fs.crop = fs.crop_fs;
+            ,
+                fs.crop = fs.crop_origin;
+            );
+      
+        </action>
+
+    <layer name="ui_buttons_container" keep="true" style="ui_buttons_container">
+
+        <layer name="ui_buttons_fs" keep="true" style="btn_fs">
+            <layer name="ui_buttons_fs_shape" keep="true" style="btn_fs_shape"/>
+        </layer>
+        <layer name="ui_buttons_in" keep="true" style="ui_buttons_button|btn_in"/>
+        <layer name="ui_buttons_out" keep="true" style="ui_buttons_button|btn_out"/>
+
+    </layer>
+
+</krpano>
