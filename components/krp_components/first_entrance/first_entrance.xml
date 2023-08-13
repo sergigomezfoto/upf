@@ -27,6 +27,9 @@ layer[ft_container].ondown="close_ft();";
         capture="false"
         autoalpha="true"
         cursor="default"
+        zorder="10"
+
+
 
     />
         <style name="ico360_text_container"
@@ -39,6 +42,7 @@ layer[ft_container].ondown="close_ft();";
             childflowspacing="20"   
             childmargin=""  
             enabled="false"  
+            zorder="110"
         />
             <style name="t360_text"
             type="text"
@@ -47,6 +51,7 @@ layer[ft_container].ondown="close_ft();";
             bg="false"
             align="top"
             text="get:ui.ft360"   
+            zorder="110"
             />
 
         <layer name="ft_container" keep="true" style="ft_container">

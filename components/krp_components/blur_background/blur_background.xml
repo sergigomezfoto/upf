@@ -22,6 +22,7 @@
     onloaded=""
     cursor="default"
     parent="stage"
+    zorder="10"
 />
 <layer name="blur_background" keep="true" style="blur_background"/>
 

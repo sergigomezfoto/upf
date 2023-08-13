@@ -4,7 +4,7 @@
 
 
 <style name="popupbg"
-    parent="STAGE"
+    parent="overlay"
     type="container"
     alpha="1"
     bg="true"
@@ -14,10 +14,12 @@
     align="center"
     width="100%"
     height="100%"
+
+
         
 />
 <style name="ploader"
-    parent="STAGE"
+    parent="overlay"
     type="container"
     alpha="0"
     bg="true"
@@ -25,11 +27,12 @@
     bgcolor="0xffffff"
     align="center"
     onloaded="delayedcall(0.1,tween(alpha,1,0.3););"
+    zorder="2000"
         
 />
 
 <style name="popuplayerstyle"
-    parent="STAGE"
+    parent="overlay"
     type="iframe"
     iframeurl=""
     alpha="0"
@@ -37,6 +40,7 @@
     bgalpha="1"
     bgcolor="0xffffff"
     align="center"
+    zorder="2000"
 />
 
 <action name="actiframe" type="js">
