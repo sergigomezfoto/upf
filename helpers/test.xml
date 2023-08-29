@@ -317,13 +317,13 @@ if (layer[test_b1].click
 <!--marca boto del centre -->
 <layer name="marcador_centre"
 
-align="center" edge="center" width="29" height="29" keep="true" enabled="false" visible="false" url="%SWFPATH%/helpers/botonets/centre.png"
+align="center" edge="center" width="29" height="29" keep="true" enabled="false" visible="false" url="%FIRSTXML%/helpers/botonets/centre.png"
 />
 
 <!--marca la linia del centre -->
 <layer name="linia"
 
-align="bottomcenter" edge="center" width="100%" height="3" alpha="0.7" keep="true" y="150"  enabled="false" distorted="true" visible="false" url="%SWFPATH%/helpers/botonets/botons_accions/linia.png"
+align="bottomcenter" edge="center" width="100%" height="3" alpha="0.7" keep="true" y="150"  enabled="false" distorted="true" visible="false" url="%FIRSTXML%/helpers/botonets/botons_accions/linia.png"
 />
 
 
