@@ -3,18 +3,17 @@
 <set var="follow" val="true" />
 
 <if check="language == 'es'">
+
     <lang
-    main="ESPAÑOL"
-    sub1="CATALÀ"
-    sub2="ENGLISH"
+    es="ES"
+    ca="CA"
+    en="EN"
     />  
 
     <ui
         logo_upf_link="https://www.upf.edu/es/"
-        cta_1="Acceder a la web"
-        cta_1_link="https://www.bsm.upf.edu/es"
-        cta_2="Encuentra tu programa"
-        cta_2_link="https://www.bsm.upf.edu/es/estudios"
+        cta_1="[a href='https://www.bsm.upf.edu/es']Acceder a la web[/a]"
+        cta_2="[a href='https://www.bsm.upf.edu/es/estudios']Encuentra tu programa[/a]"
         politica="[a href='https://www.bsm.upf.edu/es/politica-de-privacidad']Política de privacidad[/a]"
         guide="Guía de navegación"
         ft360="Arrastra para[br]moverte por las[br]imágenes 360"
@@ -42,10 +41,10 @@ Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge 
     <data name="b_03_title"><![CDATA[Entrada - Hall]]></data>
     <data name="b_03_content"><![CDATA[Bienvenido al Edifici Balmes. Tras pasar por la recepción, accederás a todos los recursos del Campus. A escasos metros se encuentra el auditorio, una aula polivalente o una zona para reuniones. Desde aquí, también verás los ascensores y escaleras que dirigen hacia el resto de recursos: espacios de trabajo, salas de estudio, cafetería, zonas de ocio… Todo ello en un ambiente innovador, con conectividad 5G y preparado para estimular tus ideas.]]></data>
 
-    <data name="b_13_title"><![CDATA[Espai Koiné (espacio polivalente)]]></data>
+    <data name="b_13_title"><![CDATA[Espai Koiné ]]></data>
     <data name="b_13_content"><![CDATA[¿Sabías que dos de nuestros espacios han sido premiados por el German Design Award 2018? Uno es el Espai Koiné, una zona muy versátil de dos ambientes pensados para optimizar la concentración. Esta es la primera estancia, una sala polivalente ideal para el trabajo en equipo gracias a sus paneles móviles coloreables y la disposición flexible del mobiliario. ]]></data>
 
-    <data name="b_12_title"><![CDATA[Espai Koiné (sala de estudios)]]></data>
+    <data name="b_12_title"><![CDATA[Espai Koiné]]></data>
     <data name="b_12_content"><![CDATA[Por su parte, las cortinas de madera son las encargadas de aislar la segunda estancia. Esto te permite volcar todos tus sentidos en el estudio gracias a su silencio. Es un espacio ideal para preparar tus exámenes o repasar en detalle tus clases.]]></data>
 
     <data name="b_10_title"><![CDATA[Auditorio]]></data>
@@ -134,7 +133,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     <data name="balmes_gps"><![CDATA[
     
     <div style="margin-top:20px;display:flex;justify-content:flex-start;">
-    <img src="assets/img/gps.png" style="width:18px;height:fit-content; margin-right:14px;"/>
+    <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/>
         <div>
             <div>Balmes, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">COMO LLEGAR</a></div><img src="assets/img/gps_arrow.png" style="margin-bottom:3px; "/></div>
         </div>
@@ -145,7 +144,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     <data name="ciutadella_gps"><![CDATA[
     
     <div style="margin-top:20px;display:flex;justify-content:flex-start;">
-   <img src="assets/img/gps.png" style="width:18px;height:fit-content; margin-right:14px;"/>
+   <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/>
         <div>
             <div>Ciutadella, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">COMO LLEGAR</a></div><img src="assets/img/gps_arrow.png" style="margin-bottom:3px; "/></div>
         </div>
@@ -177,21 +176,23 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
 <if check="language == 'ca'">
 
 <lang
-    main="CATALÀ"
-    sub1="ESPAÑOL"
-    sub2="ENGLISH"
+    es="ES"
+    ca="CA"
+    en="EN"
     />  
 
     <ui
         logo_upf_link="https://www.upf.edu/ca/"
-        cta_1="Accedeix al web"  
-        cta_1_link="https://www.bsm.upf.edu/ca"
-        cta_2="Troba el teu programa"
-        cta_2_link="https://www.bsm.upf.edu/ca/estudis"
+        cta_1="[a href='https://www.bsm.upf.edu/ca']Accedeix al web[/a]"
+        cta_2="[a href='https://www.bsm.upf.edu/ca/estudis']Troba el teu programa[/a]"
         politica="[a href='https://www.bsm.upf.edu/ca/politica-de-privacitat']Política de privacitat[/a]"
         guide="Guía de navegació"
         ft360="Arrossega per[br]veure el 360"
     />
+            <!-- cta_1="Accedeix al web"  
+        cta_1_link="https://www.bsm.upf.edu/ca"
+        cta_2="Troba el teu programa"
+        cta_2_link="https://www.bsm.upf.edu/ca/estudis" -->
     "   
     <campus 
     balmes="Campus Balmes"
@@ -307,7 +308,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     <data name="balmes_gps"><![CDATA[
     
     <div style="margin-top:20px;display:flex;justify-content:flex-start;">
-    <img src="assets/img/gps.png" style="width:18px;height:fit-content; margin-right:14px;"/>
+    <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/>
         <div>
             <div>Balmes, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">COM ARRIBAR</a></div><img src="assets/img/gps_arrow.png" style="width:14px;height:9px;margin-bottom:3px; "/></div>
         </div>
@@ -317,7 +318,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     <data name="ciutadella_gps"><![CDATA[
     
     <div style="margin-top:20px;display:flex;justify-content:flex-start;">
-   <img src="assets/img/gps.png" style="width:18px;height:fit-content; margin-right:14px;"/>
+   <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/>
         <div>
             <div>Ciutadella, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">COM ARRIBAR</a></div><img src="assets/img/gps_arrow.png" style="width:14px;height:9px;margin-bottom:3px; "/></div>
         </div>
@@ -347,22 +348,25 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
 <if check="language == 'en'">
 
 <lang
-    main="ENGLISH"
-    sub1="CATALÀ"
-    sub2="ESPAÑOL"
+    es="ES"
+    ca="CA"
+    en="EN"
     />  
 
     <ui
         logo_upf_link="https://www.upf.edu/en/"
-        cta_1="Go to site"  
-        cta_1_link="https://www.bsm.upf.edu/en"
-        cta_2="Find your program"
-        cta_2_link="https://www.bsm.upf.edu/en/studies"
+        cta_1="[a href='https://www.bsm.upf.edu/en']Go to site[/a]"
+        cta_2="[a href='https://www.bsm.upf.edu/en/studies']Find your program[/a]"
+
         politica="[a href='https://www.bsm.upf.edu/en/privacy-policy']Privacy policy[/a]"
         guide="Navigation guide"
         ft360="Drag to[br]see the 360"
     />
     "   
+            <!-- cta_1="Go to site"  
+        cta_1_link="https://www.bsm.upf.edu/en"
+        cta_2="Find your program"
+        cta_2_link="https://www.bsm.upf.edu/en/studies" -->
     <campus 
     balmes="Balmes Campus"
     ciutadella="Ciutadella Campus"
@@ -477,7 +481,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     <data name="balmes_gps"><![CDATA[
     
     <div style="margin-top:20px;display:flex;justify-content:flex-start;">
-    <img src="assets/img/gps.png" style="width:18px;height:fit-content; margin-right:14px;"/>
+    <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/>
         <div>
             <div>Balmes, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">HOW TO GET THERE</a></div><img src="assets/img/gps_arrow.png" style="width:14px;height:9px;margin-bottom:3px; "/></div>
         </div>
@@ -487,7 +491,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     <data name="ciutadella_gps"><![CDATA[
     
     <div style="margin-top:20px;display:flex;justify-content:flex-start;">
-   <img src="assets/img/gps.png" style="width:18px;height:fit-content; margin-right:14px;"/>
+   <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/>
         <div>
             <div>Ciutadella, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">HOW TO GET THERE</a></div><img src="assets/img/gps_arrow.png" style="width:14px;height:9px;margin-bottom:3px; "/></div>
         </div>

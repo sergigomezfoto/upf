@@ -13,10 +13,10 @@
         textheight="180"
     />
     <margins
-        top="20"
-        right="20"
-        bottom="20"
-        left="20"
+        top="30"
+        right="30"
+        bottom="30"
+        left="30"
     />
 
 <action name="" autorun="true">   
@@ -40,5 +40,17 @@
     trace(get(stageheight), 'HEIGHT GRAN');
 </action>
 </if>
+
+<events name="gray_background" onresize="gb_calc" keep="true" />
+
+
+<action name="gb_calc">
+gb=layer[gray_bg];
+ <!-- gb=caller;     -->
+        calculated=(stageheight - 37);  
+        tween(gb.height,*calculated,0.1,linear);
+    
+
+</action>
 
 </krpano>

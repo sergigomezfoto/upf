@@ -1,11 +1,27 @@
 <krpano>
 
 <cssstyles>
+.blt{
+    border-right: 1px solid white;
+    height: 17px;
+}
 .blt a{
 color:white;
 text-decoration: none;
 }
 .blt a:hover{
+color:white;
+text-decoration: underline;
+}
+.blt_third{
+
+    height: 17px;
+}
+.blt_third a{
+color:white;
+text-decoration: none;
+}
+.blt_third a:hover{
 color:white;
 text-decoration: underline;
 }
@@ -21,7 +37,7 @@ text-decoration: underline;
     align="bottomleft"
     flowchildren="h"
     childflowspacing="0"   
-    childmargin="0 0 0 10"
+    childmargin="0 0 0 40"
     bgborder="1,0,0,0 0xffffff 1"
     bgbordermode="inside"
     cursor="default"
@@ -40,31 +56,96 @@ text-decoration: underline;
         cursor="default"
         capture="false" 
     />
-
-    <style name="bottom_line_text_first"
-   
+    <style name="bottom_line_text_first"  
          align="left"
          text="powered by: [a href='https://noupunt.com']noupunt.com[/a]"
     />
-    <style name="bottom_line_text_middle"
-   
-         bgborder="0,2,0,2 0xffffff 1"
 
-    />
     <style name="bottom_line_text_third"
         onhover="css=(cssorig + 'text-decoration: underline;');"
         onout="css=cssorig;"
         cursor="pointer"
-        onclick="popup(calc('externals/help/index.html?ln=' + language ),'600|400','help');"         
+        onclick="popup(calc('externals/help/index.html?ln=' + language ),'600|400','help');"  
+        cssclass="blt_third"       
     />
 
 
-layer
+<style name="lang_container"
+    type="text"
+    bg="false"
+    bgcolor="0x659865"
+    bgalpha="0.3"
+    width="135px"
+    align="left"
+    height="17"
+    capture="false"
+    flowchildren="h"
+    childflowspacing="10"   
+    childmargin="0"
+    cursor="default"
+
+/>
+
+        <style name="lang_cont_ico"
+            url="%FIRSTXML%/assets/img/lang_world.png"
+            align="topleft" 
+            enabled="false" 
+            capture="false" 
+            width="18"
+            height="17"
+         />
+
+        
+            <style name="lang_sub"
+                type="text"         
+                align="topleft"    
+                bg="false"
+                bgcolor="0x654ff54"
+                css="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;text-transform: uppercase;"  
+                cssorigin="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;text-transform: uppercase;"  
+                csshover="font-family:'lota_regular';font-size:13px;color:#ffffff;text-align:center;text-transform: uppercase;text-decoration:underline;"  
+                onover="css=csshover;"
+                onout="css=cssorigin;"
+                onclick="change_lang"
+                capture="false" 
+            />
+ <style name="bottom_border"
+    bgborder="0,1,0,0 0xffffff 1"
+ />    
+
+
+     <style name="bottom_line_nopunt"
+        type="text"
+        css="color: #FFFFFF;text-decoration: none;font-size: 10px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
+        cssorig="color: #FFFFFF;text-decoration: none;font-size: 10px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
+        cssclass="blt_third"
+        bg="false"
+        bgcolor="0x654fff"
+        bgalpha="0.5"
+        alpha="0.75"
+        cursor="default"
+        capture="false" 
+    />           
+    <style name="bottom_line_text_first" 
+         align="bottomright"
+         x="46"
+         y="35"
+         text="Powered by: [a href='https://noupunt.com']noupunt.com[/a]"
+    />
 
 <layer name="bottom_line" keep="true" style="bottom_line">    
-    <layer name="bottom_line_text_noupunt" keep="true" style="bottom_line_text|bottom_line_text_first"/>
-    <layer name="bottom_line_text_politica" keep="true" text="get:ui.politica" style="bottom_line_text|bottom_line_text_middle"/>
+    <layer name="lang_container" keep="true" style="lang_container|bottom_border"> 
+        <layer name="lang_cont_ico" keep="true" style="lang_cont_ico"/>
+        <layer name="lang_es" keep="true" style="lang_sub" text="get:lang.es"/>
+        <layer name="lang_ca" keep="true" style="lang_sub" text="get:lang.ca"/>
+        <layer name="lang_en" keep="true" style="lang_sub" text="get:lang.en" />
+    </layer>
+    <layer name="cta_1" keep="true" style="bottom_line_text" text="get:ui.cta_1" />
+    <layer name="cta_2" keep="true" style="bottom_line_text" text="get:ui.cta_2" />
+    <layer name="bottom_line_text_politica" keep="true" text="get:ui.politica" style="bottom_line_text"/>
     <layer name="bottom_line_text_guide" keep="true" text="get:ui.guide" style="bottom_line_text|bottom_line_text_third"/>
 
 </layer>
+
+<layer name="bottom_line_text_noupunt" keep="true" style="bottom_line_nopunt|bottom_line_text_first"/>
 </krpano>

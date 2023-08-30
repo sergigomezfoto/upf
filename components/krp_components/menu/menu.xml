@@ -11,22 +11,31 @@
 <set var="blendmode" val="OPENBLEND(1.0, 0.0, 0.2, 0.0, linear)"/>
 
 <!-- layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y)); -->
-<set var="supercontainery" val="-100"/>
-<set var="supercontainerheight" val="320"/>
+<set var="supercontainery" val="0"/>
+<set var="supercontainerheight" val="520"/>
+<set var="container_scroll" val="400"/>
+<set var="maxheightcampus" val="470"/>
+
+<set var="minheightcampus" val="60"/>
+<set var="menuparent" val="gray_bg"/>
+
+
+<!--<set var="supercontainery" val="-100"/>
+ <set var="supercontainerheight" val="320"/>
 <set var="container_scroll" val="220"/>
 <set var="maxheightcampus" val="270"/>
 
 <set var="minheightcampus" val="40"/>
-<set var="menuparent" val="gray_bg"/>
+<set var="menuparent" val="gray_bg"/> -->
 
-<itemstextcss val="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);"/>    
-<itemstextcsscheked val="font-family:'lota_regular';font-size:16px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
-<itemstextcssover val="font-family:'lota_regular';font-size:16px;color:#C8102E;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
+<itemstextcss val="font-family:'lota_regular';font-size:21px;line-height:30px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);"/>    
+<itemstextcsscheked val="font-family:'lota_regular';font-size:21px;line-height:30px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
+<itemstextcssover val="font-family:'lota_regular';font-size:21px;line-height:30px;color:#C8102E;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
 <menuitemsbordercss val="0,0,0,4 0xC8102E 1 solid"/>
 
-<separatorcss val="font-family:'lota_semibold';font-size:20px;color:#ffffff;text-align:left;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"/>  
+<separatorcss val="font-family:'lota_semibold';font-size:21px;color:#ffffff;text-align:left;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"/>  
 
-<campuscss val="font-family:'lota_regular';font-size:27px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);color:#ffffff;text-align:left;"/>
+<campuscss val="font-family:'lota_regular';font-size:28px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);color:#ffffff;text-align:left; "/>//padding-top:30px; padding-bottom:30px;
 <campusbordercss val="0,0,0,7 0xC8102E 1 solid"/>
 <cssstyles>
 
@@ -49,6 +58,10 @@
          border-left: 8px solid #C8102E;
        transition: border-color 0.6s ease;
        
+    }
+    .container_scroll_items{
+    -webkit-mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 95%, transparent 100%);
+     mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 95%, transparent 100%);
     }
 </cssstyles>
 
@@ -92,7 +105,6 @@
             bg=""
             bgalpha="get:testbgcheck"
             bgcolor="0x000000"
-
             align="top"
             flowchildren="v"
             childflowspacing="3"   
@@ -146,10 +158,14 @@
                 capture="false"
                 cursor="default"
                 ox="-9"
+                oy="10"
+                cssclass="container_scroll_items"
+                
             />
             
                 <style name="scrollarea_scroll_items_balmes"     
                     type="scrollarea"
+                    
                     width="-4" 
                     flowchildren="v" 
                     childmargin="10"
@@ -157,11 +173,12 @@
                     scrolltype.tablet.or.mobile="inertia"
                     draggable="false"
                     mwheel="true"
-                    capturechildren="true"
+                    capturechildren="true"              
                     autoscrollbars="null,balmes_vscrollbar_grip,0"
                     onhover_autoscrolling="false"
                     onoverflowchange="set(layer[balmes_vscrollbar_grip].height,5);trace('changed');"
                     capture="false" 
+                    cursor="default"
                 />
                 <style name="balmes_vscrollbar_bg"
                     type="container" 
@@ -170,7 +187,7 @@
                     height="100%"    
                     bgcolor="0xc3bebb"
                     bgalpha="0.5"  
-                    x="28"
+                    x="10"
                     autoalpha="true"  
                     capture="false" 
                 />   
@@ -198,9 +215,27 @@
                     capturechildren="true"
                     autoscrollbars="null,ciutadella_vscrollbar_grip,0"
                     onhover_autoscrolling="false"
-                    onoverflowchange="set(layer[ciutadella_vscrollbar_grip].height,5);trace('changed');"
+                    onoverflowchange="sc_ciutadella"
                     capture="false" 
+                    pointer="default"
+                    cursor="default"
                 />
+                <action name="sc_ciutadella" scope="local">
+<!-- 
+                trace('00000000000000000000000000000000000000000000000000000000');
+                trace(caller.pixelheight); -->
+
+                if (caller.pixelheight LE 411,
+                 caller.direction="null";
+                 layer[ciutadella_vscrollbar_bg].alpha=0;
+                 layer[ciutadella_vscrollbar_grip].alpha=0;
+                );
+                <!-- scroll.direction="null";
+                scroll.capture="false";
+                scrollbg.bgalpha=0;
+                scrollgrip.bgalpha=0;
+                 -->
+                </action>
 
 
                     <style name="ciutadella_vscrollbar_bg"
@@ -242,11 +277,12 @@
                             enabled="false"      
                             ox="26"    
                             capture="false" 
+                            cursor="default"
                         />
                         <style name="separator_menu_title_space"
                             type="text"
                             keep="true"
-                           
+                            cursor="default"
                            
                             bg="true" 
                             bgcolor="0x658798"
@@ -273,20 +309,18 @@
                             onhover="css=itemstextcssover.val"
                             onout="css=itemstextcss.val"
                             capture="false" 
+                            cursor="pointer"
                         />
 
 <layer name="super_container_wraper" keep="true" style="super_container_wraper">
 
     <layer name="menu_container" keep="true" style="menu_container">
-        <layer name="campus_balmes" keep="true" style="campus" height="get:maxheightcampus">          
+        <layer name="campus_balmes" keep="true" style="campus" height="get:maxheightcampus" bg="true">          // bgalpha="1"
                 <layer name="titol_campus_balmes" keep="true" style="titol_campus" />              
                 <layer name="container_scroll_items_balmes" keep="true"  style="container_scroll_items">      //bg="true" bgalpha="1" bgcolor="0x654654"               
-                    <layer name="scrollarea_scroll_items_balmes" keep="true" style="scrollarea_scroll_items_balmes"/>                      
-                    <layer name="balmes_vscrollbar_bg" keep="true" style="balmes_vscrollbar_bg">
-                        <layer name="balmes_vscrollbar_grip" keep="true" style="balmes_vscrollbar_grip"/>
-                    </layer>
+                    <layer name="scrollarea_scroll_items_balmes" keep="true" style="scrollarea_scroll_items_balmes"/>   
+                                       <!-- el thumb está a component gray_bg -->
                 </layer>
-                
         </layer>
         <layer name="campus_ciutadella" keep="true" style="campus" height="get:minheightcampus">
                 
@@ -330,11 +364,13 @@ forall(scene, s,
             bsep2s.parent="scrollarea_scroll_items_balmes";
             callwith(bsep2, "menu_items_text('scla')");
         );
+        if (s.index !== 0 , 
         addlayer((s.title + 'menulayer'), cbl);
         cbl.loadstyle('menu_title');
         cbl.parent="scrollarea_scroll_items_balmes";
         callwith(cbl, "menu_items_text('t')");
         cbl.onclick = ('layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +',null,MERGE,get(blendmode));');
+         );
     ,charat(s.title,0) === 'c' AND c,      
         if (s.index === firstciutadellaseparator,
             addlayer('cs1', csep1);
@@ -354,12 +390,14 @@ forall(scene, s,
             csep2s.parent="scrollarea_scroll_items_ciutadella";
             callwith(csep2, "menu_items_text('scla')");
         );
+         if (s.index !== 12 , 
         addlayer((s.title + 'menulayer'), cbl);
         cbl.loadstyle('menu_title');
         cbl.parent="scrollarea_scroll_items_ciutadella";
         callwith(cbl, "menu_items_text('t')");
         cbl.onclick = ('loadscene(scene_'+ s.title +')');
         cbl.onclick = ('layer[scrollarea_scroll_items_ciutadella].scrolltocenter(,(layer[get(name)].y));loadscene(scene_'+ s.title +',null,MERGE,get(blendmode));');
+         );
     );
 );
     
@@ -418,7 +456,7 @@ if (contains(actsc,'b_'),
         tween(cc.height,get(global.minheightcampus));
         <!-- tween(csc.height,0,,); -->
         tcb.cssclass="campustextchecked";
-        tcb.enabled=false;
+        <!-- tcb.enabled=false; -->
         tcc.cssclass="campustext";
         tcc.enabled=true;
     ,contains(actsc,'c_'),
@@ -426,13 +464,13 @@ if (contains(actsc,'b_'),
         tween(cb.height,get(global.minheightcampus),,,
         );
         tween(scb.alpha|stb.alpha,0);
-        tween(scc.alpha|stc.alpha,1);
+        tween(scc.alpha,1);//|stc.alpha
         <!-- cc.height=global.maxheightcampus; -->
         tween(cc.height,get(global.maxheightcampus));
         tcb.cssclass="campustext";
         tcb.enabled=true;
         tcc.cssclass="campustextchecked";
-        tcc.enabled=false;
+        <!-- tcc.enabled=false; -->
 );
 
 forall(layer,l,

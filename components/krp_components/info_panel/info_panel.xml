@@ -18,7 +18,7 @@
     <style name="info_container_header"
         type="text"
         bgcolor="0xffffff"
-        bgalpha="0.8"
+        bgalpha="0.7"
         onclick="onclick_header();"
         flowchildren="v" 
         childmargin="0" 
@@ -31,7 +31,8 @@
         <action name="onclick_header" scope="local">
          
            switch(layer[info_container_header_button].crop, '0|0|14|14', '14|0|14|14');  
-           switch(layer[info_container_body].alpha, 0, 1);
+           
+           switch(layer[info_container_boddy_bg_white].alpha, 0, 1);
            switch(layer[text_margin].alpha, 0, 1);
       
            if (global.gpstrue,
@@ -42,7 +43,7 @@
         </action>
         <style name="info_container_header_text"
           type="text"
-          css="font-family:'lota_semibold';font-size:20px;color:#000000;letter-spacing: 0px;"  
+          css="font-family:'lota_semibold';font-size:20px;color:#383a43;letter-spacing: 0px;"  
           bg="false"
           bgcolor="0xff49ff"
           padding="24 0 0 29"
@@ -76,11 +77,10 @@
           x="28"  
           enabled="false"
         />
-
-       <style name="info_container_body"
+        <style name="info_container_boddy_bg_white"
         type="text"
         bgcolor="0xffffff"
-        bgalpha="0.8"
+        bgalpha="0.7"
         onclick="trace('info_container clicked');"
         height="20"
         align="top"
@@ -89,7 +89,33 @@
         autoalpha="true"
         capture="false"
         cursor="default"
-    />
+
+        />        
+        
+       <style name="info_container_body"
+        type="text"
+        onclick="trace('info_container clicked');"
+        height="20"
+        align="top"
+        width="270px"
+
+        autoalpha="true"
+        capture="false"
+        cursor="default"
+        bg="false"
+     
+     
+    />  //cssclass="transparent_scroll" se li afegeig cuan hi ha scroll
+
+<cssstyles>
+
+.transparent_scroll{
+     -webkit-mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 7%, rgba(0, 0, 0, 1) 94%, transparent 100%);
+     mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 7%, rgba(0, 0, 0, 1) 94%, transparent 100%);
+     background-color: rgb(211,255,255,00);
+}
+
+</cssstyles>
 
         <style name="info_container_body_scrollarea"
             type="scrollarea"
@@ -99,12 +125,15 @@
             draggable="false"
             mwheel="true"
             capturechildren="true"
+            parentmaskchildren="false"
             autoscrollbars="null,vscrollbar_grip,0"
             onhover_autoscrolling="false"
-            onoverflowchange="set(layer[vscrollbar_grip].height,5);trace('changed');"
+            onoverflowchange="setcenter(0,0);trace('changed');"
             capture="false"    
 
-        />
+   
+
+        />            
 
                 <style name="info_container_body_text"
                 type="text"
@@ -115,7 +144,7 @@
                 width="240px"
                 capture="false"
                 cursor="default"
-                css="font-family:'lota_regular';font-size:13px;color:#000000;letter-spacing: 0px;line-height: 19px;"
+                css="font-family:'lota_regular';font-size:13px;color:#383a43;letter-spacing: 0px;line-height: 19px;"
 
                 />
 
@@ -145,12 +174,12 @@
             width="280"
             height="30"   
             bgcolor="0xffffff"
-            bgalpha="0.8"       
+            bgalpha="0.7"       
         />
     <style name="info_container_gps"
         type="text"
         bgcolor="0xffffff"
-        bgalpha="0.8"
+        bgalpha="0.7"
         onclick="trace('info_container clicked');"
         flowchildren="v" 
         childmargin="0 30 20 30"
@@ -170,7 +199,7 @@
             width="220px"
             capture="false"
             cursor="default"
-            css="font-family:'lota_regular';font-size:13px;color:#000000;letter-spacing: 0px;line-height: 19px;"
+            css="font-family:'lota_regular';font-size:13px;color:#383a43;letter-spacing: 0px;line-height: 19px;"
             bgborder="2,0,0,0 0x7a7a7a 0.6 solid"
         />
 <events name="info_panel" keep="true" 
@@ -180,9 +209,10 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
 
 <action name="info_panel_action" scope="local">
 //todo
-    
+
     tit=layer[info_container_header_text];
     camp=layer[info_container_header_campus];
+    contbodybg=layer[info_container_boddy_bg_white];
     contbody=layer[info_container_body];
     cont=layer[info_container_body_text];
     scroll=layer[info_container_body_scrollarea];
@@ -238,6 +268,8 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
             scroll.capture="false";
             scrollbg.bgalpha=0;
             scrollgrip.bgalpha=0;
+            contbodybg.height=(cont.height); 
+            contbody.cssclass="";
             contbody.height=(cont.height); 
             
         ,
@@ -245,6 +277,8 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
             <!-- scroll.capture="true"; -->
             scrollbg.bgalpha=gripbgopacity;
             scrollgrip.bgalpha=gripopacity;
+            contbodybg.height=scrollarea.textheight; 
+            contbody.cssclass="transparent_scroll";
             contbody.height=scrollarea.textheight; 
             scrollgrip.height="10px";
             
@@ -261,13 +295,15 @@ onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );
         <layer name="info_container_header_line" keep="true" style="info_container_header_line" />
         <layer name="info_container_header_button" keep="true" style="info_container_header_button"/>
     </layer>
-    <layer name="info_container_body" keep="true" style="info_container_body">
-       <layer name="info_container_body_scrollarea" keep="true" style="info_container_body_scrollarea"> 
-            <layer name="info_container_body_text" keep="true" style="info_container_body_text"/>
-       </layer>
-       <layer name="vscrollbar_bg" keep="true" style="vscrollbar_bg">
-            <layer name="vscrollbar_grip" keep="true" style="vscrollbar_grip"/>
-       </layer>
+    <layer name="info_container_boddy_bg_white" keep="true" style="info_container_boddy_bg_white">
+        <layer name="info_container_body" keep="true" style="info_container_body">
+            <layer name="info_container_body_scrollarea" keep="true" style="info_container_body_scrollarea"> 
+                    <layer name="info_container_body_text" keep="true" style="info_container_body_text"/>
+            </layer>
+        </layer>
+            <layer name="vscrollbar_bg" keep="true" style="vscrollbar_bg">
+                    <layer name="vscrollbar_grip" keep="true" style="vscrollbar_grip"/>
+            </layer>
     </layer>
         <layer name="text_margin" keep="true" style="text_margin"/>
     <layer name="info_container_gps" keep="true" style="info_container_gps">

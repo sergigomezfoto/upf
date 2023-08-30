@@ -2,7 +2,6 @@
 <include url="config/controls.xml" />
 <include url="config/config.xml" />
 <include url="config/dessign.xml" />
-<include url="config/hotspots.xml" />
 <include url="plugins/s_bundle/s_bundle.xml" />
 <include url="components/krp_components/popup/popup.xml" />
 <include url="components/krp_components/blur_background/blur_background.xml" />
@@ -15,7 +14,6 @@
 <include url="components/krp_components/followmouse/followmouse.xml" />
 <include url="components/krp_components/logo/logo.xml" />
 <include url="components/krp_components/lang/lang.xml" />
-<include url="components/krp_components/cta/cta.xml" />
 <include url="components/krp_components/ui_buttons/ui_buttons.xml" />
 <include url="components/krp_components/info_panel/info_panel.xml" />
 <action name="skin_onstart_loadscene" scope="local" autorun="onstart">

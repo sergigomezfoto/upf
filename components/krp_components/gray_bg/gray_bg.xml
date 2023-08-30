@@ -8,15 +8,15 @@
     bg="true"
     bgcolor="0x000000"
     bgalpha="0.3"
-    bgcapture="false"
+    bgcapture="true"
+    capturewheel="true"
     width="calc:340 + margins.left"
     height=""
     onloaded="calc_mesures();"  
+    cursor="default"
 />
     <action name="calc_mesures" scope="local">
-        gb=caller;    
-        calculated=(stageheight - 37);  
-        tween(gb.height,*calculated,0.1,linear);
+       trace('hola');
     </action>
 
 <style name="gray_bg_bottom"
@@ -36,10 +36,25 @@
     x="5"
     alpha="0"
 />
+<style name="container_thumb"
+    type="text"
+    height="400"
+    width="20px"
+    bg="false"
+    bgcolor="0x654ff5"
+    maskchildren="true"
+    align="right"
+    bgalpha="0.5"
+    cursor="default"
+/>
 <layer name="gray_bg" keep="true" style="gray_bg">
-
     <layer name="gray_bg_bottom" keep="true" style="gray_bg_bottom"/>
     <layer name="open_bg" keep="true" style="open_bg"/>
+    <layer name="container_thumb" keep="true" style="container_thumb">
+    <layer name="balmes_vscrollbar_bg" keep="true" style="balmes_vscrollbar_bg">
+        <layer name="balmes_vscrollbar_grip" keep="true" style="balmes_vscrollbar_grip"/>
+    </layer>  
+    </layer>
 </layer>
 
 <events name="gray_bg" keep="true"

@@ -3,14 +3,14 @@
 
 
     <style name="logo_upf"
-    url="%FIRSTXML%/assets/img/logo_upf.png"
-    align="topleft"
-    x="get:margins.left"
-    y="calc:margins.top - 8"
-    capture="false"
-    onclick="openurl(get(ui.logo_upf_link));"
-
-    scale="0.75"
+        url="%FIRSTXML%/assets/img/logo_upf.png"
+        align="topleft"
+        x="get:margins.left"
+        y="calc:margins.top - 8"
+        capture="false"
+        onclick="openurl(get(ui.logo_upf_link));"
+        scale="0.5"
+        parent="gray_bg"
     />
 
 
