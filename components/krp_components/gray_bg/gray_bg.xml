@@ -37,7 +37,7 @@
     align="right"
     edge="left"
     x="-15"
-    alpha="1"
+    alpha="0"
     bgcolor="0x000000"
     bgalpha="0.7"
     bg="true"
@@ -46,21 +46,19 @@
     childflowspacing="5"
     rotate="270"
 />
-    <style name="open_bg_text"
-    type="text"
-    bg="false"
-    text="get:ui.menu"
-    align="center"
-    css="font-family:'lota_regular';font-size:13px;letter-spacing:3px;color:#ffffff;"
-    textalign="left"  
-  
-    />
+        <style name="open_bg_text"
+            type="text"
+            bg="false"
+            text="get:ui.menu"
+            align="center"
+            css="font-family:'lota_regular';font-size:13px;letter-spacing:3px;color:#ffffff;"
+            textalign="left"     
+        />
 
-    <style name="open_bg_icon"
-    url="%FIRSTXML%/assets/img/open.png"
-    align="center" 
-
-    />
+        <style name="open_bg_icon"
+            url="%FIRSTXML%/assets/img/open.png"
+            align="center" 
+        />
 
 <style name="container_thumb"
     type="text"

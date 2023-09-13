@@ -18,7 +18,7 @@
         bottom="30"
         left="30"
     />
- <set var="supercontainery" val="160"/>
+ <set var="supercontainery" val="140"/>
 <action name="" autorun="true">   
 
     trace(get(stageheight), 'HEIGHT PETIT');

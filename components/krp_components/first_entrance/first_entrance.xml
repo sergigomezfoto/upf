@@ -43,10 +43,11 @@ layer[ft_container].ondown="close_ft();";
             childmargin=""  
             enabled="false"  
             zorder="110"
+            width="200px"
         />
             <style name="t360_text"
             type="text"
-            css="font-family:'lota_regular';font-size:20px;color:#ffffff;text-align:center;"
+            css="font-family:'lota_regular';font-size:18px;color:#ffffff;text-align:center;"
             width="100%"
             bg="false"
             align="top"
