@@ -34,7 +34,7 @@
       oy="80"
       distorted="true"
       blendmode="normal"
-      alpha="1"
+      alpha="0"
       autoalpha="true"
       capture="false"
     
@@ -57,7 +57,7 @@
         onloaded="positionatehstitle"
         edge="bottom"
         width="110"
-        alpha="1"
+        alpha="0"
         autoalpha="true"
         capture="false"
     />
