@@ -11,7 +11,7 @@
 <set var="blendmode" val="OPENBLEND(1.0, 0.0, 0.2, 0.0, linear)"/>
 
 <!-- layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y)); -->
-<set var="supercontainery" val="180"/>
+
 <set var="supercontainerheight" val="520"/>
 <set var="container_scroll" val="400"/>
 <set var="maxheightcampus" val="470"/>
@@ -182,7 +182,7 @@
                 />
                 <style name="balmes_vscrollbar_bg"
                     type="container" 
-                    align="right" 
+                    align="righttop" 
                     width="2" 
                     height="100%"    
                     bgcolor="0xc3bebb"
@@ -279,15 +279,18 @@
                             capture="false" 
                             cursor="default"
                         />
+                        <style name="second_separator"
+                            height="50"
+                             textalign="leftbottom"
+                        />
                         <style name="separator_menu_title_space"
                             type="text"
                             keep="true"
-                            cursor="default"
-                           
+                            cursor="default"                     
                             bg="true" 
                             bgcolor="0x658798"
                             bgalpha="0"
-                            height="5"
+                            height="10"
                             width="240px"
                             textalign="left"
                             enabled="false"      
@@ -357,7 +360,7 @@ forall(scene, s,
         );
         if (s.index === secondbalmesseparator,
             addlayer('bs2', bsep2);
-            bsep2.loadstyle('separator_menu_title');
+            bsep2.loadstyle('separator_menu_title|second_separator');
             bsep2.parent="scrollarea_scroll_items_balmes";
             addlayer('bs2s', bsep2s);
             bsep2s.loadstyle('separator_menu_title_space');
@@ -383,7 +386,7 @@ forall(scene, s,
         );
         if (s.index === secondciutadellaseparator,
             addlayer('cs2', csep2);
-            csep2.loadstyle('separator_menu_title');
+            csep2.loadstyle('separator_menu_title|second_separator');
             csep2.parent="scrollarea_scroll_items_ciutadella";
             addlayer('cs2s', csep2s);
             csep2s.loadstyle('separator_menu_title_space');

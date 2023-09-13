@@ -3,18 +3,32 @@
 
 
     <style name="logo_upf"
+        url="%FIRSTXML%/assets/svg/logo.svg"
+        align="topleft"
+        
+        x="get:margins.left"
+        y="calc:margins.top "
+        capture="false"
+        onclick="openurl(get(ui.logo_upf_link));"
+        scale="0.5"
+        parent="gray_bg"
+    />
+    <!-- <style name="logo_upf2"
         url="%FIRSTXML%/assets/img/logo_upf.png"
         align="topleft"
+
         x="get:margins.left"
         y="calc:margins.top "
         capture="false"
         onclick="openurl(get(ui.logo_upf_link));"
         scale="0.75"
         parent="gray_bg"
-    />
+        alpha="0.6"
+    /> -->
 
 
         <layer name="logo_upf" keep="true" style="logo_upf"/>
+        <!-- <layer name="logo_upf2" keep="true" style="logo_upf2"/> -->
 
 
 </krpano>
