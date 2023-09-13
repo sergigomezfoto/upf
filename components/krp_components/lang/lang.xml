@@ -76,6 +76,8 @@ forall(hotspot, h,
     calc(hotspot[(h.name + 'title')].text,(data[(h.name)].content));
    );
 );
+//menu
+layer[open_bg_text].text=ui.menu;
 
 </action>
 

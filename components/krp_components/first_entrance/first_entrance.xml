@@ -79,4 +79,10 @@ layer[ft_container].ondown="close_ft();";
     
 </if>
 
+<if check="test">
+    <action name="" autorun="true">
+        firstcompleted=true;
+    </action>
+</if>
+
 </krpano>

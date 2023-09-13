@@ -17,7 +17,7 @@
         politica="[a href='https://www.bsm.upf.edu/es/politica-de-privacidad']Política de privacidad[/a]"
         guide="Guía de navegación"
         ft360="Arrastra para[br]moverte por las[br]imágenes 360"
-        
+        menu="MENÚ"
         
     />
        
@@ -188,6 +188,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
         politica="[a href='https://www.bsm.upf.edu/ca/politica-de-privacitat']Política de privacitat[/a]"
         guide="Guía de navegació"
         ft360="Arrossega per[br]veure el 360"
+        menu="MENÚ"
     />
             <!-- cta_1="Accedeix al web"  
         cta_1_link="https://www.bsm.upf.edu/ca"
@@ -361,6 +362,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
         politica="[a href='https://www.bsm.upf.edu/en/privacy-policy']Privacy policy[/a]"
         guide="Navigation guide"
         ft360="Drag to[br]see the 360"
+        menu="MENU"
     />
     "   
             <!-- cta_1="Go to site"  

@@ -31,11 +31,37 @@
     
 />
 <style name="open_bg"
-    url="%FIRSTXML%/assets/img/open.png"
+    type="text"
+    width="100"
+    height="30"
     align="right"
-    x="5"
-    alpha="0"
+    edge="left"
+    x="-15"
+    alpha="1"
+    bgcolor="0x000000"
+    bgalpha="0.7"
+    bg="true"
+    flowchildren="h"
+    childmargin="15"
+    childflowspacing="5"
+    rotate="270"
 />
+    <style name="open_bg_text"
+    type="text"
+    bg="false"
+    text="get:ui.menu"
+    align="center"
+    css="font-family:'lota_regular';font-size:13px;letter-spacing:3px;color:#ffffff;"
+    textalign="left"  
+  
+    />
+
+    <style name="open_bg_icon"
+    url="%FIRSTXML%/assets/img/open.png"
+    align="center" 
+
+    />
+
 <style name="container_thumb"
     type="text"
     height="400"
@@ -51,7 +77,10 @@
 />
 <layer name="gray_bg" keep="true" style="gray_bg">
     <layer name="gray_bg_bottom" keep="true" style="gray_bg_bottom"/>
-    <layer name="open_bg" keep="true" style="open_bg"/>
+    <layer name="open_bg" keep="true" style="open_bg">
+        <layer name="open_bg_text" keep="true" style="open_bg_text"/>
+        <layer name="open_bg_icon" keep="true" style="open_bg_icon"/>
+    </layer>
     <layer name="container_thumb" keep="true" style="container_thumb">
     <layer name="balmes_vscrollbar_bg" keep="true" style="balmes_vscrollbar_bg">
         <layer name="balmes_vscrollbar_grip" keep="true" style="balmes_vscrollbar_grip"/>
@@ -65,7 +94,7 @@ onframe="move_gray"
 
 <action name="move_gray">
 
-    if (mouse.x LT 120 AND !mouse.leftbutton,
+    if (mouse.x LT 100 AND !mouse.leftbutton,
         wantmenu=true;
     );
     if (mouse.x GT 400 AND !mouse.leftbutton,
@@ -81,7 +110,7 @@ tween(layer[gray_bg].x,0,0.3,easeinoutquad);
 tween(layer[open_bg].alpha,0,0.3,easeinoutquad);
 ,true);    
 s_callwhen(mg_2,!wantmenu AND firstcompleted,
-tween(layer[gray_bg].x,((layer[gray_bg].pixelwidth - 20) * -1 ),0.3,easeinoutquad);
+tween(layer[gray_bg].x,((layer[gray_bg].pixelwidth) * -1 ),0.3,easeinoutquad);
 tween(layer[open_bg].alpha,1,0.3,easeinoutquad);
 ,true);    
 
