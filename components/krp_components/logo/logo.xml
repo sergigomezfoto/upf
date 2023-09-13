@@ -6,10 +6,10 @@
         url="%FIRSTXML%/assets/img/logo_upf.png"
         align="topleft"
         x="get:margins.left"
-        y="calc:margins.top - 8"
+        y="calc:margins.top "
         capture="false"
         onclick="openurl(get(ui.logo_upf_link));"
-        scale="0.5"
+        scale="0.75"
         parent="gray_bg"
     />
 

@@ -7,7 +7,7 @@
     x="0"
     bg="true"
     bgcolor="0x000000"
-    bgalpha="0.3"
+    bgalpha="0.7"
     bgcapture="true"
     capturewheel="true"
     width="calc:340 + margins.left"
@@ -46,6 +46,7 @@
     align="right"
     bgalpha="0.5"
     cursor="default"
+    x="20"
 />
 <layer name="gray_bg" keep="true" style="gray_bg">
     <layer name="gray_bg_bottom" keep="true" style="gray_bg_bottom"/>
@@ -79,7 +80,7 @@ tween(layer[gray_bg].x,0,0.3,easeinoutquad);
 tween(layer[open_bg].alpha,0,0.3,easeinoutquad);
 ,true);    
 s_callwhen(mg_2,!wantmenu AND firstcompleted,
-tween(layer[gray_bg].x,((layer[gray_bg].pixelwidth - 20) * -1 ),0.3,easeinoutquad);
+tween(layer[gray_bg].x,((layer[gray_bg].pixelwidth - 30) * -1 ),0.3,easeinoutquad);
 tween(layer[open_bg].alpha,1,0.3,easeinoutquad);
 ,true);    
 

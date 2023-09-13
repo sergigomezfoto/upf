@@ -11,7 +11,7 @@
 <set var="blendmode" val="OPENBLEND(1.0, 0.0, 0.2, 0.0, linear)"/>
 
 <!-- layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y)); -->
-<set var="supercontainery" val="0"/>
+<set var="supercontainery" val="180"/>
 <set var="supercontainerheight" val="520"/>
 <set var="container_scroll" val="400"/>
 <set var="maxheightcampus" val="470"/>
@@ -28,14 +28,14 @@
 <set var="minheightcampus" val="40"/>
 <set var="menuparent" val="gray_bg"/> -->
 
-<itemstextcss val="font-family:'lota_regular';font-size:21px;line-height:30px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);"/>    
-<itemstextcsscheked val="font-family:'lota_regular';font-size:21px;line-height:30px;color:#ffffff;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
-<itemstextcssover val="font-family:'lota_regular';font-size:21px;line-height:30px;color:#C8102E;text-align:left;transition:all 0.2s;text-shadow: 2px 2px 4px rgba(150, 10, 30, 0.3);"/>    
+<itemstextcss val="font-family:'lota_regular';font-size:21px;line-height:25px;color:#ffffff;text-align:left;transition:all 0.2s;"/>    
+<itemstextcsscheked val="font-family:'lota_regular';font-size:21px;line-height:25px;color:#ffffff;text-align:left;transition:all 0.2s;"/>    
+<itemstextcssover val="font-family:'lota_regular';font-size:21px;line-height:25px;color:#C8102E;text-align:left;transition:all 0.2s;"/>    
 <menuitemsbordercss val="0,0,0,4 0xC8102E 1 solid"/>
 
-<separatorcss val="font-family:'lota_semibold';font-size:21px;color:#ffffff;text-align:left;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"/>  
+<separatorcss val="font-family:'lota_semibold';font-size:21px;color:#ffffff;text-align:left;"/>  
 
-<campuscss val="font-family:'lota_regular';font-size:28px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);color:#ffffff;text-align:left; "/>//padding-top:30px; padding-bottom:30px;
+<campuscss val="font-family:'lota_regular';font-size:25px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);color:#ffffff;text-align:left; "/>//padding-top:30px; padding-bottom:30px;
 <campusbordercss val="0,0,0,7 0xC8102E 1 solid"/>
 <cssstyles>
 
@@ -73,7 +73,7 @@
     bg="true"
     bgalpha="get:testbgcheck"
     bgcolor="0x2f83ff"
-    align="left"   
+    align="topleft"   
     parent="get:menuparent"
     x="0"
     y="get:supercontainery"
