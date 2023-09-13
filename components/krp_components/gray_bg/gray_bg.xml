@@ -65,7 +65,7 @@ onframe="move_gray"
 
 <action name="move_gray">
 
-    if (mouse.x LT 200 AND !mouse.leftbutton,
+    if (mouse.x LT 120 AND !mouse.leftbutton,
         wantmenu=true;
     );
     if (mouse.x GT 400 AND !mouse.leftbutton,
