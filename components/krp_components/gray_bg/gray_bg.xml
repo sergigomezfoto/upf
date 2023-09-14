@@ -7,7 +7,7 @@
     x="0"
     bg="true"
     bgcolor="0x000000"
-    bgalpha="0.7"
+    bgalpha="0.6"
     bgcapture="true"
     capturewheel="true"
     width="calc:340 + margins.left"
@@ -42,7 +42,7 @@
     bgalpha="0.7"
     bg="true"
     flowchildren="h"
-    childmargin="15"
+    childmargin="17"
     childflowspacing="5"
     rotate="270"
 />
@@ -51,7 +51,7 @@
             bg="false"
             text="get:ui.menu"
             align="center"
-            css="font-family:'lota_regular';font-size:13px;letter-spacing:3px;color:#ffffff;"
+            css="font-family:'lota_regular';font-size:13px;letter-spacing:2px;color:#ffffff;"
             textalign="left"     
         />
 
