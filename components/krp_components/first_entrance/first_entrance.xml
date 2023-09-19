@@ -6,10 +6,10 @@
         popup("https://www.youtube.com/embed/JPLJ50WkWao","66%|60%","init",first_360_action);    
     </action>
 <action name="first_360_action">
-delayedcall (3,
+<!-- delayedcall (3, -->
 layer[ft_container].ondown="close_ft();";
     
-);
+<!-- ); -->
     
 
 </action>
