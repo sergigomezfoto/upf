@@ -56,34 +56,72 @@
         />
 
         <style name="open_bg_icon"
-            url="%FIRSTXML%/assets/img/open.png"
+            url="%FIRSTXML%/assets/img/lang_triangle.png"
             align="center" 
         />
-
+<style name="super_vscrollbar_bg_container"
+    type="text"
+    height="360"
+    width="20px"
+    bg="false"
+    bgcolor="0xff4ff5"
+    maskchildren="true"
+    align="righttop"
+    y="260"
+    bgalpha="0.5"
+    cursor="default"
+    x="15"
+/>
 <style name="container_thumb"
     type="text"
     height="400"
     width="20px"
     bg="false"
     bgcolor="0x654ff5"
-    maskchildren="true"
-    align="righttop"
-    y="240"
+    maskchildren="false"
+    align="center"
+
     bgalpha="0.5"
     cursor="default"
-    x="20"
+
 />
+                <style name="balmes_vscrollbar_bg"
+                    type="container" 
+                    align="center" 
+                    width="2" 
+                    height="100%"    
+                    bgcolor="0xc3bebb"
+                    bgalpha="0.5"  
+                    x="0"
+                    y="0"
+                    autoalpha="true"  
+                    capture="false" 
+                />   
+                        <style name="balmes_vscrollbar_grip"
+                            type="container"
+                            align="top"
+                            width="4"
+                            x="0"
+                            bgcolor="0xffffff"    
+                            bgalpha="0.75"
+                            bgroundedge="7"
+                            bgcapture="true"
+                            capture="false" 
+                        />    
+
 <layer name="gray_bg" keep="true" style="gray_bg">
     <layer name="gray_bg_bottom" keep="true" style="gray_bg_bottom"/>
     <layer name="open_bg" keep="true" style="open_bg">
         <layer name="open_bg_text" keep="true" style="open_bg_text"/>
         <layer name="open_bg_icon" keep="true" style="open_bg_icon"/>
     </layer>
+<layer name="super_vscrollbar_bg_container" keep="true" style="super_vscrollbar_bg_container">
     <layer name="container_thumb" keep="true" style="container_thumb">
-    <layer name="balmes_vscrollbar_bg" keep="true" style="balmes_vscrollbar_bg">
-        <layer name="balmes_vscrollbar_grip" keep="true" style="balmes_vscrollbar_grip"/>
-    </layer>  
+        <layer name="balmes_vscrollbar_bg" keep="true" style="balmes_vscrollbar_bg">
+            <layer name="balmes_vscrollbar_grip" keep="true" style="balmes_vscrollbar_grip"/>
+        </layer>  
     </layer>
+</layer>
 </layer>
 
 <events name="gray_bg" keep="true"
@@ -101,7 +139,7 @@ onframe="move_gray"
 
 </action>
 // if="test !== true"
-<action name="" autorun="true">
+<action name="" autorun="true" if="test !== true">
 
 s_callwhen(mg_1,wantmenu AND firstcompleted,
 tween(layer[gray_bg].x,0,0.3,easeinoutquad);

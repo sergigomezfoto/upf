@@ -20,7 +20,7 @@
     />
  <set var="supercontainery" val="140"/>
 <action name="" autorun="true">   
-
+    layer[super_vscrollbar_bg_container].y=230;
     trace(get(stageheight), 'HEIGHT PETIT');
 </action>
 
@@ -38,7 +38,7 @@
     />
     <set var="supercontainery" val="180"/>
 <action name="" autorun="true">
-
+    layer[super_vscrollbar_bg_container].y=260;
     trace(get(stageheight), 'HEIGHT GRAN');
 </action>
 </if>
