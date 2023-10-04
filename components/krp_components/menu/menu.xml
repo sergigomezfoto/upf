@@ -20,14 +20,6 @@
 <set var="menuparent" val="gray_bg"/>
 
 
-<!--<set var="supercontainery" val="-100"/>
- <set var="supercontainerheight" val="320"/>
-<set var="container_scroll" val="220"/>
-<set var="maxheightcampus" val="270"/>
-
-<set var="minheightcampus" val="40"/>
-<set var="menuparent" val="gray_bg"/> -->
-
 <itemstextcss val="font-family:'lota_regular';font-size:21px;line-height:25px;color:#ffffff;text-align:left;transition:all 0.2s;"/>    
 <itemstextcsscheked val="font-family:'lota_regular';font-size:21px;line-height:25px;color:#ffffff;text-align:left;transition:all 0.2s;"/>    
 <itemstextcssover val="font-family:'lota_regular';font-size:21px;line-height:25px;color:#C8102E;text-align:left;transition:all 0.2s;"/>    
@@ -77,7 +69,7 @@
     parent="get:menuparent"
     x="0"
     y="get:supercontainery"
-    height="get:supercontainerheight"
+    height="520px"
     width="380px"
     maskchildren="true"
     capture="false" 
@@ -150,7 +142,7 @@
                 bgcolor="0xffff00"
                 bgalpha="get:testbgcheck"
                 onclick="trace('info_container clicked');"
-                height="get:container_scroll"
+                height="400"
                 align="lefttop"
                 width="350px"
                 alpha="1"
@@ -164,8 +156,7 @@
             />
             
                 <style name="scrollarea_scroll_items_balmes"     
-                    type="scrollarea"
-                    
+                    type="scrollarea" 
                     width="-4" 
                     flowchildren="v" 
                     childmargin="10"
@@ -192,53 +183,16 @@
                     draggable="false"
                     mwheel="true"
                     capturechildren="true"
-                    autoscrollbars="null,ciutadella_vscrollbar_grip,0"
+                    autoscrollbars="null,ciutadella_vscrollbar_grip,20"
                     onhover_autoscrolling="false"
-                    onoverflowchange="sc_ciutadella"
+                    onoverflowchange="set(layer[ciutadella_vscrollbar_grip].height,5);trace('changed');"
                     capture="false" 
                     pointer="default"
                     cursor="default"
                 />
-                <action name="sc_ciutadella" scope="local">
-<!-- 
-                trace('00000000000000000000000000000000000000000000000000000000');
-                trace(caller.pixelheight); -->
+               
 
-                if (caller.pixelheight LE 411,
-                 caller.direction="null";
-                 layer[ciutadella_vscrollbar_bg].alpha=0;
-                 layer[ciutadella_vscrollbar_grip].alpha=0;
-                );
-                <!-- scroll.direction="null";
-                scroll.capture="false";
-                scrollbg.bgalpha=0;
-                scrollgrip.bgalpha=0;
-                 -->
-                </action>
-
-
-                    <style name="ciutadella_vscrollbar_bg"
-                        type="container" 
-                        align="right" 
-                        width="2" 
-                        height="100%"    
-                        bgcolor="0xc3bebb"
-                        bgalpha="0.5"  
-                        x="28"
-                        autoalpha="true"  
-                        capture="false" 
-                    />   
-                            <style name="ciutadella_vscrollbar_grip"
-                                type="container"
-                                align="righttop"
-                                width="4"
-                                x="-1"
-                                bgcolor="0xffffff"    
-                                bgalpha="0.75"
-                                bgroundedge="7"
-                                bgcapture="true"
-                                capture="false" 
-                            />    
+ 
                     <!-- onoverflowchange="set(layer[vscrollbar_grip].height,5);trace('changed');" -->
 
                         <style name="separator_menu_title"
@@ -294,24 +248,21 @@
                             cursor="pointer"
                         />
 
-<layer name="super_container_wraper" keep="true" style="super_container_wraper">
+<layer name="super_container_wraper" keep="true" style="super_container_wraper" bg="false" bgalpha="1">
 
-    <layer name="menu_container" keep="true" style="menu_container">
-        <layer name="campus_balmes" keep="true" style="campus" height="get:maxheightcampus" bg="true">          // bgalpha="1"
+    <layer name="menu_container" keep="true" style="menu_container" bg="false" bgalpha="1" >
+        <layer name="campus_balmes" keep="true" style="campus" bg="false">          // bgalpha="1"
                 <layer name="titol_campus_balmes" keep="true" style="titol_campus" />              
                 <layer name="container_scroll_items_balmes" keep="true"  style="container_scroll_items">      //bg="true" bgalpha="1" bgcolor="0x654654"               
                     <layer name="scrollarea_scroll_items_balmes" keep="true" style="scrollarea_scroll_items_balmes"/>   
                                        <!-- el thumb está a component gray_bg -->
                 </layer>
         </layer>
-        <layer name="campus_ciutadella" keep="true" style="campus" height="get:minheightcampus">
-                
+        <layer name="campus_ciutadella" keep="true" style="campus" bg="false" bgalpha="1" bgcolor="0x2277ff" >                
                 <layer name="titol_campus_ciutadella" keep="true" style="titol_campus"/>         
                 <layer name="container_scroll_items_ciutadella" keep="true"  style="container_scroll_items">// bg="true" bgalpha="1" bgcolor="0x456456"
                     <layer name="scrollarea_scroll_items_ciutadella" keep="true" style="scrollarea_scroll_items_ciutadella"/>       
-                    <layer name="ciutadella_vscrollbar_bg" keep="true" style="ciutadella_vscrollbar_bg">
-                        <layer name="ciutadella_vscrollbar_grip" keep="true" style="ciutadella_vscrollbar_grip"/>
-                    </layer>
+                    
                 </layer>
                 
         </layer>
@@ -320,8 +271,211 @@
 
 </layer>
 
+<events name="menu_left" keep="true"
+
+onresize="menu_left_action"
+
+/>
+
+<action name="menu_left_action" scope="local">
+sc=layer[super_container_wraper];
+csb=layer[container_scroll_items_balmes];
+csc=layer[container_scroll_items_ciutadella];
+cc=layer[campus_ciutadella];
+cb=layer[campus_balmes];
 
 
+//thumbs balmes
+sct=layer[super_vscrollbar_balmes_bg_container];
+ct=layer[container_thumb_balmes];
+sctc=layer[super_vscrollbar_ciutadella_bg_container];
+ctc=layer[container_thumb_ciutadella];
+
+
+
+if (stageheight GE 750,
+    global.maxheightcampus=470;
+    cc=470;
+    cb=470;
+    sc.height=520;
+    csb.height=400;
+    csc.height=400;
+    //thumbs balmes
+    sct.height=360;
+    ct.height=400;
+    //thumbs ciutadella
+
+    sctc.alpha=0;
+    sctc.height=360;
+    ctc.height=400;
+    <!-- sctc.alpha=0; -->
+,
+    global.maxheightcampus=400;
+    cc=400;
+    cb=400;
+    sc.height=450;
+    csb.height=320;
+    csc.height=320;
+    //thumbs balmes
+    sct.height=280;
+    ct.height=320;
+    sctc.height=280;
+    ctc.height=320;
+
+);
+    
+adjust_menu();
+</action>
+
+<action name="" autorun="true">
+s_callwhen(c1,stageheight GE 750,
+adjust_menu();
+,
+true
+);    
+s_callwhen(c2,stageheight LT 750,
+adjust_menu();
+,
+true
+);    
+
+</action>
+
+
+<style name="super_vscrollbar_balmes_bg_container"
+    type="text"
+    height="360"
+    width="20px"
+    bg="true"
+    bgcolor="0xff4ff5"
+    maskchildren="true"
+    align="righttop"
+    y="260"
+    bgalpha="0"
+    cursor="default"
+    x="15"
+/>
+    <style name="container_thumb_balmes"
+        type="text"
+        height="400"
+        width="20px"
+        bg="false"
+        bgcolor="0x654ff5"
+        maskchildren="false"
+        align="center"
+        bgalpha="0.5"
+        cursor="default"
+
+    />
+        <style name="balmes_vscrollbar_bg"
+            type="container" 
+            align="center" 
+            width="2" 
+            height="100%"    
+            bgcolor="0xc3bebb"
+            bgalpha="0.5"  
+            x="0"
+            y="0"
+            autoalpha="true"  
+            capture="false" 
+        />   
+                <style name="balmes_vscrollbar_grip"
+                    type="container"
+                    align="top"
+                    width="4"
+                    x="0"
+                    bgcolor="0xffffff"    
+                    bgalpha="0.75"
+                    bgroundedge="7"
+                    bgcapture="true"
+                    capture="false" 
+                />    
+<layer name="super_vscrollbar_balmes_bg_container" keep="true" style="super_vscrollbar_balmes_bg_container" parent="gray_bg">
+    <layer name="container_thumb_balmes" keep="true" style="container_thumb_balmes">      
+            <layer name="balmes_vscrollbar_bg" keep="true" style="balmes_vscrollbar_bg" >
+                    <layer name="balmes_vscrollbar_grip" keep="true" style="balmes_vscrollbar_grip"/>
+            </layer>  
+    </layer>
+</layer>
+
+
+<style name="super_vscrollbar_ciutadella_bg_container"
+    type="text"
+    height="360"
+    width="20px"
+    bg="true"
+    bgcolor="0xff4ff5"
+    maskchildren="true"
+    align="righttop"
+    y="280"
+    bgalpha="0"
+    cursor="default"
+    x="15"
+    autoalpha="true"
+    capture="false"
+
+    
+/>
+    <style name="container_thumb_ciutadella"
+        type="text"
+        height="400"
+        width="20px"
+        bg="true"
+        bgcolor="0x654ff5"
+        maskchildren="false"
+        align="center"
+        bgalpha="0"
+        cursor="default"
+         capture="false"
+
+
+    />
+        <style name="ciutadella_vscrollbar_bg"
+            type="container" 
+            align="center" 
+            width="2" 
+            height="100%"    
+            bgcolor="0xc3bebb"
+            bgalpha="0.5"  
+            bg="true"
+            x="0"
+            y="0"
+            autoalpha="true"  
+            capture="false" 
+
+            
+        />   
+                <style name="ciutadella_vscrollbar_grip"
+                    type="container"
+                    align="top"
+                    width="4"
+                    x="0"
+                    bgcolor="0xffffff"    
+                    bgalpha="0.75"
+                    bgroundedge="7"
+                    bgcapture="true"
+                    capture="false" 
+                    autoalpha="true"
+                />    
+<layer name="super_vscrollbar_ciutadella_bg_container" keep="true" style="super_vscrollbar_ciutadella_bg_container" parent="gray_bg">
+    <layer name="container_thumb_ciutadella" keep="true" style="container_thumb_ciutadella">      
+            <layer name="ciutadella_vscrollbar_bg" keep="true" style="ciutadella_vscrollbar_bg" >
+                    <layer name="ciutadella_vscrollbar_grip" keep="true" style="ciutadella_vscrollbar_grip"/>
+            </layer>  
+    </layer>
+</layer>
+
+
+
+
+
+
+<!-- 
+<set var="supercontainerheight" val="520"/>
+<set var="container_scroll" val="400"/>
+<set var="maxheightcampus" val="470"/>
+
+ -->
 
  <action name="create_menu" scope="local" autorun="true">
 b="true";
@@ -425,34 +579,30 @@ tcb=layer[titol_campus_balmes];
 tcc=layer[titol_campus_ciutadella];
 scb=layer[scrollarea_scroll_items_balmes];
 stb=layer[balmes_vscrollbar_bg];
+sctc=layer[super_vscrollbar_ciutadella_bg_container];
 scc=layer[scrollarea_scroll_items_ciutadella];
 stc=layer[ciutadella_vscrollbar_bg];
 
 if (contains(actsc,'b_'),
-        <!-- cb.height=global.maxheightcampus; -->
+
         tween(cb.height,get(global.maxheightcampus));
-        <!-- tween(csb.height,get(global.container_scroll)); -->
         tween(scb.alpha|stb.alpha,1);
-        tween(scc.alpha|stc.alpha,0);
-        <!-- cc.height=global.minheightcampus; -->
+        tween(sctc.alpha|scc.alpha|stc.alpha,0);
         tween(cc.height,get(global.minheightcampus));
-        <!-- tween(csc.height,0,,); -->
         tcb.cssclass="campustextchecked";
-        <!-- tcb.enabled=false; -->
         tcc.cssclass="campustext";
         tcc.enabled=true;
     ,contains(actsc,'c_'),
-        <!-- cb.height=global.minheightcampus; -->
-        tween(cb.height,get(global.minheightcampus),,,
-        );
+        tween(cb.height,get(global.minheightcampus),,,);
         tween(scb.alpha|stb.alpha,0);
-        tween(scc.alpha,1);//|stc.alpha
-        <!-- cc.height=global.maxheightcampus; -->
+        tween(scc.alpha,1); 
+        if (stageheight LT 750,
+        tween(sctc.alpha|scc.alpha|stc.alpha,1);
+        );
         tween(cc.height,get(global.maxheightcampus));
         tcb.cssclass="campustext";
         tcb.enabled=true;
         tcc.cssclass="campustextchecked";
-        <!-- tcc.enabled=false; -->
 );
 
 forall(layer,l,
@@ -461,13 +611,10 @@ forall(layer,l,
         if (contains(l.name,actsc),
             l.enabled=false;
             l.cssclass="itemtextchecked";
-            <!-- l.bgborder=menuitemsbordercss.val; -->
             l.css=(itemstextcsscheked.val);
         ,
-
             l.enabled=true;
             l.cssclass="itemtext";
-            <!-- l.bgborder=""; -->
             l.css=(itemstextcss.val);
 
         );
