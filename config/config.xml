@@ -34,102 +34,75 @@
     classrooms="Aulas y salas"
     />
     <data name="b_02_title"><![CDATA[Fachada Balmes]]></data>
-    <data name="b_02_content"><![CDATA[Aquí empieza tu nueva aventura. En este célebre edificio situado en pleno centro de Barcelona, se fundó hace más de 30 años la Universitat Pompeu Fabra. 
-Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge hoy en día el campus urbano más grande de una escuela de negocios en el centro de la ciudad. A lo largo de este recorrido, descubrirás nuestras instalaciones y los espacios donde vivirás la experiencia que marcará tu carrera profesional. Ponte cómodo y disfruta de tu visita.
+    <data name="b_02_content"><![CDATA[Aquí empieza tu nueva aventura. En este célebre edificio situado en pleno centro de Barcelona, se fundó hace más de 30 años la Universitat Pompeu Fabra. Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge hoy en día el campus urbano más grande de una escuela de negocios en el centro de la ciudad.
 ]]></data>
 
     <data name="b_03_title"><![CDATA[Entrada]]></data>
-    <data name="b_03_content"><![CDATA[Bienvenido al Edifici Balmes. Tras pasar por la recepción, accederás a todos los recursos del Campus. A escasos metros se encuentra el auditorio, una aula polivalente o una zona para reuniones. Desde aquí, también verás los ascensores y escaleras que dirigen hacia el resto de recursos: espacios de trabajo, salas de estudio, cafetería, zonas de ocio… Todo ello en un ambiente innovador, con conectividad 5G y preparado para estimular tus ideas.]]></data>
+    <data name="b_03_content"><![CDATA[Bienvenido al Edifici Balmes. 
+Tras pasar por la recepción, a escasos metros, accederás a todos los recursos del Campus: aulas, espacios de trabajo, salas de estudio, audiorio, cafetería,… Todo ello en un ambiente innovador, con conectividad 5G y preparado para estimular tus ideas.]]></data>
 
     <data name="b_13_title"><![CDATA[Espacio polivalente]]></data>
-    <data name="b_13_content"><![CDATA[¿Sabías que dos de nuestros espacios han sido premiados por el German Design Award 2018? Uno es el Espai Koiné, una zona muy versátil de dos ambientes pensados para optimizar la concentración. Esta es la primera estancia, una sala polivalente ideal para el trabajo en equipo gracias a sus paneles móviles coloreables y la disposición flexible del mobiliario. ]]></data>
+    <data name="b_13_content"><![CDATA[¿Sabías que dos de nuestros espacios han sido premiados por el German Design Award 2018? Uno es el Espai Koiné, una zona muy versátil de dos ambientes pensados para optimizar la concentración. Esta es la primera estancia, una sala polivalente ideal para el trabajo en equipo. ]]></data>
 
     <data name="b_12_title"><![CDATA[Sala de estudios]]></data>
-    <data name="b_12_content"><![CDATA[Por su parte, las cortinas de madera son las encargadas de aislar la segunda estancia. Esto te permite volcar todos tus sentidos en el estudio gracias a su silencio. Es un espacio ideal para preparar tus exámenes o repasar en detalle tus clases.]]></data>
+    <data name="b_12_content"><![CDATA[En la segunda estancia del Espai Koiné, las cortinas de madera son las encargadas de aislar el espacio ayudándote a volcar todos tus sentidos en el estudio, convirtiéndose de esta forma en un espacio ideal para preparar tus exámenes o repasar en detalle tus clases.]]></data>
 
     <data name="b_10_title"><![CDATA[Auditorio]]></data>
-    <data name="b_10_content"><![CDATA[El auditorio del campus Balmes tiene capacidad para 200 personas y en él se celebran mesas redondas, masterclasses y conferencias. Ha acogido eventos tan importantes como el “X” o el “X” con ponentes de primer nivel. Además, está preparado para recibir a participantes de todo el mundo, ya que está dotado de un equipo de traducción simultánea.]]></data>
+    <data name="b_10_content"><![CDATA[Estás ante el escenario perfecto para albergar grandes eventos. El auditorio del campus Balmes tiene capacidad para 200 personas y en él se celebran mesas redondas, masterclasses y conferencias con ponentes de primer nivel.]]></data>
     
     <data name="b_14_title"><![CDATA[Cafetería - Restaurante]]></data>
-    <data name="b_14_content"><![CDATA[Has llegado a la cafetería, abierta en todo el horario del campus, por lo que es ideal para tomar un snack entre clases, repasar apuntes con un café o simplemente relajarte. La cafetería incluye restaurante con opciones vegetarianas o sin gluten.]]></data>
+    <data name="b_14_content"><![CDATA[Has llegado a la cafetería, el espacio ideal para tomar un snack entre clases, repasar apuntes con un café o simplemente relajarte. La cafetería incluye restaurante con opciones vegetarianas o sin gluten.]]></data>
 
     <data name="b_07_title"><![CDATA[Terraza Este]]></data>
-    <data name="b_07_content"><![CDATA[No puedes quedarte sin ver nuestra terraza. Es uno de los espacios más concurridos los días de buen tiempo. Por eso, la hemos habilitado con microondas para que puedas comer en ella.]]></data>
+    <data name="b_07_content"><![CDATA[Desde las mesas altas de esta zona de la terraza -ideales para tomar algo o organizar un evento de networking- verás al completo el skyline de la ciudad. La Sagrada Família, el Hotel Vela, la Torre Agbar… ¡Sus vistas son impresionantes!]]></data>
 
     <data name="b_08_title"><![CDATA[Terraza Sur]]></data>
-    <data name="b_08_content"><![CDATA[Desde las mesas altas de esta zona de la terraza -ideales para tomar algo o organizar un evento de networking- verás al completo el skyline de la ciudad. La Sagrada Família, el Hotel Vela, la Torre Agbar… Sus vistas son impresionantes.]]></data>
+    <data name="b_08_content"><![CDATA[No puedes quedarte sin disfrutar de nuestra terraza. Es uno de los espacios más concurridos los días de buen tiempo. Por eso, la hemos habilitado para que puedas comer en ella.]]></data>
 
     <data name="b_04_title"><![CDATA[Sala Phainon]]></data>
-    <data name="b_04_content"><![CDATA[La Sala Phainon es otro de los dos espacios premiados por el German Design Award 2018. Su configuración flexible convierte esta sala polivalente en un único ambiente ideal para acoger charlas o eventos de networking. Pero además, su diseño también permite dividir el espacio en dos salas independientes con todos los recursos tecnológicos necesarios para impartir clase.]]></data>
+    <data name="b_04_content"><![CDATA[La Sala Phainon es otro de los dos espacios premiados por el German Design Award 2018. 
+Su configuración flexible convierte esta sala polivalente en un ambiente ideal para acoger charlas o eventos de networking. Pero además, su diseño también permite dividir el espacio en dos salas independientes con todos los recursos tecnológicos necesarios para impartir clase.]]></data>
 
     <data name="b_09_title"><![CDATA[Sala Versa]]></data>
     <data name="b_09_content"><![CDATA[Impartir una charla con vistas a la terraza es un lujo que podemos disfrutar en el Campus Balmes. Nuestros invitados adoran impartir sus ponencias en la Sala Versa. Es un espacio acogedor tanto para realizar cualquier tipo de conferencia como para asistir a clase.]]></data>
     
     <data name="b_01_title"><![CDATA[Aula]]></data>
-    <data name="b_01_content"><![CDATA[Las aulas de la UPF-BSM fueron remodeladas después de la pandemia para adapatarlas al formato híbrido, por lo que disponen de la tecnología necesaria para emitir en directo. Incluyen cámaras orientadas tanto a ponentes como a asistentes y micrófonos para capturar mejor el sonido. Así, se pueden seguir las clases sin perder detalle de manera presencial o virtual. ]]></data>
+    <data name="b_01_content"><![CDATA[Las aulas de la UPF-BSM se caracterizan por su adaptación a la modalidad presencial y semipresencial, disponiendo de la tecnología necesaria para emitir en directo. Incluyen cámaras orientadas tanto a ponentes como a asistentes y micrófonos para capturar mejor el sonido.]]></data>
 
     <data name="b_11A_title"><![CDATA[Aula en anfiteatro]]></data>
     <data name="b_11A_content"><![CDATA[El formato de anfiteatro característico de las aulas universitarias también ha sido remodelado con las necesidades técnicas post COVID-19. Estas aulas, orientadas a actividades más teóricas , incluyen también equipos de vídeo y audio para que se puedan seguir a la perfección a distancia.]]></data>
 
-    <!-- <data name="b_05A_title"><![CDATA[Sala Phainon 2]]></data>
-    <data name="b_05A_content"><![CDATA[La Sala Phainon 2 es un espacio creativo y estimulante. Con su diseño moderno y una iluminación cuidada, proporciona un entorno propicio para el intercambio de ideas, la colaboración y el trabajo en equipo. Equipada con tecnología de vanguardia, esta sala es ideal para reuniones, sesiones de brainstorming y actividades de grupo.]]></data>
 
-    <data name="b_05B_title"><![CDATA[Sala Phainon 3]]></data>
-    <data name="b_05B_content"><![CDATA[La Sala Phainon 3 es un espacio exclusivo y acogedor. Con una atmósfera tranquila y un diseño elegante, ofrece un entorno propicio para reuniones privadas, entrevistas y sesiones de trabajo individual. Equipada con comodidades modernas y un ambiente discreto, esta sala proporciona un espacio de concentración y privacidad.]]></data>
-
-    <data name="b_06_title"><![CDATA[Terraza Aerea]]></data>
-    <data name="b_06_content"><![CDATA[La Terraza Aérea es un oasis en medio de la ciudad. Con vistas panorámicas, jardines y mobiliario cómodo, es un lugar ideal para relajarse, socializar y disfrutar del aire libre. Ya sea para tomar un descanso entre clases o celebrar eventos al aire libre, esta terraza ofrece un espacio único y agradable para la comunidad educativa.]]></data>
-
-    <data name="b_11B_title"><![CDATA[Aula 101 - anfiteatro 2]]></data>
-    <data name="b_11B_content"><![CDATA[El Aula 101 es un anfiteatro con un diseño moderno y funcional. Equipado con asientos confortables y tecnología audiovisual de vanguardia, proporciona un entorno propicio para conferencias, presentaciones y debates. Con una disposición en forma de anfiteatro, ofrece una visibilidad óptima y un ambiente interactivo para el aprendizaje y la participación.]]></data>
- -->
-
-    <data name="c_02_title"><![CDATA[Exterior]]></data>
-    <data name="c_02_content"><![CDATA[Has llegado al Campus Ciutadella, uno de los más reconocidos de Barcelona.
-Se trata de un enorme campus urbano situado al lado de algunos de los lugares más importantes de la ciudad: Arco de Triunfo, Passeig de Sant Joan, el Parque de la Ciutadella y, por supuesto… El mar. Su entorno lleno de árboles y su patrimonio cultural lo convierten en un lugar especial. Entra y descubre la historia que se esconde en sus emblemáticos edificios.]]></data>
+    <data name="c_02_title"><![CDATA[Entrada al Campus]]></data>
+    <data name="c_02_content"><![CDATA["Has llegado al Campus Ciutadella, uno de los más reconocidos de Barcelona.
+Se trata de un enorme campus urbano situado al lado de algunos de los lugares más importantes de la ciudad: Arco de Triunfo, Passeig de Sant Joan, el Parque de la Ciutadella y, por supuesto… el mar. Su entorno lleno de árboles y su patrimonio cultural lo convierten en un lugar especial. Entra y descubre la historia que se esconde en sus emblemáticos edificios."
+]]></data>
 
     <data name="c_06_title"><![CDATA[Pati de les aigües]]></data>
-    <data name="c_06_content"><![CDATA[El Pati de les Aigües permite disfrutar del césped y de los árboles. Cuenta con mesas y bancos para comer al aire libre, dar un paseo o respirar entre clase y clase.]]></data>
+    <data name="c_06_content"><![CDATA[El Pati de Les Aigües cuenta con mesas y bancos para comer al aire libre, dar un paseo o respirar entre clase y clase.]]></data>
 
     <data name="c_07_title"><![CDATA[Biblioteca de les aigües]]></data>
-    <data name="c_07_content"><![CDATA[¿Sabías que estás en una de las bibliotecas más icónicas de Barcelona? Su laberinto de arcos paralelos y su altura la convierten en un lugar único. Pero no siempre ha sido una biblioteca. Este espacio fue inaugurado en 1880 y su función era regular el caudal de la cascada del parque de la Ciutadella. [br][br]En su remodelación participó un estudiante de arquitectura que se convertiría en el máximo exponente del modernismo catalán: Antoni Gaudí. [br][br]Actualmente, es la Biblioteca General de la UPF y dispone de las zonas de estudio y de lectura más espectaculares del campus. ]]></data>
+    <data name="c_07_content"><![CDATA[¿Sabías que estás en una de las bibliotecas más icónicas de Barcelona? Su laberinto de arcos paralelos y su altura la convierten en un lugar único. Pero no siempre ha sido una biblioteca. Este espacio fue inaugurado en 1880 y su función era regular el caudal de la cascada del parque de la Ciutadella. En su remodelación participó un estudiante de arquitectura que se convertiría en el máximo exponente del modernismo catalán: Antoni Gaudí. Actualmente, es la Biblioteca General de la UPF y dispone de las zonas de estudio y de lectura más espectaculares del campus.]]></data>
 
     <data name="c_01_title"><![CDATA[Hall Jaume I]]></data>
-    <data name="c_01_content"><![CDATA[Si alguna vez te pierdes, te resultará muy fácil encontrarte en este patio interior. El Hall conecta con los recursos más importantes del campus: La biblioteca, la cafetería, las aulas polivalentes… Todos ellos pensados para potenciar tu talento.]]></data>
+    <data name="c_01_content"><![CDATA[Y si quieres regresar a la Biblioteca de les Aigües, ir a por un café o dirigirte a clase… El Hall del Edificio Jaume I te conectará con todo ello. El patio interior está coronado por un sinfín de balcones por los que entra luz natural a las aulas y salas. Es una de las zonas más frecuentadas del edificio, por lo que es imprescindible conocerla. ]]></data>
 
     <data name="c_12_title"><![CDATA[Hall Roger de Lluria]]></data>
-    <data name="c_12_content"><![CDATA[Si alguna vez te pierdes, te resultará muy fácil encontrarte en este patio interior. El Hall conecta con los recursos más importantes del campus: La biblioteca, la cafetería, las aulas polivalentes… Todos ellos pensados para potenciar tu talento.]]></data>
+    <data name="c_12_content"><![CDATA[Si alguna vez te pierdes, te resultará muy fácil encontrarte en este patio interior. El Hall conecta con los recursos más importantes del campus: la biblioteca, la cafetería, las aulas polivalentes… Todos ellos pensados para potenciar tu talento.]]></data>
 
     <data name="c_05_title"><![CDATA[Hall Merce Rodoreda]]></data>
-    <!-- <data name="c_05_content"><![CDATA[La Entrada del Edifici 24 - Merce Rodoreda es el punto de acceso a este edificio emblemático. Con su diseño arquitectónico moderno y una distribución funcional, te recibirán con una sensación de elegancia y sofisticación. Aquí encontrarás información, servicios y disfrutarás de un ambiente académico inspirador mientras te adentras en el corazón de este edificio.]]></data> -->
+     <data name="c_05_content"><![CDATA[Desde el Hall del edificio Merce Rodoreda podrás acceder a las aulas, sala polivalente y auditorio.]]></data> 
 
-    <data name="c_11_title"><![CDATA[Aula ]]></data>
+    <data name="c_11_title"><![CDATA[Aula]]></data>
     <data name="c_11_content"><![CDATA[Estás en una de las aulas de este edificio. Se trata de un espacio pensado para las clases presenciales, por lo que favorece la interacción entre ponentes y oyentes.]]></data>
 
     <data name="c_13_title"><![CDATA[Aula en anfiteatro]]></data>
     <data name="c_13_content"><![CDATA[Ahora, puedes ver una de las aulas características del Edifici Roger de Llúria. Dispone de un formato anfiteatro, donde cada ponente cobra protagonismo gracias a la inclinación de las gradas.]]></data>
 
-    <data name="c_10_title"><![CDATA[Sala Polivalent]]></data>
+    <data name="c_10_title"><![CDATA[Sala Polivalente]]></data>
     <data name="c_10_content"><![CDATA[En el Edifici Mercè Rodoreda, encontrarás salas polivalentes como ésta preparadas para todo tipo de conferencias, masterclasses o presentaciones de proyectos.]]></data>
 
-    <!-- <data name="c_03_title"><![CDATA[Entrada Campus General 2]]></data>
-    <data name="c_03_content"><![CDATA[La Entrada Campus General 2 es uno de los puntos de acceso a nuestro campus. Con su diseño contemporáneo y una distribución espaciosa, crea un ambiente acogedor y propicio para la bienvenida de estudiantes, profesores y visitantes. Aquí encontrarás información, servicios y una atmósfera vibrante que refleja el dinamismo de nuestra institución.]]></data>
-
-    <data name="c_04_title"><![CDATA[Entrada Campus General 3]]></data>
-    <data name="c_04_content"><![CDATA[La Entrada Campus General 3 es un lugar emblemático que marca el inicio de tu experiencia en nuestro campus. Con su diseño moderno y una distribución funcional, te dará la bienvenida con una atmósfera acogedora y una sensación de pertenencia. Aquí podrás encontrar información, servicios y disfrutar de la energía positiva que caracteriza a nuestra institución.]]></data>
-
-    <data name="c_08_title"><![CDATA[Biblioteca de les aigües: Interior 2]]></data>
-    <data name="c_08_content"><![CDATA[El Interior 2 de la Biblioteca de les aigües es un espacio versátil y funcional. Con áreas de lectura, estaciones de trabajo y zonas de consulta, ofrece un entorno óptimo para la investigación, el estudio y el aprendizaje. Aquí podrás explorar recursos académicos, sumergirte en la lectura y aprovechar al máximo los servicios que ofrece nuestra biblioteca.]]></data>
-
-    <data name="c_09_title"><![CDATA[Edifici 24 -Merce Rodoreda: Auditori]]></data>
-    <data name="c_09_content"><![CDATA[El Auditori del Edifici 24 - Merce Rodoreda es un espacio destacado para eventos y presentaciones. Con su diseño contemporáneo y equipamiento audiovisual de alta calidad, brinda una experiencia excepcional para conferencias, charlas y actuaciones. Con una acústica impecable y una distribución cómoda, este auditorio garantiza una experiencia inmersiva y memorable.]]></data>
-
-
-    <data name="c_14_title"><![CDATA[Parque Ciutadella ]]></data>
-    <data name="c_14_content"><![CDATA[El Parque Ciutadella es un oasis verde en medio de la ciudad. Con su amplia extensión de áreas verdes, estanques y senderos pintorescos, ofrece un espacio de recreación y relax para la comunidad educativa. Ya sea para disfrutar de un picnic, hacer ejercicio al aire libre o simplemente pasear, este parque brinda un entorno natural y tranquilo para desconectar del ritmo urbano.]]></data>
- -->
-
-
+    
     <data name="balmes_gps"><![CDATA[
     
     <div style="margin-top:20px;display:flex;justify-content:flex-start;">
@@ -209,103 +182,74 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     />
 
 <data name="b_02_title"><![CDATA[Façana Balmes]]></data>
-<data name="b_02_content"><![CDATA[La Façana Balmes és l'entrada principal del nostre edifici. El seu disseny arquitectònic combina elements clàssics i moderns, creant una imatge impactant i elegant. Amb la seva imponent estructura i finestrals de vidre, reflecteix la identitat de la nostra institució i acull a estudiants, professors i visitants en un ambient acollidor.]]></data>
+<data name="b_02_content"><![CDATA[Aquí comença la teva nova aventura. En aquest cèlebre edifici situat en ple centre de Barcelona, es va fundar fa més de 30 anys la Universitat Pompeu Fabra. Aquest edifici, projectat pel famós arquitecte Enric Sagnier en 1926, acull avui dia el campus urbà més gran d'una escola de negocis en el centre de la ciutat.
+]]></data>
 
 <data name="b_03_title"><![CDATA[Entrada]]></data>
-<data name="b_03_content"><![CDATA[En creuar l'entrada i endinsar-te en el Hall, et rebran un ambient modern i acollidor. Amb el seu disseny contemporani i una decoració cuidada, és un espai on convergeixen estudiants, professors i visitants. Aquí podràs trobar informació, accedir als serveis i submergir-te en l'atmosfera vibrant de la nostra institució.]]></data>
+<data name="b_03_content"><![CDATA[Benvingut al Edifici Balmes.
+Després de passar per la recepció, a escassos metres, accediràs a tots els recursos del Campus: aules, espais de treball, sales d'estudi, audiorio, cafeteria,… Tot això en un ambient innovador, amb connectivitat 5G i preparat per a estimular les teves idees.]]></data>
 
 <data name="b_13_title"><![CDATA[Espai polivalent]]></data>
-<data name="b_13_content"><![CDATA[L'Espai Koiné és un espai polivalent que s'adapta a diferents activitats acadèmiques i d'oci. Amb el seu disseny modern i una disposició flexible, pot transformar-se segons les necessitats. Ja sigui per a tallers, presentacions o activitats recreatives, aquest espai versàtil ofereix un entorn propici per a l'aprenentatge i la interacció social.]]></data>
+<data name="b_13_content"><![CDATA[Sabies que dos dels nostres espais han estat premiats pel German Design Award 2018? Un és el Espai Koiné, una zona molt versàtil de dos ambients pensats per a optimitzar la concentració. Aquesta és la primera estada, una sala polivalent ideal per al treball en equip.]]></data>
 
 <data name="b_12_title"><![CDATA[Sala d'estudis]]></data>
-<data name="b_12_content"><![CDATA[L'Espai Koiné és una sala d'estudis dissenyada per proporcionar un entorn tranquil i propici per a l'aprenentatge individual. Amb el seu ambient acollidor i mobiliari confortable, és el lloc perfecte per concentrar-se, revisar apunts i realitzar activitats acadèmiques. Aquí podràs estudiar de manera eficient i aprofitar al màxim el teu temps d'estudi.]]></data>
+<data name="b_12_content"><![CDATA[En la segona estada del Espai Koiné, les cortines de fusta són les encarregades d'aïllar l'espai ajudant-te a bolcar tots els teus sentits en l'estudi, convertint-se d'aquesta manera en un espai ideal per a preparar els teus exàmens o repassar detalladament les teves classes.]]></data>
 
 <data name="b_10_title"><![CDATA[Auditori]]></data>
-<data name="b_10_content"><![CDATA[El nostre Auditori és un espai emblemàtic i de gran capacitat. Amb el seu disseny contemporani i equipament audiovisual d'última generació, és el lloc ideal per a conferències magistrals, presentacions destacades i esdeveniments especials. Amb una acústica excepcional i una atmosfera inspiradora, ofereix una experiència inigualable per al públic i els oradors.]]></data>
+<data name="b_10_content"><![CDATA[Estàs davant l'escenari perfecte per a albergar grans esdeveniments. L'auditori del campus Balmes té capacitat per a 200 persones i en ell se celebren taules rodones, masterclasses i conferències amb ponents de primer nivell.]]></data>
 
 <data name="b_14_title"><![CDATA[Cafeteria - Restaurant]]></data>
-<data name="b_14_content"><![CDATA[La nostra Cafeteria és el lloc perfecte per gaudir d'una pausa i recarregar energies. Amb una àmplia varietat d'opcions gastronòmiques, des de menjars calents fins a refrigeris saludables, podràs satisfer els teus antojos i gaudir de moments de socialització amb companys i amics. És un espai acollidor i relaxat on podràs gaudir d'una experiència culinària única.]]></data>
+<data name="b_14_content"><![CDATA[Has arribat a la cafeteria, l'espai ideal per a prendre un snack entre classes, repassar anotacions amb un cafè o simplement relaxar-te. La cafeteria inclou restaurant amb opcions vegetarianes o sense glútens.]]></data>
 
 <data name="b_07_title"><![CDATA[Terraça Est]]></data>
-<data name="b_07_content"><![CDATA[La Terrassa 1 és un espai a l'aire lliure dissenyat per a trobades informals i moments de relax. Amb una decoració moderna i vistes panoràmiques, és el lloc perfecte per a gaudir d'un cafè, socialitzar amb companys o simplement gaudir de l'entorn natural. Aquí podràs desconnectar i recarregar energies en un ambient tranquil i agradable.]]></data>
+<data name="b_07_content"><![CDATA[Des de les taules altes d'aquesta zona de la terrassa -ideals per a prendre alguna cosa o organitzar un esdeveniment de networking- veuràs al complet el skyline de la ciutat. La Sagrada Família, l'Hotel Vela, la Torre Agbar… Les seves vistes són impressionants!]]></data>
 
 <data name="b_08_title"><![CDATA[Terraça Sud]]></data>
-<data name="b_08_content"><![CDATA[La Terrassa 2 és un espai versàtil i acollidor a l'aire lliure. Amb una combinació d'àrees verdes, zones de descans i mobiliari modern, ofereix un entorn agradable per a activitats a l'aire lliure, esdeveniments socials i moments de relax. Gaudeix del bon clima, contempla les vistes panoràmiques i aprofita al màxim aquesta àrea d'esbarjo en la nostra institució.]]></data>
+<data name="b_08_content"><![CDATA[No pots quedar-te sense gaudir de la nostra terrassa. És un dels espais més concorreguts els dies de bon temps. Per això, l'hem habilitat perquè puguis menjar en ella.]]></data>
 
 <data name="b_04_title"><![CDATA[Sala Phainon]]></data>
-<data name="b_04_content"><![CDATA[La Sala Phainon 1 és un espai multifuncional i versàtil. Equipada amb tecnologia audiovisual d'última generació, mobiliari còmode i una distribució flexible, s'adapta a diferents tipus d'esdeveniments i activitats. Des de conferències i seminaris fins a tallers i presentacions, aquest espai proporciona un entorn òptim per a l'aprenentatge i la interacció.]]></data>
+<data name="b_04_content"><![CDATA[La Sala Phainon és un altre dels dos espais premiats pel German Design Award 2018.
+La seva configuració flexible converteix aquesta sala polivalent en un ambient ideal per a acollir xerrades o esdeveniments de networking. Però a més, el seu disseny també permet dividir l'espai en dues sales independents amb tots els recursos tecnològics necessaris per a impartir classe.]]></data>
 
 <data name="b_09_title"><![CDATA[Sala Versa]]></data>
-<data name="b_09_content"><![CDATA[La Sala Versa és un espai polivalent que s'adapta a diferents necessitats. Amb el seu disseny modern i una distribució flexible, permet organitzar conferències, presentacions, tallers i activitats de grup. Equipada amb tecnologia audiovisual i mobiliari versàtil, aquesta sala ofereix un entorn còmode i funcional per a esdeveniments i activitats acadèmiques.]]></data>
+<data name="b_09_content"><![CDATA[Fer una xerrada amb vista a la terrassa és un luxe que podem gaudir al Campus Balmes. Els nostres convidats adoren impartir les seves ponències a la Sala Versa. És un espai acollidor tant per a realitzar qualsevol tipus de conferència com per a assistir a classe.]]></data>
 
 <data name="b_01_title"><![CDATA[Aula]]></data>
-<data name="b_01_content"><![CDATA[L'Aula 503 és un espai modern i equipat amb tecnologia d'avantguarda. Dissenyada per a l'aprenentatge efectiu, compta amb mobiliari ergonòmic, pissarres interactives i accés a internet d'alta velocitat. És un entorn propici per a l'intercanvi de coneixements i la col·laboració entre estudiants.]]></data>
+<data name="b_01_content"><![CDATA[Les aules de la UPF-BSM es caracteritzen per la seva adaptació a la modalitat presencial i semipresencial, disposant de la tecnologia necessària per a emetre en directe. Inclouen càmeres orientades tant a ponents com a assistents i micròfons per a capturar millor el so.]]></data>
 
-<data name="b_11A_title"><![CDATA[Aula 101 - amfiteatre 1]]></data>
-<data name="b_11A_content"><![CDATA[L'Aula 101 és un amfiteatre modern i equipat amb tecnologia de punta. Amb capacitat per a un gran nombre de persones, aquest espai és perfecte per a conferències, presentacions i classes magistrals. Compta amb un disseny ergonòmic, seients còmodes i un sistema audiovisual d'alta qualitat per assegurar una experiència d'aprenentatge òptima.]]></data>
-
-
+<data name="b_11A_title"><![CDATA[Aula en amfiteatre]]></data>
+<data name="b_11A_content"><![CDATA[El format en amfiteatre característic de les aules universitàries també ha estat remodelat tenint en compte les necessitats de l'estudiant actual. Aquestes aules, orientades a activitats més teòriques , inclouen també equips de vídeo i àudio perquè es puguin seguir a la perfecció.]]></data>
 
 
+<data name="c_02_title"><![CDATA[Entrada al Campus]]></data>
+<data name="c_02_content"><![CDATA[Has arribat al Campus Ciutadella, un dels més reconeguts de Barcelona.
+Es tracta d'un enorme campus urbà situat al costat d'alguns dels llocs més importants de la ciutat: Arc de Triomf, Passeig de Sant Joan, el Parc de la Ciutadella i, per descomptat… la mar. El seu entorn ple d'arbres i el seu patrimoni cultural el converteixen en un lloc especial. Entra i descobreix la història que s'amaga en els seus emblemàtics edificis.]]></data>
 
-<!-- <data name="b_05A_title"><![CDATA[Sala Phainon 2]]></data>
-<data name="b_05A_content"><![CDATA[La Sala Phainon 2 és un espai creatiu i estimulant. Amb el seu disseny modern i una il·luminació cuidada, proporciona un entorn propici per a l'intercanvi d'idees, la col·laboració i el treball en equip. Equipada amb tecnologia d'avantguarda, aquesta sala és ideal per a reunions, sessions de brainstorming i activitats de grup.]]></data>
+<data name="c_06_title"><![CDATA[Pati de les aigües]]></data>
+<data name="c_06_content"><![CDATA[El Pati dels Aigües compta amb taules i bancs per a menjar a l'aire lliure, fer una passejada o respirar entre classe i classe.]]></data>
 
-<data name="b_05B_title"><![CDATA[Sala Phainon 3]]></data>
-<data name="b_05B_content"><![CDATA[La Sala Phainon 3 és un espai exclusiu i acollidor. Amb una atmosfera tranquil·la i un disseny elegant, ofereix un entorn propici per a reunions privades, entrevistes i sessions de treball individual. Equipada amb comoditats modernes i un ambient discret, aquesta sala proporciona un espai de concentració i privacitat.]]></data>
+<data name="c_07_title"><![CDATA[Biblioteca de les aigües]]></data>
+<data name="c_07_content"><![CDATA[Sabies que estàs en una de les biblioteques més icòniques de Barcelona? El seu laberint d'arcs paral·lels i la seva altura la converteixen en un lloc únic. Però no sempre ha estat una biblioteca. Aquest espai va ser inaugurat en 1880 i la seva funció era regular el cabal de la cascada del parc de la Ciutadella. En la seva remodelació va participar un estudiant d'arquitectura que es convertiria en el màxim exponent del modernisme català: Antoni Gaudí. Actualment, és la Biblioteca General de la UPF i disposa de les zones d'estudi i de lectura més espectaculars del campus.
+]]></data>
 
-<data name="b_06_title"><![CDATA[Terrassa Aèria]]></data>
-<data name="b_06_content"><![CDATA[La Terrassa Aèria és un oasi enmig de la ciutat. Amb vistes panoràmiques, jardins i mobiliari còmode, és un lloc ideal per a relaxar-se, socialitzar i gaudir de l'aire lliure. Ja sigui per a prendre un descans entre classes o celebrar esdeveniments a l'aire lliure, aquesta terrassa ofereix un espai únic i agradable per a la comunitat educativa.]]></data>
+<data name="c_01_title"><![CDATA[Hall Jaume I]]></data>
+<data name="c_01_content"><![CDATA[I si vols tornar a la Biblioteca dels Aigües, anar per un cafè o dirigir-te a classe… L'Hall de l'Edifici Jaume I et connectarà amb tot això. El pati interior està coronat per una infinitat de balcons pels quals entra llum natural a les aules i sales. És una de les zones més freqüentades de l'edifici, per la qual cosa és imprescindible conèixer-la.]]></data>
 
+<data name="c_12_title"><![CDATA[Hall Roger de Lluria]]></data>
+<data name="c_12_content"><![CDATA[Si alguna vegada et perds, et resultarà molt fàcil trobar-te en aquest pati interior. L'Hall connecta amb els recursos més importants del campus: la biblioteca, la cafeteria, les aules polivalents… Tots ells pensats per a potenciar el teu talent.]]></data>
 
-<data name="b_11B_title"><![CDATA[Aula 101 - amfiteatre 2]]></data>
-<data name="b_11B_content"><![CDATA[L'Aula 101 és un amfiteatre amb un disseny modern i funcional. Equipat amb seients confortables i tecnologia audiovisual d'avantguarda, proporciona un entorn propici per a conferències, presentacions i debats. Amb una disposició en forma d'amfiteatre, ofereix una visibilitat òptima i un ambient interactiu per a l'aprenentatge i la participació.]]></data>
- -->
+<data name="c_05_title"><![CDATA[Hall Merce Rodoreda]]></data>
+<data name="c_05_content"><![CDATA[Des de l'Hall de l'edifici Merce Rodoreda podràs accedir a les aules, sala polivalent i auditori.]]></data>
 
+<data name="c_11_title"><![CDATA[Aula]]></data>
+<data name="c_11_content"><![CDATA[Estàs en una de les aules d'aquest edifici. Es tracta d'un espai pensat per a les classes presencials, per la qual cosa afavoreix la interacció entre ponents i oïdores.]]></data>
 
-<data name="c_02_title"><![CDATA[Entrada Campus General 1]]></data>
-<data name="c_02_content"><![CDATA[L'Entrada Campus General 1 és el punt d'accés principal al nostre campus. Amb el seu disseny modern i una arquitectura imponent, reflecteix la identitat i l'esperit de la nostra institució. Aquí podràs trobar informació, orientació i gaudir d'un ambient vibrant on estudiants, professors i visitants es troben per iniciar la seva jornada educativa.]]></data>
+<data name="c_13_title"><![CDATA[Aula en amfiteatre]]></data>
+<data name="c_13_content"><![CDATA[Ara, pots veure una de les aules característiques del Edifici Roger de Llúria. Disposa d'un format amfiteatre, on cada ponent cobra protagonisme gràcies a la inclinació de les graderies.]]></data>
 
-<data name="c_06_title"><![CDATA[Biblioteca de les aigües: Pati]]></data>
-<data name="c_06_content"><![CDATA[El Pati de la Biblioteca de les aigües és un espai tranquil i natural on podràs gaudir de moments de relaxació i concentració. Amb àrees verdes, bancs i una vegetació exuberant, aquest pati ofereix un ambient propici per a la lectura, l'estudi i la reflexió. Submergeix-te en un oasi de calma i aprofita al màxim aquest espai únic.]]></data>
+<data name="c_10_title"><![CDATA[Sala polivalent]]></data>
+<data name="c_10_content"><![CDATA[En el Edifici Mercè Rodoreda, trobaràs sales polivalents com aquesta preparades per a tota mena de conferències, masterclasses o presentacions de projectes.]]></data>
 
-<data name="c_07_title"><![CDATA[Biblioteca de les aigües: Interior 1]]></data>
-<data name="c_07_content"><![CDATA[L'Interior 1 de la Biblioteca de les aigües és un lloc acollidor i silenciós. Amb prestatgeries plenes de llibres, taules d'estudi i espais còmodes, convida a submergir-se en el coneixement i gaudir d'un ambient propici per a l'estudi i la investigació. Aquí podràs explorar una àmplia col·lecció de recursos acadèmics i submergir-te en un món de coneixement.]]></data>
-
-<data name="c_01_title"><![CDATA[Edifici 20 - Jaume I - Pati Cafeteria]]></data>
-<data name="c_01_content"><![CDATA[El Pati Cafeteria de l'Edifici 20 - Jaume I és un espai a l'aire lliure ideal per relaxar-se i gaudir d'un cafè o un àpat lleuger. Amb el seu disseny modern i àrees de descans, ofereix un ambient agradable i tranquil on pots gaudir de moments d'oci i socialització amb altres membres de la comunitat educativa.]]></data>
-
-<data name="c_12_title"><![CDATA[Edifici 40 - Roger de Lluria: Pati interior]]></data>
-<data name="c_12_content"><![CDATA[El Pati Interior de l'Edifici 40 - Roger de Lluria és un espai tranquil i harmoniós. Amb el seu disseny modern i una vegetació exuberant, crea un ambient acollidor i relaxat. Aquí podràs gaudir de moments de descans, socialització i connexió amb la natura. És un espai ideal per a desconnectar i recarregar energies enmig de la vida acadèmica.]]></data>
-
-<data name="c_05_title"><![CDATA[Edifici 24 -Merce Rodoreda: Entrada]]></data>
-<data name="c_05_content"><![CDATA[L'Entrada de l'Edifici 24 - Merce Rodoreda és el punt d'accés a aquest edifici emblemàtic. Amb el seu disseny arquitectònic modern i una distribució funcional, et rebran amb una sensació d'elegància i sofisticació. Aquí trobaràs informació, serveis i gaudiràs d'un ambient acadèmic inspirador mentre et endinses en el cor d'aquest edifici.]]></data>
-
-<data name="c_11_title"><![CDATA[Edifici 24 -Merce Rodoreda: Aula 24.112]]></data>
-<data name="c_11_content"><![CDATA[L'Aula 24.112 de l'Edifici 24 - Merce Rodoreda és un espai modern i equipat per a l'aprenentatge. Amb el seu disseny ergonòmic i tecnologia educativa avançada, proporciona un entorn òptim per a classes, seminaris i activitats interactives. Amb mobiliari flexible i recursos audiovisuals, aquesta aula ofereix un entorn propici per a l'aprenentatge efectiu i la participació activa.]]></data>
-
-<data name="c_13_title"><![CDATA[Edifici 40 - Roger de Lluria: Aula en amfiteatre]]></data>
-<data name="c_13_content"><![CDATA[L'Aula en Amfiteatre de l'Edifici 40 - Roger de Lluria ofereix un entorn òptim per a l'aprenentatge interactiu i la participació activa. Amb la seva disposició en forma d'amfiteatre, proporciona una visibilitat òptima des de qualsevol seient. Equipada amb tecnologia audiovisual i mobiliari ergonòmic, aquesta aula és ideal per a classes, presentacions i discussions grupals.]]></data>
-
-<data name="c_10_title"><![CDATA[Edifici 24 -Merce Rodoreda: Sala polivalent]]></data>
-<data name="c_10_content"><![CDATA[La Sala Polivalent de l'Edifici 24 - Merce Rodoreda és un espai versàtil i adaptable a diferents necessitats. Amb el seu disseny funcional i una distribució flexible, es pot utilitzar per a conferències, reunions, exposicions i altres esdeveniments. Equipada amb tecnologia moderna i mobiliari ajustable, aquesta sala ofereix un entorn propici per a activitats acadèmiques i socials.]]></data>
-
-<!-- 
-<data name="c_03_title"><![CDATA[Entrada Campus General 2]]></data>
-<data name="c_03_content"><![CDATA[L'Entrada Campus General 2 és un dels punts d'accés al nostre campus. Amb el seu disseny contemporani i una distribució espaiosa, crea un ambient acollidor i propici per a la benvinguda d'estudiants, professors i visitants. Aquí trobaràs informació, serveis i una atmosfera vibrant que reflecteix el dinamisme de la nostra institució.]]></data>
-
-<data name="c_04_title"><![CDATA[Entrada Campus General 3]]></data>
-<data name="c_04_content"><![CDATA[L'Entrada Campus General 3 és un lloc emblemàtic que marca l'inici de la teva experiència al nostre campus. Amb el seu disseny modern i una distribució funcional, et donarà la benvinguda amb una atmosfera acollidora i una sensació de pertinença. Aquí podràs trobar informació, serveis i gaudir de l'energia positiva que caracteritza la nostra institució.]]></data>
-
-<data name="c_08_title"><![CDATA[Biblioteca de les aigües: Interior 2]]></data>
-<data name="c_08_content"><![CDATA[L'Interior 2 de la Biblioteca de les aigües és un espai versàtil i funcional. Amb àrees de lectura, estacions de treball i zones de consulta, ofereix un entorn òptim per a la investigació, l'estudi i l'aprenentatge. Aquí podràs explorar recursos acadèmics, submergir-te en la lectura i aprofitar al màxim els serveis que ofereix la nostra biblioteca.]]></data>
-
-<data name="c_09_title"><![CDATA[Edifici 24 -Merce Rodoreda: Auditori]]></data>
-<data name="c_09_content"><![CDATA[L'Auditori de l'Edifici 24 - Merce Rodoreda és un espai destacat per a esdeveniments i presentacions. Amb el seu disseny contemporani i equipament audiovisual d'alta qualitat, ofereix una experiència excepcional per a conferències, xerrades i actuacions. Amb una acústica impecable i una distribució còmoda, aquest auditori garanteix una experiència immersiva i memorable.]]></data>
-
-<data name="c_14_title"><![CDATA[Parc de la Ciutadella]]></data>
-<data name="c_14_content"><![CDATA[El Parc de la Ciutadella és un oasi verd enmig de la ciutat. Amb la seva àmplia extensió d'àrees verdes, estanys i senders pintorescs, ofereix un espai de recreació i relax per a la comunitat educativa. Ja sigui per a gaudir d'un pícnic, fer exercici a l'aire lliure o simplement passejar, aquest parc ofereix un entorn natural i tranquil per a desconnectar del ritme urbà.]]></data>
-' -->
     <data name="balmes_gps"><![CDATA[
     
     <div style="margin-top:20px;display:flex;justify-content:flex-start;">
@@ -383,100 +327,72 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     />
 
 <data name="b_02_title"><![CDATA[Balmes Facade]]></data>
-<data name="b_02_content"><![CDATA[The Balmes Facade is the main entrance to our building. Its architectural design combines classic and modern elements, creating a striking and elegant image. With its imposing structure and glass windows, it reflects the identity of our institution and welcomes students, professors, and visitors in a warm atmosphere.]]></data>
+<data name="b_02_content"><![CDATA[This is where your new adventure begins. The Pompeu Fabra University was founded more than 30 years ago in this famous building in the heart of Barcelona. This building, designed by the famous architect Enric Sagnier in 1926, today houses the largest urban campus of a business school in the city centre.
+]]></data>
 
-<data name="b_03_title"><![CDATA[Entrance - Hall]]></data>
-<data name="b_03_content"><![CDATA[Crossing the entrance and stepping into the Hall, you will be greeted by a modern and welcoming atmosphere. With its contemporary design and careful decoration, it is a space where students, professors, and visitors converge. Here you can find information, access services, and immerse yourself in the vibrant atmosphere of our institution.]]></data>
+<data name="b_03_title"><![CDATA[Hall]]></data>
+<data name="b_03_content"><![CDATA[Welcome to the Edifici Balmes. 
+After passing through the reception, just a few metres away, you will have access to all the Campus resources: classrooms, work spaces, study rooms, auditorium, cafeteria,... All in an innovative environment, with 5G connectivity and ready to stimulate your ideas.]]></data>
 
-<data name="b_13_title"><![CDATA[Koiné Space: Multipurpose Area]]></data>
-<data name="b_13_content"><![CDATA[Koiné Space is a multipurpose area that adapts to various academic and leisure activities. With its modern design and flexible arrangement, it can transform according to needs. Whether for workshops, presentations, or recreational activities, this versatile space provides a conducive environment for learning and social interaction.]]></data>
+<data name="b_13_title"><![CDATA[Multipurpose space]]></data>
+<data name="b_13_content"><![CDATA[Did you know that two of our spaces have been awarded by the German Design Award 2018? One is the Espai Koiné, a very versatile area with two rooms designed to optimise concentration. This is the first room, a multipurpose room ideal for teamwork.
+]]></data>
 
-<data name="b_12_title"><![CDATA[Koiné Space: Study Room]]></data>
-<data name="b_12_content"><![CDATA[Koiné Space is a study room designed to provide a quiet and conducive learning environment. With its welcoming atmosphere and comfortable furniture, it is the perfect place to focus, review notes, and carry out academic activities. Here you can study efficiently and make the most of your study time.]]></data>
+<data name="b_12_title"><![CDATA[Study Room]]></data>
+<data name="b_12_content"><![CDATA[In the second room of the Espai Koiné, the wooden curtains are responsible for isolating the space, helping you to focus all your senses on studying, making it an ideal place to prepare for your exams or to review your classes in detail.]]></data>
 
 <data name="b_10_title"><![CDATA[Auditorium]]></data>
-<data name="b_10_content"><![CDATA[Our Auditorium is an emblematic and high-capacity space. With its contemporary design and state-of-the-art audiovisual equipment, it is the ideal place for keynote lectures, featured presentations, and special events. With exceptional acoustics and an inspiring atmosphere, it offers an unmatched experience for the audience and speakers.]]></data>
+<data name="b_10_content"><![CDATA[You are in the perfect setting to host major events. The auditorium of the Balmes campus has a capacity for 200 people and hosts round tables, masterclasses and conferences with top-level speakers.]]></data>
 
-<data name="b_14_title"><![CDATA[Cafeteria]]></data>
-<data name="b_14_content"><![CDATA[Our Cafeteria is the perfect place to enjoy a break and recharge your energy. With a wide variety of gastronomic options, from hot meals to healthy snacks, you can satisfy your cravings and enjoy socializing moments with colleagues and friends. It is a cozy and relaxed space where you can enjoy a unique culinary experience.]]></data>
+<data name="b_14_title"><![CDATA[Café - Restaurant]]></data>
+<data name="b_14_content"><![CDATA[You have arrived at the cafeteria, the ideal place to have a snack between classes, review notes with a coffee or just relax. The cafeteria includes a restaurant with vegetarian and gluten-free options.]]></data>
 
-<data name="b_07_title"><![CDATA[Terrace 1]]></data>
-<data name="b_07_content"><![CDATA[Terrace 1 is an outdoor space designed for casual meetings and relaxation moments. With a modern decor and panoramic views, it's the perfect place to enjoy a coffee, socialize with peers, or simply enjoy the natural surroundings. Here you can unwind and recharge in a peaceful and pleasant atmosphere.]]></data>
+<data name="b_07_title"><![CDATA[East Terrace]]></data>
+<data name="b_07_content"><![CDATA[From the high tables in this area of the terrace -ideal for having a drink or organising a networking event- you'll have a full view of the city skyline. The Sagrada Família, the Hotel Vela, the Agbar Tower... The views are breathtaking!]]></data>
 
-<data name="b_08_title"><![CDATA[Terrace 2]]></data>
-<data name="b_08_content"><![CDATA[Terrace 2 is a versatile and welcoming outdoor space. With a combination of green areas, relaxation zones, and modern furniture, it offers a pleasant environment for outdoor activities, social events, and relaxation moments. Enjoy the good weather, take in the panoramic views, and make the most of this recreational area in our institution.]]></data>
+<data name="b_08_title"><![CDATA[South Terrace]]></data>
+<data name="b_08_content"><![CDATA[You can't miss out on our terrace. It is one of the busiest areas on good weather days. That's why we've made it available for you to eat there.]]></data>
 
-<data name="b_04_title"><![CDATA[Phainon Room 1]]></data>
-<data name="b_04_content"><![CDATA[Phainon Room 1 is a multifunctional and versatile space. Equipped with state-of-the-art audiovisual technology, comfortable furniture, and a flexible layout, it adapts to different types of events and activities. From conferences and seminars to workshops and presentations, this space provides an optimal environment for learning and interaction.]]></data>
+<data name="b_04_title"><![CDATA[Sala Phainon]]></data>
+<data name="b_04_content"><![CDATA[The Phainon Room is another of the two spaces awarded by the German Design Award 2018. 
+Its flexible configuration makes this multi-purpose room an ideal environment for hosting talks or networking events. But in addition, its design also allows the space to be divided into two independent rooms with all the technological resources needed for teaching.]]></data>
 
-<data name="b_09_title"><![CDATA[Versa Room]]></data>
-<data name="b_09_content"><![CDATA[The Versa Room is a multipurpose space that adapts to different needs. With its modern design and flexible layout, it allows organizing conferences, presentations, workshops, and group activities. Equipped with audiovisual technology and versatile furniture, this room provides a comfortable and functional environment for events and academic activities.]]></data>
+<data name="b_09_title"><![CDATA[Sala Versa]]></data>
+<data name="b_09_content"><![CDATA[Giving a talk overlooking the terrace is a luxury that we can enjoy at Campus Balmes. Our guests love to give their talks in the Versa Room. It is a welcoming space both for any type of conference and for attending classes.]]></data>
 
-<data name="b_01_title"><![CDATA[Classroom 503]]></data>
-<data name="b_01_content"><![CDATA[Classroom 503 is a modern space equipped with cutting-edge technology. Designed for effective learning, it has ergonomic furniture, interactive whiteboards, and high-speed internet access. It is a conducive environment for the exchange of knowledge and collaboration among students.]]></data>
+<data name="b_01_title"><![CDATA[Classroom]]></data>
+<data name="b_01_content"><![CDATA[The UPF-BSM classrooms are characterised by their adaptation to face-to-face and blended learning modalities, with the necessary technology to broadcast live. They include cameras aimed at both speakers and attendees and microphones to better capture the sound.]]></data>
 
-<data name="b_11A_title"><![CDATA[Classroom 101 - Amphitheater 1]]></data>
-<data name="b_11A_content"><![CDATA[Classroom 101 is a modern amphitheater equipped with cutting-edge technology. Capable of accommodating a large number of people, this space is perfect for lectures, presentations, and keynote classes. It features ergonomic design, comfortable seats, and a high-quality audiovisual system to ensure an optimal learning experience.]]></data>
+<data name="b_11A_title"><![CDATA[Amphitheatre classroom]]></data>
+<data name="b_11A_content"><![CDATA[The amphitheatre format characteristic of university classrooms has also been remodelled to meet the needs of today's students. These classrooms, oriented towards more theoretical activities, also include video and audio equipment so that they can be followed perfectly.]]></data>
 
-<!-- 
-<data name="b_05A_title"><![CDATA[Phainon Room 2]]></data>
-<data name="b_05A_content"><![CDATA[Phainon Room 2 is a creative and stimulating space. With its modern design and careful lighting, it provides a conducive environment for the exchange of ideas, collaboration, and teamwork. Equipped with cutting-edge technology, this room is ideal for meetings, brainstorming sessions, and group activities.]]></data>
+<data name="c_02_title"><![CDATA[Campus Entrance]]></data>
+<data name="c_02_content"><![CDATA[You have arrived at the Ciutadella Campus, one of the most renowned campuses in Barcelona.
+It is a huge urban campus located next to some of the most important places in the city: Arc de Triomf, Passeig de Sant Joan, Ciutadella Park and, of course... the sea. Its tree-filled surroundings and cultural heritage make it a special place. Come in and discover the history hidden in its emblematic buildings.]]></data>
 
-<data name="b_05B_title"><![CDATA[Phainon Room 3]]></data>
-<data name="b_05B_content"><![CDATA[Phainon Room 3 is an exclusive and welcoming space. With a quiet atmosphere and elegant design, it offers a conducive environment for private meetings, interviews, and individual work sessions. Equipped with modern amenities and a discreet environment, this room provides a space for concentration and privacy.]]></data>
+<data name="c_06_title"><![CDATA[Pati de les aigües]]></data>
+<data name="c_06_content"><![CDATA[The Pati de Les Aigües has tables and benches for eating outdoors, taking a walk or taking a breath between classes.]]></data>
 
-<data name="b_06_title"><![CDATA[Aerea Terrace]]></data>
-<data name="b_06_content"><![CDATA[Aerea Terrace is an oasis in the middle of the city. With panoramic views, gardens, and comfortable furniture, it's an ideal place to relax, socialize, and enjoy the outdoors. Whether for taking a break between classes or hosting outdoor events, this terrace offers a unique and enjoyable space for the educational community.]]></data>
+<data name="c_07_title"><![CDATA[Biblioteca de les aigües]]></data>
+<data name="c_07_content"><![CDATA[Did you know you're in one of Barcelona's most iconic libraries? Its labyrinth of parallel arches and its height make it a unique place. But it has not always been a library. This space was inaugurated in 1880 and its function was to regulate the flow of the waterfall in Ciutadella Park. A student of architecture who was to become the greatest exponent of Catalan modernism, Antoni Gaudí, took part in its remodelling. It is currently the General Library of the UPF and has the most spectacular study and reading areas.]]></data>
 
-<data name="b_11B_title"><![CDATA[Classroom 101 - Amphitheater 2]]></data>
-<data name="b_11B_content"><![CDATA[Classroom 101 is an amphitheater with a modern and functional design. Equipped with comfortable seats and state-of-the-art audiovisual technology, it provides a conducive environment for lectures, presentations, and discussions. With an amphitheater-style layout, it offers optimal visibility and an interactive learning environment.]]></data>
- -->
+<data name="c_01_title"><![CDATA[Hall Jaume I]]></data>
+<data name="c_01_content"><![CDATA[And if you want to go back to the Aigües Library, get a coffee or go to class... The Hall of the Jaume I Building will connect you with all of them. The inner courtyard is crowned by countless balconies through which natural light enters the classrooms and halls. It is one of the most frequented areas of the building, so it is essential to get to know it.]]></data>
 
-<data name="c_02_title"><![CDATA[General Campus Entrance 1]]></data>
-<data name="c_02_content"><![CDATA[General Campus Entrance 1 is the main access point to our campus. With its modern design and imposing architecture, it reflects the identity and spirit of our institution. Here you can find information, guidance, and enjoy a vibrant atmosphere where students, teachers, and visitors meet to start their educational day.]]></data>
+<data name="c_12_title"><![CDATA[ Hall Roger de Lluria]]></data>
+<data name="c_12_content"><![CDATA[If you ever get lost, it's easy to find yourself in this inner courtyard. The Hall connects to the most important resources on campus: the library, the cafeteria, the multi-purpose rooms... All of them designed to enhance your talent.]]></data>
 
-<data name="c_06_title"><![CDATA[Biblioteca de les aigües: Courtyard]]></data>
-<data name="c_06_content"><![CDATA[The Courtyard of the Biblioteca de les aigües is a calm and natural space where you can enjoy moments of relaxation and focus. With green areas, benches, and lush vegetation, this courtyard provides an environment conducive to reading, studying, and reflection. Immerse yourself in an oasis of calm and make the most of this unique space.]]></data>
+<data name="c_05_title"><![CDATA[Hall Merce Rodoreda]]></data>
+<data name="c_05_content"><![CDATA[From the Hall of the Merce Rodoreda building you can access the classrooms, multi-purpose room and auditorium.]]></data>
 
-<data name="c_07_title"><![CDATA[Biblioteca de les aigües: Interior 1]]></data>
-<data name="c_07_content"><![CDATA[The Interior 1 of the Biblioteca de les aigües is a cozy and quiet place. With book-filled shelves, study tables, and comfortable spaces, it invites you to delve into knowledge and enjoy an environment conducive to study and research. Here, you can explore a wide collection of academic resources and immerse yourself in a world of knowledge.]]></data>
+<data name="c_11_title"><![CDATA[Classroom]]></data>
+<data name="c_11_content"><![CDATA[You are in one of the classrooms in this building. It is a space designed for face-to-face classes, so it favours interaction between speakers and listeners.]]></data>
 
-<data name="c_01_title"><![CDATA[Building 20 - Jaume I - Cafeteria Patio]]></data>
-<data name="c_01_content"><![CDATA[The Cafeteria Patio of Building 20 - Jaume I is an outdoor space ideal for relaxing and enjoying a coffee or a light meal. With its modern design and rest areas, it offers a pleasant and calm atmosphere where you can enjoy leisure moments and socialize with other members of the educational community.]]></data>
+<data name="c_13_title"><![CDATA[Amphitheater classroom]]></data>
+<data name="c_13_content"><![CDATA[Now, you can see one of the characteristic classrooms of the Edifici Roger de Llúria. It has an amphitheatre format, where each speaker takes centre stage thanks to the inclination of the stands.]]></data>
 
-<data name="c_12_title"><![CDATA[Edifici 40 - Roger de Lluria: Inner Courtyard]]></data>
-<data name="c_12_content"><![CDATA[The Inner Courtyard of the Edifici 40 - Roger de Lluria is a quiet and harmonious space. With its modern design and lush vegetation, it creates a cozy and relaxed atmosphere. Here, you can enjoy moments of rest, socialization, and connection with nature. It's an ideal space to disconnect and recharge amid academic life.]]></data>
-
-<data name="c_05_title"><![CDATA[Edifici 24 -Merce Rodoreda: Entrance]]></data>
-<data name="c_05_content"><![CDATA[The entrance to the Edifici 24 - Merce Rodoreda is the access point to this iconic building. With its modern architectural design and functional layout, you will be greeted with a sense of elegance and sophistication. Here you will find information, services, and enjoy an inspiring academic atmosphere as you delve into the heart of this building.]]></data>
-
-<data name="c_11_title"><![CDATA[Edifici 24 -Merce Rodoreda: Classroom 24.112]]></data>
-<data name="c_11_content"><![CDATA[The Classroom 24.112 of the Edifici 24 - Merce Rodoreda is a modern and equipped space for learning. With its ergonomic design and advanced educational technology, it provides an optimal environment for classes, seminars, and interactive activities. With flexible furniture and audiovisual resources, this classroom offers an environment conducive to effective learning and active participation.]]></data>
-
-<data name="c_13_title"><![CDATA[Edifici 40 - Roger de Lluria: Amphitheater Classroom]]></data>
-<data name="c_13_content"><![CDATA[The Amphitheater Classroom of the Edifici 40 - Roger de Lluria provides an optimal environment for interactive learning and active participation. With its amphitheater-like layout, it provides optimal visibility from any seat. Equipped with audiovisual technology and ergonomic furniture, this classroom is ideal for classes, presentations, and group discussions.]]></data>
-
-<data name="c_10_title"><![CDATA[Edifici 24 -Merce Rodoreda: Multipurpose Room]]></data>
-<data name="c_10_content"><![CDATA[The Multipurpose Room of the Edifici 24 - Merce Rodoreda is a versatile space adaptable to different needs. With its functional design and flexible layout, it can be used for conferences, meetings, exhibitions, and other events. Equipped with modern technology and adjustable furniture, this room provides an environment conducive to academic and social activities.]]></data>
-
-<!-- <data name="c_03_title"><![CDATA[General Campus Entrance 2]]></data>
-<data name="c_03_content"><![CDATA[General Campus Entrance 2 is one of the access points to our campus. With its contemporary design and spacious layout, it creates a welcoming environment for the arrival of students, teachers, and visitors. Here you will find information, services, and a vibrant atmosphere that reflects the dynamism of our institution.]]></data>
-
-<data name="c_04_title"><![CDATA[General Campus Entrance 3]]></data>
-<data name="c_04_content"><![CDATA[General Campus Entrance 3 is an emblematic place that marks the beginning of your experience on our campus. With its modern design and functional layout, it will welcome you with a cozy atmosphere and a sense of belonging. Here you can find information, services, and enjoy the positive energy that characterizes our institution.]]></data>
-
-<data name="c_08_title"><![CDATA[Biblioteca de les aigües: Interior 2]]></data>
-<data name="c_08_content"><![CDATA[The Interior 2 of the Biblioteca de les aigües is a versatile and functional space. With reading areas, workstations, and consultation zones, it offers an optimal environment for research, study, and learning. Here you can explore academic resources, immerse yourself in reading, and make the most of the services our library offers.]]></data>
-
-<data name="c_09_title"><![CDATA[Edifici 24 -Merce Rodoreda: Auditorium]]></data>
-<data name="c_09_content"><![CDATA[The Auditorium of the Edifici 24 - Merce Rodoreda is a standout space for events and presentations. With its contemporary design and high-quality audiovisual equipment, it provides an exceptional experience for conferences, talks, and performances. With impeccable acoustics and a comfortable layout, this auditorium guarantees an immersive and memorable experience.]]></data>
-
-
-<data name="c_14_title"><![CDATA[Ciutadella Park]]></data>
-<data name="c_14_content"><![CDATA[Ciutadella Park is a green oasis in the middle of the city. With its large extension of green areas, ponds, and picturesque paths, it offers a recreation and relaxation space for the educational community. Whether it's to enjoy a picnic, exercise outdoors, or simply walk around, this park provides a natural and peaceful environment to disconnect from urban rhythm.]]></data> -->
-
-
-
+<data name="c_10_title"><![CDATA[Multipurpose space]]></data>
+<data name="c_10_content"><![CDATA[In the Edifici Mercè Rodoreda, you will find multi-purpose rooms like this one, prepared for all kinds of conferences, masterclasses or project presentations.]]></data>
 
 
 
