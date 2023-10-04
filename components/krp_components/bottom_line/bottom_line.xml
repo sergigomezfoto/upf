@@ -56,10 +56,7 @@ text-decoration: underline;
         cursor="default"
         capture="false" 
     />
-    <style name="bottom_line_text_first"  
-         align="left"
-         text="powered by: [a href='https://noupunt.com']noupunt.com[/a]"
-    />
+
 
     <style name="bottom_line_text_third"
         onhover="css=(cssorig + 'text-decoration: underline;');"
@@ -125,13 +122,12 @@ text-decoration: underline;
         alpha="1"
         cursor="default"
         capture="false" 
-    />           
-    <style name="bottom_line_text_first" 
          align="bottomright"
          x="46"
          y="6"
          text="Powered by: [a href='https://noupunt.com']noupunt.com[/a]"
-    />
+    />           
+ 
 
 <layer name="bottom_line" keep="true" style="bottom_line">    
     <layer name="lang_container" keep="true" style="lang_container|bottom_border"> 
@@ -147,5 +143,40 @@ text-decoration: underline;
 
 </layer>
 
-<layer name="bottom_line_text_noupunt" keep="true" style="bottom_line_nopunt|bottom_line_text_first"/>
+<layer name="bottom_line_text_noupunt" keep="true" style="bottom_line_nopunt"/>
+
+<events name="bottom_line_text_noupunt" keep="true" onresize="noupunt_posicio"/>
+<action name="noupunt_posicio">
+np=layer[bottom_line_text_noupunt];
+if (stagewidth LE 1170,
+np.css="color: #FFFFFF;text-decoration: none;font-size: 10px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;";
+np.alpha=0.75;
+np.y=40;
+,
+np.css="color: #FFFFFF;text-decoration: none;font-size: 13px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;";
+np.alpha=1;
+np.y=6;
+
+);
+    
+
+</action>
 </krpano>
+<!-- 
+<style name="bottom_line_nopunt"
+        type="text"
+        css="color: #FFFFFF;text-decoration: none;font-size: 13px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
+        cssorig="color: #FFFFFF;text-decoration: none;font-size: 13px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
+        cssclass="blt_third"
+        bg="false"
+        bgcolor="0x654fff"
+        bgalpha="0.5"
+        alpha="1"
+        cursor="default"
+        capture="false" 
+         align="bottomright"
+         x="46"
+         y="6"
+         text="Powered by: [a href='https://noupunt.com']noupunt.com[/a]"
+    />           
+ -->
