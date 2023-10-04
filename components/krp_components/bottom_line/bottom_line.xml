@@ -116,20 +116,20 @@ text-decoration: underline;
 
      <style name="bottom_line_nopunt"
         type="text"
-        css="color: #FFFFFF;text-decoration: none;font-size: 10px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
-        cssorig="color: #FFFFFF;text-decoration: none;font-size: 10px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
+        css="color: #FFFFFF;text-decoration: none;font-size: 13px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
+        cssorig="color: #FFFFFF;text-decoration: none;font-size: 13px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;"
         cssclass="blt_third"
         bg="false"
         bgcolor="0x654fff"
         bgalpha="0.5"
-        alpha="0.75"
+        alpha="1"
         cursor="default"
         capture="false" 
     />           
     <style name="bottom_line_text_first" 
          align="bottomright"
          x="46"
-         y="35"
+         y="6"
          text="Powered by: [a href='https://noupunt.com']noupunt.com[/a]"
     />
 

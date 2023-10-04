@@ -38,13 +38,13 @@
 Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge hoy en día el campus urbano más grande de una escuela de negocios en el centro de la ciudad. A lo largo de este recorrido, descubrirás nuestras instalaciones y los espacios donde vivirás la experiencia que marcará tu carrera profesional. Ponte cómodo y disfruta de tu visita.
 ]]></data>
 
-    <data name="b_03_title"><![CDATA[Entrada - Hall]]></data>
+    <data name="b_03_title"><![CDATA[Entrada]]></data>
     <data name="b_03_content"><![CDATA[Bienvenido al Edifici Balmes. Tras pasar por la recepción, accederás a todos los recursos del Campus. A escasos metros se encuentra el auditorio, una aula polivalente o una zona para reuniones. Desde aquí, también verás los ascensores y escaleras que dirigen hacia el resto de recursos: espacios de trabajo, salas de estudio, cafetería, zonas de ocio… Todo ello en un ambiente innovador, con conectividad 5G y preparado para estimular tus ideas.]]></data>
 
-    <data name="b_13_title"><![CDATA[Espai Koiné (espacio polivalente)]]></data>
+    <data name="b_13_title"><![CDATA[Espacio polivalente]]></data>
     <data name="b_13_content"><![CDATA[¿Sabías que dos de nuestros espacios han sido premiados por el German Design Award 2018? Uno es el Espai Koiné, una zona muy versátil de dos ambientes pensados para optimizar la concentración. Esta es la primera estancia, una sala polivalente ideal para el trabajo en equipo gracias a sus paneles móviles coloreables y la disposición flexible del mobiliario. ]]></data>
 
-    <data name="b_12_title"><![CDATA[Espai Koiné (sala de estudios)]]></data>
+    <data name="b_12_title"><![CDATA[Sala de estudios]]></data>
     <data name="b_12_content"><![CDATA[Por su parte, las cortinas de madera son las encargadas de aislar la segunda estancia. Esto te permite volcar todos tus sentidos en el estudio gracias a su silencio. Es un espacio ideal para preparar tus exámenes o repasar en detalle tus clases.]]></data>
 
     <data name="b_10_title"><![CDATA[Auditorio]]></data>
@@ -53,10 +53,10 @@ Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge 
     <data name="b_14_title"><![CDATA[Cafetería - Restaurante]]></data>
     <data name="b_14_content"><![CDATA[Has llegado a la cafetería, abierta en todo el horario del campus, por lo que es ideal para tomar un snack entre clases, repasar apuntes con un café o simplemente relajarte. La cafetería incluye restaurante con opciones vegetarianas o sin gluten.]]></data>
 
-    <data name="b_07_title"><![CDATA[Terraza (zona 1)]]></data>
+    <data name="b_07_title"><![CDATA[Terraza Este]]></data>
     <data name="b_07_content"><![CDATA[No puedes quedarte sin ver nuestra terraza. Es uno de los espacios más concurridos los días de buen tiempo. Por eso, la hemos habilitado con microondas para que puedas comer en ella.]]></data>
 
-    <data name="b_08_title"><![CDATA[Terraza (zona 2)]]></data>
+    <data name="b_08_title"><![CDATA[Terraza Sur]]></data>
     <data name="b_08_content"><![CDATA[Desde las mesas altas de esta zona de la terraza -ideales para tomar algo o organizar un evento de networking- verás al completo el skyline de la ciudad. La Sagrada Família, el Hotel Vela, la Torre Agbar… Sus vistas son impresionantes.]]></data>
 
     <data name="b_04_title"><![CDATA[Sala Phainon]]></data>
@@ -68,7 +68,7 @@ Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge 
     <data name="b_01_title"><![CDATA[Aula]]></data>
     <data name="b_01_content"><![CDATA[Las aulas de la UPF-BSM fueron remodeladas después de la pandemia para adapatarlas al formato híbrido, por lo que disponen de la tecnología necesaria para emitir en directo. Incluyen cámaras orientadas tanto a ponentes como a asistentes y micrófonos para capturar mejor el sonido. Así, se pueden seguir las clases sin perder detalle de manera presencial o virtual. ]]></data>
 
-    <data name="b_11A_title"><![CDATA[Aula anfiteatro]]></data>
+    <data name="b_11A_title"><![CDATA[Aula en anfiteatro]]></data>
     <data name="b_11A_content"><![CDATA[El formato de anfiteatro característico de las aulas universitarias también ha sido remodelado con las necesidades técnicas post COVID-19. Estas aulas, orientadas a actividades más teóricas , incluyen también equipos de vídeo y audio para que se puedan seguir a la perfección a distancia.]]></data>
 
     <!-- <data name="b_05A_title"><![CDATA[Sala Phainon 2]]></data>
@@ -211,34 +211,34 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
 <data name="b_02_title"><![CDATA[Façana Balmes]]></data>
 <data name="b_02_content"><![CDATA[La Façana Balmes és l'entrada principal del nostre edifici. El seu disseny arquitectònic combina elements clàssics i moderns, creant una imatge impactant i elegant. Amb la seva imponent estructura i finestrals de vidre, reflecteix la identitat de la nostra institució i acull a estudiants, professors i visitants en un ambient acollidor.]]></data>
 
-<data name="b_03_title"><![CDATA[Entrada - Hall]]></data>
+<data name="b_03_title"><![CDATA[Entrada]]></data>
 <data name="b_03_content"><![CDATA[En creuar l'entrada i endinsar-te en el Hall, et rebran un ambient modern i acollidor. Amb el seu disseny contemporani i una decoració cuidada, és un espai on convergeixen estudiants, professors i visitants. Aquí podràs trobar informació, accedir als serveis i submergir-te en l'atmosfera vibrant de la nostra institució.]]></data>
 
-<data name="b_13_title"><![CDATA[Espai Koiné: espai polivalent]]></data>
+<data name="b_13_title"><![CDATA[Espai polivalent]]></data>
 <data name="b_13_content"><![CDATA[L'Espai Koiné és un espai polivalent que s'adapta a diferents activitats acadèmiques i d'oci. Amb el seu disseny modern i una disposició flexible, pot transformar-se segons les necessitats. Ja sigui per a tallers, presentacions o activitats recreatives, aquest espai versàtil ofereix un entorn propici per a l'aprenentatge i la interacció social.]]></data>
 
-<data name="b_12_title"><![CDATA[Espai Koiné: sala d'estudis]]></data>
+<data name="b_12_title"><![CDATA[Sala d'estudis]]></data>
 <data name="b_12_content"><![CDATA[L'Espai Koiné és una sala d'estudis dissenyada per proporcionar un entorn tranquil i propici per a l'aprenentatge individual. Amb el seu ambient acollidor i mobiliari confortable, és el lloc perfecte per concentrar-se, revisar apunts i realitzar activitats acadèmiques. Aquí podràs estudiar de manera eficient i aprofitar al màxim el teu temps d'estudi.]]></data>
 
 <data name="b_10_title"><![CDATA[Auditori]]></data>
 <data name="b_10_content"><![CDATA[El nostre Auditori és un espai emblemàtic i de gran capacitat. Amb el seu disseny contemporani i equipament audiovisual d'última generació, és el lloc ideal per a conferències magistrals, presentacions destacades i esdeveniments especials. Amb una acústica excepcional i una atmosfera inspiradora, ofereix una experiència inigualable per al públic i els oradors.]]></data>
 
-<data name="b_14_title"><![CDATA[Cafeteria]]></data>
+<data name="b_14_title"><![CDATA[Cafeteria - Restaurant]]></data>
 <data name="b_14_content"><![CDATA[La nostra Cafeteria és el lloc perfecte per gaudir d'una pausa i recarregar energies. Amb una àmplia varietat d'opcions gastronòmiques, des de menjars calents fins a refrigeris saludables, podràs satisfer els teus antojos i gaudir de moments de socialització amb companys i amics. És un espai acollidor i relaxat on podràs gaudir d'una experiència culinària única.]]></data>
 
-<data name="b_07_title"><![CDATA[Terrassa 1]]></data>
+<data name="b_07_title"><![CDATA[Terraça Est]]></data>
 <data name="b_07_content"><![CDATA[La Terrassa 1 és un espai a l'aire lliure dissenyat per a trobades informals i moments de relax. Amb una decoració moderna i vistes panoràmiques, és el lloc perfecte per a gaudir d'un cafè, socialitzar amb companys o simplement gaudir de l'entorn natural. Aquí podràs desconnectar i recarregar energies en un ambient tranquil i agradable.]]></data>
 
-<data name="b_08_title"><![CDATA[Terrassa 2]]></data>
+<data name="b_08_title"><![CDATA[Terraça Sud]]></data>
 <data name="b_08_content"><![CDATA[La Terrassa 2 és un espai versàtil i acollidor a l'aire lliure. Amb una combinació d'àrees verdes, zones de descans i mobiliari modern, ofereix un entorn agradable per a activitats a l'aire lliure, esdeveniments socials i moments de relax. Gaudeix del bon clima, contempla les vistes panoràmiques i aprofita al màxim aquesta àrea d'esbarjo en la nostra institució.]]></data>
 
-<data name="b_04_title"><![CDATA[Sala Phainon 1]]></data>
+<data name="b_04_title"><![CDATA[Sala Phainon]]></data>
 <data name="b_04_content"><![CDATA[La Sala Phainon 1 és un espai multifuncional i versàtil. Equipada amb tecnologia audiovisual d'última generació, mobiliari còmode i una distribució flexible, s'adapta a diferents tipus d'esdeveniments i activitats. Des de conferències i seminaris fins a tallers i presentacions, aquest espai proporciona un entorn òptim per a l'aprenentatge i la interacció.]]></data>
 
 <data name="b_09_title"><![CDATA[Sala Versa]]></data>
 <data name="b_09_content"><![CDATA[La Sala Versa és un espai polivalent que s'adapta a diferents necessitats. Amb el seu disseny modern i una distribució flexible, permet organitzar conferències, presentacions, tallers i activitats de grup. Equipada amb tecnologia audiovisual i mobiliari versàtil, aquesta sala ofereix un entorn còmode i funcional per a esdeveniments i activitats acadèmiques.]]></data>
 
-<data name="b_01_title"><![CDATA[Aula 503]]></data>
+<data name="b_01_title"><![CDATA[Aula]]></data>
 <data name="b_01_content"><![CDATA[L'Aula 503 és un espai modern i equipat amb tecnologia d'avantguarda. Dissenyada per a l'aprenentatge efectiu, compta amb mobiliari ergonòmic, pissarres interactives i accés a internet d'alta velocitat. És un entorn propici per a l'intercanvi de coneixements i la col·laboració entre estudiants.]]></data>
 
 <data name="b_11A_title"><![CDATA[Aula 101 - amfiteatre 1]]></data>
