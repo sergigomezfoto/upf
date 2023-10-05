@@ -125,7 +125,7 @@ text-decoration: underline;
          align="bottomright"
          x="46"
          y="6"
-         text="Powered by: [a href='https://noupunt.com']noupunt.com[/a]"
+         text="by: [a href='https://noupunt.com']noupunt.com[/a]"
     />           
  
 
