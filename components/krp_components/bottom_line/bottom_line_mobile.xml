@@ -1,0 +1,21 @@
+<krpano>
+
+
+<style name="help_mob"
+type="text"
+width="20"
+height="20"
+align="bottomright"
+x="get:margins.right"
+y="get:margins.bottom"
+bg="true"
+bgalpha="1"
+bgcolor="0xff5487"   
+onclick="popup(calc('externals/help_mob/index.html?ln=' + language ),'100%|100%','help');" 
+/>
+
+
+
+    <layer name="help_mob" keep="true" style="help_mob"/>
+<!-- popup(calc('externals/help/index.html?ln=' + language ),'600|400','help'); -->
+</krpano>

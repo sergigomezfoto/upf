@@ -12,6 +12,7 @@
 <include url="components/krp_components/menu/menu.xml" if="!mobile"/>
 <!-- <include url="test/scroll.xml" /> -->
 <include url="components/krp_components/bottom_line/bottom_line.xml" if="!mobile"/>
+<include url="components/krp_components/bottom_line/bottom_line_mobile.xml" if="mobile"/>
 <include url="components/krp_components/followmouse/followmouse.xml" if="!mobile" />
 <include url="components/krp_components/logo/logo.xml" if="!mobile"/>
 <include url="components/krp_components/logo/logo_mobile.xml" if="mobile"/>

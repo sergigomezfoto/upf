@@ -31,13 +31,24 @@
         
 />
 
-<style name="popuplayerstyle"
+<style name="popuplayerstyle" if="!mobile"
     parent="overlay"
     type="iframe"
     iframeurl=""
     alpha="0"
     bg="true"
     bgalpha="1"
+    bgcolor="0xffffff"
+    align="center"
+    zorder="2000"
+/>
+<style name="popuplayerstyle" if="mobile"
+    parent="overlay"
+    type="iframe"
+    iframeurl=""
+    alpha="0"
+    bg="true"
+    bgalpha="0.95"
     bgcolor="0xffffff"
     align="center"
     zorder="2000"
@@ -63,7 +74,7 @@
 </action>
 
 
-<style name="xclose_help"
+<style name="xclose_help" if="!mobile"
    url="%FIRSTXML%/assets/img/xclose_help.png" 
    align="righttop"
    x="40"
@@ -74,6 +85,15 @@
 
    onhover="tween(rotate,90,0.2);"
    onout="tween(rotate,0,0.2);"
+/>
+<style name="xclose_help" if="mobile"
+   url="%FIRSTXML%/assets/img/xclose_help.png" 
+   align="righttop"
+   x="40"
+   y="40" 
+   parent="popuplayer"
+   enabled="true"
+   edge="center"
 />
 <style name="xclose_hs"
     url="%FIRSTXML%/assets/img/xclose_init.png" 
@@ -150,13 +170,22 @@ delayedcall (,
 
 </action>
 
-<action name="actionsbeforepopup" scope="local" args="init">
+<action name="actionsbeforepopup" scope="local" args="init" if="!mobile">
     global.follow=false;
     control.usercontrol='off';
 
     if (!init,
         blur();
     );
+
+    <!-- addlayer('bottomlayer',bt);
+    bt.loadstyle('bottomlayer'); -->
+
+</action>
+<action name="actionsbeforepopup" scope="local" args="init" if="mobile">
+    global.follow=false;
+    control.usercontrol='off';
+
 
     <!-- addlayer('bottomlayer',bt);
     bt.loadstyle('bottomlayer'); -->
