@@ -46,6 +46,7 @@ embedpano({
   bgcolor: "#ffffff",
   onready: krpano_onready_callback,
   initvars: {
+    mobile: mobile,
     test: test,
     language: lang,
     startscene: sc,

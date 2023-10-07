@@ -6,16 +6,20 @@
 <include url="components/krp_components/popup/popup.xml" />
 <include url="components/krp_components/blur_background/blur_background.xml" />
 <include url="components/krp_components/first_entrance/first_entrance.xml" />
-<include url="components/krp_components/gray_bg/gray_bg.xml" />
-<include url="components/krp_components/hotspots_core/hotspots_core.xml" />
-<include url="components/krp_components/menu/menu.xml" />
+<include url="components/krp_components/gray_bg/gray_bg.xml" if="!mobile"/>
+<include url="components/krp_components/gray_bg/gray_bg_mobile.xml" if="mobile"/>
+<include url="components/krp_components/hotspots_core/hotspots_core.xml" if="!mobile"/>
+<include url="components/krp_components/menu/menu.xml" if="!mobile"/>
 <!-- <include url="test/scroll.xml" /> -->
-<include url="components/krp_components/bottom_line/bottom_line.xml" />
-<include url="components/krp_components/followmouse/followmouse.xml" />
-<include url="components/krp_components/logo/logo.xml" />
-<include url="components/krp_components/lang/lang.xml" />
-<include url="components/krp_components/ui_buttons/ui_buttons.xml" />
-<include url="components/krp_components/info_panel/info_panel.xml" />
+<include url="components/krp_components/bottom_line/bottom_line.xml" if="!mobile"/>
+<include url="components/krp_components/followmouse/followmouse.xml" if="!mobile" />
+<include url="components/krp_components/logo/logo.xml" if="!mobile"/>
+<include url="components/krp_components/logo/logo_mobile.xml" if="mobile"/>
+<include url="components/krp_components/lang/lang.xml" if="!mobile"/>
+<include url="components/krp_components/lang/lang_mobile.xml" if="mobile"/>
+<include url="components/krp_components/ui_buttons/ui_buttons.xml" if="!mobile"/>
+<include url="components/krp_components/info_panel/info_panel.xml" if="!mobile"/>
+<include url="components/krp_components/info_panel/info_panel_mobile.xml" if="mobile"/>
 <action name="skin_onstart_loadscene" scope="local" autorun="onstart">
 trace(language);
 		<!-- load first scene -->
@@ -207,63 +211,6 @@ trace(language);
 
 	</scene>
 
-<!-- 
-	<scene name="scene_b_05a" title="b_05a" onstart="" thumburl="panos/b_05a.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/b_05a.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/b_05a.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_b_05b" title="b_05b" onstart="" thumburl="panos/b_05b.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/b_05b.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/b_05b.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene> 
-
- <scene name="scene_b_06" title="b_06" onstart="" thumburl="panos/b_06.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/b_06.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/b_06.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene> 
-	<scene name="scene_b_11b" title="b_11b" onstart="" thumburl="panos/b_11B.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/b_11b.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/b_11b.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene> -->
-
-
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////CIUTADELLA
@@ -401,78 +348,7 @@ trace(language);
 
 	</scene>
 
-	<!-- <scene name="scene_c_03" title="c_03" onstart="" thumburl="panos/c_03.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/c_03.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/c_03.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_c_04" title="c_04" onstart="" thumburl="panos/c_04.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/c_04.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/c_04.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_c_09" title="c_09" onstart="" thumburl="panos/c_09.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/c_09.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/c_09.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene> -->
-<!-- 
-
-	<scene name="scene_c_14" title="c_14" onstart="" thumburl="panos/c_14.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/c_14.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/c_14.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene>
-
-
-	<scene name="scene_c_08" title="c_08" onstart="" thumburl="panos/c_08.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/c_08.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/c_08.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene> -->
-
-<include url="helpers/test.xml"    if="test AND !mobile"      />
+<include url="helpers/test.xml"    if="test"      />
 
 </krpano>

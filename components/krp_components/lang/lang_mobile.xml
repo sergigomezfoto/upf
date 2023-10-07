@@ -1,0 +1,164 @@
+<krpano>
+
+
+
+<action name="change_lang">
+
+   if (text === 'Català',
+    language='ca';
+    ,text === 'Español',
+    language='es';
+    ,text === 'English',
+    language='en';
+   );
+   includexml('%FIRSTXML%/config/config.xml', hot_reload(););
+change_lang_buttons();
+tween(layer[lang_general_container].alpha,0,0.2);
+</action>
+
+<action name="change_lang_buttons" autorun="true">
+trace('això és un test');
+trace(language);
+l_es=layer[lang_es];
+l_ca=layer[lang_ca];
+l_en=layer[lang_en];
+
+l_es.enabled="true";
+l_es.css=l_es.cssorigin;
+l_ca.enabled="true";
+l_ca.css=l_ca.cssorigin;
+l_en.enabled="true";
+l_en.css=l_en.cssorigin;
+
+if (language === 'ca',
+    l_ca.enabled="false";
+    l_ca.css=l_ca.csshover;
+    ,language === 'es',
+    l_es.enabled="false";
+    l_es.css=l_es.csshover;
+    ,language === 'en',
+    l_en.enabled="false";
+    l_en.css=l_en.csshover;
+);
+    
+</action>
+
+
+
+<action name="hot_reload">
+
+info_panel_action();
+layer[cta_1].text=ui.cta_1;
+layer[cta_2].text=ui.cta_2;
+
+//menu component
+callwith(layer[titol_campus_balmes],"menu_items_text('titol_campus_balmes')");
+callwith(layer[titol_campus_ciutadella],"menu_items_text('titol_campus_ciutadella')");
+callwith(layer[bs1],"menu_items_text('scom')");
+callwith(layer[bs2],"menu_items_text('scla')");
+callwith(layer[cs1],"menu_items_text('scom')");
+callwith(layer[cs2],"menu_items_text('scla')");
+forall(layer,l,
+    if(contains(l.name,'menulayer'),
+        callwith(l, "menu_items_text('t')");
+    );
+);
+//bottom line component
+layer[bottom_line_text_politica].text=ui.politica;
+layer[bottom_line_text_guide].text=ui.guide;
+//js-krpano data
+<!-- jscall(jsUiText();); -->
+
+
+//hotspots
+forall(hotspot, h,
+   if (!contains(h.name,'title') AND !contains(h.name,'preview'),
+    trace(data[(h.name)].content);
+    trace(hotspot[(h.name + 'title')].text);
+    calc(hotspot[(h.name + 'title')].text,(data[(h.name)].content));
+   );
+);
+//menu
+layer[open_bg_text].text=ui.menu;
+
+</action>
+
+<style name="lang_general_container"
+    type="text"
+    bg="true"
+    bgcolor="0x363636"
+    bgalpha="1"
+    alpha="0"
+    align="top"
+    height="100%"
+    width="100%"
+    zorder="21231212121"
+    autoalpha="true"
+/>
+<style name="lang_container"
+    type="text"
+    bg="false"
+    bgcolor="0x363636"
+    bgalpha="1"
+    align="top"
+    height="100%"
+    width="100%"
+    capture="false"
+    flowchildren="v"
+    childflowspacing="20"   
+    childmargin="calc:83 + margins.top"
+    cursor="default"
+
+/>
+
+<style name="lang_close_mob"
+url="%FIRSTXML%/assets/img/xclose_init.png"
+align="righttop"
+x="get:margins.right"
+y="get:margins.top"
+onclick="tween(layer[lang_general_container].alpha,0,0.2);"
+/>
+
+            <style name="lang_sub"
+                type="text"         
+                align="top"    
+                bg="false"
+                bgcolor="0x654ff54"
+                css="font-family:'lota_regular';font-size:20px;color:#ffffff;opacity:0.5;text-align:center;"  
+                cssorigin="font-family:'lota_regular';font-size:20px;color:#ffffff;opacity:0.5;text-align:center;"  
+                csshover="font-family:'lota_regular';font-size:20px;color:#ffffff;text-align:center;"  
+                onover="css=csshover;"
+                onout="css=cssorigin;"
+                onclick="change_lang"
+                capture="false" 
+            />
+
+
+        <style name="lang_cont_ico"
+            url="%FIRSTXML%/assets/img/lang_world_mobile.png"
+            align="topright" 
+            enabled="true" 
+            capture="false" 
+            x="get:margins.right"
+            y="get:margins.top"
+            onclick="tween(layer[lang_general_container].alpha,1,0.2);"
+         />
+
+
+
+ <layer name="lang_general_container" keep="true" style="lang_general_container" parent="stage">       
+    <layer name="lang_container" keep="true" style="lang_container" > 
+        <layer name="lang_es" keep="true" style="lang_sub" text="get:lang.es"/>
+        <layer name="lang_ca" keep="true" style="lang_sub" text="get:lang.ca"/>
+        <layer name="lang_en" keep="true" style="lang_sub" text="get:lang.en" />
+    </layer> 
+        <layer name="lang_close_mob" keep="true" style="lang_close_mob" flow="false"    />     
+</layer>
+
+
+
+        
+
+
+
+</krpano>

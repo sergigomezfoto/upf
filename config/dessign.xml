@@ -1,10 +1,16 @@
 <krpano>
 
-    <margins
+    <margins if="!mobile"
     top="50"
     right="50"
     bottom="50"
     left="50"
+    />
+    <margins if="mobile"
+    top="20"
+    right="20"
+    bottom="20"
+    left="20"
     />
 
 
@@ -16,7 +22,7 @@
 <events name="resize_design" keep="true" onresize="resize_design"
 />
 
-<action name="resize_design">
+<action name="resize_design" if="!mobile">
 
 gray=layer[gray_bg];
 gray_bottom=layer[gray_bg_bottom];
@@ -61,43 +67,9 @@ super_container.y=(supercontainery);
 menu_container.x=(margin);   
 scroll_balmes.y=(scrollbalmes_y);
 </action>
-<!-- <if check="stageheight LT 1024">
 
-    <scrollarea
-        textheight="180"
-    />
-    <margins
-        top="30"
-        right="30"
-        bottom="30"
-        left="30"
-    />
- <set var="supercontainery" val="140"/>
-<action name="" autorun="true">   
-    layer[super_vscrollbar_bg_container].y=230;
-    trace(get(stageheight), 'HEIGHT PETIT');
-</action>
 
-</if>
-
-<if check="stageheight GE 1024">
-    <scrollarea
-        textheight="280"
-    />
-    <margins
-        top="50"
-        right="50"
-        bottom="50"
-        left="50"
-    />
-    <set var="supercontainery" val="180"/>
-<action name="" autorun="true">
-    layer[super_vscrollbar_bg_container].y=260;
-    trace(get(stageheight), 'HEIGHT GRAN');
-</action>
-</if> -->
-
-<events name="gray_background" onresize="gb_calc" keep="true" />
+<events name="gray_background" onresize="gb_calc" keep="true" if="!mobile" />
 
 
 <action name="gb_calc">

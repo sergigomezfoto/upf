@@ -4,10 +4,15 @@
 
 <if check="language == 'es'">
 
-    <lang
+    <lang if="!mobile"
     es="ES"
     ca="CA"
     en="EN"
+    />  
+    <lang if="mobile"
+    es="Español"
+    ca="Català"
+    en="English"
     />  
 
     <ui
@@ -33,7 +38,7 @@
     common="Espacios comunes"
     classrooms="Aulas y salas"
     />
-    <data name="b_02_title"><![CDATA[Fachada Balmes]]></data>
+    <data name="b_02_title"><![CDATA[Fachada]]></data>
     <data name="b_02_content"><![CDATA[Aquí empieza tu nueva aventura. En este célebre edificio situado en pleno centro de Barcelona, se fundó hace más de 30 años la Universitat Pompeu Fabra. Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge hoy en día el campus urbano más grande de una escuela de negocios en el centro de la ciudad.
 ]]></data>
 
@@ -73,7 +78,7 @@ Su configuración flexible convierte esta sala polivalente en un ambiente ideal 
     <data name="b_11A_content"><![CDATA[El formato de anfiteatro característico de las aulas universitarias también ha sido remodelado con las necesidades técnicas post COVID-19. Estas aulas, orientadas a actividades más teóricas , incluyen también equipos de vídeo y audio para que se puedan seguir a la perfección a distancia.]]></data>
 
 
-    <data name="c_02_title"><![CDATA[Entrada al Campus]]></data>
+    <data name="c_02_title"><![CDATA[Entrada]]></data>
     <data name="c_02_content"><![CDATA["Has llegado al Campus Ciutadella, uno de los más reconocidos de Barcelona.
 Se trata de un enorme campus urbano situado al lado de algunos de los lugares más importantes de la ciudad: Arco de Triunfo, Passeig de Sant Joan, el Parque de la Ciutadella y, por supuesto… el mar. Su entorno lleno de árboles y su patrimonio cultural lo convierten en un lugar especial. Entra y descubre la historia que se esconde en sus emblemáticos edificios."
 ]]></data>
@@ -148,10 +153,15 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
 
 <if check="language == 'ca'">
 
-<lang
+    <lang if="!mobile"
     es="ES"
     ca="CA"
     en="EN"
+    />  
+    <lang if="mobile"
+    es="Español"
+    ca="Català"
+    en="English"
     />  
 
     <ui
@@ -181,7 +191,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     classrooms="Aules i Espais"
     />
 
-<data name="b_02_title"><![CDATA[Façana Balmes]]></data>
+<data name="b_02_title"><![CDATA[Façana]]></data>
 <data name="b_02_content"><![CDATA[Aquí comença la teva nova aventura. En aquest cèlebre edifici situat en ple centre de Barcelona, es va fundar fa més de 30 anys la Universitat Pompeu Fabra. Aquest edifici, projectat pel famós arquitecte Enric Sagnier en 1926, acull avui dia el campus urbà més gran d'una escola de negocis en el centre de la ciutat.
 ]]></data>
 
@@ -221,7 +231,7 @@ La seva configuració flexible converteix aquesta sala polivalent en un ambient 
 <data name="b_11A_content"><![CDATA[El format en amfiteatre característic de les aules universitàries també ha estat remodelat tenint en compte les necessitats de l'estudiant actual. Aquestes aules, orientades a activitats més teòriques , inclouen també equips de vídeo i àudio perquè es puguin seguir a la perfecció.]]></data>
 
 
-<data name="c_02_title"><![CDATA[Entrada al Campus]]></data>
+<data name="c_02_title"><![CDATA[Entrada]]></data>
 <data name="c_02_content"><![CDATA[Has arribat al Campus Ciutadella, un dels més reconeguts de Barcelona.
 Es tracta d'un enorme campus urbà situat al costat d'alguns dels llocs més importants de la ciutat: Arc de Triomf, Passeig de Sant Joan, el Parc de la Ciutadella i, per descomptat… la mar. El seu entorn ple d'arbres i el seu patrimoni cultural el converteixen en un lloc especial. Entra i descobreix la història que s'amaga en els seus emblemàtics edificis.]]></data>
 
@@ -292,12 +302,16 @@ Es tracta d'un enorme campus urbà situat al costat d'alguns dels llocs més imp
 
 <if check="language == 'en'">
 
-<lang
+    <lang if="!mobile"
     es="ES"
     ca="CA"
     en="EN"
     />  
-
+    <lang if="mobile"
+    es="Español"
+    ca="Català"
+    en="English"
+    />  
     <ui
         logo_upf_link="https://www.upf.edu/en/"
         cta_1="[a href='https://www.bsm.upf.edu/en']Go to site[/a]"
@@ -326,7 +340,7 @@ Es tracta d'un enorme campus urbà situat al costat d'alguns dels llocs més imp
     classrooms="Classrooms and Spaces"
     />
 
-<data name="b_02_title"><![CDATA[Balmes Facade]]></data>
+<data name="b_02_title"><![CDATA[Facade]]></data>
 <data name="b_02_content"><![CDATA[This is where your new adventure begins. The Pompeu Fabra University was founded more than 30 years ago in this famous building in the heart of Barcelona. This building, designed by the famous architect Enric Sagnier in 1926, today houses the largest urban campus of a business school in the city centre.
 ]]></data>
 
@@ -366,7 +380,7 @@ Its flexible configuration makes this multi-purpose room an ideal environment fo
 <data name="b_11A_title"><![CDATA[Amphitheatre classroom]]></data>
 <data name="b_11A_content"><![CDATA[The amphitheatre format characteristic of university classrooms has also been remodelled to meet the needs of today's students. These classrooms, oriented towards more theoretical activities, also include video and audio equipment so that they can be followed perfectly.]]></data>
 
-<data name="c_02_title"><![CDATA[Campus Entrance]]></data>
+<data name="c_02_title"><![CDATA[Entrance]]></data>
 <data name="c_02_content"><![CDATA[You have arrived at the Ciutadella Campus, one of the most renowned campuses in Barcelona.
 It is a huge urban campus located next to some of the most important places in the city: Arc de Triomf, Passeig de Sant Joan, Ciutadella Park and, of course... the sea. Its tree-filled surroundings and cultural heritage make it a special place. Come in and discover the history hidden in its emblematic buildings.]]></data>
 

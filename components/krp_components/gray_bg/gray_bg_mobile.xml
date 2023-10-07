@@ -1,0 +1,25 @@
+<krpano>
+
+    
+<style name="gray_bg"
+    type="container"
+    align="lefttop"
+    x="0"
+    bg="true"
+    bgcolor="0x000000"
+    bgalpha="0.6"
+    bgcapture="true"
+    capturewheel="true"
+    width="calc:340 + margins.left"
+    height=""
+    onloaded="calc_mesures();"  
+    cursor="default"
+/>
+
+
+<layer name="gray_bg" keep="true" style="gray_bg">
+
+</layer>
+
+
+</krpano>

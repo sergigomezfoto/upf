@@ -1,0 +1,35 @@
+<krpano>
+
+<style name="backgroud_logo_and_lang"
+type="container"
+width="100%"
+height="83"
+bg="true"
+bgcolor="0x000000"
+bgalpha="0.5"
+    
+/>
+
+    <style name="logo_upf"
+        url="%FIRSTXML%/assets/svg/logo_mob.svg"
+        align="topleft"
+        
+        x="get:margins.left"
+        y="calc:margins.top "
+        capture="false"
+        onclick="openurl(get(ui.logo_upf_link));"
+        scale="0.5"
+     
+    />
+
+<layer name="backgroud_logo_and_lang" keep="true" style="backgroud_logo_and_lang">
+
+        <layer name="logo_upf" keep="true" style="logo_upf"/>
+        <layer name="lang_cont_ico" keep="true" style="lang_cont_ico" />
+        <!-- <layer name="logo_upf2" keep="true" style="logo_upf2"/> -->
+
+</layer>
+
+
+
+</krpano>

@@ -1,0 +1,357 @@
+<krpano>
+
+<style name="super_info_container"   
+    type="text"
+    align="top"
+    y="0"
+    x="0"   
+    bgcolor="0xffffff"
+    bgalpha="0.95"
+    width="100%"
+    height="100%"
+    enabled="true"
+    capture="true"
+    parent="overlay"
+    autoalpha="true"
+    alpha="0"
+/>    
+
+<style name="info_close_mob"
+    url="%FIRSTXML%/assets/img/xclose_help.png"
+    align="righttop"
+    x="get:margins.right"
+    y="get:margins.top"
+    onclick="tween(layer[super_info_container].alpha,0,0.2);"
+/>
+
+<style name="info_container"   
+    type="container"
+    align="top"
+    y="calc:margins.top + 60"
+    x="0" 
+    bg="false"  
+    bgcolor="0xff545f"
+    bgalpha="0.7"
+    flowchildren="v" 
+    childmargin="0"
+    childflowspacing="20"
+    width="100%"
+    maxwidth="500"
+
+/>
+
+    <style name="info_container_header"
+        type="text"
+        bg="false"
+        flowchildren="v" 
+        childmargin="0" 
+        childflowspacing="3"
+        align="lefttop"
+        minwidth="300"
+        width="100%"   
+        capture="false"
+
+    />
+
+        <style name="info_container_header_text"
+          type="text"
+          css="font-family:'lota_semibold';font-size:20px;color:#383a43;letter-spacing: 0px;"  
+          bg="false"
+          bgcolor="0xff49ff"
+          padding="20 0 0 20"
+          enabled="false"
+          
+        />
+        <style name="info_container_header_campus"
+          type="text"
+          css="font-family:'lota_semibold';font-size:16px;color:#7a7a7a;letter-spacing: 0px;"  
+          bg="false"
+          width="100%"
+          bgcolor="0x6549ff"
+          padding="0 0 20 20"
+          enabled="false"
+        />
+        <style name="info_container_header_line"
+          type="text"
+          bgborder="0,0,2,0 0x7a7a7a 0.6 solid"       
+          height="5px"
+          width="-40"
+          bg="false"
+          enabled="false"
+          align="bottom"
+        />
+        
+
+        <style name="info_container_boddy_bg_white"
+        type="text"
+        bg="false"
+        bgcolor="0xffffff"
+        bgalpha="1"
+        
+        height="20"
+        align="lefttop"
+        width="100%"
+        alpha="1"
+        autoalpha="true"
+        capture="false"
+        cursor="default"
+
+        />        
+        
+       <style name="info_container_body"
+        type="text"
+        onclick="trace('info_container clicked');"       
+        align="lefttop"
+        width="100%"
+        autoalpha="true"
+        capture="false"
+        cursor="default"
+        bg="false"        
+    />  
+
+<cssstyles>
+
+.transparent_scroll{
+     -webkit-mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 7%, rgba(0, 0, 0, 1) 94%, transparent 100%);
+     mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 7%, rgba(0, 0, 0, 1) 94%, transparent 100%);
+     background-color: rgb(211,255,255,00);
+}
+
+</cssstyles>
+
+        <style name="info_container_body_scrollarea"
+            type="scrollarea"
+            width="-4" flowchildren="v" childmargin="10"
+            scrolltype.desktop="smooth"
+            scrolltype.tablet.or.mobile="inertia"
+            draggable="false"
+            mwheel="true"
+            capturechildren="true"
+            parentmaskchildren="false"
+            autoscrollbars="null,vscrollbar_grip,0"
+            onhover_autoscrolling="false"
+            onoverflowchange="setcenter(0,0);trace('changed');"
+            capture="false"    
+
+   
+
+        />            
+
+                <style name="info_container_body_text"
+                type="text"
+                align="topleft"
+                padding="0 0 20 10"
+                bgcolor="0x6554ff"
+                bgalpha="0"
+                width="100%"
+                capture="false"
+                cursor="default"
+                css="font-family:'lota_regular';font-size:13px;color:#383a43;letter-spacing: 0px;line-height: 19px;"
+
+                />
+
+        
+        <style name="vscrollbar_bg"
+            type="container" 
+            align="right" 
+            width="2" 
+            height="100%"    
+            bgcolor="0xd9d9da"
+            bgalpha="1"  
+            x="16"  
+        />   
+            <style name="vscrollbar_grip"
+                type="container"
+                align="righttop"
+                width="4"
+                x="-1"
+                bgcolor="0xc1c1c1"    
+                bgalpha="0.72"
+                bgroundedge="7"
+                bgcapture="true"
+            />    
+
+    <style name="info_container_gps"
+        type="text"
+        bg="false"
+        bgcolor="0xffffff"
+        bgalpha="0.7"
+        flowchildren="v" 
+        childmargin="0 0 0 20"
+        childflowspacing="0"
+        align="lefttop"
+        width="100%"
+        capture="false"
+        alpha="0"  
+        autoalpha="true"
+        cursor="default"
+    />
+        <style name="info_container_gps_text"
+            type="text"
+            align="lefttop"
+            bg="false"
+            bgcolor="0x6554ff"
+            interactive="true"
+            width="-20"
+            capture="false"
+            cursor="default"
+            css="font-family:'lota_regular';font-size:13px;color:#383a43;letter-spacing: 0px;line-height: 19px;"
+            bgborder="2,0,0,0 0x7a7a7a 0.6 solid"
+        />
+
+<style name="pano_name_container"
+type="text"
+bgalpha="0.90"
+bgcolor="0xffffff"
+align="righttop"
+flowchildren="h"
+x="get:margins.right"
+y="calc:83 + margins.top" 
+childmargin="10 10 10 20"
+childflowspacing="30"
+enabled="true"
+capture="false"
+enablechildren="false"
+onclick="tween(layer[super_info_container].alpha,1,0.2);"
+
+/>
+
+    <style name="pano_name"
+    type="text"
+    bg="false"
+    html=""
+    css="font-family:'lota_semibold';font-size:16px;color:#383a43;letter-spacing: 0px;"   
+    align="right"  
+    />
+
+    <style name="pano_ico"
+     url="%FIRSTXML%/assets/img/plus_min.png"
+     crop="0|0|14|14"
+     align="right"
+    />
+        <!-- enabled="true" -->
+        <!-- onclick="trace('aesgseg');" -->
+<events name="info_panel" keep="true" 
+onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );"
+/>
+
+
+<action name="info_panel_action" scope="local">
+//todo
+    pn=layer[pano_name];
+    tit=layer[info_container_header_text];
+    camp=layer[info_container_header_campus];
+    contbodybg=layer[info_container_boddy_bg_white];
+    contbody=layer[info_container_body];
+    cont=layer[info_container_body_text];
+    scroll=layer[info_container_body_scrollarea];
+    scrollbg=layer[vscrollbar_bg];
+    scrollgrip=layer[vscrollbar_grip];
+    gripopacity="0.72";
+    gripbgopacity="1";
+    sc=(scene[(xml.scene)].title);
+    sci=(scene[(xml.scene)].index );
+    gps=layer[info_container_gps];
+    gpstext=layer[info_container_gps_text];
+
+    cp='';
+    panos_balmes=12;
+    if (sci === 0 OR sci === panos_balmes, global.gpstrue=true;,global.gpstrue=false;);
+    if (contains(sc,'b_')
+    ,
+        cp=campusinfo.balmes;
+        if (sci === 0  ,
+            gpstext.text=data[balmes_gps].content;
+            gps.alpha=1;
+            , 
+            gps.alpha=0;
+        );
+
+    , contains(sc,'c_'),
+        cp=campusinfo.ciutadella;
+        if (sci === panos_balmes  ,
+            gpstext.text=data[ciutadella_gps].content;
+            gps.alpha=1;
+            , 
+            gps.alpha=0;
+        );
+    );
+    lastheight=(cont.height); 
+    cont.text=data[(sc + '_content')].content;
+
+    tit.text=data[(sc + '_title')].content;
+    pn.text=data[(sc + '_title')].content;
+    camp.text=cp;
+    makeloop=true;
+    asyncloop(cont.height === lastheight AND makeloop
+    , 
+        if (!a,
+            delayedcall (0.1, makeloop=false;); 
+            a=true;
+        );
+        //trace('loop');
+    ,
+        //trace('now');
+        if (cont.height LT scrollarea.textheight,
+
+            scroll.direction="null";
+            scroll.capture="false";
+            scrollbg.bgalpha=0;
+            scrollgrip.bgalpha=0;
+            contbodybg.height=(cont.height); 
+            contbody.cssclass="";
+            contbody.height=(cont.height); 
+            
+        ,
+            scroll.direction="v";
+            <!-- scroll.capture="true"; -->
+            scrollbg.bgalpha=gripbgopacity;
+            scrollgrip.bgalpha=gripopacity;
+            contbodybg.height=scrollarea.textheight; 
+            contbody.cssclass="transparent_scroll";
+            contbody.height=scrollarea.textheight; 
+            scrollgrip.height="10px";
+            
+        );
+   
+    );
+
+</action>
+
+<layer name="pano_name_container" keep="true" style="pano_name_container">
+    <layer name="pano_name" keep="true" style="pano_name"/>
+    <layer name="pano_ico" keep="true" style="pano_ico"/>
+
+</layer>
+
+
+<layer name="super_info_container" keep="true" style="super_info_container">
+    <layer name="info_container" keep="true" style="info_container">
+        <layer name="info_container_header" keep="true" style="info_container_header" >
+            <layer name="info_container_header_text" keep="true" style="info_container_header_text" />
+            <layer name="info_container_header_campus" keep="true" style="info_container_header_campus" >
+            <layer name="info_container_header_line" keep="true" style="info_container_header_line" />   
+            </layer>
+        </layer>
+       <layer name="info_container_boddy_bg_white" keep="true" style="info_container_boddy_bg_white">
+            <layer name="info_container_body" keep="true" style="info_container_body">
+                <layer name="info_container_body_scrollarea" keep="true" style="info_container_body_scrollarea"> 
+                        <layer name="info_container_body_text" keep="true" style="info_container_body_text"/>
+                </layer>
+            </layer>
+                <layer name="vscrollbar_bg" keep="true" style="vscrollbar_bg">
+                        <layer name="vscrollbar_grip" keep="true" style="vscrollbar_grip"/>
+                </layer>
+        </layer>
+           
+        <layer name="info_container_gps" keep="true" style="info_container_gps">
+        
+            <layer name="info_container_gps_text" keep="true" style="info_container_gps_text"/>
+        
+        </layer>
+        
+    </layer>
+     <layer name="info_close_mob" keep="true" style="info_close_mob"     />   
+</layer>
+
+</krpano>

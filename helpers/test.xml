@@ -10,7 +10,7 @@
 
 		<!-- <videocall creada dianmicament a videocall.xml videocallin();/> -->
 		<!-- CONTENIDOR ARROSSEGABLE parent="STAGE"-->
-		<layer name="test_contenidor" keep="true" type="container" maskchildren="false" align="center" width="250" height="300" visible="true" bgcolor="get:testdisseny.colordefons" bgalpha="1" bgcapture="true" zorder="1000000000000" x="10" y="0" ondown="draglayer2();">
+		<layer name="test_contenidor" keep="true" type="container" maskchildren="false" align="bottomleft" width="250" height="300" visible="true" bgcolor="get:testdisseny.colordefons" bgalpha="1" bgcapture="true" zorder="1000000000000" x="10" y="0" ondown="draglayer2();">
 				<!-- TITOL -->
 				<layer name="test_titol" style="text_nomes" html="[B]OPTION DESTROYER 2.0[/B]" align="righttop" width="100%" height="calc:testdisseny.midatitol" y="get:testdisseny.margesuperior" css="calc: testdisseny.colortextos + 'text-align:center;' " bg="true" bgcolor="get:testdisseny.bgtitol" bgalpha="1" edge="rightop" padding="10 0 10 0" />
 				<!-- INFO ESCENA -->
