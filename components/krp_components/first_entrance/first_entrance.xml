@@ -2,9 +2,10 @@
 
 <if check="!test">
 
-    <action name="" autorun="true">
+    <action name="" autorun="true" if="!mobile">
         popup("https://www.youtube.com/embed/JPLJ50WkWao","66%|60%","init",first_360_action);    
     </action>
+
 <action name="first_360_action">
 <!-- delayedcall (3, -->
 layer[ft_container].ondown="close_ft();";
@@ -72,6 +73,17 @@ layer[ft_container].ondown="close_ft();";
     sharp();
     tween(layer[ft_container].alpha,0, 0.2,);   
     delayedcall (1,
+        firstcompleted=true;
+    );
+    </action>
+    <action name="close_ft_" autorun="true" if="mobile">
+    sharp();
+    tween(layer[ft_container].alpha,0, 0.2,);   
+    delayedcall (1,
+    trace('aa');
+    jscall(kploaded += 1 ;);
+    unload_loader();
+    close_ft();
         firstcompleted=true;
     );
     </action>
