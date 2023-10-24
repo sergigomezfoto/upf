@@ -2,7 +2,7 @@
 
 <if check="!test">
 
-    <action name="" autorun="true" if="!mobile">
+    <action name="" autorun="true" if="!mobile" >
         popup("https://www.youtube.com/embed/JPLJ50WkWao","66%|60%","init",first_360_action);    
     </action>
 
@@ -11,9 +11,9 @@
 layer[ft_container].ondown="close_ft();";
     
 <!-- ); -->
-    
 
 </action>
+
     <style name="ft_container"
         type="container"
         width="100%"
@@ -58,13 +58,13 @@ layer[ft_container].ondown="close_ft();";
 
         <layer name="ft_container" keep="true" style="ft_container">
 
-        <layer name="ico360_text_container" keep="true" style="ico360_text_container">
-                    
-                <layer name="ico360" keep="true"  url="%FIRSTXML%/assets/img/360.png" align="top"  />
-                <layer name="t360_text" keep="true" style="t360_text"/>
+            <layer name="ico360_text_container" keep="true" style="ico360_text_container">
+                        
+                    <layer name="ico360" keep="true"  url="%FIRSTXML%/assets/img/360.png" align="top"  />
+                    <layer name="t360_text" keep="true" style="t360_text"/>
 
 
-        </layer>    
+            </layer>    
 
         </layer>
 

@@ -1,7 +1,7 @@
 <krpano>
 
 
-<style name="help_mob"
+<!-- <style name="help_mob"
 type="text"
 width="20"
 height="20"
@@ -13,9 +13,84 @@ bgalpha="1"
 bgcolor="0xff5487"   
 onclick="popup(calc('externals/help_mob/index.html?ln=' + language ),'100%|100%','help');" 
 />
+ -->
+<style name="help_mob"
+url="%FIRSTXML%/assets/img/help_mobile.png"
+
+align="rightbottom"
+x="get:margins.right"
+y="get:margins.bottom"
+onclick="popup(calc('externals/help_mob/index.html?ln=' + language ),'100%|100%','help');" 
+/>
 
 
 
     <layer name="help_mob" keep="true" style="help_mob"/>
+
+
+
+<style name="campus_and_menu"
+    type="text"
+    text=""
+    align="bottomleft"
+    x="get:margins.right"
+    y="get:margins.bottom" 
+    flowchildren="h"
+    childflowspacing="10"
+    bg="false"
+    bgalpha="0.5"
+    bgcolor="0xff5487"
+    capture="false" 
+
+
+
+/>
+
+<style name="campus_and_menu_text"
+    type="text"
+    text=""
+    css="font-family:'lota_semibold';font-size:18px;color:#ffffff;letter-spacing: 0px;line-height: 19px;"
+    bg="false"
+    onclick="campus_and_menu_open();"
+    capture="false" 
+/>
+
+<events name="" keep="true"
+onnewscene="campus_and_manu_text_events()"
+
+/>
+
+<action name="campus_and_manu_text_events">
+
+  if (contains(scene[(xml.scene)].name,'_b_'),
+    trace('balmes');
+    layer[campus_and_menu_text].text=(campus.balmes);
+    ,
+    trace('ciutadella');
+    layer[campus_and_menu_text].text=(campus.ciutadella);
+  );  
+
+</action>
+
+
+<style name="campus_and_menu_triangle"
+    url="%FIRSTXML%/assets/img/open.png"
+    align="left"
+    onclick="campus_and_menu_open();"
+    capture="false" 
+/>
+
+
+    <layer name="campus_and_menu" keep="true" style="campus_and_menu">
+            <layer name="campus_and_menu_text" keep="true" style="campus_and_menu_text"/>
+            <layer name="campus_and_menu_triangle" keep="true" style="campus_and_menu_triangle"/>
+    </layer>
+
+<action name="campus_and_menu_open">
+
+    trace('campus_and_menu_open');
+
+</action>
+
 <!-- popup(calc('externals/help/index.html?ln=' + language ),'600|400','help'); -->
 </krpano>

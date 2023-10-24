@@ -68,7 +68,7 @@ layer[bottom_line_text_politica].text=ui.politica;
 layer[bottom_line_text_guide].text=ui.guide;
 //js-krpano data
 <!-- jscall(jsUiText();); -->
-
+campus_and_manu_text_events();
 
 //hotspots
 forall(hotspot, h,
