@@ -5,11 +5,12 @@
 <include url="plugins/s_bundle/s_bundle.xml" />
 <include url="components/krp_components/popup/popup.xml" />
 <include url="components/krp_components/blur_background/blur_background.xml" />
-<include url="components/krp_components/first_entrance/first_entrance.xml" />
+<include url="components/krp_components/first_entrance/first_entrance.xml"  if="!mobile"/>
+<include url="components/krp_components/first_entrance/first_entrance_mob.xml" if="mobile"/>
 <include url="components/krp_components/gray_bg/gray_bg.xml" if="!mobile"/>
 <include url="components/krp_components/gray_bg/gray_bg_mobile.xml" if="mobile"/>
 <include url="components/krp_components/hotspots_core/hotspots_core.xml" if="!mobile"/>
-<include url="components/krp_components/menu/menu.xml" if="!mobile"/>
+<include url="components/krp_components/menu/menu.xml" />
 <!-- <include url="test/scroll.xml" /> -->
 <include url="components/krp_components/bottom_line/bottom_line.xml" if="!mobile"/>
 <include url="components/krp_components/bottom_line/bottom_line_mobile.xml" if="mobile"/>
@@ -30,6 +31,9 @@ trace(language);
 		if(isset(startlookat),
 			txtsplit(startlookat, ',', hlookat,vlookat,fov,distortion,architectural);
 			lookat(get(hlookat),get(vlookat),get(fov),get(distortion),get(architectural));
+		);
+		if (mobile == true,
+			jscall(getDataFromKrpano());
 		);
 
 	</action>	

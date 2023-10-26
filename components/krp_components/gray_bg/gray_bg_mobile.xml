@@ -12,9 +12,9 @@
     capturewheel="true"
     width="calc:340 + margins.left"
     height=""
-    onloaded="calc_mesures();"  
     cursor="default"
 />
+    <!-- onloaded="calc_mesures();"   -->
 
 
 <layer name="gray_bg" keep="true" style="gray_bg">

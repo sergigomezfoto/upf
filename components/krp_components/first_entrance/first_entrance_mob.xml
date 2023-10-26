@@ -2,8 +2,11 @@
 
 <if check="!test">
 
-    <action name="" autorun="true" >
-        popup("https://www.youtube.com/embed/JPLJ50WkWao","66%|60%","init",first_360_action);    
+    <action name="" autorun="true"  >
+      
+
+
+
     </action>
 
 <action name="first_360_action">
@@ -82,7 +85,7 @@ layer[ft_container].ondown="close_ft();";
     delayedcall (1,
     trace('aa');
     jscall(kploaded += 1 ;);
-    unload_loader();
+   // unload_loader();
     close_ft();
         firstcompleted=true;
     );

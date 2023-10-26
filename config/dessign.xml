@@ -22,50 +22,51 @@
 <events name="resize_design" keep="true" onresize="resize_design"
 />
 
-<action name="resize_design" if="!mobile">
+<action name="resize_design" >
+if (!mobile,
+        gray=layer[gray_bg];
+        gray_bottom=layer[gray_bg_bottom];
+        info_container=layer[info_container];
+        logo_upf=layer[logo_upf];
+        menu_container=layer[menu_container];
+        super_container=layer[super_container_wraper];
+        scroll_balmes=layer[super_vscrollbar_balmes_bg_container];
+        if (stageheight LT 1024,
+        margin=30;
+        trace('petttiitt');
+            margins.top=30;
+            margins.right=30;
+            margins.bottom=30;
+            margins.left=30;
+            scrollarea.textheight=180;
+            supercontainery=140;
+            scrollbalmes_y=230;
+        ,
+        margin=50;
+        trace('gran');
+            margins.top=50;
+            margins.right=50;
+            margins.bottom=50;
+            margins.left=50;
+            scrollarea.textheight=280;
+            supercontainery=180;
+            scrollbalmes_y=260;
 
-gray=layer[gray_bg];
-gray_bottom=layer[gray_bg_bottom];
-info_container=layer[info_container];
-logo_upf=layer[logo_upf];
-menu_container=layer[menu_container];
-super_container=layer[super_container_wraper];
-scroll_balmes=layer[super_vscrollbar_balmes_bg_container];
-if (stageheight LT 1024,
-margin=30;
-trace('petttiitt');
-    margins.top=30;
-    margins.right=30;
-    margins.bottom=30;
-    margins.left=30;
-    scrollarea.textheight=180;
-    supercontainery=140;
-    scrollbalmes_y=230;
-,
-margin=50;
-trace('gran');
-    margins.top=50;
-    margins.right=50;
-    margins.bottom=50;
-    margins.left=50;
-    scrollarea.textheight=280;
-    supercontainery=180;
-    scrollbalmes_y=260;
-
+        );
+        //gray
+        gray.width=(340 + margin);
+        gray_bottom.width=(340 + margin);
+        //info_container
+        info_container.y=(margin);
+        info_container.x=(margin);
+        //logo_upf
+        logo_upf.y=(margin);
+        logo_upf.x=(margin);
+        //menu_container
+        super_container.y=(supercontainery);
+        menu_container.x=(margin);   
+        scroll_balmes.y=(scrollbalmes_y);
 );
-//gray
-gray.width=(340 + margin);
-gray_bottom.width=(340 + margin);
-//info_container
-info_container.y=(margin);
-info_container.x=(margin);
-//logo_upf
-logo_upf.y=(margin);
-logo_upf.x=(margin);
-//menu_container
-super_container.y=(supercontainery);
-menu_container.x=(margin);   
-scroll_balmes.y=(scrollbalmes_y);
 </action>
 
 

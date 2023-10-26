@@ -1,0 +1,147 @@
+:root {
+    
+    --accordion-container-padding: 1rem; 
+    --item-campus-height: 16px;  /* Posa aquí l'altura real que vulguis */
+    --cta-container-height:120px;
+
+}
+
+
+
+/* Estil general per a tot el panel del menú */
+.menu-panel {
+    background-color: #343434;  /* Color de fons sòlid */
+    position: fixed;             /* Fixar el menú a la pantalla */
+    top: 0;                      /* Posició superior a 0 */
+    left: 0;                     /* Posició esquerra a 0 */
+    width: 100%;                 /* Amplada al 100% de la pantalla */
+    height: 100vh;               /* Altura al 100% de la pantalla */
+    overflow-y: auto;            /* Si el contingut és més gran que l'altura, mostra una barra de desplaçament */
+}
+#space1,#space2{
+    height: 20px;
+    background-color: #343654;
+}
+/* Estil per al contenidor d'accordions */
+.accordion-container {
+    margin-top: var(--item-campus-height);
+    padding-top: var(--accordion-container-padding);               /* Espaiament intern */
+    padding-bottom: 0;
+    padding-left: var(--accordion-container-padding);               /* Espaiament intern */
+    padding-right: var(--accordion-container-padding);               /* Espaiament intern */
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
+    max-height: calc(100vh  - var(--cta-container-height) - ( var(--accordion-container-padding)) - var(--item-campus-height)); 
+    overflow: hidden;
+    /* background-color: brown; */
+    position:relative;
+
+}
+.desapear{
+    -webkit-mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 95%, transparent 100%);
+    mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 95%, transparent 100%);
+    margin-top: 10px;
+}
+.desapear-container {
+    overflow: hidden;
+    position: relative;
+
+}
+/* Estils per als menús d'accordions */
+.accordion-menu {
+    margin-bottom: 10px;       /* Espaiament a la part inferior per separar-los */
+}
+
+/* Estil per als botons del títol d'accordions */
+.accordion-title {
+    background-color: transparent;     /* Color de fons més clar que el del panel */
+    color: #fff;                /* Color de lletra blanc */
+    padding: 0px;            /* Espaiament intern */
+    border: none;               /* Sense borda */
+    width: 100%;                /* Amplada al 100% del contenidor */
+    text-align: left;           /* Alinear text a l'esquerra */
+    cursor: pointer;            /* Cursor en forma de mà quan es posa el ratolí a sobre */
+    height: var(--item-campus-height);
+    padding: 3px 30px ;
+}
+
+/* Estil per al contingut ocult d'accordions */
+.accordion-content {
+    height: 100%;
+    max-height: calc(100% - (var(--item-campus-height)*2) - var(--cta-container-height)) !important; 
+    overflow-y: auto;  /* Mostra una barra de desplaçament si el contingut supera l'altura màxima */
+    transition: height 0.3s ease-in-out; /* Afegeix una transició suau */
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
+}
+
+/* .acordion-content-items{
+    padding:20px;
+} */
+
+/* Estil per als títols dins dels accorions (Espacios comunes, Aulas y salas, etc.) */
+
+
+  .accordion-content  p.separator{
+        color:aquamarine;
+        }
+
+/* Estil per als elements clicables dins dels accorions (Entrada, Espacio polivalente, etc.) */
+.accordion-content p {
+    color: #ddd;               /* Color de lletra encara més clar */
+    cursor: pointer;           /* Cursor en forma de mà */
+    margin: 3px 0;         /* Espaiament a la part superior i inferior */
+    padding: 3px 30px   /* Espaiament intern */
+}
+
+/* .accordion-content p:hover {
+    background-color: #555;  
+} */
+
+#menuBalmes {
+    height: auto; /* Per mostrar el contingut per defecte */
+}
+
+/* ////////////////////////////////////////// CTA ///////////////////////////////////////// */
+
+
+.cta-container{
+    /* background-color: #555; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    overflow: hidden;
+}
+.cta{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.cta-container a{
+    display: block;
+    color: #fff;
+    margin: 0;
+    text-decoration: none;
+    /* background-color: aqua; */
+    height: 100%;
+    position:relative
+}
+.cta-container a span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-left:40px;
+}
+.cta-container .cta:first-child{
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    
+}
