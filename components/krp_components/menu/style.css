@@ -63,6 +63,8 @@
     cursor: pointer;            /* Cursor en forma de mà quan es posa el ratolí a sobre */
     height: var(--item-campus-height);
     padding: 3px 30px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Estil per al contingut ocult d'accordions */
@@ -84,6 +86,7 @@
 
   .accordion-content  p.separator{
         color:aquamarine;
+        margin-top: 10px;
         }
 
 /* Estil per als elements clicables dins dels accorions (Entrada, Espacio polivalente, etc.) */
