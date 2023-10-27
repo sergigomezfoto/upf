@@ -18,7 +18,7 @@
     <base target="_blank">
     <script>
         let mobile = false;
-        if (window.matchMedia('only screen and (max-width:1023px)').matches) {
+        if (window.matchMedia('only screen and (max-width:950px)').matches) {
             mobile = true;
         }
     </script>
@@ -54,55 +54,55 @@
         <div id="close_guide"><img src="assets/img/close_guide.png" alt="close_guide"></div>
     </div> -->
     <div class="menu-panel">
+        <div class="close_menu"></div>
         <div class="accordion-container">
             <!-- Campus Balmes -->
-            <div class="accordion-menu" data-campus="Campus Balmes">
-                <p class="accordion-title" data-name="scene_b_02"
-                    onclick="toggleCampus('menuBalmes', 'scene_b_02')">Campus Balmes</p>
-                  
+            <div class="accordion-menu"  id="CampusBalmesContainer">
+                <p class="accordion-title" id="scene_b_02" onclick="toggleCampusAndloadPanorama(event,'menuBalmes')">
+                    Campus Balmes</p>
+
                 <div class="desapear">
                     <div class="accordion-content" id="menuBalmes">
-                        <!-- Espacios comunes -->
-                        <p class="separator">Espacios comunes</p >
-                        <p data-name="scene_b_03" onclick="loadPanorama('scene_b_03')">Entrada</p>
-                        <p data-name="scene_b_13" onclick="loadPanorama('scene_b_13')">Espacio polivalente</p>
-                        <p data-name="scene_b_12" onclick="loadPanorama('scene_b_12')">Sala de estudios</p>
-                        <p data-name="scene_b_10" onclick="loadPanorama('scene_b_10')">Auditorio</p>
-                        <p data-name="scene_b_14" onclick="loadPanorama('scene_b_14')">Cafetería - Restaurante</p>
-                        <p data-name="scene_b_07" onclick="loadPanorama('scene_b_07')">Terraza Este</p>
-                        <p data-name="scene_b_08" onclick="loadPanorama('scene_b_08')">Terraza Sur</p>
 
-                        <!-- Aulas y salas -->
-                        <p class="separator">Aulas y salas</p>
-                        <p data-name="scene_b_04" onclick="loadPanorama('scene_b_04')">Sala Phainon</p>
-                        <p data-name="scene_b_09" onclick="loadPanorama('scene_b_09')">Sala Versa</p>
-                        <p data-name="scene_b_01" onclick="loadPanorama('scene_b_01')">Aula</p>
-                        <p data-name="scene_b_11a" onclick="loadPanorama('scene_b_11a')">Aula en anfiteatro</p>
+                        <p id="s_1" class="separator">Espacios comunes</p>
+                        <p id="scene_b_03" onclick="loadPanorama(event)">Entrada</p>
+                        <p id="scene_b_13" onclick="loadPanorama(event)">Espacio polivalente</p>
+                        <p id="scene_b_12" onclick="loadPanorama(event)">Sala de estudios</p>
+                        <p id="scene_b_10" onclick="loadPanorama(event)">Auditorio</p>
+                        <p id="scene_b_14" onclick="loadPanorama(event)">Cafetería - Restaurante</p>
+                        <p id="scene_b_07" onclick="loadPanorama(event)">Terraza Este</p>
+                        <p id="scene_b_08" onclick="loadPanorama(event)">Terraza Sur</p>
+
+                        <p id="s_2" class="separator">Aulas y salas</p>
+                        <p id="scene_b_04" onclick="loadPanorama(event)">Sala Phainon</p>
+                        <p id="scene_b_09" onclick="loadPanorama(event)">Sala Versa</p>
+                        <p id="scene_b_01" onclick="loadPanorama(event)">Aula</p>
+                        <p id="scene_b_11a" onclick="loadPanorama(event)">Aula en anfiteatro</p>
                     </div>
                 </div>
 
             </div>
 
 
-            <div class="accordion-menu" data-campus="Campus Ciutadella">
-                <p class="accordion-title" data-name="scene_c_02"
-                    onclick="toggleCampus('menuCiutadella', 'scene_c_02')">Campus Ciutadella</p>
+            <div class="accordion-menu"  id="CampusCiutadellaContainer">
+                <p class="accordion-title" id="scene_c_02"
+                    onclick="toggleCampusAndloadPanorama(event,'menuCiutadella')">Campus Ciutadella</p>
                 <div class="desapear">
                     <div class="accordion-content" id="menuCiutadella">
 
-                        <!-- Espacios comunes -->
-                        <p class="separator">Espacios comunes</p>
-                        <p data-name="scene_c_06" onclick="loadPanorama('scene_c_06')">Pati de les aigües</p>
-                        <p data-name="scene_c_07" onclick="loadPanorama('scene_c_07')">Biblioteca de les aigües</p>
-                        <p data-name="scene_c_01" onclick="loadPanorama('scene_c_01')">Hall Jaume I</p>
-                        <p data-name="scene_c_12" onclick="loadPanorama('scene_c_12')">Hall Roger de Lluria</p>
-                        <p data-name="scene_c_05" onclick="loadPanorama('scene_c_05')">Hall Merce Rodoreda</p>
+  
+                        <p id="s_3" class="separator">Espacios comunes</p>
+                        <p id="scene_c_06" onclick="loadPanorama(event)">Pati de les aigües</p>
+                        <p id="scene_c_07" onclick="loadPanorama(event)">Biblioteca de les aigües</p>
+                        <p id="scene_c_01" onclick="loadPanorama(event)">Hall Jaume I</p>
+                        <p id="scene_c_12" onclick="loadPanorama(event)">Hall Roger de Lluria</p>
+                        <p id="scene_c_05" onclick="loadPanorama(event)">Hall Merce Rodoreda</p>
 
-                        <!-- Aulas y salas -->
-                        <p class="separator">Aulas y salas</p>
-                        <p data-name="scene_c_11" onclick="loadPanorama('scene_c_11')">Aula</p>
-                        <p data-name="scene_c_13" onclick="loadPanorama('scene_c_13')">Aula en anfiteatro</p>
-                        <p data-name="scene_c_10" onclick="loadPanorama('scene_c_10')">Sala Polivalente</p>
+
+                        <p id="s_4" class="separator">Aulas y salas</p>
+                        <p id="scene_c_11" onclick="loadPanorama(event)">Aula</p>
+                        <p id="scene_c_13" onclick="loadPanorama(event)">Aula en anfiteatro</p>
+                        <p id="scene_c_10" onclick="loadPanorama(event)">Sala Polivalente</p>
 
 
                     </div>
@@ -111,11 +111,11 @@
         </div>
         <div class="cta-container">
             <div class="cta">
-                <a href="https://www.upf.edu/web/bsm/estudia-amb-nosaltres" target="_blank"><span>ACCEDE A LA
+                <a id="cta_1" href="https://www.upf.edu/web/bsm/estudia-amb-nosaltres" target="_blank"><span>ACCEDE A LA
                         WEB</span></a>
             </div>
             <div class="cta">
-                <a href="https://www.upf.edu/web/bsm/estudia-amb-nosaltres" target="_blank"><span>ENCUENTRA TU
+                <a id="cta_2" href="https://www.upf.edu/web/bsm/estudia-amb-nosaltres" target="_blank"><span>ENCUENTRA TU
                         PROGRAMA</span></a>
             </div>
         </div>

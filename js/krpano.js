@@ -59,3 +59,4 @@ function krpano_onready_callback(krpano_interface) {
   krpano = krpano_interface;
 
 }
+

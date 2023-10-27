@@ -1,8 +1,10 @@
 :root {
     
     --accordion-container-padding: 1rem; 
-    --item-campus-height: 16px;  /* Posa aquí l'altura real que vulguis */
+    --item-campus-height: 26px;  /* Posa aquí l'altura real que vulguis */
     --cta-container-height:120px;
+    --accordion-container-top:60px;
+    --accordion-container-left:25px;
 
 }
 
@@ -10,41 +12,53 @@
 
 /* Estil general per a tot el panel del menú */
 .menu-panel {
-    background-color: #343434;  /* Color de fons sòlid */
+    background-color: rgba(52, 52, 52,1);  /* Color de fons sòlid */
     position: fixed;             /* Fixar el menú a la pantalla */
     top: 0;                      /* Posició superior a 0 */
     left: 0;                     /* Posició esquerra a 0 */
     width: 100%;                 /* Amplada al 100% de la pantalla */
     height: 100vh;               /* Altura al 100% de la pantalla */
     overflow-y: auto;            /* Si el contingut és més gran que l'altura, mostra una barra de desplaçament */
+    overflow-x: hidden;
+    font-family:'lota_regular';
+    font-size: 16px;
+    line-height: 1.75;
 }
-#space1,#space2{
-    height: 20px;
-    background-color: #343654;
+.close_menu{
+    background-image: url(../../../assets/img/xclose_init.png);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
 }
 /* Estil per al contenidor d'accordions */
 .accordion-container {
-    margin-top: var(--item-campus-height);
-    padding-top: var(--accordion-container-padding);               /* Espaiament intern */
+    /* margin-top: var(--item-campus-height); */
     padding-bottom: 0;
-    padding-left: var(--accordion-container-padding);               /* Espaiament intern */
-    padding-right: var(--accordion-container-padding);               /* Espaiament intern */
-    /* padding-top: 0px;
-    padding-bottom: 0px; */
+    /* padding-right: var(--accordion-container-padding);    */
     max-height: calc(100vh  - var(--cta-container-height) - ( var(--accordion-container-padding)) - var(--item-campus-height)); 
-    overflow: hidden;
-    /* background-color: brown; */
     position:relative;
-
+    border-left: 1px solid white;
+    position: relative;
+    top:var(--accordion-container-top);
+    left:var(--accordion-container-left);
+    width: calc(100% - 40px);
+    /* background-color: brown; */
 }
 .desapear{
     -webkit-mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 95%, transparent 100%);
     mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 95%, transparent 100%);
     margin-top: 10px;
+        /* background-color: aliceblue; */
+    /* width: 110%; */
+    position: relative;
+    left: -4px;
 }
 .desapear-container {
     overflow: hidden;
     position: relative;
+    
 
 }
 /* Estils per als menús d'accordions */
@@ -62,39 +76,52 @@
     text-align: left;           /* Alinear text a l'esquerra */
     cursor: pointer;            /* Cursor en forma de mà quan es posa el ratolí a sobre */
     height: var(--item-campus-height);
-    padding: 3px 30px ;
+    padding: 3px 19px ;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 18px;
+    border-left: 8px solid rgba(200, 16, 46,0);
+    transition: border-color 0.6s ease;
+    margin-left: -4px;
 }
+.accordion-title, 
+.accordion-container p {
 
+    position: relative;
+    z-index: 20;
+}
 /* Estil per al contingut ocult d'accordions */
 .accordion-content {
     height: 100%;
-    max-height: calc(100% - (var(--item-campus-height)*2) - var(--cta-container-height)) !important; 
-    overflow-y: auto;  /* Mostra una barra de desplaçament si el contingut supera l'altura màxima */
+
+    overflow-y: auto;  
+    overflow-x: hidden;
     transition: height 0.3s ease-in-out; /* Afegeix una transició suau */
-    /* margin-bottom: 20px;
-    margin-top: 20px; */
+    position: relative;
+    left:-2px;
+
 }
+.accordion-content > p:last-of-type {
+margin-bottom: 10px;
 
-/* .acordion-content-items{
-    padding:20px;
-} */
-
-/* Estil per als títols dins dels accorions (Espacios comunes, Aulas y salas, etc.) */
+}
 
 
   .accordion-content  p.separator{
-        color:aquamarine;
+        color:rgba(255,255,255,1); 
         margin-top: 10px;
+        border-left: none;
+        margin-left:  8px;
         }
 
 /* Estil per als elements clicables dins dels accorions (Entrada, Espacio polivalente, etc.) */
 .accordion-content p {
-    color: #ddd;               /* Color de lletra encara més clar */
+    color: rgba(255,255,255,0.5);              /* Color de lletra encara més clar */
     cursor: pointer;           /* Cursor en forma de mà */
-    margin: 3px 0;         /* Espaiament a la part superior i inferior */
-    padding: 3px 30px   /* Espaiament intern */
+    margin: 3px 3px;
+    padding: 3px 20px;
+    border-left: 5px solid rgba(200, 16, 46,0);
+    width: calc(100% - 70px);
 }
 
 /* .accordion-content p:hover {
@@ -141,7 +168,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    padding-left:40px;
+    padding-left:93px;
+    text-transform: uppercase;
 }
 .cta-container .cta:first-child{
     border-bottom: 1px solid #fff;
