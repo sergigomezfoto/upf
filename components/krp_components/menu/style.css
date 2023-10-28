@@ -17,7 +17,7 @@
     top: 0;                      /* Posició superior a 0 */
     left: 0;                     /* Posició esquerra a 0 */
     width: 100%;                 /* Amplada al 100% de la pantalla */
-    height: 100vh;               /* Altura al 100% de la pantalla */
+    height: 100%;               /* Altura al 100% de la pantalla */
     overflow-y: auto;            /* Si el contingut és més gran que l'altura, mostra una barra de desplaçament */
     overflow-x: hidden;
     font-family:'lota_regular';
@@ -37,7 +37,7 @@
     /* margin-top: var(--item-campus-height); */
     padding-bottom: 0;
     /* padding-right: var(--accordion-container-padding);    */
-    max-height: calc(100vh  - var(--cta-container-height) - ( var(--accordion-container-padding)) - var(--item-campus-height)); 
+    max-height: calc(100%  - var(--cta-container-height) - ( var(--accordion-container-padding)) - var(--item-campus-height)); 
     position:relative;
     border-left: 1px solid white;
     position: relative;
@@ -145,6 +145,7 @@ margin-bottom: 10px;
     flex-direction: column;
     height: 120px;
     overflow: hidden;
+    z-index: 999; 
 }
 .cta{
     width: 100vw;
