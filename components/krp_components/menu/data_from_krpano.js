@@ -1,3 +1,5 @@
+let indexOfScenes =[];
+
 const getDataFromKrpano = () => {
   const krpanoMenu = [];
   const balmesIndex = 0;
@@ -68,19 +70,29 @@ const getDataFromKrpano = () => {
   };
   krpanoMenu.push(cta1);
   krpanoMenu.push(cta2);
-  const updateTextContent = (data) => {
-    data.forEach((item) => {
-      const element = document.getElementById(item.id);
-      if (element && !item.url) {
-        element.textContent = item.title;
-      }
-      if (element && item.url) {
-        element.href = item.url; // Això és útil per als enllaços
-        element.innerHTML = `<span>${item.title}</span>`;
-      }
-    });
-  };
-  updateTextContent(krpanoMenu);
+  
+  indexOfScenes = krpanoMenu
+  .filter((item) => item.id.includes('scene'))
+  .map((item) => item.id);
   console.log(krpanoMenu);
+  
   return krpanoMenu;
+};
+
+const updateTextContent = (data) => {
+  data.forEach((item) => {
+    const element = document.getElementById(item.id);
+    if (element && !item.url) {
+      element.textContent = item.title;
+    }
+    if (element && item.url) {
+      element.href = item.url; // Això és útil per als enllaços
+      element.innerHTML = `<span>${item.title}</span>`;
+    }
+  });
+};
+
+const krpanoLang = () => {
+  const data = getDataFromKrpano();
+  updateTextContent(data);
 };

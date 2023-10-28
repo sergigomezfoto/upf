@@ -55,7 +55,7 @@ onclick="popup(calc('externals/help_mob/index.html?ln=' + language ),'100%|100%'
     capture="false" 
 />
 
-<events name="" keep="true"
+<events name="bottom_line" keep="true"
 onnewscene="campus_and_manu_text_events()"
 
 />
@@ -86,9 +86,8 @@ onnewscene="campus_and_manu_text_events()"
             <layer name="campus_and_menu_triangle" keep="true" style="campus_and_menu_triangle"/>
     </layer>
 
-<action name="campus_and_menu_open">
-
-    trace('campus_and_menu_open');
+<action name="campus_and_menu_open" type="js">
+makeVisibleAndInteractive(menuPanel);
 
 </action>
 

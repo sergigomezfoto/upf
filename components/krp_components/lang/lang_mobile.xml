@@ -14,6 +14,7 @@
    includexml('%FIRSTXML%/config/config.xml', hot_reload(););
 change_lang_buttons();
 tween(layer[lang_general_container].alpha,0,0.2);
+jscall(krpanoLang());
 </action>
 
 <action name="change_lang_buttons" autorun="true">

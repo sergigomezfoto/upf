@@ -9,11 +9,26 @@
 <set var="firstciutadellaseparator" val="13"/>
 <set var="secondciutadellaseparator" val="18"/>
 
+<set var="blendmode" val="OPENBLEND(1.0, 0.0, 0.2, 0.0, linear)"/>
+
+<if check="mobile">
+
+
+<action name="s_loadsc" scope="local" args="scenename">
+
+  loadscene((scenename), null, MERGE,get(gobal.blendmode));  
+    
+</action>
+
+
+
+</if>
+
+
 
 <if check="!mobile">
 
 
-    <set var="blendmode" val="OPENBLEND(1.0, 0.0, 0.2, 0.0, linear)"/>
 
     <!-- layer[scrollarea_scroll_items_balmes].scrolltocenter(,(layer[get(name)].y)); -->
 
