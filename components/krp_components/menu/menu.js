@@ -26,7 +26,7 @@ const toggleCampusAndloadPanorama = (event, menuId) => {
         console.log("Intentant tancar el menú, però no permetem que es tanqui ell mateix"); 
         krpano.actions.trace(`vaig a -> ${sceneName}`);
         krpano.call('s_loadsc(' + sceneName +')');
-        makeInvisibleAndNonInteractive(menuPanel);
+        // makeInvisibleAndNonInteractive(menuPanel);
         return;
     }
     
@@ -37,15 +37,15 @@ const toggleCampusAndloadPanorama = (event, menuId) => {
     // Aquí pots afegir la funcionalitat per carregar la panoràmica basant-te en sceneName
     krpano.actions.trace(`vaig a -> ${sceneName}`);
     krpano.call('s_loadsc(' + sceneName +')');
-    makeInvisibleAndNonInteractive(menuPanel);
+    // makeInvisibleAndNonInteractive(menuPanel);
     
 };
 const loadPanorama=(event)=>{
     const element = event.currentTarget; // o event.target, depenent del teu cas d'ús
     const sceneName = element.getAttribute('id');
     krpano.actions.trace(`vaig a -> ${sceneName}`);
-    krpano.call('s_loadsc(' + sceneName +')');
-    makeInvisibleAndNonInteractive(menuPanel);
+    krpano.call('s_loadsc(' + sceneName +', ' + menuPanel + ')');
+    
 }
 
 

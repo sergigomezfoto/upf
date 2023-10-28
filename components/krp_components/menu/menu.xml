@@ -11,18 +11,20 @@
 
 <set var="blendmode" val="OPENBLEND(1.0, 0.0, 0.2, 0.0, linear)"/>
 
-<if check="mobile">
+<action name="s_loadsc" scope="local" args="scenename,menupanel">
 
-
-<action name="s_loadsc" scope="local" args="scenename">
-
-  loadscene((scenename), null, MERGE,get(gobal.blendmode));  
+  loadscene(*scenename, null, MERGE,'OPENBLEND(1.0, 0.0, 0.2, 0.0, linear)');  
+  
+  delayedcall (0.5,
+  jscall(makeInvisibleAndNonInteractive(menuPanel));
     
+  );
+
 </action>
 
 
 
-</if>
+
 
 
 
