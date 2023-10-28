@@ -5,7 +5,7 @@
 <set var="firstcituadellaindex" val="12"/>
 
 <set var="firstbalmesseparator" val="1"/>
-<set var="secondbalmesseparator" val="8"/>
+<set var="secondbalmesseparator" val="6"/>
 <set var="firstciutadellaseparator" val="13"/>
 <set var="secondciutadellaseparator" val="18"/>
 

@@ -9,7 +9,7 @@
 
     </action>
 
-<action name="first_360_action">
+<action name="first_360_action" autorun="true">
 <!-- delayedcall (3, -->
 layer[ft_container].ondown="close_ft();";
     
@@ -80,14 +80,11 @@ layer[ft_container].ondown="close_ft();";
     );
     </action>
     <action name="close_ft_" autorun="true" if="mobile">
-    sharp();
-    tween(layer[ft_container].alpha,0, 0.2,);   
+    <!-- sharp(); -->
+    tween(layer[ft_container].alpha,1, 0.2,);   
     delayedcall (1,
-    trace('aa');
-    jscall(kploaded += 1 ;);
-   // unload_loader();
-    close_ft();
-        firstcompleted=true;
+        firstcompleted=true;  
+        jscall(kploaded += 1 ;);
     );
     </action>
 

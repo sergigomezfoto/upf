@@ -53,7 +53,7 @@ Tras pasar por la recepción, a escasos metros, accederás a todos los recursos 
     <data name="b_12_content"><![CDATA[En la segunda estancia del Espai Koiné, las cortinas de madera son las encargadas de aislar el espacio ayudándote a volcar todos tus sentidos en el estudio, convirtiéndose de esta forma en un espacio ideal para preparar tus exámenes o repasar en detalle tus clases.]]></data>
 
     <data name="b_10_title"><![CDATA[Auditorio]]></data>
-    <data name="b_10_content"><![CDATA[Estás ante el escenario perfecto para albergar grandes eventos. El auditorio del campus Balmes tiene capacidad para 200 personas y en él se celebran mesas redondas, masterclasses y conferencias con ponentes de primer nivel.]]></data>
+    <data name="b_10_content"><![CDATA[Estás ante el escenario perfecto para albergar grandes eventos. El auditorio del campus Balmes tiene capacidad para más de 200 personas y en él se celebran mesas redondas, masterclasses y conferencias con ponentes de primer nivel.]]></data>
     
     <data name="b_14_title"><![CDATA[Cafetería - Restaurante]]></data>
     <data name="b_14_content"><![CDATA[Has llegado a la cafetería, el espacio ideal para tomar un snack entre clases, repasar apuntes con un café o simplemente relajarte. La cafetería incluye restaurante con opciones vegetarianas o sin gluten.]]></data>
@@ -92,11 +92,11 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     <data name="c_01_title"><![CDATA[Hall Jaume I]]></data>
     <data name="c_01_content"><![CDATA[Y si quieres regresar a la Biblioteca de les Aigües, ir a por un café o dirigirte a clase… El Hall del Edificio Jaume I te conectará con todo ello. El patio interior está coronado por un sinfín de balcones por los que entra luz natural a las aulas y salas. Es una de las zonas más frecuentadas del edificio, por lo que es imprescindible conocerla. ]]></data>
 
-    <data name="c_12_title"><![CDATA[Hall Roger de Lluria]]></data>
+    <data name="c_12_title"><![CDATA[Hall Roger de Llúria]]></data>
     <data name="c_12_content"><![CDATA[Si alguna vez te pierdes, te resultará muy fácil encontrarte en este patio interior. El Hall conecta con los recursos más importantes del campus: la biblioteca, la cafetería, las aulas polivalentes… Todos ellos pensados para potenciar tu talento.]]></data>
 
-    <data name="c_05_title"><![CDATA[Hall Merce Rodoreda]]></data>
-     <data name="c_05_content"><![CDATA[Desde el Hall del edificio Merce Rodoreda podrás acceder a las aulas, sala polivalente y auditorio.]]></data> 
+    <data name="c_05_title"><![CDATA[Hall Mercè Rodoreda]]></data>
+     <data name="c_05_content"><![CDATA[Desde el Hall del edificio Mercè Rodoreda podrás acceder a las aulas, sala polivalente y auditorio.]]></data> 
 
     <data name="c_11_title"><![CDATA[Aula]]></data>
     <data name="c_11_content"><![CDATA[Estás en una de las aulas de este edificio. Se trata de un espacio pensado para las clases presenciales, por lo que favorece la interacción entre ponentes y oyentes.]]></data>
@@ -206,7 +206,7 @@ Després de passar per la recepció, a escassos metres, accediràs a tots els re
 <data name="b_12_content"><![CDATA[En la segona estada del Espai Koiné, les cortines de fusta són les encarregades d'aïllar l'espai ajudant-te a bolcar tots els teus sentits en l'estudi, convertint-se d'aquesta manera en un espai ideal per a preparar els teus exàmens o repassar detalladament les teves classes.]]></data>
 
 <data name="b_10_title"><![CDATA[Auditori]]></data>
-<data name="b_10_content"><![CDATA[Estàs davant l'escenari perfecte per a albergar grans esdeveniments. L'auditori del campus Balmes té capacitat per a 200 persones i en ell se celebren taules rodones, masterclasses i conferències amb ponents de primer nivell.]]></data>
+<data name="b_10_content"><![CDATA[Estàs davant l'escenari perfecte per a albergar grans esdeveniments. L'auditori del campus Balmes té capacitat per a més de 200 persones i en ell se celebren taules rodones, masterclasses i conferències amb ponents de primer nivell.]]></data>
 
 <data name="b_14_title"><![CDATA[Cafeteria - Restaurant]]></data>
 <data name="b_14_content"><![CDATA[Has arribat a la cafeteria, l'espai ideal per a prendre un snack entre classes, repassar anotacions amb un cafè o simplement relaxar-te. La cafeteria inclou restaurant amb opcions vegetarianes o sense glútens.]]></data>
@@ -245,11 +245,11 @@ Es tracta d'un enorme campus urbà situat al costat d'alguns dels llocs més imp
 <data name="c_01_title"><![CDATA[Hall Jaume I]]></data>
 <data name="c_01_content"><![CDATA[I si vols tornar a la Biblioteca dels Aigües, anar per un cafè o dirigir-te a classe… L'Hall de l'Edifici Jaume I et connectarà amb tot això. El pati interior està coronat per una infinitat de balcons pels quals entra llum natural a les aules i sales. És una de les zones més freqüentades de l'edifici, per la qual cosa és imprescindible conèixer-la.]]></data>
 
-<data name="c_12_title"><![CDATA[Hall Roger de Lluria]]></data>
+<data name="c_12_title"><![CDATA[Hall Roger de Llúria]]></data>
 <data name="c_12_content"><![CDATA[Si alguna vegada et perds, et resultarà molt fàcil trobar-te en aquest pati interior. L'Hall connecta amb els recursos més importants del campus: la biblioteca, la cafeteria, les aules polivalents… Tots ells pensats per a potenciar el teu talent.]]></data>
 
-<data name="c_05_title"><![CDATA[Hall Merce Rodoreda]]></data>
-<data name="c_05_content"><![CDATA[Des de l'Hall de l'edifici Merce Rodoreda podràs accedir a les aules, sala polivalent i auditori.]]></data>
+<data name="c_05_title"><![CDATA[Hall Mercè Rodoreda]]></data>
+<data name="c_05_content"><![CDATA[Des de l'Hall de l'edifici Mercè Rodoreda podràs accedir a les aules, sala polivalent i auditori.]]></data>
 
 <data name="c_11_title"><![CDATA[Aula]]></data>
 <data name="c_11_content"><![CDATA[Estàs en una de les aules d'aquest edifici. Es tracta d'un espai pensat per a les classes presencials, per la qual cosa afavoreix la interacció entre ponents i oïdores.]]></data>
@@ -356,7 +356,7 @@ After passing through the reception, just a few metres away, you will have acces
 <data name="b_12_content"><![CDATA[In the second room of the Espai Koiné, the wooden curtains are responsible for isolating the space, helping you to focus all your senses on studying, making it an ideal place to prepare for your exams or to review your classes in detail.]]></data>
 
 <data name="b_10_title"><![CDATA[Auditorium]]></data>
-<data name="b_10_content"><![CDATA[You are in the perfect setting to host major events. The auditorium of the Balmes campus has a capacity for 200 people and hosts round tables, masterclasses and conferences with top-level speakers.]]></data>
+<data name="b_10_content"><![CDATA[You are in the perfect setting to host major events. The auditorium of the Balmes campus has a capacity for more than 200 people and hosts round tables, masterclasses and conferences with top-level speakers.]]></data>
 
 <data name="b_14_title"><![CDATA[Café - Restaurant]]></data>
 <data name="b_14_content"><![CDATA[You have arrived at the cafeteria, the ideal place to have a snack between classes, review notes with a coffee or just relax. The cafeteria includes a restaurant with vegetarian and gluten-free options.]]></data>
@@ -393,11 +393,11 @@ It is a huge urban campus located next to some of the most important places in t
 <data name="c_01_title"><![CDATA[Hall Jaume I]]></data>
 <data name="c_01_content"><![CDATA[And if you want to go back to the Aigües Library, get a coffee or go to class... The Hall of the Jaume I Building will connect you with all of them. The inner courtyard is crowned by countless balconies through which natural light enters the classrooms and halls. It is one of the most frequented areas of the building, so it is essential to get to know it.]]></data>
 
-<data name="c_12_title"><![CDATA[ Hall Roger de Lluria]]></data>
+<data name="c_12_title"><![CDATA[ Hall Roger de Llúria]]></data>
 <data name="c_12_content"><![CDATA[If you ever get lost, it's easy to find yourself in this inner courtyard. The Hall connects to the most important resources on campus: the library, the cafeteria, the multi-purpose rooms... All of them designed to enhance your talent.]]></data>
 
-<data name="c_05_title"><![CDATA[Hall Merce Rodoreda]]></data>
-<data name="c_05_content"><![CDATA[From the Hall of the Merce Rodoreda building you can access the classrooms, multi-purpose room and auditorium.]]></data>
+<data name="c_05_title"><![CDATA[Hall Mercè Rodoreda]]></data>
+<data name="c_05_content"><![CDATA[From the Hall of the Mercè Rodoreda building you can access the classrooms, multi-purpose room and auditorium.]]></data>
 
 <data name="c_11_title"><![CDATA[Classroom]]></data>
 <data name="c_11_content"><![CDATA[You are in one of the classrooms in this building. It is a space designed for face-to-face classes, so it favours interaction between speakers and listeners.]]></data>

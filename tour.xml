@@ -88,33 +88,6 @@ onnewscene="newscene();"
 
 	</scene>
 
-	<scene name="scene_b_13" title="b_13" onstart="" thumburl="panos/b_13.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="77" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/b_13.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/b_13.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_b_12" title="b_12" onstart="" thumburl="panos/b_12.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="130" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/b_12.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/b_12.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene>
 
 	<scene name="scene_b_10" title="b_10" onstart="" thumburl="panos/b_10.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
@@ -175,7 +148,62 @@ onnewscene="newscene();"
 		<hotspot name="h_b_07_1"  ath="-16" atv="-30" style="hspano|hs" if="!mobile" />
 
 	</scene>
+
+	<scene name="scene_b_01" title="b_01" onstart="" thumburl="panos/b_01.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-90" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/b_01.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/b_01.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_b_11a" title="b_11a" onstart="" thumburl="panos/b_11a.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/b_11a.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/b_11a.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
 	
+	<scene name="scene_b_13" title="b_13" onstart="" thumburl="panos/b_13.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="77" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/b_13.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/b_13.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_b_12" title="b_12" onstart="" thumburl="panos/b_12.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="130" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/b_12.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/b_12.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+
+	</scene>
 	<scene name="scene_b_04" title="b_04" onstart="" thumburl="panos/b_04.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -206,33 +234,6 @@ onnewscene="newscene();"
 	</scene>
 
 
-	<scene name="scene_b_01" title="b_01" onstart="" thumburl="panos/b_01.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="-90" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/b_01.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/b_01.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_b_11a" title="b_11a" onstart="" thumburl="panos/b_11a.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/b_11a.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/b_11a.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-
-	</scene>
 
 
 
@@ -253,6 +254,20 @@ onnewscene="newscene();"
 		<hotspot name="h_c_02_1"  ath="-90" atv="-13" style="hspano|hs"  if="!mobile" />
 
 	</scene>
+	
+	<scene name="scene_c_07" title="c_07" onstart="" thumburl="panos/c_07.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/c_07.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/c_07.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+		</image>
+		<hotspot name="h_c_07_1"  ath="18" atv="-11" style="hspano|hs"  if="!mobile" />
+	</scene>
 
 	<scene name="scene_c_06" title="c_06" onstart="" thumburl="panos/c_06.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
@@ -271,19 +286,7 @@ onnewscene="newscene();"
 	</scene>
 
 
-	<scene name="scene_c_07" title="c_07" onstart="" thumburl="panos/c_07.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/c_07.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/c_07.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-		</image>
-		<hotspot name="h_c_07_1"  ath="18" atv="-11" style="hspano|hs"  if="!mobile" />
-	</scene>
+	
 
 	<scene name="scene_c_01" title="c_01" onstart="" thumburl="panos/c_01.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
