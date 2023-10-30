@@ -55,6 +55,7 @@ text-decoration: underline;
         align="center"
         cursor="default"
         capture="false" 
+        oy="1"
     />
 
 
@@ -146,20 +147,38 @@ text-decoration: underline;
 <layer name="bottom_line_text_noupunt" keep="true" style="bottom_line_nopunt"/>
 
 <events name="bottom_line_text_noupunt" keep="true" onresize="noupunt_posicio"/>
+
 <action name="noupunt_posicio">
 np=layer[bottom_line_text_noupunt];
+c1=layer[cta_1];
+c2=layer[cta_2];
+p=layer[bottom_line_text_politica];
+g=layer[bottom_line_text_guide];
+ln=layer[lang_container];
+
 if (stagewidth LE 1170,
-np.css="color: #FFFFFF;text-decoration: none;font-size: 10px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;";
-np.alpha=0.75;
-np.y=40;
-,
-np.css="color: #FFFFFF;text-decoration: none;font-size: 13px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;";
-np.alpha=1;
-np.y=6;
-
+    np.css="color: #FFFFFF;text-decoration: none;font-size: 10px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;";
+    np.alpha=0.75;
+    np.y=40;
+    ,
+    np.css="color: #FFFFFF;text-decoration: none;font-size: 13px;font-family: 'lota_regular', Arial, Helvetica, sans-serif;letter-spacing: 1px;";
+    np.alpha=1;
+    np.y=6;
 );
-    
 
+if (stagewidth LE 918,
+    ln.width=120;
+    c1.padding="0 10 0 10";
+    c2.padding="0 10 0 10";
+    p.padding="0 10 0 10";
+    g.padding="0 10 0 10";
+    ,
+    ln.width=135;
+    c1.padding="0 25 0 25";
+    c2.padding="0 25 0 25";
+    p.padding="0 25 0 25";
+    g.padding="0 25 0 25";  
+);
 </action>
 </krpano>
 <!-- 

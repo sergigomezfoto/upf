@@ -8,7 +8,7 @@
 <style name="info_container"   
     type="container"
     align="topright"
-    y="calc:margins.top "
+    y="calc:margins.top + 100"
     x="calc:margins.right"   
     bgcolor="0x549865"
     bgalpha="0"

@@ -24,6 +24,7 @@
 
 <action name="resize_design" >
 if (!mobile,
+trace('ho');
         gray=layer[gray_bg];
         gray_bottom=layer[gray_bg_bottom];
         info_container=layer[info_container];
@@ -31,6 +32,7 @@ if (!mobile,
         menu_container=layer[menu_container];
         super_container=layer[super_container_wraper];
         scroll_balmes=layer[super_vscrollbar_balmes_bg_container];
+        ui_buttons=layer[ui_buttons_container];
         if (stageheight LT 1024,
         margin=30;
         trace('petttiitt');
@@ -66,6 +68,7 @@ if (!mobile,
         super_container.y=(supercontainery);
         menu_container.x=(margin);   
         scroll_balmes.y=(scrollbalmes_y);
+        ui_buttons.x=(margin);
 );
 </action>
 
