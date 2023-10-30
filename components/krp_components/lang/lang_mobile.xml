@@ -143,6 +143,7 @@ onclick="tween(layer[lang_general_container].alpha,0,0.2);"
             x="get:margins.right"
             y="get:margins.top"
             onclick="tween(layer[lang_general_container].alpha,1,0.2);"
+            scale="0.5"
          />
 
 

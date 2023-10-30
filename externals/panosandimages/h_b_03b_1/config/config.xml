@@ -1,0 +1,66 @@
+<krpano>
+  
+<set var="follow" val="true" />
+
+<if check="language == 'es'">
+  
+  
+    <campusinfo 
+    balmes="Campus Balmes"
+    ciutadella="Campus Ciutadella"
+    />
+  
+    <data name="b_03b_title"><![CDATA[Punktocrator]]></data>
+    <data name="b_03b_content"><![CDATA[Seguro que te has fijado en este curioso graffiti, ¿verdad? Es una de las obras que forman parte de “Art Track”, un proyecto de la UPF en el que artistas contemporáneos plasman su arte en la universidad.[br][br]En este caso, estás ante el “Punktocrator” del artista urbano Frank Trepax. ¿Te animas a descubrir el resto de obras de arte expuestas en el campus?]]></data>
+
+
+</if>
+
+
+
+
+<if check="language == 'ca'">
+
+    <campusinfo 
+    balmes="Campus Balmes"
+    ciutadella="Campus Ciutadella"
+    />
+ 
+<data name="b_03b_title"><![CDATA[Punktocrator]]></data>
+<data name="b_03b_content"><![CDATA[La Terrassa Aèria és un oasi enmig de la ciutat. Amb vistes panoràmiques, jardins i mobiliari còmode, és un lloc ideal per a relaxar-se, socialitzar i gaudir de l'aire lliure. Ja sigui per a prendre un descans entre classes o celebrar esdeveniments a l'aire lliure, aquesta terrassa ofereix un espai únic i agradable per a la comunitat educativa.]]></data>
+
+
+
+</if>
+
+<if check="language == 'en'">
+
+    <campusinfo 
+    balmes="Balmes Campus"
+    ciutadella="Ciutadella Campus"
+    />
+
+<data name="b_03b_title"><![CDATA[Punktocrator]]></data>
+<data name="b_03b_content"><![CDATA[Aerea Terrace is an oasis in the middle of the city. With panoramic views, gardens, and comfortable furniture, it's an ideal place to relax, socialize, and enjoy the outdoors. Whether for taking a break between classes or hosting outdoor events, this terrace offers a unique and enjoyable space for the educational community.]]></data>
+
+</if>
+
+
+
+
+
+</krpano>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

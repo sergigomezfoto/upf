@@ -3,6 +3,7 @@
 <include url="config/config.xml" />
 <include url="config/dessign.xml" />
 <include url="plugins/s_bundle/s_bundle.xml" />
+<include url="components/krp_components/nadir/nadir.xml" />
 <include url="components/krp_components/popup/popup.xml" />
 <include url="components/krp_components/blur_background/blur_background.xml" />
 <include url="components/krp_components/first_entrance/first_entrance.xml"  if="!mobile"/>
@@ -85,7 +86,7 @@ onnewscene="newscene();"
 		<image>
 			<cube url="panos/b_03.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
-
+		<hotspot name="h_b_03b_1"  ath="-2.3085480718262943" atv="-8" style="hsphoto|hs"  if="!mobile" />
 	</scene>
 
 
@@ -138,7 +139,7 @@ onnewscene="newscene();"
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="-16" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-63" vlookat="5" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/b_08.tiles/preview.jpg" />
 
@@ -281,7 +282,7 @@ onnewscene="newscene();"
 			<cube url="panos/c_06.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 		</image>
 		
-			<hotspot name="h_c_06_1"  ath="90" atv="-14" style="hsphoto|hs"  if="!mobile" />
+			<hotspot name="h_c_06_1"  ath="74" atv="-15.713396756568413" style="hsphoto|hs"  if="!mobile" />
 	
 	</scene>
 
@@ -373,6 +374,9 @@ onnewscene="newscene();"
 		</image>
 
 	</scene>
+
+
+
 
 
 <include url="helpers/test.xml"    if="test"      />

@@ -144,6 +144,9 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
 <data name="h_c_06_1"><![CDATA[
 <span>Punktocrator</span>
 ]]></data>
+<data name="h_b_03b_1"><![CDATA[
+<span>código QR</span>
+]]></data>
 
 
 </if>
@@ -295,7 +298,9 @@ Es tracta d'un enorme campus urbà situat al costat d'alguns dels llocs més imp
 <data name="h_c_06_1"><![CDATA[
 <span>Punktocrator</span>
 ]]></data>
-
+<data name="h_b_03b_1"><![CDATA[
+<span>códig QR</span>
+]]></data>
 
 
 </if>
@@ -447,6 +452,9 @@ It is a huge urban campus located next to some of the most important places in t
 <span>Punktocrator</span>
 ]]></data>
 
+<data name="h_b_03b_1"><![CDATA[
+<span>QR code</span>
+]]></data>
 
 </if>
 

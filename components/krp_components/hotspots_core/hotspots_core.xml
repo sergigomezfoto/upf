@@ -23,7 +23,7 @@
     onhover="hsonhover()"
     onhover2="tween(hotspot[(caller.name + 'preview')].alpha|hotspot[(caller.name + 'title')].alpha,1,0.2,linear);"
     onout="hsonout()"
-    capture="false"
+    capture="true"
     onclick="hsonclick"
 
  />
