@@ -32,33 +32,34 @@ onclick="popup(calc('externals/help_mob/index.html?ln=' + language ),'100%|100%'
 <style name="campus_and_menu"
     type="text"
     text=""
-    align="bottomleft"
+    align="right"
     x="get:margins.right"
-    y="get:margins.bottom" 
+ 
     flowchildren="h"
-    childflowspacing="10"
+    childflowspacing="4"
     bg="false"
     bgalpha="0.5"
     bgcolor="0xff5487"
     capture="false" 
-
+    zorder="1000000000"
+    parent="backgroud_logo_and_lang"
 
 
 />
-
+    <!-- y="get:margins.top" -->
 <style name="campus_and_menu_text"
     type="text"
-    text=""
-    css="font-family:'lota_semibold';font-size:18px;color:#ffffff;letter-spacing: 0px;line-height: 19px;"
+    text="MENU"
+    css="font-family:'lota_regular';font-size:16px;color: #F2F2F2;letter-spacing: 0px;line-height: 19px;"
     bg="false"
     onclick="campus_and_menu_open();"
     capture="false" 
 />
 
-<events name="bottom_line" keep="true"
+<!-- <events name="bottom_line" keep="true"
 onnewscene="campus_and_manu_text_events()"
 
-/>
+/> -->
 
 <action name="campus_and_manu_text_events">
 
@@ -74,10 +75,11 @@ onnewscene="campus_and_manu_text_events()"
 
 
 <style name="campus_and_menu_triangle"
-    url="%FIRSTXML%/assets/img/open.png"
+    url="%FIRSTXML%/assets/img/open_mob.png"
     align="left"
     onclick="campus_and_menu_open();"
     capture="false" 
+    oy="-1"
 />
 
 
@@ -86,7 +88,7 @@ onnewscene="campus_and_manu_text_events()"
             <layer name="campus_and_menu_triangle" keep="true" style="campus_and_menu_triangle"/>
     </layer>
 
-<action name="campus_and_menu_open" type="js">
+<action name="campus_and_menu_open" type="js" autorun="true">//TEST
 makeVisibleAndInteractive(menuPanel);
 
 </action>

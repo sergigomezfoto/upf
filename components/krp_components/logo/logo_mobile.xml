@@ -18,14 +18,14 @@ bgalpha="0.5"
         y="calc:margins.top "
         capture="false"
         onclick="openurl(get(ui.logo_upf_link));"
-        scale="0.5"
+
      
     />
 
 <layer name="backgroud_logo_and_lang" keep="true" style="backgroud_logo_and_lang">
 
         <layer name="logo_upf" keep="true" style="logo_upf"/>
-        <layer name="lang_cont_ico" keep="true" style="lang_cont_ico" />
+        <!-- <layer name="lang_cont_ico" keep="true" style="lang_cont_ico" /> -->
         <!-- <layer name="logo_upf2" keep="true" style="logo_upf2"/> -->
 
 </layer>

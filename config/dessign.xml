@@ -14,9 +14,13 @@
     />
 
 
-    <scrollarea
+    <scrollarea if="!mobile"
         textheight="280"
     />
+    <scrollarea if="mobile"
+        textheight="270"
+    />
+
  <set var="supercontainery" val="140"/>
 
 <events name="resize_design" keep="true" onresize="resize_design"

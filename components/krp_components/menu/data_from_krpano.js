@@ -75,7 +75,6 @@ const getDataFromKrpano = () => {
   .filter((item) => item.id.includes('scene'))
   .map((item) => item.id);
   console.log(krpanoMenu);
-  
   return krpanoMenu;
 };
 
@@ -87,7 +86,7 @@ const updateTextContent = (data) => {
     }
     if (element && item.url) {
       element.href = item.url; // Això és útil per als enllaços
-      element.innerHTML = `<span>${item.title}</span>`;
+      // element.innerHTML = `<span>${item.title}</span>`;
     }
   });
 };
