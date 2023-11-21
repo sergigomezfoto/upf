@@ -48,6 +48,7 @@
         childflowspacing="3"
         align="lefttop"
         minwidth="300"
+
         width="100%"   
         capture="false"
 
@@ -55,27 +56,29 @@
 
         <style name="info_container_header_text"
           type="text"
-          css="font-family:'lota_semibold';font-size:22px;color:#383a43;letter-spacing: 0px;"  
+          css="font-family:'lota_semibold';font-size:30px;color:#383a43;letter-spacing: 0px;"  
           bg="false"
           bgcolor="0xff49ff"
-          padding="20 0 0 20"
+          padding="30 0 0 30"
+          width="320px"
           enabled="false"
           
         />
         <style name="info_container_header_campus"
           type="text"
-          css="font-family:'lota_semibold';font-size:18px;color:#7a7a7a;letter-spacing: 0px;"  
+          css="font-family:'lota_semibold';font-size:23px;color:#7a7a7a;letter-spacing: 0px;"  
           bg="false"
           width="100%"
           bgcolor="0x6549ff"
-          padding="0 0 10 20"
+          padding="0 0 10 30"
+
           enabled="false"
         />
         <style name="info_container_header_line"
           type="text"
           bgborder="0,0,1.5,0 0x383a43 1 solid"       
           height="0px"
-          width="-40"
+          width="-60"
           bg="false"
           enabled="false"
           align="bottom"
@@ -84,7 +87,7 @@
           type="text"
           bgborder="0,0,1.5,0 0x383a43 1 solid"       
           height="1px"
-          width="-40"
+          width="-60"
           bg="false"
           enabled="false"
           align="bottom"
@@ -130,8 +133,10 @@
         <style name="info_container_body_scrollarea"
             type="scrollarea"
             width="-4" flowchildren="v" childmargin="10"
+
             scrolltype="smooth"
             draggable="true"
+            
             mwheel="true"
             capturechildren="true"
             parentmaskchildren="false"
@@ -147,13 +152,13 @@
                 <style name="info_container_body_text"
                 type="text"
                 align="topleft"
-                padding="0 20 20 10"
+                padding="0 30 20 20"
                 bgcolor="0x6554ff"
                 bgalpha="0"
                 width="100%"
                 capture="false"
                 cursor="default"
-                css="font-family:'lota_regular';font-size:14px;color:#383a43;letter-spacing: 0px;line-height: 22px;"
+                css="font-family:'lota_regular';font-size:22px;color:#383a43;letter-spacing: 0px;line-height: 28.6px;"
                 
                 />
 
@@ -184,7 +189,7 @@
         bgcolor="0xffffff"
         bgalpha="0.7"
         flowchildren="v" 
-        childmargin="0 0 0 20"
+        childmargin="0 0 0 30"
         childflowspacing="0"
         align="lefttop"
         width="100%"
@@ -202,7 +207,7 @@
             width="-20"
             capture="false"
             cursor="default"
-            css="font-family:'lota_regular';font-size:14px;color:#383a43;letter-spacing: 0px;line-height: 19px;"
+            css="font-family:'lota_regular';font-size:22px;color:#383a43;letter-spacing: 0px;line-height: 28.6px;"
             
         />
 
