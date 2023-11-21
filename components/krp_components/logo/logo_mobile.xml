@@ -11,11 +11,10 @@ bgalpha="0.5"
 />
 
     <style name="logo_upf"
-        url="%FIRSTXML%/assets/svg/logo_mob.svg"
-        align="topleft"
-        
+        url="%FIRSTXML%/assets/svg/cabecera.svg"
+        align="topleft"    
         x="get:margins.left"
-        y="calc:margins.top "
+        y="10"
         capture="false"
         onclick="openurl(get(ui.logo_upf_link));"
 
