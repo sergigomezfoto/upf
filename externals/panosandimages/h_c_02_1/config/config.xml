@@ -10,7 +10,7 @@
     ciutadella="Campus Ciutadella"
     />
   
-    <data name="c_14_title"><![CDATA[Parque de la Ciutadella]]></data>
+    <data name="c_14_title"><![CDATA[Parque Ciutadella]]></data>
     <data name="c_14_content"><![CDATA[ Esta vista aérea de la terraza te permite ver a la perfección todo el potencial de este espacio. ¿Te imaginas todo lo que se puede organizar aquí?]]></data>
 
 
@@ -40,7 +40,7 @@
     ciutadella="Ciutadella Campus"
     />
 
-<data name="c_14_title"><![CDATA[Ciutadella's park]]></data>
+<data name="c_14_title"><![CDATA[Ciutadella Park]]></data>
 <data name="c_14_content"><![CDATA[Aerea Terrace is an oasis in the middle of the city. With panoramic views, gardens, and comfortable furniture, it's an ideal place to relax, socialize, and enjoy the outdoors. Whether for taking a break between classes or hosting outdoor events, this terrace offers a unique and enjoyable space for the educational community.]]></data>
 
 </if>

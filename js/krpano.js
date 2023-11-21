@@ -27,7 +27,6 @@ let sc = 0;
 
 const startSceneParam = getStartScene();
 const languageParam = getLanguage();
-
 if (startSceneParam !== null) {
   sc = startSceneParam;
 }
@@ -35,6 +34,7 @@ if (startSceneParam !== null) {
 if (languageParam !== null) {
   lang = languageParam;
 }
+document.getElementById(lang).classList.add("underlined");
 
 //TOUR
 embedpano({

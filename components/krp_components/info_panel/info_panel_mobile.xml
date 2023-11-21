@@ -311,7 +311,7 @@ align="leftbottom"
 flowchildren="h"
 
 x="get:margins.right"
-y="calc: margins.bottom * 3" 
+y="calc: margins.bottom * 2.5" 
 childmargin="10 23 10 23"
 childflowspacing="30"
 enabled="true"

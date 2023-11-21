@@ -27,7 +27,7 @@
     />
  
 <data name="c_pantocrator_title"><![CDATA[Punktocrator]]></data>
-<data name="c_pantocrator_content"><![CDATA[La Terrassa Aèria és un oasi enmig de la ciutat. Amb vistes panoràmiques, jardins i mobiliari còmode, és un lloc ideal per a relaxar-se, socialitzar i gaudir de l'aire lliure. Ja sigui per a prendre un descans entre classes o celebrar esdeveniments a l'aire lliure, aquesta terrassa ofereix un espai únic i agradable per a la comunitat educativa.]]></data>
+<data name="c_pantocrator_content"><![CDATA[Segur que t'has fixat en aquest curiós grafiti, veritat? És una de les obres que formen part de “Art Track”, un projecte de la UPF en el qual artistes contemporanis plasmen el seu art en la universitat. En aquest cas, estàs davant el “Punktocrator” de l'artista urbà Frank Trepax. T'animes a descobrir la resta d'obres d'art exposades al campus?]]></data>
 
 
 
@@ -40,8 +40,8 @@
     ciutadella="Ciutadella Campus"
     />
 
-<data name="pantocrator_title"><![CDATA[Punktocrator]]></data>
-<data name="pantocrator_content"><![CDATA[Aerea Terrace is an oasis in the middle of the city. With panoramic views, gardens, and comfortable furniture, it's an ideal place to relax, socialize, and enjoy the outdoors. Whether for taking a break between classes or hosting outdoor events, this terrace offers a unique and enjoyable space for the educational community.]]></data>
+<data name="c_pantocrator_title"><![CDATA[Punktocrator]]></data>
+<data name="c_pantocrator_content"><![CDATA[For sure you've noticed this curious graffiti, right? It's one of the works that form part of "Art Track", a UPF project in which contemporary artists express their art at the university. In this case, you're looking at "Punktocrator" by the urban artist Frank Trepax. Are you up for discovering the rest of the works of art exhibited on campus?]]></data>
 
 </if>
 

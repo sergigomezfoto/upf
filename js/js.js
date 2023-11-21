@@ -1,4 +1,4 @@
-let test = true;
+let test = false;
 // const politica = document.querySelector("#politca > a");
 // const guide = document.querySelector("#guide > a");
 // const navGuide = document.querySelector("#navigation_guide");

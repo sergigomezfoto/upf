@@ -24,7 +24,7 @@ layer[ft_container].ondown="close_ft();";
         keep="true"
         bgcolor="0x000000"
         bg="true"
-        bgalpha="0.5"
+        bgalpha="0.8"
         parent="stage"
         onloaded="blur();"
         bgcapture="true"
@@ -63,7 +63,7 @@ layer[ft_container].ondown="close_ft();";
 
             <layer name="ico360_text_container" keep="true" style="ico360_text_container">
                         
-                    <layer name="ico360" keep="true"  url="%FIRSTXML%/assets/img/360.png" align="top"  />
+                    <layer name="ico360" keep="true"  url="%FIRSTXML%/assets/img/360.png" scale="0.75" align="top"  />
                     <layer name="t360_text" keep="true" style="t360_text"/>
 
 

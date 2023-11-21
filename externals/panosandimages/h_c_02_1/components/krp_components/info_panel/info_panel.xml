@@ -28,9 +28,10 @@
         align="left"
         width="280px"
         capture="false"
+        enabled="false"
 
     />
-        <action name="onclick_header" scope="local">
+        <action name="onclick_header" scope="local" autorun="true">
          
            switch(layer[info_container_header_button].crop, '0|0|14|14', '14|0|14|14');  
            
@@ -49,7 +50,7 @@
           bg="false"
           bgcolor="0xff49ff"
           padding="24 0 0 29"
-          width="220px"
+          width="260px"
           enabled="false"
           
         />
@@ -78,6 +79,7 @@
           y="28"
           x="28"  
           enabled="false"
+          alpha="0"
         />
         <style name="info_container_boddy_bg_white"
         type="text"

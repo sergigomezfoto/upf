@@ -14,8 +14,20 @@ const closeAllExcept = (currentMenu) => {
         }
     });
 };
-
+const addOverflowHidden = () => {
+    document.querySelectorAll('.accordion-content').forEach(element => {
+        element.style.overflowY = 'hidden';
+    });
+    setTimeout(() => {
+        document.querySelectorAll('.accordion-content').forEach(element => {
+            element.style.overflowY = 'auto';
+            element.scrollTop = 0;
+        });
+    }
+        , 300);
+};
 const toggleCampusAndloadPanorama = (event, menuId) => {
+    addOverflowHidden();
     const element = event.currentTarget; // o event.target, depenent del teu cas d'ús
     const sceneName = element.getAttribute('id');
     
@@ -44,7 +56,7 @@ const loadPanorama=(event)=>{
     const element = event.currentTarget; // o event.target, depenent del teu cas d'ús
     const sceneName = element.getAttribute('id');
     krpano.actions.trace(`vaig a -> ${sceneName}`);
-    krpano.call('s_loadsc(' + sceneName +', ' + menuPanel + ')');
+    krpano.call('s_loadsc(' + sceneName +')');
     
 }
 
@@ -87,7 +99,12 @@ const updateBorder = (sceneName) => {
             ? '5px solid rgba(200, 16, 46, 1)' // Gruix 5px
             : '8px solid rgba(200, 16, 46, 1)'; // Gruix 8px
     }
-    
+    let keepBorderElementId;
+    if (sceneName.includes('_b_')) {
+        keepBorderElementId = 'scene_b_02';
+    } else if (sceneName.includes('_c_')) {
+        keepBorderElementId = 'scene_c_02';
+    }
     // Recorrem tots els altres elements i els posem en transparent
     indexOfScenes.forEach((item) => {
         if (item !== sceneName) {
@@ -106,6 +123,13 @@ const updateBorder = (sceneName) => {
             }
         }
     });
+    // Si hi ha un element que ha de mantenir el seu border, l'ajustem
+    if (keepBorderElementId) {
+        const keepBorderElement = document.getElementById(keepBorderElementId);
+        if (keepBorderElement) {
+            keepBorderElement.style.borderLeft = '8px solid rgba(200, 16, 46, 1)';
+        }
+    }
 };
 
 
@@ -123,7 +147,21 @@ const makeInvisibleAndNonInteractive=(element)=> {
 
 
 
+//////////////////////////////////////LANGUAGA
 
+const highlightLanguage = (clickedElementId) => {
+    // Get all elements with the 'lan' class
+    const elements = document.getElementsByClassName('lan');
+
+    // Remove the 'underlined' class from all elements
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].classList.remove('underlined');
+    }
+
+    // Add the 'underlined' class to the clicked element
+    const clickedElement = document.getElementById(clickedElementId);
+    clickedElement.classList.add('underlined');
+};
 
 
 

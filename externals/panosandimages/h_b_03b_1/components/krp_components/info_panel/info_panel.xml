@@ -14,6 +14,7 @@
     bgalpha="0"
     flowchildren="v" 
     childmargin="0"
+    enabled="false"
 
 />
 
@@ -30,7 +31,7 @@
         capture="false"
 
     />
-        <action name="onclick_header" scope="local">
+        <action name="onclick_header" scope="local" autorun="true">
          
            switch(layer[info_container_header_button].crop, '0|0|14|14', '14|0|14|14');  
            
@@ -78,6 +79,7 @@
           y="28"
           x="28"  
           enabled="false"
+          alpha="0"
         />
         <style name="info_container_boddy_bg_white"
         type="text"

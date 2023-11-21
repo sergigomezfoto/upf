@@ -2,7 +2,7 @@
 
 
 
-<action name="change_lang">
+<action name="change_lang" scope="local" args="text">
 
    if (text === 'Català',
     language='ca';
@@ -18,7 +18,7 @@ jscall(krpanoLang());
 </action>
 
 <action name="change_lang_buttons" autorun="true">
-trace('això és un test');
+<!-- trace('això és un test');
 trace(language);
 l_es=layer[lang_es];
 l_ca=layer[lang_ca];
@@ -41,7 +41,7 @@ if (language === 'ca',
     l_en.enabled="false";
     l_en.css=l_en.csshover;
 );
-    
+     -->
 </action>
 
 
@@ -147,7 +147,7 @@ onclick="tween(layer[lang_general_container].alpha,0,0.2);"
          />
 
 
-
+<!-- 
  <layer name="lang_general_container" keep="true" style="lang_general_container" parent="stage">       
     <layer name="lang_container" keep="true" style="lang_container" > 
         <layer name="lang_es" keep="true" style="lang_sub" text="get:lang.es"/>
@@ -155,7 +155,7 @@ onclick="tween(layer[lang_general_container].alpha,0,0.2);"
         <layer name="lang_en" keep="true" style="lang_sub" text="get:lang.en" />
     </layer> 
         <layer name="lang_close_mob" keep="true" style="lang_close_mob" flow="false"    />     
-</layer>
+</layer> -->
 
 
 

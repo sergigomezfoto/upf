@@ -14,18 +14,18 @@ bgcolor="0xff5487"
 onclick="popup(calc('externals/help_mob/index.html?ln=' + language ),'100%|100%','help');" 
 />
  -->
-<style name="help_mob"
+<!-- <style name="help_mob"
 url="%FIRSTXML%/assets/img/help_mobile.png"
 
 align="rightbottom"
 x="get:margins.right"
 y="get:margins.bottom"
 onclick="popup(calc('externals/help_mob/index.html?ln=' + language ),'100%|100%','help');" 
-/>
+/> -->
 
 
 
-    <layer name="help_mob" keep="true" style="help_mob"/>
+    <!-- <layer name="help_mob" keep="true" style="help_mob"/> -->
 
 
 
@@ -75,7 +75,7 @@ onnewscene="campus_and_manu_text_events()"
 
 
 <style name="campus_and_menu_triangle"
-    url="%FIRSTXML%/assets/img/open_mob.png"
+    url="%FIRSTXML%/assets/svg/rec.svg"
     align="left"
     onclick="campus_and_menu_open();"
     capture="false" 
@@ -88,7 +88,7 @@ onnewscene="campus_and_manu_text_events()"
             <layer name="campus_and_menu_triangle" keep="true" style="campus_and_menu_triangle"/>
     </layer>
 
-<action name="campus_and_menu_open" type="js" autorun="true">//TEST
+<action name="campus_and_menu_open" type="js" autorun="false">//TEST
 makeVisibleAndInteractive(menuPanel);
 
 </action>

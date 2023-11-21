@@ -47,8 +47,8 @@
     /* background-color: brown; */
 }
 .desapear{
-    -webkit-mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 95%, transparent 100%);
-    mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 95%, transparent 100%);
+    -webkit-mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, transparent 100%);
+    mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, transparent 100%);
     margin-top: 10px;
         /* background-color: aliceblue; */
     /* width: 110%; */
@@ -78,8 +78,8 @@
     cursor: pointer;            /* Cursor en forma de mà quan es posa el ratolí a sobre */
     height: var(--item-campus-height);
     padding: 3px 19px ;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
     font-size: 22px;
     border-left: 8px solid rgba(200, 16, 46,0);
     transition: border-color 0.3s ease;
@@ -111,7 +111,7 @@ margin-bottom: 10px;
 
   .accordion-content  p.separator{
     color: #F2F2F2;  
-        margin-top: 7px;
+        margin-top: 12px;
         border-left: none;
         /* display:inline-block; */
         width: 70%;
@@ -120,7 +120,9 @@ margin-bottom: 10px;
         padding-left: 0px;
         margin-bottom: 5px;
         }
-
+        .accordion-content p.separator:first-of-type {
+            margin-top: 0px;
+        }
 /* Estil per als elements clicables dins dels accorions (Entrada, Espacio polivalente, etc.) */
 .accordion-content p {
     color: #F2F2F2;             /* Color de lletra encara més clar */
@@ -195,18 +197,27 @@ margin-bottom: 10px;
     height: 100%;
     position:relative
 }
-/* .cta-container a span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding-left:93px;
-    text-transform: uppercase;
-} */
+
+.underlined {
+    text-decoration: underline;
+    color: #F2F2F2;
+    pointer-events: none;
+}
+
+
 @media only screen and (max-width: 365px) {
 
+    .cta-container{
+        gap:15px;
+    }
+    .ctasec{
+        padding-left:15px;
+    }
 
+}
+@media only screen and (max-width: 345px) {
 
- 
+.menu-panel{
+    font-size: 14px;
+}
 }
