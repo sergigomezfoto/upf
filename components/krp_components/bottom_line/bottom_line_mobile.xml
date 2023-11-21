@@ -63,13 +63,13 @@ onnewscene="campus_and_manu_text_events()"
 
 <action name="campus_and_manu_text_events">
 
-  if (contains(scene[(xml.scene)].name,'_b_'),
+  <!-- if (contains(scene[(xml.scene)].name,'_b_'),
     trace('balmes');
     layer[campus_and_menu_text].text=(campus.balmes);
     ,
     trace('ciutadella');
     layer[campus_and_menu_text].text=(campus.ciutadella);
-  );  
+  );   -->
 
 </action>
 

@@ -307,9 +307,9 @@ onnewscene="if(global.sd6 === true AND !global.sd7 === true,info_panel_action();
             <!-- scroll.capture="true"; -->
             scrollbg.bgalpha=gripbgopacity;
             scrollgrip.bgalpha=gripopacity;
-            contbodybg.height=scrollarea.textheight; 
+            contbodybg.height=scrollarea.textheight - 20; 
             contbody.cssclass="transparent_scroll";
-            contbody.height=scrollarea.textheight; 
+            contbody.height=scrollarea.textheight - 20; 
             scrollgrip.height="10px";
             
         );

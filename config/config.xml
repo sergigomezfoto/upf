@@ -16,7 +16,7 @@
     />  
 
     <ui
-        logo_upf_link="https://www.upf.edu/es/"
+        logo_upf_link="https://www.bsm.upf.edu/es"
         cta_1="[a href='https://www.bsm.upf.edu/es']Acceder a la web[/a]"
         cta_2="[a href='https://www.bsm.upf.edu/es/estudios']Encuentra tu programa[/a]"
         politica="[a href='https://www.bsm.upf.edu/es/politica-de-privacidad']Política de privacidad[/a]"
@@ -168,7 +168,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m�
     />  
 
     <ui
-        logo_upf_link="https://www.upf.edu/ca/"
+        logo_upf_link="https://www.bsm.upf.edu/ca"
         cta_1="[a href='https://www.bsm.upf.edu/ca']Accedeix al web[/a]"
         cta_2="[a href='https://www.bsm.upf.edu/ca/estudis']Troba el teu programa[/a]"
         politica="[a href='https://www.bsm.upf.edu/ca/politica-de-privacitat']Política de privacitat[/a]"
@@ -318,7 +318,7 @@ Es tracta d'un enorme campus urbà situat al costat d'alguns dels llocs més imp
     en="English"
     />  
     <ui
-        logo_upf_link="https://www.upf.edu/en/"
+        logo_upf_link="https://www.bsm.upf.edu/en"
         cta_1="[a href='https://www.bsm.upf.edu/en']Go to site[/a]"
         cta_2="[a href='https://www.bsm.upf.edu/en/studies']Find your program[/a]"
 
