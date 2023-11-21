@@ -203,8 +203,25 @@
             bgborder="2,0,0,0 0x7a7a7a 0.6 solid"
         />
 <events name="info_panel" keep="true" 
-onnewscene="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );"
+onloadcomplete="if(global.sd5 === true,info_panel_action();,set(global.sd5,true); );tween_loading_0();"
+onnewscene="if(global.sd6 === true AND !global.sd7 === true,info_panel_action(); trace('nomes un cop al inici');set(global.sd7,true);,set(global.sd6,true); );tween_loading_1();"
 />
+<style name="loading"
+    url="%FIRSTXML%/assets/svg/loader.svg"
+    align="center"
+    alpha="0"
+/>
+<layer name="loading" keep="true" style="loading"/>
+<action name="tween_loading_1">
+
+    tween(layer[loading].alpha,1,0.2);
+
+</action>
+
+<action name="tween_loading_0">
+    tween(layer[loading].alpha,0,0.2);
+</action>
+
 <!-- onnewscene="info_panel_action();" -->
 
 <action name="info_panel_action" scope="local">
