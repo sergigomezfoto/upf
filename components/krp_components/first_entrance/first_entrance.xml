@@ -2,15 +2,14 @@
 
 <if check="!test">
 
-    <action name="" autorun="true" >
+    <!-- <action name="" autorun="true" >
         popup("https://www.youtube.com/embed/JPLJ50WkWao","66%|60%","init",first_360_action);    
-    </action>
+    </action> -->
 
 <action name="first_360_action">
-<!-- delayedcall (3, -->
+
 layer[ft_container].ondown="close_ft();";
     
-<!-- ); -->
 
 </action>
 
@@ -92,10 +91,12 @@ layer[ft_container].ondown="close_ft();";
     
 </if>
 
-<if check="test">
-    <action name="" autorun="true">
+<!-- <if check="test"> --> //TREURE AL POSAR EL POPUP CORRECTE
+    <action name="" autorun="true" if="!mobile">
+      first_360_action();
+       jscall(kploaded += 1 ;);
         firstcompleted=true;
     </action>
-</if>
+<!-- </if> -->
 
 </krpano>

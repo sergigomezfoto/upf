@@ -124,7 +124,7 @@ Se trata de un enorme campus urbano situado al lado de algunos de los lugares m√
     <div style="margin-top:20px;display:flex;justify-content:flex-start;">
    <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/>
         <div>
-            <div>Ciutadella, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">COMO LLEGAR</a></div><img src="assets/img/gps_arrow.png" style="margin-bottom:3px; "/></div>
+            <div>Ciutadella, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://maps.app.goo.gl/jZXvTRupwenor5W9A">COMO LLEGAR</a></div><img src="assets/img/gps_arrow.png" style="margin-bottom:3px; "/></div>
         </div>
     </div>
 

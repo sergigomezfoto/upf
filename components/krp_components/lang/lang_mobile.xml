@@ -79,6 +79,14 @@ forall(hotspot, h,
     calc(hotspot[(h.name + 'title')].text,(data[(h.name)].content));
    );
 );
+
+if (language === 'en',
+layer[campus_and_menu_text].text="MENU";
+,
+layer[campus_and_menu_text].text="MENÚ";
+   
+);
+
 //menu
 layer[open_bg_text].text=ui.menu;
 
