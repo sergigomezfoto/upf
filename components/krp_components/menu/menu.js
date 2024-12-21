@@ -26,18 +26,44 @@ const addOverflowHidden = () => {
     }
         , 300);
 };
-const toggleCampusAndloadPanorama = (event, menuId) => {
+// const toggleCampusAndloadPanorama = (event, menuId) => {
+//     addOverflowHidden();
+//     const element = event.currentTarget; // o event.target, depenent del teu cas d'ús
+//     const sceneName = element.getAttribute('id');
+    
+//     const content = document.getElementById(menuId);
+//     const maxHeight = acordionContainerHeight - ctaHeight - itemCampusHeight;
+
+//     if (content.style.height && content.style.height !== '0px') {
+//         console.log("Intentant tancar el menú, però no permetem que es tanqui ell mateix"); 
+//         krpano.actions.trace(`vaig a -> ${sceneName}`);
+//         krpano.call('s_loadsc(' + sceneName +')');
+//         // makeInvisibleAndNonInteractive(menuPanel);
+//         return;
+//     }
+    
+//     closeAllExcept(content.closest('.accordion-menu'));
+//     const desiredHeight = Math.min(content.scrollHeight, maxHeight);
+//     content.style.height = desiredHeight + 'px';
+    
+//     // Aquí pots afegir la funcionalitat per carregar la panoràmica basant-te en sceneName
+//     krpano.actions.trace(`vaig a -> ${sceneName}`);
+//     krpano.call('s_loadsc(' + sceneName +')');
+//     // makeInvisibleAndNonInteractive(menuPanel);
+    
+// };
+const toggleCampus = (event, menuId) => {
     addOverflowHidden();
-    const element = event.currentTarget; // o event.target, depenent del teu cas d'ús
-    const sceneName = element.getAttribute('id');
+    // const element = event.currentTarget; // o event.target, depenent del teu cas d'ús
+    // const sceneName = element.getAttribute('id');
     
     const content = document.getElementById(menuId);
     const maxHeight = acordionContainerHeight - ctaHeight - itemCampusHeight;
 
     if (content.style.height && content.style.height !== '0px') {
-        console.log("Intentant tancar el menú, però no permetem que es tanqui ell mateix"); 
-        krpano.actions.trace(`vaig a -> ${sceneName}`);
-        krpano.call('s_loadsc(' + sceneName +')');
+        // console.log("Intentant tancar el menú, però no permetem que es tanqui ell mateix"); 
+        // krpano.actions.trace(`vaig a -> ${sceneName}`);
+        // krpano.call('s_loadsc(' + sceneName +')');
         // makeInvisibleAndNonInteractive(menuPanel);
         return;
     }
@@ -47,8 +73,8 @@ const toggleCampusAndloadPanorama = (event, menuId) => {
     content.style.height = desiredHeight + 'px';
     
     // Aquí pots afegir la funcionalitat per carregar la panoràmica basant-te en sceneName
-    krpano.actions.trace(`vaig a -> ${sceneName}`);
-    krpano.call('s_loadsc(' + sceneName +')');
+    // krpano.actions.trace(`vaig a -> ${sceneName}`);
+    // krpano.call('s_loadsc(' + sceneName +')');
     // makeInvisibleAndNonInteractive(menuPanel);
     
 };
@@ -101,9 +127,9 @@ const updateBorder = (sceneName) => {
     }
     let keepBorderElementId;
     if (sceneName.includes('_b_')) {
-        keepBorderElementId = 'scene_b_02';
+        keepBorderElementId = 'campus_balmes';
     } else if (sceneName.includes('_c_')) {
-        keepBorderElementId = 'scene_c_02';
+        keepBorderElementId = 'campus_ciutadella';
     }
     // Recorrem tots els altres elements i els posem en transparent
     indexOfScenes.forEach((item) => {
@@ -129,6 +155,19 @@ const updateBorder = (sceneName) => {
         if (keepBorderElement) {
             keepBorderElement.style.borderLeft = '8px solid rgba(200, 16, 46, 1)';
         }
+        if (sceneName.includes('_c_')) {
+            const campusBalmesElement = document.getElementById('campus_balmes');
+            if (campusBalmesElement) {
+                campusBalmesElement.style.borderLeft = '8px solid rgba(200, 16, 46, 0)';
+            }
+        }
+        if (sceneName.includes('_b_')) {
+            const campusCiutadellaElement = document.getElementById('campus_ciutadella');
+            if (campusCiutadellaElement) {
+                campusCiutadellaElement.style.borderLeft = '8px solid rgba(200, 16, 46, 0)';
+            }
+        }
+    
     }
 };
 

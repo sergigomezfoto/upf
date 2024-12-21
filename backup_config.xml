@@ -1,0 +1,493 @@
+<krpano>
+<set var="follow" val="true"/>
+<if check="language == 'es'">
+<lang if="!mobile" es="ES" ca="CA" en="EN"/>
+<lang if="mobile" es="Español" ca="Català" en="English"/>
+<ui logo_upf_link="https://www.bsm.upf.edu/es" cta_1="[a href='https://www.bsm.upf.edu/es']Acceder a la web[/a]" cta_2="[a href='https://www.bsm.upf.edu/es/estudios']Encuentra tu programa[/a]" politica="[a href='https://www.bsm.upf.edu/es/politica-de-privacidad']Política de privacidad[/a]" guide="Guía de navegación" ft360="Arrastra para[br]moverte por las[br]imágenes 360" menu="MENÚ"/>
+<campus balmes="Campus Balmes" ciutadella="Campus Ciutadella"/>
+<campusinfo balmes="Campus Balmes" ciutadella="Campus Ciutadella"/>
+<separators common="Espacios comunes" classrooms="Aulas y salas"/>
+<data name="b_02_title">
+<![CDATA[ Edificio Balmes ]]>
+</data>
+<!--  <data name="b_02_title" if="!mobile" ><![CDATA[Campus Balmes]]></data>
+    <data name="b_02_title" if="mobile" ><![CDATA[Edificio Balmes]]></data>  -->
+<data name="b_02_content">
+<![CDATA[ Aquí empieza tu nueva aventura. En este célebre edificio situado en pleno centro de Barcelona, se fundó hace más de 30 años la Universitat Pompeu Fabra. Este edificio, proyectado por el famoso arquitecto Enric Sagnier en 1926, acoge hoy en día el campus urbano más grande de una escuela de negocios en el centro de la ciudad. ]]>
+</data>
+<data name="b_03_title">
+<![CDATA[ Entrada ]]>
+</data>
+<data name="b_03_content">
+<![CDATA[ Bienvenido al Edifici Balmes. Tras pasar por la recepción, a escasos metros, accederás a todos los recursos del Campus: aulas, espacios de trabajo, salas de estudio, audiorio, cafetería,… Todo ello en un ambiente innovador, con conectividad 5G y preparado para estimular tus ideas. ]]>
+</data>
+<data name="b_13_title">
+<![CDATA[ Espacio polivalente ]]>
+</data>
+<data name="b_13_content">
+<![CDATA[ ¿Sabías que dos de nuestros espacios han sido premiados por el German Design Award 2018? Uno es el Espai Koiné, una zona muy versátil de dos ambientes pensados para optimizar la concentración. Esta es la primera estancia, una sala polivalente ideal para el trabajo en equipo. ]]>
+</data>
+<data name="b_12_title">
+<![CDATA[ Sala de estudios ]]>
+</data>
+<data name="b_12_content">
+<![CDATA[ En la segunda estancia del Espai Koiné, las cortinas de madera son las encargadas de aislar el espacio ayudándote a volcar todos tus sentidos en el estudio, convirtiéndose de esta forma en un espacio ideal para preparar tus exámenes o repasar en detalle tus clases. ]]>
+</data>
+<data name="b_10_title">
+<![CDATA[ Auditorio ]]>
+</data>
+<data name="b_10_content">
+<![CDATA[ Estás ante el escenario perfecto para albergar grandes eventos. El auditorio del campus Balmes tiene capacidad para más de 200 personas y en él se celebran mesas redondas, masterclasses y conferencias con ponentes de primer nivel. ]]>
+</data>
+<data name="b_14_title">
+<![CDATA[ Cafetería - Restaurante ]]>
+</data>
+<data name="b_14_content">
+<![CDATA[ Has llegado a la cafetería, el espacio ideal para tomar un snack entre clases, repasar apuntes con un café o simplemente relajarte. La cafetería incluye restaurante con opciones vegetarianas o sin gluten. ]]>
+</data>
+<data name="b_07_title">
+<![CDATA[ Terraza Este ]]>
+</data>
+<data name="b_07_content">
+<![CDATA[ Desde las mesas altas de esta zona de la terraza -ideales para tomar algo o organizar un evento de networking- verás al completo el skyline de la ciudad. La Sagrada Família, el Hotel Vela, la Torre Agbar… ¡Sus vistas son impresionantes! ]]>
+</data>
+<data name="b_08_title">
+<![CDATA[ Terraza Sur ]]>
+</data>
+<data name="b_08_content">
+<![CDATA[ No puedes quedarte sin disfrutar de nuestra terraza. Es uno de los espacios más concurridos los días de buen tiempo. Por eso, la hemos habilitado para que puedas comer en ella. ]]>
+</data>
+<data name="b_04_title">
+<![CDATA[ Sala Phainon ]]>
+</data>
+<data name="b_04_content">
+<![CDATA[ La Sala Phainon es otro de los dos espacios premiados por el German Design Award 2018. Su configuración flexible convierte esta sala polivalente en un ambiente ideal para acoger charlas o eventos de networking. Pero además, su diseño también permite dividir el espacio en dos salas independientes con todos los recursos tecnológicos necesarios para impartir clase. ]]>
+</data>
+<data name="b_09_title">
+<![CDATA[ Sala Versa ]]>
+</data>
+<data name="b_09_content">
+<![CDATA[ Impartir una charla con vistas a la terraza es un lujo que podemos disfrutar en el Campus Balmes. Nuestros invitados adoran impartir sus ponencias en la Sala Versa. Es un espacio acogedor tanto para realizar cualquier tipo de conferencia como para asistir a clase. ]]>
+</data>
+<data name="b_01_title">
+<![CDATA[ Aula ]]>
+</data>
+<data name="b_01_content">
+<![CDATA[ Las aulas de la UPF-BSM se caracterizan por su adaptación a la modalidad presencial y semipresencial, disponiendo de la tecnología necesaria para emitir en directo. Incluyen cámaras orientadas tanto a ponentes como a asistentes y micrófonos para capturar mejor el sonido. ]]>
+</data>
+<data name="b_11A_title">
+<![CDATA[ Aula en anfiteatro ]]>
+</data>
+<data name="b_11A_content">
+<![CDATA[ El formato de anfiteatro característico de las aulas universitarias también ha sido remodelado con las necesidades técnicas post COVID-19. Estas aulas, orientadas a actividades más teóricas , incluyen también equipos de vídeo y audio para que se puedan seguir a la perfección a distancia. ]]>
+</data>
+<data name="c_02_title">
+<![CDATA[ Edificios Ciutadella ]]>
+</data>
+<!--  <data name="c_02_title" if="!mobile"><![CDATA[Campus Ciutadella]]></data>
+    <data name="c_02_title" if="mobile"><![CDATA[Edificio Ciutadella]]></data>  -->
+<data name="c_02_content">
+<![CDATA[ Has llegado al Campus Ciutadella, uno de los más reconocidos de Barcelona. Se trata de un enorme campus urbano situado al lado de algunos de los lugares más importantes de la ciudad: Arco de Triunfo, Passeig de Sant Joan, el Parque de la Ciutadella y, por supuesto… el mar. Su entorno lleno de árboles y su patrimonio cultural lo convierten en un lugar especial. Entra y descubre la historia que se esconde en sus emblemáticos edificios. ]]>
+</data>
+<data name="c_06_title">
+<![CDATA[ Pati de les aigües ]]>
+</data>
+<data name="c_06_content">
+<![CDATA[ El Pati de Les Aigües cuenta con mesas y bancos para comer al aire libre, dar un paseo o respirar entre clase y clase. ]]>
+</data>
+<data name="c_07_title">
+<![CDATA[ Biblioteca de les aigües ]]>
+</data>
+<data name="c_07_content">
+<![CDATA[ ¿Sabías que estás en una de las bibliotecas más icónicas de Barcelona? Su laberinto de arcos paralelos y su altura la convierten en un lugar único. Pero no siempre ha sido una biblioteca. Este espacio fue inaugurado en 1880 y su función era regular el caudal de la cascada del parque de la Ciutadella. En su remodelación participó un estudiante de arquitectura que se convertiría en el máximo exponente del modernismo catalán: Antoni Gaudí. Actualmente, es la Biblioteca General de la UPF y dispone de las zonas de estudio y de lectura más espectaculares del campus. ]]>
+</data>
+<data name="c_01_title">
+<![CDATA[ Hall Jaume I ]]>
+</data>
+<data name="c_01_content">
+<![CDATA[ Y si quieres regresar a la Biblioteca de les Aigües, ir a por un café o dirigirte a clase… El Hall del Edificio Jaume I te conectará con todo ello. El patio interior está coronado por un sinfín de balcones por los que entra luz natural a las aulas y salas. Es una de las zonas más frecuentadas del edificio, por lo que es imprescindible conocerla. ]]>
+</data>
+<data name="c_12_title">
+<![CDATA[ Hall Roger de Llúria ]]>
+</data>
+<data name="c_12_content">
+<![CDATA[ Si alguna vez te pierdes, te resultará muy fácil encontrarte en este patio interior. El Hall conecta con los recursos más importantes del campus: la biblioteca, la cafetería, las aulas polivalentes… Todos ellos pensados para potenciar tu talento. ]]>
+</data>
+<data name="c_05_title">
+<![CDATA[ Hall Mercè Rodoreda ]]>
+</data>
+<data name="c_05_content">
+<![CDATA[ Desde el Hall del edificio Mercè Rodoreda podrás acceder a las aulas, sala polivalente y auditorio. ]]>
+</data>
+<data name="c_11_title">
+<![CDATA[ Aula ]]>
+</data>
+<data name="c_11_content">
+<![CDATA[ Estás en una de las aulas de este edificio. Se trata de un espacio pensado para las clases presenciales, por lo que favorece la interacción entre ponentes y oyentes. ]]>
+</data>
+<data name="c_13_title">
+<![CDATA[ Aula en anfiteatro ]]>
+</data>
+<data name="c_13_content">
+<![CDATA[ Ahora, puedes ver una de las aulas características del Edifici Roger de Llúria. Dispone de un formato anfiteatro, donde cada ponente cobra protagonismo gracias a la inclinación de las gradas. ]]>
+</data>
+<data name="c_10_title">
+<![CDATA[ Sala Polivalente ]]>
+</data>
+<data name="c_10_content">
+<![CDATA[ En el Edifici Mercè Rodoreda, encontrarás salas polivalentes como ésta preparadas para todo tipo de conferencias, masterclasses o presentaciones de proyectos. ]]>
+</data>
+<data name="balmes_gps">
+<![CDATA[ <div style="margin-top:20px;display:flex;justify-content:flex-start;"> <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/> <div> <div>Balmes, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">COMO LLEGAR</a></div><img src="assets/img/gps_arrow.png" style="margin-bottom:3px; "/></div> </div> </div> ]]>
+</data>
+<data name="ciutadella_gps">
+<![CDATA[ <div style="margin-top:20px;display:flex;justify-content:flex-start;"> <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/> <div> <div>Ciutadella, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://maps.app.goo.gl/jZXvTRupwenor5W9A">COMO LLEGAR</a></div><img src="assets/img/gps_arrow.png" style="margin-bottom:3px; "/></div> </div> </div> ]]>
+</data>
+////////////////////////////////////////////////////HOTSPOTS
+<data name="h_b_07_1">
+<![CDATA[ <span>Skyline</span> ]]>
+</data>
+<data name="h_c_02_1">
+<![CDATA[ <span>Parque de &nbsp;</br>&nbsp;la Ciutadella</span> ]]>
+</data>
+<data name="h_c_07_1">
+<![CDATA[ <span>Biblioteca<br>de les aigües</span> ]]>
+</data>
+<data name="h_c_06_1">
+<![CDATA[ <span>Punktocrator</span> ]]>
+</data>
+<data name="h_b_03b_1">
+<![CDATA[ <span>código QR</span> ]]>
+</data>
+</if>
+<if check="language == 'ca'">
+<lang if="!mobile" es="ES" ca="CA" en="EN"/>
+<lang if="mobile" es="Español" ca="Català" en="English"/>
+<ui logo_upf_link="https://www.bsm.upf.edu/ca" cta_1="[a href='https://www.bsm.upf.edu/ca']Accedeix al web[/a]" cta_2="[a href='https://www.bsm.upf.edu/ca/estudis']Troba el teu programa[/a]" politica="[a href='https://www.bsm.upf.edu/ca/politica-de-privacitat']Política de privacitat[/a]" guide="Guía de navegació" ft360="Arrossega per[br]veure el 360" menu="MENÚ"/>
+<!--  cta_1="Accedeix al web"  
+        cta_1_link="https://www.bsm.upf.edu/ca"
+        cta_2="Troba el teu programa"
+        cta_2_link="https://www.bsm.upf.edu/ca/estudis"  -->
+"
+<campus balmes="Campus Balmes" ciutadella="Campus Ciutadella"/>
+<campusinfo balmes="Campus Balmes" ciutadella="Campus Ciutadella"/>
+<separators common="Espais comuns" classrooms="Aules i Espais"/>
+<data name="b_02_title">
+<![CDATA[ Edifici Balmes ]]>
+</data>
+<!--  <data name="b_02_title" if="!mobile"><![CDATA[Campus Balmes]]></data>
+<data name="b_02_title" if="mobile"  ><![CDATA[Edifici Balmes]]></data>  -->
+<data name="b_02_content">
+<![CDATA[ Aquí comença la teva nova aventura. En aquest cèlebre edifici situat en ple centre de Barcelona, es va fundar fa més de 30 anys la Universitat Pompeu Fabra. Aquest edifici, projectat pel famós arquitecte Enric Sagnier en 1926, acull avui dia el campus urbà més gran d'una escola de negocis en el centre de la ciutat. ]]>
+</data>
+<data name="b_03_title">
+<![CDATA[ Entrada ]]>
+</data>
+<data name="b_03_content">
+<![CDATA[ Benvingut al Edifici Balmes. Després de passar per la recepció, a escassos metres, accediràs a tots els recursos del Campus: aules, espais de treball, sales d'estudi, audiorio, cafeteria,… Tot això en un ambient innovador, amb connectivitat 5G i preparat per a estimular les teves idees. ]]>
+</data>
+<data name="b_13_title">
+<![CDATA[ Espai polivalent ]]>
+</data>
+<data name="b_13_content">
+<![CDATA[ Sabies que dos dels nostres espais han estat premiats pel German Design Award 2018? Un és el Espai Koiné, una zona molt versàtil de dos ambients pensats per a optimitzar la concentració. Aquesta és la primera estada, una sala polivalent ideal per al treball en equip. ]]>
+</data>
+<data name="b_12_title">
+<![CDATA[ Sala d'estudis ]]>
+</data>
+<data name="b_12_content">
+<![CDATA[ En la segona estada del Espai Koiné, les cortines de fusta són les encarregades d'aïllar l'espai ajudant-te a bolcar tots els teus sentits en l'estudi, convertint-se d'aquesta manera en un espai ideal per a preparar els teus exàmens o repassar detalladament les teves classes. ]]>
+</data>
+<data name="b_10_title">
+<![CDATA[ Auditori ]]>
+</data>
+<data name="b_10_content">
+<![CDATA[ Estàs davant l'escenari perfecte per a albergar grans esdeveniments. L'auditori del campus Balmes té capacitat per a més de 200 persones i en ell se celebren taules rodones, masterclasses i conferències amb ponents de primer nivell. ]]>
+</data>
+<data name="b_14_title">
+<![CDATA[ Cafeteria - Restaurant ]]>
+</data>
+<data name="b_14_content">
+<![CDATA[ Has arribat a la cafeteria, l'espai ideal per a prendre un snack entre classes, repassar anotacions amb un cafè o simplement relaxar-te. La cafeteria inclou restaurant amb opcions vegetarianes o sense glútens. ]]>
+</data>
+<data name="b_07_title">
+<![CDATA[ Terraça Est ]]>
+</data>
+<data name="b_07_content">
+<![CDATA[ Des de les taules altes d'aquesta zona de la terrassa -ideals per a prendre alguna cosa o organitzar un esdeveniment de networking- veuràs al complet el skyline de la ciutat. La Sagrada Família, l'Hotel Vela, la Torre Agbar… Les seves vistes són impressionants! ]]>
+</data>
+<data name="b_08_title">
+<![CDATA[ Terraça Sud ]]>
+</data>
+<data name="b_08_content">
+<![CDATA[ No pots quedar-te sense gaudir de la nostra terrassa. És un dels espais més concorreguts els dies de bon temps. Per això, l'hem habilitat perquè puguis menjar en ella. ]]>
+</data>
+<data name="b_04_title">
+<![CDATA[ Sala Phainon ]]>
+</data>
+<data name="b_04_content">
+<![CDATA[ La Sala Phainon és un altre dels dos espais premiats pel German Design Award 2018. La seva configuració flexible converteix aquesta sala polivalent en un ambient ideal per a acollir xerrades o esdeveniments de networking. Però a més, el seu disseny també permet dividir l'espai en dues sales independents amb tots els recursos tecnològics necessaris per a impartir classe. ]]>
+</data>
+<data name="b_09_title">
+<![CDATA[ Sala Versa ]]>
+</data>
+<data name="b_09_content">
+<![CDATA[ Fer una xerrada amb vista a la terrassa és un luxe que podem gaudir al Campus Balmes. Els nostres convidats adoren impartir les seves ponències a la Sala Versa. És un espai acollidor tant per a realitzar qualsevol tipus de conferència com per a assistir a classe. ]]>
+</data>
+<data name="b_01_title">
+<![CDATA[ Aula ]]>
+</data>
+<data name="b_01_content">
+<![CDATA[ Les aules de la UPF-BSM es caracteritzen per la seva adaptació a la modalitat presencial i semipresencial, disposant de la tecnologia necessària per a emetre en directe. Inclouen càmeres orientades tant a ponents com a assistents i micròfons per a capturar millor el so. ]]>
+</data>
+<data name="b_11A_title">
+<![CDATA[ Aula en amfiteatre ]]>
+</data>
+<data name="b_11A_content">
+<![CDATA[ El format en amfiteatre característic de les aules universitàries també ha estat remodelat tenint en compte les necessitats de l'estudiant actual. Aquestes aules, orientades a activitats més teòriques , inclouen també equips de vídeo i àudio perquè es puguin seguir a la perfecció. ]]>
+</data>
+<data name="c_02_title">
+<![CDATA[ Edificis Ciutadella ]]>
+</data>
+<!--  <data name="c_02_title" if="!mobile"><![CDATA[Campus Ciutadella]]></data>
+<data name="c_02_title" if="mobile"><![CDATA[Edifici Ciutadella]]></data>  -->
+<data name="c_02_content">
+<![CDATA[ Has arribat al Campus Ciutadella, un dels més reconeguts de Barcelona. Es tracta d'un enorme campus urbà situat al costat d'alguns dels llocs més importants de la ciutat: Arc de Triomf, Passeig de Sant Joan, el Parc de la Ciutadella i, per descomptat… la mar. El seu entorn ple d'arbres i el seu patrimoni cultural el converteixen en un lloc especial. Entra i descobreix la història que s'amaga en els seus emblemàtics edificis. ]]>
+</data>
+<data name="c_06_title">
+<![CDATA[ Pati de les aigües ]]>
+</data>
+<data name="c_06_content">
+<![CDATA[ El Pati dels Aigües compta amb taules i bancs per a menjar a l'aire lliure, fer una passejada o respirar entre classe i classe. ]]>
+</data>
+<data name="c_07_title">
+<![CDATA[ Biblioteca de les aigües ]]>
+</data>
+<data name="c_07_content">
+<![CDATA[ Sabies que estàs en una de les biblioteques més icòniques de Barcelona? El seu laberint d'arcs paral·lels i la seva altura la converteixen en un lloc únic. Però no sempre ha estat una biblioteca. Aquest espai va ser inaugurat en 1880 i la seva funció era regular el cabal de la cascada del parc de la Ciutadella. En la seva remodelació va participar un estudiant d'arquitectura que es convertiria en el màxim exponent del modernisme català: Antoni Gaudí. Actualment, és la Biblioteca General de la UPF i disposa de les zones d'estudi i de lectura més espectaculars del campus. ]]>
+</data>
+<data name="c_01_title">
+<![CDATA[ Hall Jaume I ]]>
+</data>
+<data name="c_01_content">
+<![CDATA[ I si vols tornar a la Biblioteca dels Aigües, anar per un cafè o dirigir-te a classe… L'Hall de l'Edifici Jaume I et connectarà amb tot això. El pati interior està coronat per una infinitat de balcons pels quals entra llum natural a les aules i sales. És una de les zones més freqüentades de l'edifici, per la qual cosa és imprescindible conèixer-la. ]]>
+</data>
+<data name="c_12_title">
+<![CDATA[ Hall Roger de Llúria ]]>
+</data>
+<data name="c_12_content">
+<![CDATA[ Si alguna vegada et perds, et resultarà molt fàcil trobar-te en aquest pati interior. L'Hall connecta amb els recursos més importants del campus: la biblioteca, la cafeteria, les aules polivalents… Tots ells pensats per a potenciar el teu talent. ]]>
+</data>
+<data name="c_05_title">
+<![CDATA[ Hall Mercè Rodoreda ]]>
+</data>
+<data name="c_05_content">
+<![CDATA[ Des de l'Hall de l'edifici Mercè Rodoreda podràs accedir a les aules, sala polivalent i auditori. ]]>
+</data>
+<data name="c_11_title">
+<![CDATA[ Aula ]]>
+</data>
+<data name="c_11_content">
+<![CDATA[ Estàs en una de les aules d'aquest edifici. Es tracta d'un espai pensat per a les classes presencials, per la qual cosa afavoreix la interacció entre ponents i oïdores. ]]>
+</data>
+<data name="c_13_title">
+<![CDATA[ Aula en amfiteatre ]]>
+</data>
+<data name="c_13_content">
+<![CDATA[ Ara, pots veure una de les aules característiques del Edifici Roger de Llúria. Disposa d'un format amfiteatre, on cada ponent cobra protagonisme gràcies a la inclinació de les graderies. ]]>
+</data>
+<data name="c_10_title">
+<![CDATA[ Sala polivalent ]]>
+</data>
+<data name="c_10_content">
+<![CDATA[ En el Edifici Mercè Rodoreda, trobaràs sales polivalents com aquesta preparades per a tota mena de conferències, masterclasses o presentacions de projectes. ]]>
+</data>
+<data name="balmes_gps">
+<![CDATA[ <div style="margin-top:20px;display:flex;justify-content:flex-start;"> <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/> <div> <div>Balmes, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">COM ARRIBAR</a></div><img src="assets/img/gps_arrow.png" style="width:14px;height:9px;margin-bottom:3px; "/></div> </div> </div> ]]>
+</data>
+<data name="ciutadella_gps">
+<![CDATA[ <div style="margin-top:20px;display:flex;justify-content:flex-start;"> <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/> <div> <div>Ciutadella, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">COM ARRIBAR</a></div><img src="assets/img/gps_arrow.png" style="width:14px;height:9px;margin-bottom:3px; "/></div> </div> </div> ]]>
+</data>
+////////////////////////////////////////////////////HOTSPOTS
+<data name="h_b_07_1">
+<![CDATA[ <span> Skyline</span> ]]>
+</data>
+<data name="h_c_02_1">
+<![CDATA[ <span>Parc de </br> la Ciutadella</span> ]]>
+</data>
+<data name="h_c_07_1">
+<![CDATA[ <span>Biblioteca<br>de les aigües</span> ]]>
+</data>
+<data name="h_c_06_1">
+<![CDATA[ <span>Punktocrator</span> ]]>
+</data>
+<data name="h_b_03b_1">
+<![CDATA[ <span>códig QR</span> ]]>
+</data>
+</if>
+<if check="language == 'en'">
+<lang if="!mobile" es="ES" ca="CA" en="EN"/>
+<lang if="mobile" es="Español" ca="Català" en="English"/>
+<ui logo_upf_link="https://www.bsm.upf.edu/en" cta_1="[a href='https://www.bsm.upf.edu/en']Go to site[/a]" cta_2="[a href='https://www.bsm.upf.edu/en/studies']Find your program[/a]" politica="[a href='https://www.bsm.upf.edu/en/privacy-policy']Privacy policy[/a]" guide="Navigation guide" ft360="Drag to[br]see the 360" menu="MENU"/>
+"
+<!--  cta_1="Go to site"  
+        cta_1_link="https://www.bsm.upf.edu/en"
+        cta_2="Find your program"
+        cta_2_link="https://www.bsm.upf.edu/en/studies"  -->
+<campus balmes="Balmes Campus" ciutadella="Ciutadella Campus"/>
+<campusinfo balmes="Balmes Campus" ciutadella="Ciutadella Campus"/>
+<separators common="Common spaces" classrooms="Classrooms and Spaces"/>
+<data name="b_02_title">
+<![CDATA[ Balmes Building ]]>
+</data>
+<!--  <data name="b_02_title" if="!mobile" ><![CDATA[Balmes Campus]]></data>
+<data name="b_02_title" if="mobile" ><![CDATA[Balmes Building]]></data>  -->
+<data name="b_02_content">
+<![CDATA[ This is where your new adventure begins. The Pompeu Fabra University was founded more than 30 years ago in this famous building in the heart of Barcelona. This building, designed by the famous architect Enric Sagnier in 1926, today houses the largest urban campus of a business school in the city centre. ]]>
+</data>
+<data name="b_03_title">
+<![CDATA[ Hall ]]>
+</data>
+<data name="b_03_content">
+<![CDATA[ Welcome to the Edifici Balmes. After passing through the reception, just a few metres away, you will have access to all the Campus resources: classrooms, work spaces, study rooms, auditorium, cafeteria,... All in an innovative environment, with 5G connectivity and ready to stimulate your ideas. ]]>
+</data>
+<data name="b_13_title">
+<![CDATA[ Multipurpose space ]]>
+</data>
+<data name="b_13_content">
+<![CDATA[ Did you know that two of our spaces have been awarded by the German Design Award 2018? One is the Espai Koiné, a very versatile area with two rooms designed to optimise concentration. This is the first room, a multipurpose room ideal for teamwork. ]]>
+</data>
+<data name="b_12_title">
+<![CDATA[ Study Room ]]>
+</data>
+<data name="b_12_content">
+<![CDATA[ In the second room of the Espai Koiné, the wooden curtains are responsible for isolating the space, helping you to focus all your senses on studying, making it an ideal place to prepare for your exams or to review your classes in detail. ]]>
+</data>
+<data name="b_10_title">
+<![CDATA[ Auditorium ]]>
+</data>
+<data name="b_10_content">
+<![CDATA[ You are in the perfect setting to host major events. The auditorium of the Balmes campus has a capacity for more than 200 people and hosts round tables, masterclasses and conferences with top-level speakers. ]]>
+</data>
+<data name="b_14_title">
+<![CDATA[ Café - Restaurant ]]>
+</data>
+<data name="b_14_content">
+<![CDATA[ You have arrived at the cafeteria, the ideal place to have a snack between classes, review notes with a coffee or just relax. The cafeteria includes a restaurant with vegetarian and gluten-free options. ]]>
+</data>
+<data name="b_07_title">
+<![CDATA[ East Terrace ]]>
+</data>
+<data name="b_07_content">
+<![CDATA[ From the high tables in this area of the terrace -ideal for having a drink or organising a networking event- you'll have a full view of the city skyline. The Sagrada Família, the Hotel Vela, the Agbar Tower... The views are breathtaking! ]]>
+</data>
+<data name="b_08_title">
+<![CDATA[ South Terrace ]]>
+</data>
+<data name="b_08_content">
+<![CDATA[ You can't miss out on our terrace. It is one of the busiest areas on good weather days. That's why we've made it available for you to eat there. ]]>
+</data>
+<data name="b_04_title">
+<![CDATA[ Sala Phainon ]]>
+</data>
+<data name="b_04_content">
+<![CDATA[ The Phainon Room is another of the two spaces awarded by the German Design Award 2018. Its flexible configuration makes this multi-purpose room an ideal environment for hosting talks or networking events. But in addition, its design also allows the space to be divided into two independent rooms with all the technological resources needed for teaching. ]]>
+</data>
+<data name="b_09_title">
+<![CDATA[ Sala Versa ]]>
+</data>
+<data name="b_09_content">
+<![CDATA[ Giving a talk overlooking the terrace is a luxury that we can enjoy at Campus Balmes. Our guests love to give their talks in the Versa Room. It is a welcoming space both for any type of conference and for attending classes. ]]>
+</data>
+<data name="b_01_title">
+<![CDATA[ Classroom ]]>
+</data>
+<data name="b_01_content">
+<![CDATA[ The UPF-BSM classrooms are characterised by their adaptation to face-to-face and blended learning modalities, with the necessary technology to broadcast live. They include cameras aimed at both speakers and attendees and microphones to better capture the sound. ]]>
+</data>
+<data name="b_11A_title">
+<![CDATA[ Amphitheatre classroom ]]>
+</data>
+<data name="b_11A_content">
+<![CDATA[ The amphitheatre format characteristic of university classrooms has also been remodelled to meet the needs of today's students. These classrooms, oriented towards more theoretical activities, also include video and audio equipment so that they can be followed perfectly. ]]>
+</data>
+<data name="c_02_title">
+<![CDATA[ Ciutadella Buildings ]]>
+</data>
+<!--  <data name="c_02_title" if="!mobile"><![CDATA[Ciutadella Campus]]></data>
+<data name="c_02_title" if="mobile"><![CDATA[Ciutadella Building]]></data>  -->
+<data name="c_02_content">
+<![CDATA[ You have arrived at the Ciutadella Campus, one of the most renowned campuses in Barcelona. It is a huge urban campus located next to some of the most important places in the city: Arc de Triomf, Passeig de Sant Joan, Ciutadella Park and, of course... the sea. Its tree-filled surroundings and cultural heritage make it a special place. Come in and discover the history hidden in its emblematic buildings. ]]>
+</data>
+<data name="c_06_title">
+<![CDATA[ Pati de les aigües ]]>
+</data>
+<data name="c_06_content">
+<![CDATA[ The Pati de Les Aigües has tables and benches for eating outdoors, taking a walk or taking a breath between classes. ]]>
+</data>
+<data name="c_07_title">
+<![CDATA[ Biblioteca de les aigües ]]>
+</data>
+<data name="c_07_content">
+<![CDATA[ Did you know you're in one of Barcelona's most iconic libraries? Its labyrinth of parallel arches and its height make it a unique place. But it has not always been a library. This space was inaugurated in 1880 and its function was to regulate the flow of the waterfall in Ciutadella Park. A student of architecture who was to become the greatest exponent of Catalan modernism, Antoni Gaudí, took part in its remodelling. It is currently the General Library of the UPF and has the most spectacular study and reading areas. ]]>
+</data>
+<data name="c_01_title">
+<![CDATA[ Hall Jaume I ]]>
+</data>
+<data name="c_01_content">
+<![CDATA[ And if you want to go back to the Aigües Library, get a coffee or go to class... The Hall of the Jaume I Building will connect you with all of them. The inner courtyard is crowned by countless balconies through which natural light enters the classrooms and halls. It is one of the most frequented areas of the building, so it is essential to get to know it. ]]>
+</data>
+<data name="c_12_title">
+<![CDATA[ Hall Roger de Llúria ]]>
+</data>
+<data name="c_12_content">
+<![CDATA[ If you ever get lost, it's easy to find yourself in this inner courtyard. The Hall connects to the most important resources on campus: the library, the cafeteria, the multi-purpose rooms... All of them designed to enhance your talent. ]]>
+</data>
+<data name="c_05_title">
+<![CDATA[ Hall Mercè Rodoreda ]]>
+</data>
+<data name="c_05_content">
+<![CDATA[ From the Hall of the Mercè Rodoreda building you can access the classrooms, multi-purpose room and auditorium. ]]>
+</data>
+<data name="c_11_title">
+<![CDATA[ Classroom ]]>
+</data>
+<data name="c_11_content">
+<![CDATA[ You are in one of the classrooms in this building. It is a space designed for face-to-face classes, so it favours interaction between speakers and listeners. ]]>
+</data>
+<data name="c_13_title">
+<![CDATA[ Amphitheater classroom ]]>
+</data>
+<data name="c_13_content">
+<![CDATA[ Now, you can see one of the characteristic classrooms of the Edifici Roger de Llúria. It has an amphitheatre format, where each speaker takes centre stage thanks to the inclination of the stands. ]]>
+</data>
+<data name="c_10_title">
+<![CDATA[ Multipurpose space ]]>
+</data>
+<data name="c_10_content">
+<![CDATA[ In the Edifici Mercè Rodoreda, you will find multi-purpose rooms like this one, prepared for all kinds of conferences, masterclasses or project presentations. ]]>
+</data>
+<data name="balmes_gps">
+<![CDATA[ <div style="margin-top:20px;display:flex;justify-content:flex-start;"> <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/> <div> <div>Balmes, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">HOW TO GET THERE</a></div><img src="assets/img/gps_arrow.png" style="width:14px;height:9px;margin-bottom:3px; "/></div> </div> </div> ]]>
+</data>
+<data name="ciutadella_gps">
+<![CDATA[ <div style="margin-top:20px;display:flex;justify-content:flex-start;"> <img src="assets/img/gps.png" style="width:18px;height:28px; margin-right:14px;"/> <div> <div>Ciutadella, 132-134<br>08008 Barcelona</div><div style="display:flex;flex-direction: row;flex-wrap: nowrap;align-items: center; gap:6px;"><div><a style="color:#C8102E;letter-spacing: 1.3px; text-decoration:none; font-size:0.6em; font-weight: bold;" href="https://www.google.es/maps/place/UPF+Barcelona+School+of+Management/@41.3935706,2.1573545,15z/data=!4m6!3m5!1s0x12a4a290ff886705:0x400a0058e0564602!8m2!3d41.3935706!4d2.1573545!16s%2Fg%2F11bx1b8xjk?entry=ttu&hl=es">HOW TO GET THERE</a></div><img src="assets/img/gps_arrow.png" style="width:14px;height:9px;margin-bottom:3px; "/></div> </div> </div> ]]>
+</data>
+////////////////////////////////////////////////////HOTSPOTS
+<data name="h_b_07_1">
+<![CDATA[ <span> Skyline</span> ]]>
+</data>
+<data name="h_c_02_1">
+<![CDATA[ <span>Ciutadella's park</span> ]]>
+</data>
+<data name="h_c_07_1">
+<![CDATA[ <span>Biblioteca<br>de les aigües</span> ]]>
+</data>
+<data name="h_c_06_1">
+<![CDATA[ <span>Punktocrator</span> ]]>
+</data>
+<data name="h_b_03b_1">
+<![CDATA[ <span>QR code</span> ]]>
+</data>
+</if>
+</krpano>

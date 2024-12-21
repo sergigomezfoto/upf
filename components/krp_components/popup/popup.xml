@@ -138,7 +138,8 @@ delayedcall (,
     popupbg.onclick=("closepopup(,"+ act + ")");
 
     txtsplit(size,'|',w,h);
-    trace(w);
+    
+
     addlayer('popuploader',ifloader);
     ifloader.loadstyle('ploader');
     ifloader.width=*w;
@@ -148,6 +149,58 @@ delayedcall (,
     iframe.loadstyle('popuplayerstyle');
     iframe.iframeurl=url;
     iframe.width=*w;
+    iframe.height=*h;
+    iframe.onloaded="actiframe()"; 
+    
+    addlayer('closepopuplayer',ciframe);
+    if (type === 'help' OR type === 'hs',
+        if (type === 'help',
+            ciframe.loadstyle('xclose_help');
+        );
+        if (type === 'hs',
+            ciframe.loadstyle('xclose_hs');
+        );
+        ciframe.onclick=("closepopup(,"+ act + ")");
+        ,type === 'init',
+        ciframe.loadstyle('xclose_init');
+        ciframe.onclick=("closepopup(true,"+ act + ")");
+    );
+
+);
+
+
+</action>
+<action name="popup_prop" scope="local" args="url,size,type,act">
+
+    trace((act));
+    if (type === 'help' OR type == 'hs',
+        actionsbeforepopup();
+        
+        ,type === 'init',
+        actionsbeforepopup(true);
+    );
+
+
+delayedcall (,
+    addlayer('popupbg',popupbg);
+    popupbg.loadstyle('popupbg');
+    <!-- popupbg.onclick=("closepopup(,"+ act + ")"); -->
+
+    txtsplit(size,'|',w,h);
+    calc(wpx, stagewidth * (w/100));
+    calc(h, (wpx*9)/16);
+    trace(w,'wwwwwwwwwwwwwwwwwwwwwww');
+    trace(h,'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh');
+
+    addlayer('popuploader',ifloader);
+    ifloader.loadstyle('ploader');
+    ifloader.width=*wpx;
+    ifloader.height=*h;
+
+    addlayer('popuplayer',iframe);
+    iframe.loadstyle('popuplayerstyle');
+    iframe.iframeurl=url;
+    iframe.width=*wpx;
     iframe.height=*h;
     iframe.onloaded="actiframe()"; 
     

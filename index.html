@@ -58,12 +58,12 @@
         <div class="accordion-container">
             <!-- Campus Balmes -->
             <div class="accordion-menu" id="CampusBalmesContainer">
-                <p class="accordion-title" id="scene_b_02" onclick="toggleCampusAndloadPanorama(event,'menuBalmes')">
+                <p class="accordion-title" id="campus_balmes" onclick="toggleCampus(event,'menuBalmes')">
                     Campus Balmes</p>
-
                 <div class="desapear">
                     <div class="accordion-content" id="menuBalmes">
 
+                        <p id="scene_b_02" onclick="loadPanorama(event)">Edifício Balmes</p>
                         <p id="s_1" class="separator">Espacios comunes</p>
                         <p id="scene_b_03" onclick="loadPanorama(event)">Entrada</p>
                         <p id="scene_b_10" onclick="loadPanorama(event)">Auditorio</p>
@@ -86,12 +86,12 @@
 
 
             <div class="accordion-menu" id="CampusCiutadellaContainer">
-                <p class="accordion-title" id="scene_c_02"
-                    onclick="toggleCampusAndloadPanorama(event,'menuCiutadella')">Campus Ciutadella</p>
+                <p class="accordion-title" id="campus_ciutadella" onclick="toggleCampus(event,'menuCiutadella')">Campus
+                    Ciutadella</p>
                 <div class="desapear">
                     <div class="accordion-content" id="menuCiutadella">
 
-
+                        <p id="scene_c_02" onclick="loadPanorama(event)">Edifício Balmes</p>
                         <p id="s_3" class="separator">Espacios comunes</p>
                         <p id="scene_c_07" onclick="loadPanorama(event)">Biblioteca de les aigües</p>
                         <p id="scene_c_06" onclick="loadPanorama(event)">Pati de les aigües</p>
@@ -125,9 +125,12 @@
                         </g>
                     </svg>
                     <!-- <img src="./assets/img/world.png" alt="" /> -->
-                    <div id="es" class="lan" onclick="highlightLanguage('es');krpano.call('change_lang(Español)')">ES</div>
-                    <div id="ca" class="lan" onclick="highlightLanguage('ca');krpano.call('change_lang(Català)')">CA</div>
-                    <div id="en" class="lan" onclick="highlightLanguage('en');krpano.call('change_lang(English)')">EN</div>
+                    <div id="es" class="lan" onclick="highlightLanguage('es');krpano.call('change_lang(Español)')">ES
+                    </div>
+                    <div id="ca" class="lan" onclick="highlightLanguage('ca');krpano.call('change_lang(Català)')">CA
+                    </div>
+                    <div id="en" class="lan" onclick="highlightLanguage('en');krpano.call('change_lang(English)')">EN
+                    </div>
                 </div>
             </div>
 

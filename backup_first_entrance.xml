@@ -1,0 +1,23 @@
+<krpano>
+<if check="!test">
+<!--  <action name="" autorun="true" >
+        popup("https://www.youtube.com/embed/JPLJ50WkWao","66%|60%","init",first_360_action);    
+    </action>  -->
+<action name="first_360_action"> layer[ft_container].ondown="close_ft();"; </action>
+<style name="ft_container" type="container" width="100%" height="100%" keep="true" bgcolor="0x000000" bg="true" bgalpha="0.5" parent="stage" onloaded="blur();" bgcapture="true" capture="false" autoalpha="true" cursor="default" zorder="10"/>
+<style name="ico360_text_container" type="container" align="center" bg="false" bgcolor="0x000000" bgalpha="1" flowchildren="v" childflowspacing="20" childmargin="" enabled="false" zorder="110" width="200px"/>
+<style name="t360_text" type="text" css="font-family:'lota_regular';font-size:18px;color:#ffffff;text-align:center;" width="100%" bg="false" align="top" text="get:ui.ft360" zorder="110"/>
+<layer name="ft_container" keep="true" style="ft_container">
+<layer name="ico360_text_container" keep="true" style="ico360_text_container">
+<layer name="ico360" keep="true" url="%FIRSTXML%/assets/img/360.png" align="top"/>
+<layer name="t360_text" keep="true" style="t360_text"/>
+</layer>
+</layer>
+<action name="close_ft"> sharp(); tween(layer[ft_container].alpha,0, 0.2,); delayedcall (1, firstcompleted=true; ); </action>
+<action name="close_ft_" autorun="true" if="mobile"> sharp(); tween(layer[ft_container].alpha,0, 0.2,); delayedcall (1, trace('aa'); jscall(kploaded += 1 ;); unload_loader(); close_ft(); firstcompleted=true; ); </action>
+</if>
+<!--  <if check="test">  -->
+//TREURE AL POSAR EL POPUP CORRECTE
+<action name="" autorun="true" if="!mobile"> first_360_action(); jscall(kploaded += 1 ;); firstcompleted=true; </action>
+<!--  </if>  -->
+</krpano>

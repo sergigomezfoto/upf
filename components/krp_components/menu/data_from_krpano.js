@@ -34,12 +34,12 @@ const getDataFromKrpano = () => {
       separatorObject.title = krpano.separators.classrooms;
       krpanoMenu.push(separatorObject);
     }
-    if (ciutadellaIndex === i || balmesIndex === i) {
-      titleObject.title = krpano.campus[balmesIndex === i ? "balmes" : "ciutadella"];
-      titleObject.id = scene.name;
-      krpanoMenu.push(titleObject);
-      return;
-    }
+    // if (ciutadellaIndex === i || balmesIndex === i) {
+    //   titleObject.title = krpano.campus[balmesIndex === i ? "balmes" : "ciutadella"];
+    //   titleObject.id = scene.name;
+    //   krpanoMenu.push(titleObject);
+    //   return;
+    // }
 
     sceneObject.id = scene.name;
     let dataObject = `${scene.name.replace("scene_", "")}_title`;
@@ -68,6 +68,16 @@ const getDataFromKrpano = () => {
     title: extractLinkData(krpano.ui.cta_2).title,
     url: extractLinkData(krpano.ui.cta_2).url,
   };
+  const campusBalmes={
+    id: "campus_balmes",
+    title: krpano.campus.balmes,
+  }
+  const campusCiutadella={
+    id: "campus_ciutadella",
+    title: krpano.campus.ciutadella,
+  }
+  krpanoMenu.push(campusBalmes);
+  krpanoMenu.push(campusCiutadella);
   krpanoMenu.push(cta1);
   krpanoMenu.push(cta2);
   

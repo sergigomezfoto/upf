@@ -47,8 +47,9 @@
     /* background-color: brown; */
 }
 .desapear{
-    -webkit-mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, transparent 100%);
-    mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, transparent 100%);
+    /* background-color: royalblue; */
+    -webkit-mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 98%, transparent 100%);
+    mask: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 98%, transparent 100%);
     margin-top: 10px;
         /* background-color: aliceblue; */
     /* width: 110%; */
@@ -220,4 +221,11 @@ margin-bottom: 10px;
 .menu-panel{
     font-size: 14px;
 }
+}
+
+/* #s_1,#s_3{
+    margin-top: 0px;
+} */
+#scene_b_02,#scene_c_02{
+    margin-top:2px;
 }
