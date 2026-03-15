@@ -3,7 +3,7 @@
 <if check="!test">
 
     <action name="" autorun="true" >
-        popup_prop(get(ui.first_entrance_video),"66|60","init",first_360_action);    
+        //popup_prop(get(ui.first_entrance_video),"66|60","init",first_360_action);    
     </action>
 
 <action name="first_360_action">
