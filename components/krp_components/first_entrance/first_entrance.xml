@@ -70,6 +70,15 @@ layer[ft_container].ondown="close_ft();";
 
     <action name="close_ft">
     sharp();
+    blackclosed=true;
+    enough=false;
+    delayedcall (2,
+    enoughvisualtime=true;
+    );
+    
+   
+    <!-- loop(timer GT 0, elapsed=(elapsed + 1); ); -->
+
     tween(layer[ft_container].alpha,0, 0.2,);   
     delayedcall (1,
         firstcompleted=true;

@@ -76,12 +76,19 @@ onframe="move_gray"
 
 <action name="move_gray">
 
+if(blackclosed === true
+, 
+
     if (mouse.x LT 100 AND !mouse.leftbutton,
         wantmenu=true;
     );
-    if (mouse.x GT 400 AND !mouse.leftbutton,
+    if (mouse.x GT 400 AND !mouse.leftbutton AND enoughvisualtime,
         wantmenu=false;
     );
+,
+
+    wantmenu=true;
+);
 
 </action>
 // if="test !== true"
